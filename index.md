@@ -1,14 +1,17 @@
 ---
-layout: default
 title: Blog
 ---
-<h1>Latest Posts</h1>
+# Welcome to My Blog!
+
+
+## 最近文章
 
 <ul>
   {% for post in site.posts %}
     <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
       
+      <p> {{ post.date }} | {{ post.excerpt }} </p>
     </li>
   {% endfor %}
 </ul>
