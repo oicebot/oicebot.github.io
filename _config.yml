@@ -4,7 +4,7 @@ SEOTitle: Oicebot    	 #显示在浏览器上搜索的时候显示的标题
 description: "oicebot's Blog"  			 #网站介绍
 url: "https://oicebot.github.io"          # 这个就是填写你的博客地址
 baseurl: ""
-theme: jekyll-theme-hacker
+#theme: jekyll-theme-hacker
 
 # Sidebar settings
 sidebar: true                           # 是否开启侧边栏.
