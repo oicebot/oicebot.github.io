@@ -1,37 +1,6 @@
-## Welcome to GitHub Pages
+## 待办事项
 
-You can use the [editor on GitHub](https://github.com/oicebot/oicebot.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/oicebot/oicebot.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- [x] https://blog.usejournal.com/why-you-need-to-learn-more-programming-languages-9160d609eac3 （2月2号交，补充一些案例）
+- [ ] https://towardsdatascience.com/looking-for-a-house-build-a-web-scraper-to-help-you-5ab25badc83e （春节期间交，精简一些）
+- [ ] https://medium.com/s/story/if-you-only-read-a-few-books-in-2019-read-these-4533f41fe1d4  （荐书、精简一些，春节期间交）
+- [ ] https://blog.udacity.com/2017/04/overcoming-obstacles-career-change.html （学员访谈，2月3号交）
