@@ -1,12 +1,12 @@
 ---
 layout: default
-title: ¿²µÂÈËµÄĞ¡°ü°ü
+title: åå¾·äººçš„å°åŒ…åŒ…
 ---
 
 # Welcome to My Blog!
 
 
-## ×î½üÎÄÕÂ
+## æœ€è¿‘æ–‡ç« 
 
 <ul>
   {% for post in site.posts %}
@@ -18,6 +18,6 @@ title: ¿²µÂÈËµÄĞ¡°ü°ü
   {% endfor %}
 </ul>
 
-## Òë¸öÂş»­
+## è¯‘ä¸ªæ¼«ç”»
 
 empty
