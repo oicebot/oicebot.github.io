@@ -13,7 +13,7 @@ title: 首页
   {% for post in site.posts %}
     <li>
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      <p><small>{{ post.date | date: "%Y-%m-%d" }} - {{ post.excerpt | strip_html | strip_newlines | truncate:170 }}</small></p>
+      <p><small>{{ post.date | date: "%Y-%m-%d" }} - {{ post.excerpt | strip_html | strip_newlines | truncate:100 }}</small></p>
     </li>
   {% endfor %}
 </ul>
