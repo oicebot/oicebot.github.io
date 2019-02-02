@@ -7,16 +7,10 @@ url: https://news.slashdot.org/story/17/02/23/216256/study-reveals-bot-on-bot-ed
 ---
 “超级机器人大战已经爆发了！”
 
-A new study from computer scientists has found that the online encyclopedia is a battleground where silent wars have raged for years. Since Wikipedia launched in 2001, its millions of articles have been ranged over by software robots, or simply "bots," that are built to mend errors, add links to other pages, and perform other basic housekeeping tasks. In the early days, the bots were so rare they worked in isolation. But over time, the number deployed on the encyclopedia exploded with unexpected consequences. The more the bots came into contact with one another, the more they became locked in combat, undoing each other's edits and changing the links they had added to other pages. Some conflicts only ended when one or other bot was taken out of action.
-
 来自计算机科学家的一项最新研究发现，一场无声的战争已经在网络百科全书里肆虐多年。自从维基百科于2001年问世以来，自动化软件程序——或简称“机器人”——已归类整理了数以百万计的文章，主要是进行简单错误修复，添加到其他页面的链接以及执行其他基本的整理事务等工作。在早期，机器人还十分罕见，基本都是相互独立地处理工作。但随着时间的推移，部署在百科全书上的机器人的数量爆炸式增长，带来了意想不到的后果。机器人彼此接触得越多，他们互相锁定在“编辑争夺战”——互相撤消彼此的编辑并更改其他机器人添加到其他页面的链接——中的可能性也越高。有些冲突只有当一个或多个机器人被关闭时才结束。
-
-The findings emerged from a study that looked at bot-on-bot conflict in the first ten years of Wikipedia's existence. The researchers at Oxford and the Alan Turing Institute in London examined the editing histories of pages in 13 different language editions and recorded when bots undid other bots' changes. While some conflicts mirrored those found in society, such as the best names to use for contested territories, others were more intriguing. Describing their research in a paper entitled Even Good Bots Fight in the journal Plos One, the scientists reveal that among the most contested articles were pages on former president of Pakistan Pervez Musharraf, the Arabic language, Niels Bohr and Arnold Schwarzenegger.
 
 这个发现来自牛津大学和伦敦的阿兰·图灵研究所的一个研究成果。研究人员分析了维基百科问世的头十年间，机器人对机器人的编辑冲突的情况。他们检查了13种不同语言版本的维基百科页面的编辑历史记录，并记录了机器人如何回退其他机器人对页面的改动。虽然一些冲突反映了社会上对事物的分歧，例如对主权争议领土的命名问题，但其他的冲突更为奇妙。他们将研究结果以题为《好机器人也会争战（Even Good Bots Fight）》的论文发表在了 Plos One 杂志上，科学家透露，争夺最激烈的文章包括巴基斯坦前总统佩尔韦兹·穆沙拉夫、阿拉伯语、尼尔斯·玻尔和阿诺德·施瓦辛格的维基百科页面。
 
-One of the most intense battles played out between Xqbot and Darknessbot which fought over 3,629 different articles between 2009 and 2010. Over the period, Xqbot undid more than 2,000 edits made by Darknessbot, with Darknessbot retaliating by undoing more than 1,700 of Xqbot's changes. The two clashed over pages on all sorts of topics, from Alexander of Greece and Banqiao district in Taiwan to Aston Villa football club.
-
 最激烈的一些争夺战发生在 Xqbot 和 Darknessbot 之间，他们在 2009 - 2010 年期间在超过 3629 篇不同的文章中发生了编辑冲突。在这段时间， Xqbot 撤销了 Darknessbot 提交的超过 2000 条改动，而 Darknessbot 报复性地撤销了超过 1700 条 Xqbot 提交的改动。两个机器人在各种主题的页面上你来我往，征战不休，从希腊的亚历山大和台湾的板桥区，一直打到阿斯顿维拉足球俱乐部，还不罢休。
 
-编译来源：https://news.slashdot.org/story/17/02/23/216256/study-reveals-bot-on-bot-editing-wars-raging-on-wikipedias-pages
+编译来源： {{ page.url }}
