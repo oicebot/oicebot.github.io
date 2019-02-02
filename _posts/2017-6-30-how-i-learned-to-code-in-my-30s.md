@@ -4,13 +4,12 @@ title: 30岁才转行学编程是怎样一种体验
 date: 2017-06-30
 category: 自学
 tags: udacity translate
-url: https://medium.com/udacity/how-i-learned-to-code-in-my-30s-61ad21180208
-from: "Brad Crispin"
+from: https://medium.com/udacity/how-i-learned-to-code-in-my-30s-61ad21180208
 author: Brad Crispin
 ---
 “沉迷写代码，跟紧老司机，而且永不言败”
 
-（本文已投稿给「[优达学城](https://cn.udacity.com)」并发表。 原作： [{{ page.from }}]({{ page.url }}) 译者：欧剃 转载请保留此信息）
+（本文已投稿给「[优达学城](https://cn.udacity.com)」并发表。 原作： [{{ page.author }}]({{ page.from }}) 译者：欧剃 转载请保留此信息）
 
 -----------
 

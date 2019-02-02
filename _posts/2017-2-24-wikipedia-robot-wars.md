@@ -3,7 +3,7 @@ layout: post
 title: 大战三万回合：维基百科页面上的编辑机器人大混战
 date: 2017-02-24
 tags: wikipedia translate
-url: https://news.slashdot.org/story/17/02/23/216256/study-reveals-bot-on-bot-editing-wars-raging-on-wikipedias-pages
+from: https://news.slashdot.org/story/17/02/23/216256/study-reveals-bot-on-bot-editing-wars-raging-on-wikipedias-pages
 ---
 “超级机器人大战已经爆发了！”
 
