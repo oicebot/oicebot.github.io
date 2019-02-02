@@ -24,3 +24,5 @@ title: 首页
 ----
 
 {% include_relative todo.md %}
+
+{% include_relative footer.md %}

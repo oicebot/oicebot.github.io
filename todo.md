@@ -1,8 +1,3 @@
-----
-layout: post
-author: 欧剃
-----
-
 ## 待办事项
 
 - [x] [为啥你需要学习更多编程语言](https://blog.usejournal.com/why-you-need-to-learn-more-programming-languages-9160d609eac3) （2月2号交，补充一些案例）
