@@ -1,4 +1,9 @@
-[Blog](/blog.html)
+----
+layout: post
+author: 欧剃
+
+----
+
 
 ## 待办事项
 
