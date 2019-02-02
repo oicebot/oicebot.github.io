@@ -1,3 +1,5 @@
+[Blog](/blog.html)
+
 ## 待办事项
 
 - [x] https://blog.usejournal.com/why-you-need-to-learn-more-programming-languages-9160d609eac3 （2月2号交，补充一些案例）
