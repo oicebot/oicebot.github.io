@@ -11,3 +11,5 @@ sidebar: true                           # 是否开启侧边栏.
 sidebar-about-description: "说点装逼的话。。。"
 
 
+
+theme: jekyll-theme-hacker
