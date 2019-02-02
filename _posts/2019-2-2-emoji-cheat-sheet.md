@@ -1,3 +1,5 @@
+Github 上可用的各种表情图标大集合
+
 # emoji-cheat-sheet
 
 [![build](https://travis-ci.org/ikatyang/emoji-cheat-sheet.svg?branch=master)](https://travis-ci.org/ikatyang/emoji-cheat-sheet)

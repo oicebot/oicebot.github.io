@@ -11,8 +11,10 @@ title: 首页
 <ul>
   {% for post in site.posts %}
     <li>
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>{{ post.date | date: "%Y-%m-%d" }}
-      <p>  {{ post.excerpt }} </p>
+      <table border="0">
+      <tr><td><h3><a href="{{ post.url }}">{{ post.title }}</a></h3></td><td>{{ post.date | date: "%Y-%m-%d" }}</td></tr>
+      <tr>  {{ post.excerpt }} </tr>
+      </table>
     </li>
   {% endfor %}
 </ul>
@@ -21,8 +23,4 @@ title: 首页
 
 * 暂无内容
 
-----
-
 {% include_relative todo.md %}
-
-{% include_relative footer.md %}
