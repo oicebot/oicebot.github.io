@@ -8,7 +8,6 @@ url: https://medium.com/udacity/how-i-learned-to-code-in-my-30s-61ad21180208
 from: "Brad Crispin"
 author: Brad Crispin
 ---
-
 “沉迷写代码，跟紧老司机，而且永不言败”
 
 （本文已投稿给「[优达学城](https://cn.udacity.com)」并发表。 原作： [{{ page.from }}]({{ page.url }}) 译者：欧剃 转载请保留此信息）

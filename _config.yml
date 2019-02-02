@@ -5,6 +5,7 @@ description: "欧剃，游荡的坎德人，在他的旅途中收集了许许多
 url: "https://oicebot.github.io"          # 这个就是填写你的博客地址
 baseurl: ""
 theme: jekyll-theme-hacker
+author: 欧剃
 
 # Sidebar settings
 sidebar: true                           # 是否开启侧边栏.

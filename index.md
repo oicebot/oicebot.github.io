@@ -13,7 +13,7 @@ title: 首页
   {% for post in site.posts %}
     <li>
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      <p><small> -{{ post.date | date: "%Y-%m-%d" }}</small> - {{ post.excerpt }}</p>
+      <p><small>{{ post.date | date: "%Y-%m-%d" }} - {{ post.excerpt }}</small></p>
     </li>
   {% endfor %}
 </ul>
