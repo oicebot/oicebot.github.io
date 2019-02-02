@@ -9,6 +9,9 @@ layout: default
 
 {{content}}
 
+{% if page.url %}
+<p style="color:#b5e853"><small>编译来源： {{ page.url }}</small></p>
+{% endif %}
 {% if page.tags %}
-  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+<p style="color:#8c8c8c"><small>标签：<em>{{ page.tags | join: "</em>、<em>" }}</em></small></p>
 {% endif %}
