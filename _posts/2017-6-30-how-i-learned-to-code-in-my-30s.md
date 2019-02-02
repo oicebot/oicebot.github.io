@@ -13,7 +13,7 @@ author: Brad Crispin
 
 -----------
 
-![作者近照](img/1_rzCI0BDS8jBgInGv0JCSCw.jpeg)
+<img src='/img/1_rzCI0BDS8jBgInGv0JCSCw.jpg' class="img-responsive" alt="" />
 
 人们经常问我，想知道我是怎么开始学编程的。当他们知道我30岁之后才转行学写代码的时候，往往都一脸惊讶。
 
