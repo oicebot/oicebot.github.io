@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 坎德人的小包包
+title: 首页
 ---
 
 # Welcome to My Blog!
@@ -11,13 +11,16 @@ title: 坎德人的小包包
 <ul>
   {% for post in site.posts %}
     <li>
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      
-      <p> {{ post.date | date: "%Y-%m-%d" }} {{ post.excerpt }} </p>
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>{{ post.date | date: "%Y-%m-%d" }}
+      <p>  {{ post.excerpt }} </p>
     </li>
   {% endfor %}
 </ul>
 
 ## 译个漫画
 
-empty
+* 暂无内容
+
+----
+
+{% include_relative todo.md %}
