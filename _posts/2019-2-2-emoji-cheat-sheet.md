@@ -1,3 +1,11 @@
+---
+layout: post
+title: emoji-cheat-sheet
+category: 自学
+author: GitHub
+url: https://help.github.com/articles/basic-writing-and-formatting-syntax/#using-emoji
+---
+
 Github 上可用的各种表情图标大集合
 
 # emoji-cheat-sheet

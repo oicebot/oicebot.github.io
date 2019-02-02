@@ -6,7 +6,7 @@ category: 自学
 tags: udacity translate
 url: https://medium.com/udacity/how-i-learned-to-code-in-my-30s-61ad21180208
 from: "Brad Crispin"
-
+author: Brad Crispin
 ---
 
 “沉迷写代码，跟紧老司机，而且永不言败”
