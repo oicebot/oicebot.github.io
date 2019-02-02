@@ -1,10 +1,12 @@
 ---
-title: Blog
+layout: default
+title: ¿²µÂÈËµÄĞ¡°ü°ü
 ---
+
 # Welcome to My Blog!
 
 
-## æœ€è¿‘æ–‡ç« 
+## ×î½üÎÄÕÂ
 
 <ul>
   {% for post in site.posts %}
@@ -15,3 +17,7 @@ title: Blog
     </li>
   {% endfor %}
 </ul>
+
+## Òë¸öÂş»­
+
+empty
