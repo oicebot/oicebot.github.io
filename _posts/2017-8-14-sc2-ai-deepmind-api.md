@@ -31,7 +31,7 @@ excerpt_separator: <!--more-->
 
 所以对于未知领域的计算就更加困难了，于是Deepmind决定开发新的应用程序接口来进行AI在即时战略游戏上的应用。
 
-<img src="https://1-im.guokr.com/8Ro5iou88FRmIXdWraZN8a7Mcib8h7EkEo89lKEhyJKwAwAAxgEAAFBO.png?imageView2/1/w/640/h/307" class="img-responsive" alt="" /><br><small>可以看到，这两种游戏在玩家获得的信息方面的不同。图片来源：维基百科、《星际争霸2》游戏截图</small>
+<img src="http://1-im.guokr.com/8Ro5iou88FRmIXdWraZN8a7Mcib8h7EkEo89lKEhyJKwAwAAxgEAAFBO.png?imageView2/1/w/640/h/307" class="img-responsive" alt="" /><br><small>可以看到，这两种游戏在玩家获得的信息方面的不同。图片来源：维基百科、《星际争霸2》游戏截图</small>
 
 ## 这东西到底是什么？
 
@@ -42,7 +42,7 @@ excerpt_separator: <!--more-->
 * 一个是暴雪放出的《星际争霸2》游戏API，让计算机程序能够从类似人类玩家一样的视角，获得当前游戏状态的相关信息——AI能获得的数据和信息和人类玩家是平等的；
 * 另一个是Deepmind放出的PySC2，它提供了一个分析处理游戏数据的代码库——可以告诉AI下一步要进行什么操作，是挖矿还是建造兵营。此外，PySC2还能够帮助程序员编写的AI进行强化学习<sup>[3]</sup>。
 
-<img src="https://2-im.guokr.com/HjFpyjVSwr7W2GgwKRWVXQKCDwZtLuKQDZwezCwKMrawAwAA6wEAAFBO.png?imageView2/1/w/640/h/332" class="img-responsive" alt="" /><br><small>SC2LE结构图：星际2客户端本身（左侧黑色）是核心，通过API和PySC2进行沟通，联合成一个整体，玩家的AI（右侧Agent）通过PySC2得到各种观察结果和反馈，然后做出具体的行动命令，以模拟人类操作的方式，输入进PySC2里，形成一个具体的游戏操作。图片来源：Deepmind SC2LE介绍</small>
+<img src="http://2-im.guokr.com/HjFpyjVSwr7W2GgwKRWVXQKCDwZtLuKQDZwezCwKMrawAwAA6wEAAFBO.png?imageView2/1/w/640/h/332" class="img-responsive" alt="" /><br><small>SC2LE结构图：星际2客户端本身（左侧黑色）是核心，通过API和PySC2进行沟通，联合成一个整体，玩家的AI（右侧Agent）通过PySC2得到各种观察结果和反馈，然后做出具体的行动命令，以模拟人类操作的方式，输入进PySC2里，形成一个具体的游戏操作。图片来源：Deepmind SC2LE介绍</small>
 
 这里的“强化学习”，是一种基于决策和交互的机器学习方式。在“训练”过程中，程序针对当前需要解决的问题，建立一个模型，然后基于当前环境给定的各种规则和条件作出决策，并且通过探索各种可能性，根据获得的反馈（可能是“奖励”或“惩罚”，比如成功开了分矿，或者在战斗中损失了一支部队等等情况）来调整下一步决策，通过不断的试错和修正，来寻求最优的对策。
 
@@ -60,13 +60,13 @@ excerpt_separator: <!--more-->
 
 接下来，我们先看暴雪放出的代码<sup>[4]</sup>：
 
-<img src="https://3-im.guokr.com/5D5QBl354KsRnSSqn7Pesno73UcUQP5j198k4TmNxMlKAwAAuwMAAFBO.png" class="img-responsive" alt="" />
+<img src="http://3-im.guokr.com/5D5QBl354KsRnSSqn7Pesno73UcUQP5j198k4TmNxMlKAwAAuwMAAFBO.png?imageView2/1/w/640/h/725" class="img-responsive" alt="" />
 
 在下载区，前三个是API的编程说明书、C++的代码库和Linux版的《星际争霸2》AI用客户端——不是程序员的你可以安全的忽略它们。第四个是地图包，第五个是65000个游戏回放数据。如果只是想看看AI怎么玩，并不打算实际调教一个AI的话，你只需要下载几个地图包即可。下载后解压压缩包里的东西到星际争霸2的 StarCraft II/Maps 文件夹里，解压密码是 iagreetotheeula 。
 
 解压完之后，你的 StarCraft II 文件夹里应该有这些子文件夹：
 
-<img src="https://3-im.guokr.com/q0IKBf8epWomNIbhyPNMQXLQsPJhD0Dfx6e8b0cQnrbpAAAAGQEAAFBO.png" class="img-responsive" alt="" />
+<img src="http://3-im.guokr.com/q0IKBf8epWomNIbhyPNMQXLQsPJhD0Dfx6e8b0cQnrbpAAAAGQEAAFBO.png" class="img-responsive" alt="" />
 
 然后，你需要从 Deepmind 的开源页面上安装PySC2模块<sup>[5]</sup>。
 
@@ -76,11 +76,11 @@ excerpt_separator: <!--more-->
 pip install pysc2
 ```
 
-<img src="https://1-im.guokr.com/OMgyUvaisvG5WHf7LDVi1ytLyYskKwtFHMWXfPPzMtz0AgAAaAEAAEdJ.gif" class="img-responsive" alt="" />
+<img src="http://1-im.guokr.com/OMgyUvaisvG5WHf7LDVi1ytLyYskKwtFHMWXfPPzMtz0AgAAaAEAAEdJ.gif" class="img-responsive" alt="" />
 
 最后， PySC2 还提供了一套测试基本AI学习功能的“迷你游戏”的地图包，在[Deepmind的github页面](https://github.com/deepmind/pysc2/releases/download/v1.0/mini_games.zip)上可以下载到 ，将其放进 Maps 文件夹里即可。
 
-<img src="https://2-im.guokr.com/WRA51mc_gK6B3jeLwfRZTm54H3EnqyEVXueiuQkkF9msAwAAOwIAAFBO.png" class="img-responsive" alt="" />
+<img src="http://2-im.guokr.com/WRA51mc_gK6B3jeLwfRZTm54H3EnqyEVXueiuQkkF9msAwAAOwIAAFBO.png" class="img-responsive" alt="" />
 
 安装好了最基本的SC2LE运行环境后，你就可以通过 python 命令激活一个新的AI开始游戏了！
 
@@ -100,17 +100,17 @@ python -m pysc2.bin.agent --map CollectMineralShards --agent pysc2.agents.script
 
 游戏效果如下：
 
-<img src="https://3-im.guokr.com/fgjsL-bvglxrtOfQTVS03krufIX9Vl0I6ijbh7wfqbe2AQAA7QAAAEdJ.gif" class="img-responsive" alt="" />
+<img src="http://3-im.guokr.com/fgjsL-bvglxrtOfQTVS03krufIX9Vl0I6ijbh7wfqbe2AQAA7QAAAEdJ.gif" class="img-responsive" alt="" />
 
 背景是游戏画面，而中间我切出来的那个窗口则是PySC2本身的AI工作窗口，里面显示了从AI的角度所看到的游戏数据是什么样的。
 
 动图闪太快看不清？让我们开一局新的完整游戏看看：
 
-<img src="https://1-im.guokr.com/oirEzKKhKUyog8A1lq8eTeJfs05aUCMMDacM2ObkO5G2BQAAzAIAAFBO.png" class="img-responsive" alt="" /><br><small>上图左边是经过简化的游戏图像，可以看到中间（大绿圆）是星灵的枢纽（Nexus），带着一群探机（小绿圆）在采矿（蓝圆）。右侧则是各个分层数据，包括地形高度、当前视野、小地图数据，当前窗口上的各个单位类型、血量，已选中的单位数据等等。图片来源：SC2LE程序界面</small>
+<img src="http://1-im.guokr.com/oirEzKKhKUyog8A1lq8eTeJfs05aUCMMDacM2ObkO5G2BQAAzAIAAFBO.png" class="img-responsive" alt="" /><br><small>上图左边是经过简化的游戏图像，可以看到中间（大绿圆）是星灵的枢纽（Nexus），带着一群探机（小绿圆）在采矿（蓝圆）。右侧则是各个分层数据，包括地形高度、当前视野、小地图数据，当前窗口上的各个单位类型、血量，已选中的单位数据等等。图片来源：SC2LE程序界面</small>
 
 过了一会，显然目前的实验AI基本就是乱来：
 
-<img src="https://3-im.guokr.com/Lefv2pCvWozMzF8TX-JiXsXcF2nVlpLl4cPr0G_CFH-gBQAAvAIAAFBO.png" class="img-responsive" alt="" /><br><small>建造顺序和建筑摆放的方式可以说是十分混乱了。 图片来源：SC2LE程序界面</small>
+<img src="http://3-im.guokr.com/Lefv2pCvWozMzF8TX-JiXsXcF2nVlpLl4cPr0G_CFH-gBQAAvAIAAFBO.png" class="img-responsive" alt="" /><br><small>建造顺序和建筑摆放的方式可以说是十分混乱了。 图片来源：SC2LE程序界面</small>
 
 根据deepmind的资料显示，目前各家训练开发出来的AI（PySC2中附带了好几个不同的范例）在完成采矿、控制单位移动、造兵等基础操作方面没有太大的问题，但在整个游戏上还很难和暴雪内置的简单敌人抗衡。大部分的AI能做到的都只是机械的随机重复已有的行为而已。看来要玩的好，这门槛也还不低啊，想要“做一个AI打败电竞高手赚钱”还是挺任重道远的。
 
@@ -118,19 +118,19 @@ python -m pysc2.bin.agent --map CollectMineralShards --agent pysc2.agents.script
 
 你现在下载[这个软件](https://github.com/davechurchill/CommandCenter)，也可以在你电脑上模拟一场：
 
-<img src="https://3-im.guokr.com/hCeq8so5S1CaqB6YnOmf_NHFQTz0r8zLiDQ-BN4wCtWsAwAAJAIAAFBO.png" class="img-responsive" alt="" /><br><small>
+<img src="http://3-im.guokr.com/hCeq8so5S1CaqB6YnOmf_NHFQTz0r8zLiDQ-BN4wCtWsAwAAJAIAAFBO.png" class="img-responsive" alt="" /><br><small>
 这盘，被CommandCenter杀光农民的电脑敌人打出了gg。 图片来源：星际争霸2AI运行截图</small>
 
 大卫·丘吉尔表示，接下来他将让这个AI学会建造附属建筑、适时升级相应的科技，未来还会尝试让AI能对战斗情况进行预判，以及在主动进攻、积极防御、游击骚扰等策略中灵活选择。
 
 最后，Deepmind和暴雪在SC2LE的发布说明中表示，希望通过这次开源的代码和范例，能给广大星际玩家和自制AI爱好者提供更多的便利，更好地发挥出创造力，也希望能给人工智能领域的研究者一个更强有力的研究工具，以便推进未来人工智能技术的发展和进步。或许在不久以后，我们就能看到星际争霸AI版的《机器人大战》节目了吧？
 
-<img src="https://3-im.guokr.com/utyii6vk0BV1JdlTU2IapCGxyuOrSZz-Oj2A9gEYrZisAwAAEQIAAFBO.png" class="img-responsive" alt="" /><br><small>
+<img src="http://3-im.guokr.com/utyii6vk0BV1JdlTU2IapCGxyuOrSZz-Oj2A9gEYrZisAwAAEQIAAFBO.png" class="img-responsive" alt="" /><br><small>
 在《机器人大战》这个暴露年龄的节目中，参赛者用自己制造的机器人下场决斗，把对方摧毁的一方获胜。图片来源： Battlebots.com</small>
 
 无独有偶，8月12日早上，特斯拉老板伊隆·马斯克（Elon Musk）旗下的人工智能OpenAI在Dota2的1v1比赛中，以三战两胜的成绩首次击败了人类职业选手Dendi<sup>[7]</sup>。
 
-<img src="https://3-im.guokr.com/wKlt87ch97A47gyk6D0GBENFOI9dlt3_XufNcLrLuw4gAwAAvAEAAEdJ.gif" class="img-responsive" alt="" /><br><small>
+<img src="http://3-im.guokr.com/wKlt87ch97A47gyk6D0GBENFOI9dlt3_XufNcLrLuw4gAwAAvAEAAEdJ.gif" class="img-responsive" alt="" /><br><small>
 被AI单杀的Dendi小哥。图片来源：Dota2比赛视频</small>
 
 据OpenAI团队介绍，他们的AI并不是靠微操数量取胜，他们的AI通过自己和自己比赛的机器学习方式，花了两周时间达到了目前的水平。
@@ -152,4 +152,4 @@ python -m pysc2.bin.agent --map CollectMineralShards --agent pysc2.agents.script
 7.    https://blog.openai.com/dota-2/
 
 
-_本文于2017年8月发布于[果壳网](https://www.guokr.com/article/442356/)，版权归果壳网（guokr.com）所有，禁止转载。如有需要，请联系sns@guokr.com_
+_本文已于2017年8月发布于[果壳网](https://www.guokr.com/article/442356/)，版权归果壳网（guokr.com）所有，禁止转载。如有需要，请联系sns@guokr.com_
