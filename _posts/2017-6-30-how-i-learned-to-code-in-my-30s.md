@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 30岁才转行学编程是怎样一种体验
+title: 学员访谈:30岁才转行学编程是怎样一种体验
 date: 2017-06-30
-category: 自学
+category: 学员访谈
 tags: udacity translate
 from: https://medium.com/udacity/how-i-learned-to-code-in-my-30s-61ad21180208
 author: Brad Crispin
