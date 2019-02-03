@@ -148,6 +148,7 @@ a.sidebar-nav-item:focus {
   background-color: #fff;
   border-radius: 4px;
   cursor: pointer;
+  z-index:99999;
 }
 .sidebar-toggle:before {
   display: block;
