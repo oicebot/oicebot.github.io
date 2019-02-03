@@ -18,12 +18,14 @@ title: 首页
       <br><br>
     </li>
   {% endfor %}
-  <h3>查看<a href="https://oicebot.github.io/titles"> 全部文章… </a></h3>
+  <h3><a href="https://oicebot.github.io/titles"> 查看全部文章>>> </a></h3>
 
 </ul>
 
 ## 译个漫画
 
 暂无内容
+
+----
 
 {% include_relative todo.md %}
