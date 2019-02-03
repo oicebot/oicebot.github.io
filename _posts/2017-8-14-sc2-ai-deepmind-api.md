@@ -141,8 +141,7 @@ python -m pysc2.bin.agent --map CollectMineralShards --agent pysc2.agents.script
 
 不知道OpenAI会不会开源相关代码，让我们一饱眼福呢？对于电竞玩家来说，能够和人工智能对战还是非常令人期待的！（编辑：Lyroat）
 
-
-参考资料：
+<p style="color:grey">参考资料：<small>
 1.    http://us.battle.net/sc2/en/blog/20944009
 2.    https://deepmind.com/blog/deepmind-and-blizzard-open-starcraft-ii-ai-research-environment/
 3.    https://deepmind.com/documents/110/sc2le.pdf
@@ -150,6 +149,6 @@ python -m pysc2.bin.agent --map CollectMineralShards --agent pysc2.agents.script
 5.    https://github.com/deepmind/pysc2
 6.    https://github.com/davechurchill/CommandCenter
 7.    https://blog.openai.com/dota-2/
-
+</small></p>
 
 _本文已于2017年8月发布于[果壳网](https://www.guokr.com/article/442356/)，译文版权归果壳网（guokr.com）所有，禁止转载。如有需要，请联系sns@guokr.com_
