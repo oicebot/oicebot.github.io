@@ -37,7 +37,7 @@
 /* Prevent scroll on narrow devices */
 html,
 body {
-  overflow-x: hidden;   
+  overflow-x: hidden;
 }
 
 
@@ -141,14 +141,14 @@ a.sidebar-nav-item:focus {
   top:  1rem;
   left: 1rem;
   display: block;
-  /* width: 2.2rem; */ 
+  /* width: 2.2rem; */
   width: 1rem;
   padding: .5rem .65rem;
   color: #505050;
   background-color: #fff;
   border-radius: 4px;
   cursor: pointer;
-  z-index:99999;
+  z-index:999999;
 }
 .sidebar-toggle:before {
   display: block;
@@ -157,6 +157,7 @@ a.sidebar-nav-item:focus {
   padding-bottom: .125rem;
   border-top: .375rem double;
   border-bottom: .125rem solid;
+  z-index:999999;
 
   /* Make the border inside the box */
   -webkit-box-sizing: border-box;
@@ -168,18 +169,23 @@ a.sidebar-nav-item:focus {
 #sidebar-checkbox:checked ~ .wrap .sidebar-toggle {
   color: #fff;
   background-color: #505050;
+  z-index:999999;
 }
 
 @media (min-width: 30.1rem) {
   .sidebar-toggle {
+    position: absolute;
+    /*
     position: fixed;
-    /* width: 2.25rem; */
+    width: 2.25rem; */
     width: 1rem;
+    z-index:999999;
   }
   .sidebar-toggle:before {
     padding-bottom: .15rem;
     border-top-width: .45rem;
     border-bottom-width: .15rem;
+    z-index:999999;
   }
 }
 
@@ -226,9 +232,11 @@ a.sidebar-nav-item:focus {
 #sidebar-checkbox:checked + .sidebar {
   left: 0;
   visibility: visible;
+  z-index:999999;
 }
 #sidebar-checkbox:checked ~ .wrap {
   left: 14rem;
+  z-index:999999;
 }
 
 

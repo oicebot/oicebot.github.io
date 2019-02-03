@@ -8,5 +8,5 @@ theme: jekyll-theme-hacker
 author: 欧剃
 
 # Sidebar settings
-sidebar: true                           # 是否开启侧边栏.
-sidebar-about-description: "  "
+#sidebar: true                           # 是否开启侧边栏.
+#sidebar-about-description: "  "
