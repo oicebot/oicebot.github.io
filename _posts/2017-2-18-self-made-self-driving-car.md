@@ -6,8 +6,6 @@ tags: guokr selfdriving translate
 from: https://www.technologyreview.com/s/603637/how-a-college-kid-made-his-honda-civic-self-driving-for-700/
 author: Tom Simonite
 ---
-![](http://3-im.guokr.com/8NnViRHHW1D_9V_300rpql_Z_lbMZLV34kxqYeN3WeKcBAAA2gIAAFBO.png?imageView2/1/w/480/h/296)<br><small>（图片来源： technologyreview.com ）</small>
-
 内布拉斯加大学的学生布雷万·约根森（Brevan Jorgenson）将一辆2016款本田思域的车内后视镜换成了一个叫做 Comma Neo 的自制电子设备，这个设备可以使用相机识别道路标记和路上的其他车辆，并自动控制刹车，油门和方向盘 —— 换句话说，他把自己的车子升级成了自动驾驶汽车！而这一切的总花费不过 $700 美元左右。
 
 ![](http://2-im.guokr.com/oWlZrgbkSbIhLATbIdRXCKG8KaSRJBE8RB81ddBFScVJAgAANQEAAFBO.png?imageView2/1/w/480/h/253)<br><small>
@@ -40,14 +38,5 @@ Comma Neo 的核心，是一台搭载了开源 Open Pilot 软件的一加3手机
 “你能合法使用这个设备，并不意味着你能不负相关的民事责任。”史密斯教授总结道。
 
 原作： [{{ page.author }}]({{ page.from }}) 译者：欧剃
-
-编译来源：
-
-1. https://www.technologyreview.com/s/603637/how-a-college-kid-made-his-honda-civic-self-driving-for-700/
-2. http://www.theverge.com/2016/11/30/13779336/comma-ai-autopilot-canceled-autonomous-car-software-free
-3. https://github.com/commaai/openpilot
-4. https://github.com/commaai/neo
-
-
 
 _本文已于2017年2月发布于[果壳网](http://jingxuan.guokr.com/pick/79279/)，译文版权归果壳网（guokr.com）所有，禁止转载。如有需要，请联系sns@guokr.com_
