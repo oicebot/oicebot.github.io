@@ -2,8 +2,9 @@
 layout: post
 title: 人工智能转战电竞！《星际2》人机大战要出现了吗？
 date: 2017-08-14
-tags: guokr ai translate
+tags: guokr ai
 excerpt_separator: <!--more-->
+from: https://www.guokr.com/article/442356/
 ---
 最近，Google旗下的人工智能团队，AlphaGo的亲生父亲Deepmind宣布和暴雪娱乐合作，并放出了《星际争霸2》的应用程序接口（API），让AI能够在即时战略游戏环境下进行机器学习。
 
