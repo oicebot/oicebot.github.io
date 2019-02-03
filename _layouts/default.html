@@ -11,17 +11,13 @@
 {% seo %}
   </head>
 
-  <body>
+  <body class="layout-reverse">
 
     {% include sidebar.html %}
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
     <div class="wrap">
-      <div class="container">
-        <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-      </div>
-
       <header>
         <div class="container">
           <br><br>
@@ -34,6 +30,9 @@
       <section id="main_content">
         {{ content }}
       </section>
+    </div>
+    <div class="container">
+      <label for="sidebar-checkbox" class="sidebar-toggle"></label>
     </div>
 
     {% include footer.md %}
