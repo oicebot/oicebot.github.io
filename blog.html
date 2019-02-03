@@ -1,0 +1,38 @@
+---
+layout: default
+title: 全部文章
+paginate: 5
+---
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="/blog/page{{paginator.next_page}}"> 👈 过去</a>
+  {% else %}
+    <span class="pagination-item older">没有更早的文章</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="/blog">未来 👉</a>
+    {% else %}
+      <a class="pagination-item newer" href="/blog/page{{paginator.previous_page}}">未来 👉</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">没有更新的文章</span>
+  {% endif %}
+</div>
