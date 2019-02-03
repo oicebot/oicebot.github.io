@@ -152,4 +152,4 @@ python -m pysc2.bin.agent --map CollectMineralShards --agent pysc2.agents.script
 7.    https://blog.openai.com/dota-2/
 
 
-_本文已于2017年8月发布于[果壳网](https://www.guokr.com/article/442356/)，版权归果壳网（guokr.com）所有，禁止转载。如有需要，请联系sns@guokr.com_
+_本文已于2017年8月发布于[果壳网](https://www.guokr.com/article/442356/)，译文版权归果壳网（guokr.com）所有，禁止转载。如有需要，请联系sns@guokr.com_
