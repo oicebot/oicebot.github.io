@@ -7,7 +7,7 @@ title: 首页
 
 欢迎！这里是我陈列包包里的各种有趣的小东西的地方！请四处转转吧~
 
-<img src="/img/treasure-161753_640.png" width="66%" />
+<img src="/img/treasure-161753.svg" width="32%" />
 
 ## 我的文章
 
