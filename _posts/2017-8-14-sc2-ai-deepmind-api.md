@@ -15,7 +15,7 @@ excerpt_separator: <!--more-->
 
 2016年，暴雪在嘉年华上承诺放出《星际争霸2》的游戏API，而在第二年8月9日暴雪就实现了自己的诺言<sup>[1]</sup>。
 
-<img src="https://2-im.guokr.com/LtPQQWUw93nFOQkcJlOUuOp1ugfdwOgHC71WDvuoh1isAwAA5QEAAFBO.png" class="img-responsive" alt="" /><br><small>图片来源：暴雪娱乐</small>
+<img src="http://2-im.guokr.com/LtPQQWUw93nFOQkcJlOUuOp1ugfdwOgHC71WDvuoh1isAwAA5QEAAFBO.png?imageView2/1/w/640/h/330" class="img-responsive" alt="" /><br><small>图片来源：暴雪娱乐</small>
 
 另一方面，人工智能团队Deepmind从深度学习等人工智能研究的前沿领域着手，在训练AI玩Atari游戏机、走迷宫等项目之后，通过卓越的围棋AI“AlphaGo”连续击败多名世界围棋顶级高手，一鸣惊人。此后，DeepMind官方就表示将研究方向转向即时战略游戏，而首选的就是《星际争霸2》<sup>[2]</sup>。
 
@@ -31,7 +31,7 @@ excerpt_separator: <!--more-->
 
 所以对于未知领域的计算就更加困难了，于是Deepmind决定开发新的应用程序接口来进行AI在即时战略游戏上的应用。
 
-<img src="https://1-im.guokr.com/8Ro5iou88FRmIXdWraZN8a7Mcib8h7EkEo89lKEhyJKwAwAAxgEAAFBO.png" class="img-responsive" alt="" /><br><small>可以看到，这两种游戏在玩家获得的信息方面的不同。图片来源：维基百科、《星际争霸2》游戏截图</small>
+<img src="https://1-im.guokr.com/8Ro5iou88FRmIXdWraZN8a7Mcib8h7EkEo89lKEhyJKwAwAAxgEAAFBO.png?imageView2/1/w/640/h/307" class="img-responsive" alt="" /><br><small>可以看到，这两种游戏在玩家获得的信息方面的不同。图片来源：维基百科、《星际争霸2》游戏截图</small>
 
 ## 这东西到底是什么？
 
@@ -42,7 +42,7 @@ excerpt_separator: <!--more-->
 * 一个是暴雪放出的《星际争霸2》游戏API，让计算机程序能够从类似人类玩家一样的视角，获得当前游戏状态的相关信息——AI能获得的数据和信息和人类玩家是平等的；
 * 另一个是Deepmind放出的PySC2，它提供了一个分析处理游戏数据的代码库——可以告诉AI下一步要进行什么操作，是挖矿还是建造兵营。此外，PySC2还能够帮助程序员编写的AI进行强化学习<sup>[3]</sup>。
 
-<img src="https://2-im.guokr.com/HjFpyjVSwr7W2GgwKRWVXQKCDwZtLuKQDZwezCwKMrawAwAA6wEAAFBO.png" class="img-responsive" alt="" /><br><small>SC2LE结构图：星际2客户端本身（左侧黑色）是核心，通过API和PySC2进行沟通，联合成一个整体，玩家的AI（右侧Agent）通过PySC2得到各种观察结果和反馈，然后做出具体的行动命令，以模拟人类操作的方式，输入进PySC2里，形成一个具体的游戏操作。图片来源：Deepmind SC2LE介绍</small>
+<img src="https://2-im.guokr.com/HjFpyjVSwr7W2GgwKRWVXQKCDwZtLuKQDZwezCwKMrawAwAA6wEAAFBO.png?imageView2/1/w/640/h/332" class="img-responsive" alt="" /><br><small>SC2LE结构图：星际2客户端本身（左侧黑色）是核心，通过API和PySC2进行沟通，联合成一个整体，玩家的AI（右侧Agent）通过PySC2得到各种观察结果和反馈，然后做出具体的行动命令，以模拟人类操作的方式，输入进PySC2里，形成一个具体的游戏操作。图片来源：Deepmind SC2LE介绍</small>
 
 这里的“强化学习”，是一种基于决策和交互的机器学习方式。在“训练”过程中，程序针对当前需要解决的问题，建立一个模型，然后基于当前环境给定的各种规则和条件作出决策，并且通过探索各种可能性，根据获得的反馈（可能是“奖励”或“惩罚”，比如成功开了分矿，或者在战斗中损失了一支部队等等情况）来调整下一步决策，通过不断的试错和修正，来寻求最优的对策。
 
