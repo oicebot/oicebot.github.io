@@ -18,7 +18,7 @@ title: 首页
       <br><br>
     </li>
   {% endfor %}
-  <h3>查看<a href="https://oicebot.github.io/blog"> 全部文章… </a></h3>
+  <h3>查看<a href="https://oicebot.github.io/titles"> 全部文章… </a></h3>
 
 </ul>
 
