@@ -54,44 +54,6 @@ body {
   width: 100%;
 }
 
-
-/*
- * Masthead
- *
- * Super small header above the content for site name and short description.
- */
-
-.masthead {
-  padding-top:    1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 3rem;
-  border-bottom: 1px solid #eee;
-}
-.masthead-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #505050;
-}
-.masthead-title a {
-  color: #505050;
-}
-.masthead-title small {
-  font-size: 75%;
-  font-weight: 400;
-  color: #c0c0c0;
-  letter-spacing: 0;
-}
-
-@media (max-width: 48rem) {
-  .masthead-title {
-    text-align: center;
-  }
-  .masthead-title small {
-    display: none;
-  }
-}
-
-
 /*
  * Sidebar
  *
@@ -116,21 +78,22 @@ body {
   width: 14rem;
   visibility: hidden;
   overflow-y: auto;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", STXihei, "华文细黑", "Microsoft YaHei", Terminal, monospace;
   font-size: .875rem; /* 15px */
   color: rgba(255,255,255,.6);
   background-color: #202020;
 }
 @media (min-width: 30rem) {
   .sidebar {
-    font-size: .75rem; /* 14px */
+    /* font-size: .75rem; /* 14px */
+    font-size: 1rem;
   }
 }
 
 /* Sidebar content */
 .sidebar a {
-  font-weight: normal;
-  color: #fff;
+  font-weight: bold;
+  color: #b5e853;
 }
 .sidebar-item {
   padding: 1rem;
