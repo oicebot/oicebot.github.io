@@ -20,7 +20,6 @@
     <div class="wrap">
       <header>
         <div class="container">
-          <br><br>
           <h1><a style="color:#b5e853" href="https://oicebot.github.io/">{{ site.title | default: site.github.repository_name }}</a></h1>
           <h2>{{ site.description | default: site.github.project_tagline }}</h2>
         </div>
@@ -31,10 +30,11 @@
         {{ content }}
       </section>
     </div>
-    <div class="container">
-      <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <div class="masthead">
+      <div class="container">
+        <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+      </div>
     </div>
-
     {% include footer.md %}
 
     {% if site.google_analytics %}
