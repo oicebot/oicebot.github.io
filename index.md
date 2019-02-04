@@ -10,6 +10,17 @@ title: 首页
 <img src="/img/treasure-161753.svg" width="35%" class="img-responsive" alt=""/>
 
 > 注：本站所有文章均由**欧剃**本人翻译或撰写，大部分投稿在优达学城、果壳网、别瞎玩等媒体，版权所有，转载请先联系。
+> 
+## 最新文章
+
+<ul>
+{% for post in site.posts limit:2 %}
+      <li>
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> {{ post.date | date: "%Y-%m-%d" }} - {{ post.excerpt | strip_html | strip_newlines | truncate:100 }} 
+        <br><br>
+      </li>
+{% endfor %}
+</ul>
 
 ## 精选文章
 
