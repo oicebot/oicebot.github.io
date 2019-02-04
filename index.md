@@ -16,7 +16,7 @@ title: 首页
 <ul>
 {% for post in site.posts limit:2 %}
       <li>
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> {{ post.date | date: "%Y-%m-%d" }} - {{ post.excerpt | strip_html | strip_newlines | truncate:100 }} 
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3><span style="color:green;">{{ post.date | date: "%Y-%m-%d" }}</span> {{ post.excerpt | strip_html | strip_newlines | truncate:70 }} 
         <br><br>
       </li>
 {% endfor %}
@@ -29,7 +29,7 @@ title: 首页
   {% for post in site.posts %}
     {% if post.star %}
       <li>
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> {{ post.date | date: "%Y-%m-%d" }} - {{ post.excerpt | strip_html | strip_newlines | truncate:100 }} 
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3><span style="color:green;">{{ post.date | date: "%Y-%m-%d" }}</span> {{ post.excerpt | strip_html | strip_newlines | truncate:100 }} 
         <br><br>
       </li>
       {% assign my_index = my_index | plus: 1 %}
