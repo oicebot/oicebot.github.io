@@ -1,33 +1,23 @@
 ---
-layout: none
-title: 阅读全部
+layout: page
+title: 精选文章
 ---
-<p>你还可以： 
-  <li>
-      <a href="https://oicebot.github.io/tags">按标签分类浏览全部文章</a></p>
-  </li>
-  <li>
-      <a href="https://oicebot.github.io/titles">按时间顺序浏览全部文章</a></p>
-  </li>
 
- <hr>
+> 本站所有文章均由**欧剃**本人翻译或撰写，大部分投稿在优达学城、果壳网、别瞎玩等媒体，版权所有，转载请先联系。
 
- <div class="posts">
+<ul>
   {% for post in site.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
-  </div>
-  <hr>
-  <br>
+    {% if post.star %}
+    <li>
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> {{ post.date | date: "%Y-%m-%d" }} - {{ post.excerpt | strip_html | strip_newlines | truncate:100 }}
+      <br><br>
+    </li>
+    {% endif %}
   {% endfor %}
-</div>
 
------
+</ul>
+
+## 全部文章
+
+<h3><a href="https://oicebot.github.io/tags"> <<<查看全部标签 </a> 
+  ◆   <a href="https://oicebot.github.io/titles"> 查看全部文章>>> </a></h3>
