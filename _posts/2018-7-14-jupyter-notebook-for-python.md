@@ -6,11 +6,11 @@ tags: udacity translate python
 from: https://medium.com/codingthesmartway-com-blog/getting-started-with-jupyter-notebook-for-python-4e7082bd5d46
 author: Sebastian Eschweiler
 ---
-<img src="/img/20180714/image1.png">
+<img src="/img/20180714/image2.png">
 
 不论你是刚开始学 Python，还是正在啃数据分析的骨头，对你来说，不断在各种命令行窗口和编辑器里切来切去，或者不断打开各种窗口查看 matplotlib 的输出之类的繁琐操作，一定是家常便饭了。哎呀，这都 8102 年了，除了又大又笨重的 IDE，难道就没有什么简单而直观的办法，让我们这些新手能管理和运行代码吗？
 
-<img src="/img/20180714/image2.png">
+<img src="/img/20180714/image10.png">
 
 当然有啊，还是免费的咧！
 
@@ -116,7 +116,7 @@ Jupyter Notebook 是一款 Web 应用，它能让用户将上面说的各种窗�
 
 右上角显示了当前这个单元格的类型是“代码（Code）”。在这种类型的单元格里，你可以直接输入希望运行的 Python 代码。每个格子里可以放上一行或者多行的代码。
  
-当你点击右上角的运行按钮<img src="/img/20180714/image20.png">，或者按`Shift + 回车`组合键，该单元格里的代码将会被运行。
+当你点击右上角的运行按钮 <img src="/img/20180714/image20.png"> ，或者按`Shift + 回车`组合键，该单元格里的代码将会被运行。
  
 <img src="/img/20180714/image7.png">
 
@@ -138,7 +138,7 @@ Jupyter Notebook 是一款 Web 应用，它能让用户将上面说的各种窗�
 
 <img src="/img/20180714/image3.png">
 
-当你写完这些文本时，你可以“运行”这个单元格，或是按【Shift + 回车】快捷键，于是那些 markdown 格式的记号会被渲染成文本。效果如下：
+当你写完这些文本时，你可以“运行”这个单元格，或是按 `Shift + 回车` 快捷键，于是那些 markdown 格式的记号会被渲染成文本。效果如下：
  
 <img src="/img/20180714/image22.png">
  
