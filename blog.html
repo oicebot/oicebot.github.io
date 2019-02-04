@@ -7,7 +7,7 @@ title: 精选文章
   {% for post in site.posts %}
     {% if post.star %}
     <li>
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3><span style="color:green;">{{ post.date | date: "%Y-%m-%d" }}</span> {{ post.excerpt | strip_html | strip_newlines | truncate:120 }}
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3><span style="color:dodgerblue;">{{ post.date | date: "%Y-%m-%d" }}</span> {{ post.excerpt | strip_html | strip_newlines | truncate:120 }}
       <br><br>
     </li>
     {% endif %}
