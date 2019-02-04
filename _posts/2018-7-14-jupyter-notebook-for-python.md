@@ -5,10 +5,12 @@ date: 2018-7-14
 tags: udacity translate python
 from: https://medium.com/codingthesmartway-com-blog/getting-started-with-jupyter-notebook-for-python-4e7082bd5d46
 author: Sebastian Eschweiler
+excerpt_separator: <!--more-->
 ---
 <img src="/img/20180714/image2.png">
 
 不论你是刚开始学 Python，还是正在啃数据分析的骨头，对你来说，不断在各种命令行窗口和编辑器里切来切去，或者不断打开各种窗口查看 matplotlib 的输出之类的繁琐操作，一定是家常便饭了。哎呀，这都 8102 年了，除了又大又笨重的 IDE，难道就没有什么简单而直观的办法，让我们这些新手能管理和运行代码吗？
+<!--more-->
 
 <img src="/img/20180714/image10.png">
 
