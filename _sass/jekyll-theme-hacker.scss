@@ -44,6 +44,14 @@ li {
    h2       - project description
 */
 
+star {
+  color: gold;
+  text-shadow: 0 1px 1px rgba(255, 0, 0, 0.938),
+               0 0 5px rgba(236, 18, 18, 0.247),
+               0 0 10px rgba(255, 0, 0, 0.1);
+
+}
+
 header {
   background: rgba(0, 0, 0, 0.1);
   width: 100%;

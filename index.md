@@ -18,12 +18,9 @@ title: 首页
   {% for post in site.posts %}
     {% if post.star %}
       <li>
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> {{ post.date | date: "%Y-%m-%d" }} - {{ post.excerpt | strip_html | strip_newlines | truncate:100 }}
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> <span style="color:#000;"> {% increment my_index %} </span> {{ post.date | date: "%Y-%m-%d" }} - {{ post.excerpt | strip_html | strip_newlines | truncate:100 }}
         <br><br>
-      </li>
-      <!--
-      {% increment my_index %}
-      -->
+      </li>         
     {% endif %}
     {% if my_index > 2 %}
       {% assign my_index = 0 %}
