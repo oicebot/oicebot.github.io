@@ -7,9 +7,9 @@ title: 首页
 
 欢迎！这里是我陈列包包里的各种有趣的小东西的地方！请四处转转吧~
 
-<img src="/img/treasure-161753.svg" width="32%" />
+<img src="/img/treasure-161753.svg" width="35%" class="img-responsive" alt=""/>
 
-## 我的文章
+## 精选文章
 
 > 本站所有文章均由**欧剃**本人翻译或撰写，大部分投稿在优达学城、果壳网、别瞎玩等媒体，版权所有，转载请先联系。
 
@@ -23,10 +23,12 @@ title: 首页
     {% endif %}
   {% endfor %}
 
-  <h3><a href="https://oicebot.github.io/tags"> <<<查看全部标签 </a> 
-  ◆   <a href="https://oicebot.github.io/titles"> 查看全部文章>>> </a></h3>
-
 </ul>
+
+## 全部文章
+
+<h3><a href="https://oicebot.github.io/tags"> <<<查看全部标签 </a> 
+  ◆   <a href="https://oicebot.github.io/titles"> 查看全部文章>>> </a></h3>
 
 ## 译个漫画
 
