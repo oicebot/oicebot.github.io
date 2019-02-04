@@ -11,16 +11,20 @@ title: 首页
 
 ## 我的文章
 
-> 本站所有文章均由我本人翻译或撰写，大部分投稿在优达学城、果壳网、别瞎玩等媒体，版权所有，转载请先联系。
+> 本站所有文章均由**欧剃**本人翻译或撰写，大部分投稿在优达学城、果壳网、别瞎玩等媒体，版权所有，转载请先联系。
 
 <ul>
-  {% for post in site.posts limit:5 %}
+  {% for post in site.posts %}
+    {% if post.star %}
     <li>
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> {{ post.date | date: "%Y-%m-%d" }} - {{ post.excerpt | strip_html | strip_newlines | truncate:100 }}
       <br><br>
     </li>
+    {% endif %}
   {% endfor %}
-  <h3><a href="https://oicebot.github.io/titles"> 查看全部文章>>> </a></h3>
+
+  <h3><a href="https://oicebot.github.io/tags"> <<<查看全部标签 </a> 
+  ◆   <a href="https://oicebot.github.io/titles"> 查看全部文章>>> </a></h3>
 
 </ul>
 

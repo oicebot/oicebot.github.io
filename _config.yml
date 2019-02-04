@@ -6,7 +6,7 @@ url: "https://oicebot.github.io"          # 这个就是填写你的博客地址
 baseurl: ""
 theme: jekyll-theme-hacker
 author: 欧剃
-
+star: false
 # Sidebar settings
 #sidebar: true                           # 是否开启侧边栏.
 #sidebar-about-description: "  "
