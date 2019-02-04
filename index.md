@@ -51,7 +51,9 @@ title: 首页
 
 ## 译个漫画
 
-暂无内容
+**译个漫画**是我发布自己翻译的漫画作品的公众号，目前正在缓慢更新一些冷掉牙的 xkcd 漫画，不知道合不合大家的口味呢。
+
+<img src="/assets/images/wechatID.png" class="img-responsive" alt="欢迎关注！" />
 
 ----
 
