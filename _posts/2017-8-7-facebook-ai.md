@@ -4,6 +4,7 @@ title: Facebook的人工智能开发出了自己的秘密语言？还早着呢
 date: 2017-08-14
 tags: guokr ai
 from: https://www.guokr.com/article/442345/
+star: true
 ---
 近日，一条略带诡异的消息传遍了社交网络：“Facebook 的人工智能开发出了自己的秘密语言，吓得工程师把它们的插头给拔了。” 啥！？这太有科幻片既视感了吧？难道《终结者》里要灭绝人类的AI“天网”就要出现了吗？
 
