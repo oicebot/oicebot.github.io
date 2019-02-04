@@ -21,9 +21,9 @@ title: 首页
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> {{ post.date | date: "%Y-%m-%d" }} - {{ post.excerpt | strip_html | strip_newlines | truncate:100 }} 
         <br><br>
       </li>
-      {% assign my_index = {{my_index | plus: 1}} %}
+      {% assign my_index = my_index | plus: 1 %}
     {% endif %}
-    {% if my_index > 2 %}
+    {% if my_index == 2 %}
       {% break %}
     {% endif %}
   {% endfor %}
