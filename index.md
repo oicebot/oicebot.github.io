@@ -14,7 +14,7 @@ title: 首页
 > 本站所有文章均由**欧剃**本人翻译或撰写，大部分投稿在优达学城、果壳网、别瞎玩等媒体，版权所有，转载请先联系。
 
 <ul>
-  {% assign index = 0}
+  {% assign index = 0 %}
   {% for post in site.posts %}
     {% if post.star %}
       <li>
@@ -24,6 +24,7 @@ title: 首页
       {% increment index %}
     {% endif %}
     {% if index > 4 %}
+      {% index = 0 %}
       {% break %}
     {% endif %}
   {% endfor %}
