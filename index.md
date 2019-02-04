@@ -23,7 +23,6 @@ title: 首页
       </li>         
     {% endif %}
     {% if my_index > 2 %}
-      {% assign my_index = 0 %}
       {% break %}
     {% endif %}
   {% endfor %}

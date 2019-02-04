@@ -7,10 +7,10 @@ title: 所有文章
 <ul>
   {% for post in site.posts %}
     <li>
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      {% if page.star %}
+      {% if post.star %}
         <span class="star"> 精 </span>
       {% endif %}
+      <h3><a href="{{ post.url }}">{{- post.title }}</a></h3>
       {{- post.date | date: "%Y-%m-%d" }} - {{ post.excerpt | strip_html | strip_newlines | truncate:100 }}
       <br><br>
     </li>
