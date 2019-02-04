@@ -23,7 +23,7 @@ title: 首页
       </li>
       {% assign my_index = my_index | plus: 1 %}
     {% endif %}
-    {% if my_index == 2 %}
+    {% if my_index == 5 %}
       {% break %}
     {% endif %}
   {% endfor %}
