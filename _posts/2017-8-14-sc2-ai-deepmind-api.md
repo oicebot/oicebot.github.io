@@ -6,6 +6,7 @@ tags: guokr ai
 excerpt_separator: <!--more-->
 from: https://www.guokr.com/article/442356/
 star: true
+origin: true
 ---
 最近，Google旗下的人工智能团队，AlphaGo的亲生父亲Deepmind宣布和暴雪娱乐合作，并放出了《星际争霸2》的应用程序接口（API），让AI能够在即时战略游戏环境下进行机器学习。
 

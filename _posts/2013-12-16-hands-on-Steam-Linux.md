@@ -2,7 +2,8 @@
 layout: post
 title: SteamOS Beta 动手玩
 date: 2013-12-16
-tags: linux game translate
+tags: linux game
+origin: true
 ---
 在大家翘首以盼到纷纷睡着(大雾)之后，Valve终于发布了SteamOS的Beta版本。于是我们就在第一时间把玩了一下这个基于Debian的衍生版系统。
 
