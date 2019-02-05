@@ -4,15 +4,12 @@ layout: default
 
 <p><small>发表日期：{{ page.date | date: "%Y-%m-%d" }}
     {% if page.origin %}
-        <span class="origin"> 原创 </span>
-    {% endif %}
+        <span class="origin">&nbsp;原创 </span>
+    {% endif %}    
     {% if page.star %}
-        <span class="star"> 精选文章 </span>
+        <span class="star">&nbsp;精选文章 </span>
     {% endif %}
-
-
-</small>
-</p>
+</small></p>
 <h1>{{ page.title }}</h1>
 
 <p class="view" style="color:#449444;">作者：{{ page.author | default: site.author }}</p>
