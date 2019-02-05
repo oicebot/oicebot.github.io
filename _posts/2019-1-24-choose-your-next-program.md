@@ -5,12 +5,15 @@ date: 2019-01-24
 tags: udacity python translate
 from: https://medium.freecodecamp.org/which-programming-language-should-you-learn-next-487d077baa32
 author: Constantin
+excerpt_separator: <!--more-->
 ---
 <img src="https://mmbiz.qpic.cn/mmbiz_png/ldSjzkNDxlnZxv0BzugJemxENCMNDl8JuicoPztteHVvRAueD8Dha8FA8jAeticEYL16EnqibtwFesevK6hO8VyZQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1">
 
 在计算机技术日益普及的今天，不学一两门编程语言，出门都不好意思跟人打招呼（大误）。不论你是从事计算机专业的老鸟，还是慕名而来的萌新，学习一门新的编程语言总是十分有益的。
 
 当然，并没有哪个编程语言就一定是“专业开发人员必学语言”，你该选什么语言很大程度上取决于你现有的知识水平，以及你未来的职业发展规划。
+
+<!--more-->
 
 别担心，今天就带你好好捋一捋当下的形势，帮你选到最适合的编程语言。下面推荐**三种**编程语言<sup><span style="color:gray;"></span></sup>，以及几种你可能会喜欢的备选方案，让你自己挑一挑。
 
