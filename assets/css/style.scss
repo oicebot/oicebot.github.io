@@ -14,11 +14,11 @@
 .origin {
     color: black;
     background-color: chartreuse;
+    border-radius:20%;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: 0 1px 1px rgba(161, 243, 193, 0.938),
-                 0 0 5px rgba(18, 236, 36, 0.247),
-                 0 0 10px rgba(0, 255, 21, 0.1);
-
+    width:32px;
+    line-height: 19px;
+    text-align:center;
 
   }
