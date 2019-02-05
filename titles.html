@@ -6,9 +6,13 @@ title: 所有文章
 <ul>
   {% for post in site.posts %}
     <li>
-      <h3><a href="{{ post.url }}">{{- post.title -}}</a>      {% if post.star %}
-        <sup><span class="star"> 精 </span></sup>
-      {% endif %}</h3>
+      <h3><a href="{{ post.url }}">{{- post.title -}}</a><sup><small>
+        {% if page.origin %}
+          <span class="origin"> 原创 </span>
+        {% endif %}
+        {% if post.star %}
+          <span class="star"> 精 </span>
+        {% endif %}</small></sup></h3>
       <span style="color:dodgerblue;">{{- post.date | date: "%Y-%m-%d" }}</span> {{ post.excerpt | strip_html | strip_newlines | truncate:100 }}
       <br><br>
     </li>
