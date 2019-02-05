@@ -7,7 +7,7 @@ from: https://medium.freecodecamp.org/which-programming-language-should-you-lear
 author: Constantin
 excerpt_separator: <!--more-->
 ---
-<img src="https://mmbiz.qpic.cn/mmbiz_png/ldSjzkNDxlnZxv0BzugJemxENCMNDl8JuicoPztteHVvRAueD8Dha8FA8jAeticEYL16EnqibtwFesevK6hO8VyZQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1">
+<img src="/img/udacity/challenge.webp">
 
 在计算机技术日益普及的今天，不学一两门编程语言，出门都不好意思跟人打招呼（大误）。不论你是从事计算机专业的老鸟，还是慕名而来的萌新，学习一门新的编程语言总是十分有益的。
 
@@ -15,7 +15,7 @@ excerpt_separator: <!--more-->
 
 <!--more-->
 
-别担心，今天就带你好好捋一捋当下的形势，帮你选到最适合的编程语言。下面推荐**三种**编程语言<sup><span style="color:gray;"></span></sup>，以及几种你可能会喜欢的备选方案，让你自己挑一挑。
+别担心，今天就带你好好捋一捋当下的形势，帮你选到最适合的编程语言。下面推荐**三种**编程语言<sup><span style="color:gray;">(一种给新手，一种给有经验的程序员，还有一种给专家级程序员)</span></sup>，以及几种你可能会喜欢的备选方案，让你自己挑一挑。
 
 首先，让我们了解一下近年来几种主要编程语言的发展趋势。
 
@@ -25,7 +25,7 @@ excerpt_separator: <!--more-->
 
 下面这张表显示了几种主要编程语言在2017～2018年间就业情况的变化：
 
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/ldSjzkNDxlnxeic2oT97GCRBK4SZuTbCS7icxHib62hof1HtP15tl6tRF738eA3DqqHjBYewyK5JuBjEL5qbkDu9w/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" /><br><small>（数据来源：Indeed.com，可视化制图：Coding Dojo)</small>
+<img src="/img/643434234d234234dsf230.webp" /><br><small>（数据来源：Indeed.com，可视化制图：Coding Dojo)</small>
 
 尽管 **Java** 已经有 20 多年的历史，它依旧是就业需求最高的编程语言——虽然自 2017 年来，它的需求量有所下跌。长期以来，Java 一直是最受企业追捧的计算机语言，这可能是因为它强大的可移植性，可以在各种硬件和系统上运行。举个栗子，所有的安卓应用程序都基于 Java，而大部分《财富》500 强企业都用 Java 进行后端开发。
 
@@ -74,13 +74,13 @@ JavaScript 有一个可能是最方便的特性，那就是它实际上已经内
 
 ### 初学者的其他选择:
 
-1. python 
+* python 
 
-一个不错的选择是 **Python** 语言。它相对容易，也更有趣，只有不多的几条严格语法规则。事实上，它读起来就像普通的英语，所以即使是纯粹的初学者也能理解代码。Python 被许多大公司采用，构建类似 Instagram、YouTube 和 Spotify 的网站，因此它也有可能是你拿到顶级 IT 企业职位的敲门砖。
+    一个不错的选择是 **Python** 语言。它相对容易，也更有趣，只有不多的几条严格语法规则。事实上，它读起来就像普通的英语，所以即使是纯粹的初学者也能理解代码。Python 被许多大公司采用，构建类似 Instagram、YouTube 和 Spotify 的网站，因此它也有可能是你拿到顶级 IT 企业职位的敲门砖。
 
-2. Ruby
+* Ruby
 
-像 Python 一样， **Ruby** 也很容易让初学者上手。在使用它的时候，你不必记住许多命令或语法规则。如今许多初创公司越来越多地使用 Ruby 的一个全栈框架—— Ruby on Rails，它也被用于构建了 Airbnb、Groupon 等网站。
+    像 Python 一样， **Ruby** 也很容易让初学者上手。在使用它的时候，你不必记住许多命令或语法规则。如今许多初创公司越来越多地使用 Ruby 的一个全栈框架—— Ruby on Rails，它也被用于构建了 Airbnb、Groupon 等网站。
 
 <center> . . . </center>
 
@@ -141,4 +141,4 @@ Scala 是程序员试图改进 Java 的许多尝试之一，它基本上可以�
 那么，2019 年你打算学哪一门编程语言呢？
 
 
-_（本文已投稿给「[优达学城](https://cn.udacity.com)」并已[发表](https://mp.weixin.qq.com/s/xeWPMZ-rjYTYJB-BK2TD5A)。 原作： [{{ page.author }}]({{ page.from }} 译者：欧剃 编辑：kooyee 转载请保留此信息）_
+_（本文已投稿给「[优达学城](https://cn.udacity.com)」并已[发表](https://mp.weixin.qq.com/s/xeWPMZ-rjYTYJB-BK2TD5A)。 原作： [{{ page.author }}]({{ page.from }}) 译者：欧剃 编辑：kooyee 转载请保留此信息）_
