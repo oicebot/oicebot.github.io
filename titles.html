@@ -3,21 +3,30 @@ layout: page
 title: 所有文章
 ---
 
-<ul>
+<div class="info-list"> <ul class="list-a">
   {% for post in site.posts %}
     <li>
-      <h3><a href="{{ post.url }}">{{- post.title -}}</a><sup><small>
-        {% if post.origin %}
-          <span class="origin"> 原创 </span>&nbsp;
-        {% endif %}        
-        {% if post.star %}
-          <span class="star"> 精 </span>
-        {% endif %}</small></sup></h3>
-      <span style="color:dodgerblue;">{{- post.date | date: "%Y-%m-%d" }}</span> {{ post.excerpt | strip_html | strip_newlines | truncate:100 }}
-      <br><br>
-    </li>
+      <div class="only-info">
+        <div class="art-img"><a href="{{ post.url }}">
+            {% if post.thumb %}
+              <img width="100%" src="{{ post.thumb }}" alt="{{post.title}}">
+            {% else %}
+              <img width="100%" src="{{ site.thumb }}" alt="{{post.title}}">
+            {% endif %}
+        </a></div>
+      </div>
+      <div class="rt-tit-box">
+          <h3><a href="{{ post.url }}">{{- post.title -}}</a><sup><small>
+              {% if post.origin %}
+                <span class="origin"> 原创 </span>
+              {% endif %}        
+              {% if post.star %}
+                <span class="star">精选</span>
+              {% endif %}</small></sup></h3>
+            <div class="vice"><span style="color:#b5b5b5;">{{ post.date | date: "%Y-%m-%d" }}</span><span>{{ post.excerpt | strip_html | strip_newlines | truncate:150 }}</span></div>
+        </div></li>
   {% endfor %}
-</ul>
+</ul></div>
 <h2>阅读模式</h2>
 <p>你还可以： <a href="https://oicebot.github.io/tags">按标签分类浏览全部文章</a></p>
   
