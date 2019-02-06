@@ -6,10 +6,11 @@ tags: udacity SpaceX translate
 from: https://blogs.scientificamerican.com/observations/elon-musk-does-it-again/
 author: Lee Billings
 star: true
+thumb: "/img/50E7AA0A-8EE9-4726-B1E63F0C20EE3A24_source.jpg"
 ---
 一年前你要跟我这么说，我会以为你疯了。但事实证明，人类航天探索事业的又一个转折点已经到来。
 
-<img src="https://static.scientificamerican.com/blogs/cache/file/50E7AA0A-8EE9-4726-B1E63F0C20EE3A24_source.jpg?w=590&h=800&5A6EA761-0AB7-4344-AA2715ADF32BDCB5" /><br><small>北京时间2月7日凌晨，SpaceX的猎鹰重型运载火箭从肯尼迪航天中心发射升空
+<img src="/img/50E7AA0A-8EE9-4726-B1E63F0C20EE3A24_source.jpg" /><br><small>北京时间2月7日凌晨，SpaceX的猎鹰重型运载火箭从肯尼迪航天中心发射升空
 （图片来源：JIM WATSON/AFP/Getty Images）</small>
 
 今天凌晨，太阳系多了一颗小行星。

@@ -8,6 +8,4 @@ theme: jekyll-theme-hacker
 author: 欧剃
 star: false
 origin: false
-# Sidebar settings
-#sidebar: true                           # 是否开启侧边栏.
-#sidebar-about-description: "  "
+thumb: "/assets/images/books-42701.svg"

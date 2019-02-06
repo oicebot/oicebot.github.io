@@ -5,7 +5,8 @@ title: 首页
 
 # 欢迎
 
-<img src="/img/treasure-161753.svg" width="25%" class="img-responsive" alt=""/> 欢迎！这里是我陈列包包里的各种有趣的小东西的地方！请四处转转吧~
+<img src="/img/treasure-161753.svg" width="25%" class="img-responsive" alt=""/> 
+<br>欢迎！这里是我陈列包包里的各种有趣的小东西的地方！请四处转转吧~
 
 本站所有文章均由<b><a href="https://oicebot.github.io/about">欧剃</a></b>本人翻译或撰写，大部分投稿在优达学城、果壳网、别瞎玩等媒体，版权所有，转载请先联系。
 
@@ -24,24 +25,24 @@ title: 首页
 
 ## 精选文章
 
-<ul>
+<table>
   {% assign my_index = 0 %}
   {% for post in site.posts %}
     {% if post.star %}
-      <li>
+      <tr width="100%"><td width="20%"><img src={{ post.thumb }} /></td><td width="80%">
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3><span style="color:dodgerblue;">{{ post.date | date: "%Y-%m-%d" }}</span> {{ post.excerpt | strip_html | strip_newlines | truncate:120 }} 
-        <br><br>
-      </li>
+        </td>
+      </tr>
       {% assign my_index = my_index | plus: 1 %}
     {% endif %}
     {% if my_index == 5 %}
       {% break %}
     {% endif %}
   {% endfor %}
-  <li>
+  </table>
+  <br>
   <h3><a href="https://oicebot.github.io/blog"> 更多精选文章… </a> </h3>
-  </li>
-</ul>
+
 
 ## 全部文章
 
