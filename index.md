@@ -29,14 +29,14 @@ title: 首页
   {% assign my_index = 0 %}
   {% for post in site.posts %}
     {% if post.star %}
-      <tr width="100%"><td width="30%">
+      <tr width="100%"><td width="96px">
           {% if post.thumb %}
           <img width="100%" src="{{ post.thumb }}" alt="{{post.title}}">
           {% else %}
           <img width="100%" src="{{ site.thumb }}" alt="{{post.title}}">
           {% endif %}
       </td>
-      <td width="70%">
+      <td>
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
         </td>
       </tr>
