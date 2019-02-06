@@ -29,7 +29,7 @@ title: 首页
   {% assign my_index = 0 %}
   {% for post in site.posts %}
     {% if post.star %}
-      <tr width="100%"><td width="20%"><img src={{ post.thumb }} /></td><td width="80%">
+      <tr width="100%"><td width="10%"><img src="{{ post.thumb }}" /></td><td width="80%">
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3><span style="color:dodgerblue;">{{ post.date | date: "%Y-%m-%d" }}</span> {{ post.excerpt | strip_html | strip_newlines | truncate:120 }} 
         </td>
       </tr>
