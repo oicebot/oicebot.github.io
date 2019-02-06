@@ -17,7 +17,7 @@ title: 首页
 <ul>
 {% for post in site.posts limit:2 %}
       <li>
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3><span style="color:dodgerblue;">{{ post.date | date: "%Y-%m-%d" }}</span> {{ post.excerpt | strip_html | strip_newlines | truncate:100 }} 
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3><span style="color:dodgerblue;">{{ post.date | date: "%Y-%m-%d" }}</span> {{ post.excerpt | strip_html | strip_newlines | truncate:70 }} 
         <br><br>
       </li>
 {% endfor %}
@@ -29,17 +29,18 @@ title: 首页
   {% assign my_index = 0 %}
   {% for post in site.posts %}
     {% if post.star %}
-      <tr width="100%"><td width="25%">
-          {% if post.img %}
+      <tr width="100%"><td width="30%">
+          {% if post.thumb %}
           <img width="100%" src="{{ post.thumb }}" alt="{{post.title}}">
           {% else %}
           <img width="100%" src="{{ site.thumb }}" alt="{{post.title}}">
           {% endif %}
       </td>
-      <td width="75%">
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3><span style="color:dodgerblue;">{{ post.date | date: "%Y-%m-%d" }}</span> {{ post.excerpt | strip_html | strip_newlines | truncate:120 }} 
+      <td width="70%">
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
         </td>
       </tr>
+      <tr><td colspan="2"><span style="color:dodgerblue;">{{ post.date | date: "%Y-%m-%d" }}</span> {{ post.excerpt | strip_html | strip_newlines | truncate:100 }} </td>
       {% assign my_index = my_index | plus: 1 %}
     {% endif %}
     {% if my_index == 5 %}
