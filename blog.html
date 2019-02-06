@@ -2,18 +2,25 @@
 layout: page
 title: 精选文章
 ---
-
-<ul>
+<div class="info-list"> <ul class="list-a">
   {% for post in site.posts %}
     {% if post.star %}
-    <li>
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3><span style="color:dodgerblue;">{{ post.date | date: "%Y-%m-%d" }}</span> {{ post.excerpt | strip_html | strip_newlines | truncate:120 }}
-      <br><br>
-    </li>
+    <li><div class="only-info">
+        <div class="art-img"><a href="{{ post.url }}">
+        {% if post.thumb %}
+          <img width="100%" src="{{ post.thumb }}" alt="{{post.title}}">
+        {% else %}
+          <img width="100%" src="{{ site.thumb }}" alt="{{post.title}}">
+        {% endif %}
+        </a></div>
+        </div>
+        <div class="rt-tit-box">
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <div class="vice"><span style="color:#b5b5b5;">{{ post.date | date: "%Y-%m-%d" }}</span><span>{{ post.excerpt | strip_html | strip_newlines | truncate:150 }}</span></div>
+        </div></li>
     {% endif %}
   {% endfor %}
-
-</ul>
+</ul></div>
 
 <h2>全部文章</h2>
 
