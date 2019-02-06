@@ -40,7 +40,7 @@ title: 首页
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
         </td>
       </tr>
-      <tr><td colspan="2"><span style="color:dodgerblue;">{{ post.date | date: "%Y-%m-%d" }}</span> {{ post.excerpt | strip_html | strip_newlines | truncate:100 }} </td>
+      <tr><td colspan="2"><span style="color:dodgerblue;">{{ post.date | date: "%Y-%m-%d" }}</span> {{ post.excerpt | strip_html | strip_newlines | truncate:100 }} </td></tr>
       {% assign my_index = my_index | plus: 1 %}
     {% endif %}
     {% if my_index == 5 %}
