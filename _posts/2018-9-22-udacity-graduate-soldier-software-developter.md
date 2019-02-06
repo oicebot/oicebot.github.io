@@ -6,7 +6,7 @@ category: 学员访谈
 tags: udacity translate
 from: https://blog.udacity.com/2018/09/udacity-graduate-soldier-software-developer.html
 author: Adam Lane
-thumb: "/img/v2-44b60c9d2f44e799d29b8d55f7d53c52_1200x500.jpg"
+thumb: "/img/thumb_v2-44b60c9d2f44e799d29b8d55f7d53c52_1200x500.jpg"
 ---
 像许多人一样，罗伯特·普兰也曾在自己的事业上小有成就，然后醒悟到，他这份职业的发展方向并不是那么令人称心如意。高中毕业后，他在英国参了军，当了五年的车辆技师。然而他并不满足于这样的生活。在入伍之前，他就对计算机和电脑程序非常感兴趣。转业回家之后，他的第一份“技术”工作是电脑店里的售后维修员。这份工作并不能激发他的热情，但却也促使他更进一步，去了解做一个程序员是怎样的生活体验。然后，他发现，成为一名程序员对他来说并不是遥不可及的梦想。
 

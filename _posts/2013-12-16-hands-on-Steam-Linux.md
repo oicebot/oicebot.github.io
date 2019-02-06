@@ -4,11 +4,11 @@ title: SteamOS Beta 动手玩
 date: 2013-12-16
 tags: linux game
 origin: true
-thumb: "/img/1280px-Steamos-big-picture.png"
+thumb: "/img/1280px-Steamos-big-picture.jpg"
 ---
 在大家翘首以盼到纷纷睡着(大雾)之后，Valve终于发布了SteamOS的Beta版本。于是我们就在第一时间把玩了一下这个基于Debian的衍生版系统。
 
-<img src="/img/1280px-Steamos-big-picture.png" />
+<img src="/img/1280px-Steamos-big-picture.jpg" />
 
 SteamOS的发布总体来说有点鱼龙混杂。一方面这是由一家向Linux平台提供了众多给力驱动和杀手级游戏的公司研发出的最新Debian衍生版系统，另一方面，整个Beta版的安装略显凌乱。当然，Valve官方在放出Beta测试版的两个zip包（以及鲜明的警示：“安装此系统将会清空你的整个硬盘”）之时，就已经反复强调SteamOS现在还是在Beta测试阶段，而且并不推荐给除了“强悍的Linux折腾党”之外的朋友。
 

@@ -19,7 +19,7 @@ thumb: "/img/sc2ai/thumb.jpg"
 
 2016年，暴雪在嘉年华上承诺放出《星际争霸2》的游戏API，而在第二年8月9日暴雪就实现了自己的诺言<sup>[1]</sup>。
 
-<img src="/img/sc2ai/LtPQQWUw93nFOQkcJlOUuOp1ugfdwOgHC71WDvuoh1isAwAA5QEAAFBO.png" class="img-responsive" alt="" /><br><small>图片来源：暴雪娱乐</small>
+<img src="/img/sc2ai/LtPQQWUw93nFOQkcJlOUuOp1ugfdwOgHC71WDvuoh1isAwAA5QEAAFBO.jpg" class="img-responsive" alt="" /><br><small>图片来源：暴雪娱乐</small>
 
 另一方面，人工智能团队Deepmind从深度学习等人工智能研究的前沿领域着手，在训练AI玩Atari游戏机、走迷宫等项目之后，通过卓越的围棋AI“AlphaGo”连续击败多名世界围棋顶级高手，一鸣惊人。此后，DeepMind官方就表示将研究方向转向即时战略游戏，而首选的就是《星际争霸2》<sup>[2]</sup>。
 
@@ -84,7 +84,7 @@ pip install pysc2
 
 最后， PySC2 还提供了一套测试基本AI学习功能的“迷你游戏”的地图包，在[Deepmind的github页面](https://github.com/deepmind/pysc2/releases/download/v1.0/mini_games.zip)上可以下载到 ，将其放进 Maps 文件夹里即可。
 
-<img src="/img/sc2ai/WRA51mc_gK6B3jeLwfRZTm54H3EnqyEVXueiuQkkF9msAwAAOwIAAFBO.png" class="img-responsive" alt="" />
+<img src="/img/sc2ai/WRA51mc_gK6B3jeLwfRZTm54H3EnqyEVXueiuQkkF9msAwAAOwIAAFBO.jpg" class="img-responsive" alt="" />
 
 安装好了最基本的SC2LE运行环境后，你就可以通过 python 命令激活一个新的AI开始游戏了！
 
