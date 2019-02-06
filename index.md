@@ -14,49 +14,58 @@ title: 首页
 
 ## 最新文章
 
-<table>
+<div class="info-list"> <ul class="list-a">
 {% for post in site.posts limit:2 %}
-<tr> <td colspan="2">
+    <li><div class="only-info">
+      <div class="art-img"><a href="{{ post.url }}">
+      {% if post.thumb %}
+        <img width="100%" src="{{ post.thumb }}" alt="{{post.title}}">
+      {% else %}
+        <img width="100%" src="{{ site.thumb }}" alt="{{post.title}}">
+      {% endif %}
+      </a></div>
+      </div>
+      <div class="rt-tit-box">
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        </td>
-      </tr>
-      <tr><td width="96px" height="96px">
-          {% if post.thumb %}
-          <img width="100%" src="{{ post.thumb }}" alt="{{post.title}}">
-          {% else %}
-          <img width="100%" src="{{ site.thumb }}" alt="{{post.title}}">
-          {% endif %}
-      </td><td><span style="color:dodgerblue;">{{ post.date | date: "%Y-%m-%d" }}</span> {{ post.excerpt | strip_html | strip_newlines | truncate:150 }} </td></tr>
+          <div class="vice"><span style="color:dodgerblue;">{{ post.date | date: "%Y-%m-%d" }}</span><span>{{ post.excerpt | strip_html | strip_newlines | truncate:100 }}</span></div>
+      </div></li>
 {% endfor %}
-</table>
+</ul></div>
 
 ## 精选文章
 
-<table>
+<div class="info-list"> <ul class="list-a">
   {% assign my_index = 0 %}
   {% for post in site.posts %}
     {% if post.star %}
-      <tr> <td colspan="2">
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        </td>
-      </tr>
-      <tr><td width="96px" height="96px">
-          {% if post.thumb %}
+      <li><div class="only-info">
+        <div class="art-img"><a href="{{ post.url }}">
+        {% if post.thumb %}
           <img width="100%" src="{{ post.thumb }}" alt="{{post.title}}">
-          {% else %}
+        {% else %}
           <img width="100%" src="{{ site.thumb }}" alt="{{post.title}}">
-          {% endif %}
-      </td><td><span style="color:dodgerblue;">{{ post.date | date: "%Y-%m-%d" }}</span> {{ post.excerpt | strip_html | strip_newlines | truncate:150 }} </td></tr>
+        {% endif %}
+        </a></div>
+        </div>
+        <div class="rt-tit-box">
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <div class="vice"><span style="color:dodgerblue;">{{ post.date | date: "%Y-%m-%d" }}</span><span>{{ post.excerpt | strip_html | strip_newlines | truncate:100 }}</span></div>
+        </div></li>
       {% assign my_index = my_index | plus: 1 %}
     {% endif %}
     {% if my_index == 5 %}
       {% break %}
     {% endif %}
-  {% endfor %}
-  </table>
-  <br>
-  <h3><a href="https://oicebot.github.io/blog"> 更多精选文章… </a> </h3>
-
+ {% endfor %}
+    <li><div class="only-info">
+    <div class="art-img"><a href="https://oicebot.github.io/blog">
+      <img width="100%" src="/assets/images/beaker-2026885.svg" alt="更多精选文章">
+    </a></div>
+    </div>
+    <div class="rt-tit-box">
+      <h3><a href="https://oicebot.github.io/blog"> 更多精选文章… </a> </h3>
+    </div></li>  
+</ul></div>
 
 ## 全部文章
 
