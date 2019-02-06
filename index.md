@@ -14,14 +14,21 @@ title: 首页
 
 ## 最新文章
 
-<ul>
+<table>
 {% for post in site.posts limit:2 %}
-      <li>
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3><span style="color:dodgerblue;">{{ post.date | date: "%Y-%m-%d" }}</span> {{ post.excerpt | strip_html | strip_newlines | truncate:70 }} 
-        <br><br>
-      </li>
+<tr> <td colspan="2">
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        </td>
+      </tr>
+      <tr><td width="96px" height="96px">
+          {% if post.thumb %}
+          <img width="100%" src="{{ post.thumb }}" alt="{{post.title}}">
+          {% else %}
+          <img width="100%" src="{{ site.thumb }}" alt="{{post.title}}">
+          {% endif %}
+      </td><td><span style="color:dodgerblue;">{{ post.date | date: "%Y-%m-%d" }}</span> {{ post.excerpt | strip_html | strip_newlines | truncate:150 }} </td></tr>
 {% endfor %}
-</ul>
+</table>
 
 ## 精选文章
 
@@ -29,18 +36,17 @@ title: 首页
   {% assign my_index = 0 %}
   {% for post in site.posts %}
     {% if post.star %}
-      <tr width="100%"><td width="96px">
+      <tr> <td colspan="2">
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        </td>
+      </tr>
+      <tr><td width="96px" height="96px">
           {% if post.thumb %}
           <img width="100%" src="{{ post.thumb }}" alt="{{post.title}}">
           {% else %}
           <img width="100%" src="{{ site.thumb }}" alt="{{post.title}}">
           {% endif %}
-      </td>
-      <td>
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        </td>
-      </tr>
-      <tr><td colspan="2"><span style="color:dodgerblue;">{{ post.date | date: "%Y-%m-%d" }}</span> {{ post.excerpt | strip_html | strip_newlines | truncate:100 }} </td></tr>
+      </td><td><span style="color:dodgerblue;">{{ post.date | date: "%Y-%m-%d" }}</span> {{ post.excerpt | strip_html | strip_newlines | truncate:150 }} </td></tr>
       {% assign my_index = my_index | plus: 1 %}
     {% endif %}
     {% if my_index == 5 %}
