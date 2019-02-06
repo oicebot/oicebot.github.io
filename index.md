@@ -5,12 +5,10 @@ title: 首页
 
 # 欢迎
 
-<img src="/img/treasure-161753.svg" width="25%" class="img-responsive" alt=""/> 
+<img src="/assets/images/treasure-161753.svg" width="25%" class="img-responsive" alt=""/> 
 <br>欢迎！这里是我陈列包包里的各种有趣的小东西的地方！请四处转转吧~
 
 本站所有文章均由<b><a href="https://oicebot.github.io/about">欧剃</a></b>本人翻译或撰写，大部分投稿在优达学城、果壳网、别瞎玩等媒体，版权所有，转载请先联系。
-
-自 2017 年以来，我陆续为果壳网、优达学城等媒体供稿，主要为翻译/编译，以介绍国外科技新闻和编程技术为主，偶尔也动笔写写科普文章。欢迎约稿~ 😊
 
 ## 最新文章
 
@@ -21,7 +19,7 @@ title: 首页
       {% if post.thumb %}
         <img width="100%" src="{{ post.thumb }}" alt="{{post.title}}">
       {% else %}
-        <img width="100%" src="{{ site.thumb }}" alt="{{post.title}}">
+        <img width="100%" height="120px" src="{{ site.thumb }}" alt="{{post.title}}">
       {% endif %}
       </a></div>
       </div>
@@ -43,7 +41,7 @@ title: 首页
         {% if post.thumb %}
           <img width="100%" src="{{ post.thumb }}" alt="{{post.title}}">
         {% else %}
-          <img width="100%" src="{{ site.thumb }}" alt="{{post.title}}">
+          <img width="100%" height="120px" src="{{ site.thumb }}" alt="{{post.title}}">
         {% endif %}
         </a></div>
         </div>
@@ -58,12 +56,13 @@ title: 首页
     {% endif %}
  {% endfor %}
     <li><div class="only-info">
-    <div class="art-img"><a href="https://oicebot.github.io/blog">
-      <img width="100%" src="/assets/images/beaker-2026885.svg" alt="更多精选文章">
+    <div class="art-img" ><a href="https://oicebot.github.io/blog">
+      <img width="100%" height="120px" src="/assets/images/beaker-2026885.svg" alt="更多精选文章">
     </a></div>
     </div>
     <div class="rt-tit-box">
       <h3><a href="https://oicebot.github.io/blog"> 更多精选文章… </a> </h3>
+      <div class="vice"><span>自 2017 年以来，我陆续为果壳网、优达学城等媒体供稿，主要为翻译/编译，以介绍国外科技新闻和编程技术为主，偶尔也动笔写写科普文章。欢迎约稿~ 😊</span></div>
     </div></li>  
 </ul></div>
 

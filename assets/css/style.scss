@@ -29,6 +29,10 @@ ul.list-a li{ width:100%; border-bottom:1px solid #215e1f; overflow:hidden; padd
 ul.list-a li .only-info{float:left; width:180px; padding-right: 7px}
 ul.list-a li .rt-tit-box{margin:auto; padding-top:3px}
 .vice{ line-height:18px; text-align:left; color:#ffffff}
-.vice span{ padding-right:3px}
+.vice span{ padding-right:3px; 
+            text-shadow: 0 1px 1px rgb(0, 0, 0),
+            0 0 5px rgb(0, 0, 0),
+            0 0 10px rgba(0, 0, 0, 0.562);
+}
 .art-img{float:left; width:180px; height:120px; padding-right: 7px}
-.art-img img{width:180px; height:120px;}
+.art-img img{width:180px; }
