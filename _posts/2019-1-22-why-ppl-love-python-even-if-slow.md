@@ -6,6 +6,7 @@ tags: udacity python translate
 from: https://medium.com/@trungluongquang/why-python-is-popular-despite-being-super-slow-83a8320412a9
 author: Bobby
 excerpt_separator: <!--more-->
+thumb: "/img/Python3-powered_hello-world.svg"
 ---
 <img src="/img/udacity/udalogo.gif">
 

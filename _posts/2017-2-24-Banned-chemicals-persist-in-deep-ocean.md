@@ -4,6 +4,7 @@ title: 全球最深的海沟，也逃不出违禁化学品的污染
 date: 2017-02-24
 tags: guokr nature translate
 star: true
+thumb: "/img/ZY05ewY1a7ve8YY0rBacAprwBgJInxq0zxglyeiIzD-UAgAAcwEAAEpQ.jpg"
 ---
 海洋承载了地球上最大的生物群系，海洋的深处往往成为各种海洋废弃物和污染物的最后归宿。以往人们认为，有着广阔的空间和深度的海洋深处，应该仍有大面积区域未受人类活动影响。但最近科学家们惊讶地发现，在深海生态系统中也存在相对高浓度的多氯联苯（PCB）、多溴联苯醚（PBDE）等污染物，这些化学品在20世纪曾被广泛使用，后来被发现有毒且会在环境中累积。以上研究结果日前被发表在《自然-生态与演化》（Nature Ecology & Evolution）期刊上。
 
@@ -11,12 +12,12 @@ star: true
 
 在这项研究中，纽卡斯尔大学的艾伦·贾米森（Alan Jamieson）博士带领的研究团队取样测量了太平洋海底数种端足类动物脂肪组织中的污染物水平。
 
-<img src="http://2-im.guokr.com/ZY05ewY1a7ve8YY0rBacAprwBgJInxq0zxglyeiIzD-UAgAAcwEAAEpQ.jpg" class="img-responsive" alt="" /><br><small>
+<img src="/img/ZY05ewY1a7ve8YY0rBacAprwBgJInxq0zxglyeiIzD-UAgAAcwEAAEpQ.jpg" class="img-responsive" alt="" /><br><small>
 从太平洋的马里亚纳和克马德克海沟取回的端足类动物样本。图片来源：Alan Jamieson</small>
 
 研究团队从两条深达超深渊带（Hadal Zone）的海沟中捕获了三种不同的琴钩虾科动物。一处是在位于北太平洋寡营养表层水下方的马里亚纳海沟（12°N 145°E），对一种地方性端足类动物（_Hirondellea gigas_）进行了采样，最深的样本来自水下10,250米处；另一处是在位于新西兰在南太平洋的初级生产力水层以下的克马德克海沟（32°S 177°W），捕获了两种不同的地方性端足类物种（_Hirondellea dubia_ 和 _Bathycallisoma schellenbergi_），最深的样本来自水下10,000米处。
 
-<img src="http://3-im.guokr.com/qYZd5rr6lO7ONE563VLjZirgYIiV5wWP-HsGz9Nc_qlwAgAAmQEAAEpQ.jpg" class="img-responsive" alt="" /><br><small>
+<img src="/img/qYZd5rr6lO7ONE563VLjZirgYIiV5wWP-HsGz9Nc_qlwAgAAmQEAAEpQ.jpg" class="img-responsive" alt="" /><br><small>
 两处海沟的地理位置图，来源：BBC</small>
 
 为采集样本，研究团队将一艘专门定制的全海洋深度着陆器从水面降落至海床上，之后使用声音信号遥控着陆器抛出压载物，上浮收回。着陆器一般要在海床上停留8到12小时。在它的脚垫上安装着一组三个小漏斗陷阱（长30cm，直径6cm，陷阱开口直径约2.5cm），每个陷阱中都有一个装着约100克鲭鱼的网袋作为诱饵。网袋的作用在于既能在水中散发诱饵的气味，又不至于让诱饵被猎物吃掉，影响后续测定持久性有机污染物（POP）含量的数据。同时，一旦样本被取回船上，在后续的处理和保存期间将被严格控制不接触任何塑料制品。
@@ -25,10 +26,10 @@ star: true
 
 在样本中发现的污染物主要包括多氯联苯（PCB）、多溴联苯醚（PBDE）等，常被用作电绝缘体和阻燃剂等。
 
-<img src="http://1-im.guokr.com/XC_njbokE2_wg8ykkJLCyLv6DBIRzlns8zC5VxrKJ-utAgAAlAEAAEpQ.jpg" class="img-responsive" alt="" /><br><small>
+<img src="/img/XC_njbokE2_wg8ykkJLCyLv6DBIRzlns8zC5VxrKJ-utAgAAlAEAAEpQ.jpg" class="img-responsive" alt="" /><br><small>
 两处海沟采得的不同生物中 PCB 的浓度，黑色为净浓度，灰色为脂质中的浓度。图片来源：nature.com</small>
 
-<img src="http://2-im.guokr.com/lX-s8a-d2hdNYpIVsRXVd-6rg2G716pE5vLUQ360FNytAgAAgwEAAEpQ.jpg" class="img-responsive" alt="" /><br><small>
+<img src="/img/lX-s8a-d2hdNYpIVsRXVd-6rg2G716pE5vLUQ360FNytAgAAgwEAAEpQ.jpg" class="img-responsive" alt="" /><br><small>
 两处海沟采得的不同生物中 PBDE 的浓度，黑色为净浓度，灰色为脂质中的浓度。图片来源：nature.com</small>
 
 1979年，美国禁止了 PCB 的生产，联合国在2001年签署的《关于持久性有机污染物的斯德哥尔摩公约》中在全球范围内全面禁用 PCB 。但从1930年代到 PCB 被禁止的1970年代，此类化学品的全球总产量估计达130万吨左右，其中大约65%被认为已在陆上被填埋处理或依旧存留于电子设备中，剩余的35%被排放到了沿海沉积物和海洋的开放水体之中——这常是因为工业事故和排放、垃圾填埋场的泄漏或垃圾的不完全焚烧。这些污染物不受自然降解过程的影响，因此能在环境中以数十年为单位长期存在。不但如此，它们还会在环境中长距离传播，甚至散布到极地地区和开阔的海洋等看似孤立的环境中去。

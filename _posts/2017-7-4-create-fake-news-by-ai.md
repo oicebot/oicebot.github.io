@@ -5,6 +5,7 @@ date: 2017-07-04
 tags: deeplearning ai translate
 from: https://www.economist.com/news/science-and-technology/21724370-generating-convincing-audio-and-video-fake-events-fake-news-you-aint-seen
 author: economist.com
+thumb: "/img/20170704/image1.jpg"
 ---
 今年早些时候，某著名视频网站上有人放出了一段看上去像是法国著名音乐人弗朗索瓦丝·哈蒂（Françoise Hardy）的视频。在这个视频中，她被画面外的人问了个问题，是关于为什么川普要指使白宫发言人肖恩·斯宾塞，让他在总统就职典礼的观礼人数问题上撒谎。一开始哈蒂还争辩了几句，接下来她表示，斯宾塞先生“提出了另外一种事实”。
 
@@ -40,7 +41,11 @@ author: economist.com
  
 生成图像则难得多。“生成式对抗网络”的机器学习方式，是在2014年由伊恩·古德费洛（Ian Goodfellow）提出的，当时他是在深度学习之父约书亚·本吉奥（Yoshua Bengio）手下读博的学生。古德费洛发现，虽然深度学习能让机器很好地辨别各种类型的数据（例如区分一张猫照片和一张狗照片），但让软件按照这个去生成猫或者狗的照片则根本一塌糊涂。对电脑来说，就算从数据库里学习了大量的训练图片，要生成一张有意义的照片也是困难重重。
 
-<img src="/img/20170704/image7.jpg" /><img src="/img/20170704/image8.jpg" /><br><small>左：约书亚·本吉奥 （Yoshua Bengio） 右：伊恩·古德费洛（Ian Goodfellow）</small>
+<table><tr><td width="50%">
+<img src="/img/20170704/image7.jpg" />
+</td><td width="50%"><img src="/img/20170704/image8.jpg" /></td></tr>
+<tr><td colspan="2"><small>左：约书亚·本吉奥 （Yoshua Bengio） 右：伊恩·古德费洛（Ian Goodfellow）</small></td></tr>
+</table>
 
 于是，古德费洛采用了另外一个类似的概念：博弈。他不再尝试让计算机一蹴而就，直接生成什么有用的东西，而是用另一个agent——一个对抗者——对生成器的输出进行评判，按照和训练数据集中已有的真实照片的相似度，给出具体的评分来自数据集还是来自生成器的判断。生成器根据辨别器的反馈，不断进行修正，逐步生成越来越像真实的图像。
 

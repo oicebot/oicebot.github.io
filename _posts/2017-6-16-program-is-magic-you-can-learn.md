@@ -6,6 +6,7 @@ tags: udacity python
 excerpt_separator: <!--more-->
 star: true
 origin: true
+thumb: "/img/20170616/image5.jpg"
 ---
 “在任何一项足够先进的技术和魔法之间，我们无法作出区分。”这是著名科幻作家亚瑟·克拉克在1973年做出的论断。
 

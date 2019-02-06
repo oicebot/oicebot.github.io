@@ -4,8 +4,11 @@ title: SteamOS Beta 动手玩
 date: 2013-12-16
 tags: linux game
 origin: true
+thumb: "/img/1280px-Steamos-big-picture.png"
 ---
 在大家翘首以盼到纷纷睡着(大雾)之后，Valve终于发布了SteamOS的Beta版本。于是我们就在第一时间把玩了一下这个基于Debian的衍生版系统。
+
+<img src="/img/1280px-Steamos-big-picture.png" />
 
 SteamOS的发布总体来说有点鱼龙混杂。一方面这是由一家向Linux平台提供了众多给力驱动和杀手级游戏的公司研发出的最新Debian衍生版系统，另一方面，整个Beta版的安装略显凌乱。当然，Valve官方在放出Beta测试版的两个zip包（以及鲜明的警示：“安装此系统将会清空你的整个硬盘”）之时，就已经反复强调SteamOS现在还是在Beta测试阶段，而且并不推荐给除了“强悍的Linux折腾党”之外的朋友。
 
@@ -19,7 +22,7 @@ SteamOS的发布总体来说有点鱼龙混杂。一方面这是由一家向Linu
 
 大家之前也许对于SteamOS桌面环境抱有疑问，它到底是一个独立可用的桌面操作系统，还是只能限制在Steam“大屏幕”+部分游戏自带界面的桌面环境呢？现在这个问题基本可以解决了，尽管Debian Wheezy源中很早就带了Gnome 3.4.2，SteamOS自带的还是Gnome 3桌面环境，也就是对“强悍的Linux折腾党”来说，很不幸，客户端侧（本地）窗口装饰管理器不能用了。
 
-安装完成后，SteamOS自带的本地应用程序相当的少，唯一的桌面应用就是Valve的Steam本身，以及一个Valve的系统问题报告器——不过Valve很早就在GitHub上搭了个开发者社区 https://github.com/ValveSoftware/SteamOS
+安装完成后，SteamOS自带的本地应用程序相当的少，唯一的桌面应用就是Valve的Steam本身，以及一个Valve的系统问题报告器——不过Valve很早就在GitHub上搭了个开发者社区 <https://github.com/ValveSoftware/SteamOS>
 
 ## SteamOS界面
 
@@ -36,3 +39,4 @@ SteamOS的系统界面基本上就是Steam“大屏幕”模式加上一些Steam
 不过既然这是一个基于Debian的衍生版Linux系统，你想要自己安装驱动应该是不会太麻烦——比如更新nVidia驱动、安装本次版本并未附带的AMD或者Intel驱动，甚至想办法引入同类硬件的开源驱动等——不过你得明白，一切后果自负。话是这么说，不过Valve还是表示将会尽可能地保持和Debian包管理系统的兼容性，如果用户真的希望用自己的驱动来跑的话。
 
 _“...我们期望继续与 debian 的包管理系统在很大程度上兼容。”_
+

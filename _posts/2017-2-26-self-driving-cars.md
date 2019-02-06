@@ -4,6 +4,7 @@ title: 英国政府拟提修法草案：自动驾驶汽车应为事故负责，�
 date: 2017-02-24
 tags: selfdriving translate
 from: https://news.slashdot.org/story/17/02/23/2220219/self-driving-cars-should-be-liable-for-accidents-not-the-passengers-uk-government
+thumb: "/img/pY_ZLEi50qpQrSTJLCEkqLhFFDdxd6yZYodQcav_T640AwAAIwIAAEpQ.jpg"
 ---
 “在所有主要高速公路服务和加油站设置充电设施，以及自动驾驶汽车的乘客在发生事故时不负责任——以上是英国政府提出的新法律草案中的两项主要措施，政府希望这将使公众在未来几年内能享受到运输科技发展的成果，”科技博客 Ars Technica 报道称，“这些变化是车辆技术和航空法案（VTAB）的一部分，它是一个基本上由政府的愿望清单构成的法律草案。”
 

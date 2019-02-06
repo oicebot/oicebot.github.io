@@ -5,6 +5,7 @@ date: 2018-7-14
 tags: udacity translate python
 from: https://medium.com/codingthesmartway-com-blog/getting-started-with-jupyter-notebook-for-python-4e7082bd5d46
 author: Sebastian Eschweiler
+thumb: "/img/20180714/image2.png"
 excerpt_separator: <!--more-->
 ---
 <img src="/img/20180714/image2.png">

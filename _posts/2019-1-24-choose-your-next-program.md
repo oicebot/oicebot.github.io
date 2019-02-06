@@ -6,6 +6,7 @@ tags: udacity python translate
 from: https://medium.freecodecamp.org/which-programming-language-should-you-learn-next-487d077baa32
 author: Constantin
 excerpt_separator: <!--more-->
+thumb: "/assets/images/code-1839406_640.jpg"
 ---
 <img src="/img/udacity/challenge.webp">
 
