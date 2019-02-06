@@ -7,7 +7,7 @@ excerpt_separator: <!--more-->
 from: https://www.guokr.com/article/442356/
 star: true
 origin: true
-thumb: "/img/sc2ai/hCeq8so5S1CaqB6YnOmf_NHFQTz0r8zLiDQ-BN4wCtWsAwAAJAIAAFBO.png"
+thumb: "/img/sc2ai/thumb.jpg"
 ---
 最近，Google旗下的人工智能团队，AlphaGo的亲生父亲Deepmind宣布和暴雪娱乐合作，并放出了《星际争霸2》的应用程序接口（API），让AI能够在即时战略游戏环境下进行机器学习。
 
@@ -35,7 +35,7 @@ thumb: "/img/sc2ai/hCeq8so5S1CaqB6YnOmf_NHFQTz0r8zLiDQ-BN4wCtWsAwAAJAIAAFBO.png"
 
 所以对于未知领域的计算就更加困难了，于是Deepmind决定开发新的应用程序接口来进行AI在即时战略游戏上的应用。
 
-<img src="/img/sc2ai/8Ro5iou88FRmIXdWraZN8a7Mcib8h7EkEo89lKEhyJKwAwAAxgEAAFBO.png" class="img-responsive" alt="" /><br><small>可以看到，这两种游戏在玩家获得的信息方面的不同。图片来源：维基百科、《星际争霸2》游戏截图</small>
+<img src="/img/sc2ai/8Ro5iou88FRmIXdWraZN8a7Mcib8h7EkEo89lKEhyJKwAwAAxgEAAFBO.jpg" class="img-responsive" alt="" /><br><small>可以看到，这两种游戏在玩家获得的信息方面的不同。图片来源：维基百科、《星际争霸2》游戏截图</small>
 
 ## 这东西到底是什么？
 
@@ -118,14 +118,14 @@ pip install pysc2
 
 你现在下载[这个软件](https://github.com/davechurchill/CommandCenter)，也可以在你电脑上模拟一场：
 
-<img src="/img/sc2ai/hCeq8so5S1CaqB6YnOmf_NHFQTz0r8zLiDQ-BN4wCtWsAwAAJAIAAFBO.png" class="img-responsive" alt="" /><br><small>
+<img src="/img/sc2ai/hCeq8so5S1CaqB6YnOmf_NHFQTz0r8zLiDQ-BN4wCtWsAwAAJAIAAFBO.jpg" class="img-responsive" alt="" /><br><small>
 这盘，被CommandCenter杀光农民的电脑敌人打出了gg。 图片来源：星际争霸2AI运行截图</small>
 
 大卫·丘吉尔表示，接下来他将让这个AI学会建造附属建筑、适时升级相应的科技，未来还会尝试让AI能对战斗情况进行预判，以及在主动进攻、积极防御、游击骚扰等策略中灵活选择。
 
 最后，Deepmind和暴雪在SC2LE的发布说明中表示，希望通过这次开源的代码和范例，能给广大星际玩家和自制AI爱好者提供更多的便利，更好地发挥出创造力，也希望能给人工智能领域的研究者一个更强有力的研究工具，以便推进未来人工智能技术的发展和进步。或许在不久以后，我们就能看到星际争霸AI版的《机器人大战》节目了吧？
 
-<img src="/img/sc2ai/utyii6vk0BV1JdlTU2IapCGxyuOrSZz-Oj2A9gEYrZisAwAAEQIAAFBO.png" class="img-responsive" alt="" /><br><small>
+<img src="/img/sc2ai/utyii6vk0BV1JdlTU2IapCGxyuOrSZz-Oj2A9gEYrZisAwAAEQIAAFBO.jpg" class="img-responsive" alt="" /><br><small>
 在《机器人大战》这个暴露年龄的节目中，参赛者用自己制造的机器人下场决斗，把对方摧毁的一方获胜。图片来源： Battlebots.com</small>
 
 无独有偶，8月12日早上，特斯拉老板伊隆·马斯克（Elon Musk）旗下的人工智能OpenAI在Dota2的1v1比赛中，以三战两胜的成绩首次击败了人类职业选手Dendi<sup>[7]</sup>。
