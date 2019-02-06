@@ -24,3 +24,5 @@ layout: default
 {% if page.tags %}
 <p style="color:#8c8c8c"><small>标签：<em>{{ page.tags | join: "</em>、<em>" }}</em></small></p>
 {% endif %}
+
+{% include gitalk.html %}
