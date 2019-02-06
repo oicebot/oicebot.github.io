@@ -27,7 +27,7 @@ title: 首页
       </div>
       <div class="rt-tit-box">
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-          <div class="vice"><span style="color:dodgerblue;">{{ post.date | date: "%Y-%m-%d" }}</span><span>{{ post.excerpt | strip_html | strip_newlines | truncate:100 }}</span></div>
+          <div class="vice"><span style="color:#b5b5b5;">{{ post.date | date: "%Y-%m-%d" }}</span><span>{{ post.excerpt | strip_html | strip_newlines | truncate:100 }}</span></div>
       </div></li>
 {% endfor %}
 </ul></div>
@@ -49,7 +49,7 @@ title: 首页
         </div>
         <div class="rt-tit-box">
           <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            <div class="vice"><span style="color:dodgerblue;">{{ post.date | date: "%Y-%m-%d" }}</span><span>{{ post.excerpt | strip_html | strip_newlines | truncate:130 }}</span></div>
+            <div class="vice"><span style="color:#b5b5b5;">{{ post.date | date: "%Y-%m-%d" }}</span><span>{{ post.excerpt | strip_html | strip_newlines | truncate:130 }}</span></div>
         </div></li>
       {% assign my_index = my_index | plus: 1 %}
     {% endif %}
