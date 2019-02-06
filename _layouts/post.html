@@ -25,4 +25,8 @@ layout: default
 <p style="color:#8c8c8c"><small>标签：<em>{{ page.tags | join: "</em>、<em>" }}</em></small></p>
 {% endif %}
 
+    <!-- social comment function-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
 {% include gitalk.html %}
