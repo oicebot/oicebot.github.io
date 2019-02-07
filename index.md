@@ -5,11 +5,14 @@ title: 首页
 
 # 欢迎
 
-<img src="/assets/images/treasure-161753.svg" width="25%" class="img-responsive" alt=""/> 
-<br>欢迎！这里是我陈列包包里的各种有趣的小东西的地方！请四处转转吧~
-
-本站所有文章均由<b><a href="{{ site.url -}}/about">欧剃</a></b>本人翻译或撰写，大部分投稿在优达学城、果壳网、别瞎玩等媒体，版权所有，转载请先联系。
-
+<div>
+  <div style="float:left;margin-right: 10px" width="200px">
+    <img src="/assets/images/treasure-161753.svg" width="200px">
+  </div>
+  <div style="margin-left: 10px;padding-left:10px"><br>欢迎！这里是我陈列包包里的各种有趣的小东西的地方！请四处转转吧~<br><br>本站所有文章均由<b><a href="{{ site.url -}}/about">欧剃</a></b>本人翻译或撰写，大部分投稿在优达学城、果壳网、别瞎玩等媒体，版权所有，转载请先联系。</div>
+  
+</div>
+<br>
 <div class="info-list" style="padding-top: 0px">
 <div style="float:left;"><h2>最新文章</h2></div>
 <div style="float:right;padding-top:10px"><a href="{{ site.url -}}/titles"> 阅读更多>>> </a></div>
