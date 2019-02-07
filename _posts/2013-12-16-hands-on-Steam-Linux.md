@@ -2,7 +2,7 @@
 layout: post
 title: SteamOS Beta 动手玩
 date: 2013-12-16
-tags: linux game
+tags: linux Game
 origin: true
 thumb: "/img/1280px-Steamos-big-picture.jpg"
 ---

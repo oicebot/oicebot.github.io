@@ -2,8 +2,7 @@
 layout: post
 title: 学员访谈：从部队转业回来，一不留神就变成了码农？
 date: 2018-09-22
-category: 学员访谈
-tags: udacity translate
+tags: udacity translate nanodegree
 from: https://blog.udacity.com/2018/09/udacity-graduate-soldier-software-developer.html
 author: Adam Lane
 thumb: "/img/thumb_v2-44b60c9d2f44e799d29b8d55f7d53c52_1200x500.jpg"
@@ -104,4 +103,4 @@ thumb: "/img/thumb_v2-44b60c9d2f44e799d29b8d55f7d53c52_1200x500.jpg"
 
 罗伯特的学习态度值得我们所有人效仿。他在学习上付出的努力让他的梦想成了真，这深深地鼓舞了我。他战胜了自我怀疑，战胜了求职中的挫折，最后获得了通向梦想的钥匙，踏入了他梦寐以求的事业之门。这是他职业生涯的第一大步，让我们恭喜他，祝他早日成功！
 
-（本文已投稿给「[优达学城](https://cn.udacity.com)」并[发表](https://zhuanlan.zhihu.com/p/45300386)。 原作： [{{ page.author }}]({{ page.from }}) 译者：欧剃 转载请保留此信息）
+_（本文已投稿给「[优达学城](https://cn.udacity.com)」并[发表](https://zhuanlan.zhihu.com/p/45300386)。 原作： [{{ page.author }}]({{ page.from }}) 译者：欧剃 转载请保留此信息）_

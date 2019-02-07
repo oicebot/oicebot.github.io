@@ -2,7 +2,7 @@
 layout: post
 title: 眼见不为实：艺术家用人工智能技术生成了有图有视频的……假新闻！
 date: 2017-07-04
-tags: deeplearning ai translate
+tags: Machine-Learning AI translate
 from: https://www.economist.com/news/science-and-technology/21724370-generating-convincing-audio-and-video-fake-events-fake-news-you-aint-seen
 author: economist.com
 thumb: "/img/20170704/image1.jpg"
