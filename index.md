@@ -10,9 +10,10 @@ title: 首页
 
 本站所有文章均由<b><a href="{{ site.url -}}/about">欧剃</a></b>本人翻译或撰写，大部分投稿在优达学城、果壳网、别瞎玩等媒体，版权所有，转载请先联系。
 
-## 最新文章
-
-<div class="info-list"> <ul class="list-a">
+<div class="info-list" style="padding-top: 0px">
+<div style="float:left;"><h2>最新文章</h2></div>
+<div style="float:right;text-align:right;"><a href="{{ site.url -}}/titles"> 阅读更多>>> </a></div>
+ <ul class="list-a">
 {% for post in site.posts limit:2 %}
     <li><div class="only-info">
       <div class="art-img"><a href="{{ post.url }}">
@@ -33,14 +34,15 @@ title: 首页
                 <span class="star">精选</span>
               {% endif %}</small></sup>
         </h3>
-          <div class="vice"><span style="color:#b5b5b5;">{{ post.date | date: "%Y-%m-%d" }}</span><span>{{ post.excerpt | strip_html | strip_newlines | truncate:100 }}</span></div>
+          <div class="vice"><span class="v_date">{{ post.date | date: "%Y-%m-%d" }}</span><span>{{ post.excerpt | strip_html | strip_newlines | truncate:100 }}</span></div>
       </div></li>
 {% endfor %}
 </ul></div>
 
-## 精选文章
 
 <div class="info-list"> <ul class="list-a">
+<div style="float:left;"><h2>精选文章</h2></div>
+<div style="float:right;text-align:right;"><a href="{{ site.url -}}/blog"> 阅读更多>>> </a></div>
   {% assign my_index = 0 %}
   {% for post in site.posts %}
     {% if post.star %}
@@ -63,7 +65,7 @@ title: 首页
                 <span class="star">精选</span>
               {% endif %}</small></sup>
           </h3>
-            <div class="vice"><span style="color:#b5b5b5;">{{ post.date | date: "%Y-%m-%d" }}</span><span>{{ post.excerpt | strip_html | strip_newlines | truncate:130 }}</span></div>
+            <div class="vice"><span class="v_date" >{{ post.date | date: "%Y-%m-%d" }}</span><span>{{ post.excerpt | strip_html | strip_newlines | truncate:130 }}</span></div>
         </div></li>
       {% assign my_index = my_index | plus: 1 %}
     {% endif %}

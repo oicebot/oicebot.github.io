@@ -23,11 +23,12 @@ title: 所有文章
               {% if post.star %}
                 <span class="star">精选</span>
               {% endif %}</small></sup></h3>
-            <div class="vice"><span style="color:#b5b5b5;">{{ post.date | date: "%Y-%m-%d" }}</span><span>{{ post.excerpt | strip_html | strip_newlines | truncate:150 }}</span></div>
+            <div class="vice"><span class="v_date">{{ post.date | date: "%Y-%m-%d" }}</span><span>{{ post.excerpt | strip_html | strip_newlines | truncate:150 }}</span></div>
         </div></li>
   {% endfor %}
 </ul></div>
 <h2>阅读模式</h2>
-<p>你还可以： <a href="{{ site.url -}}/tags">按标签分类浏览全部文章</a></p>
+<h3><a href="{{ site.url -}}/tags"> <<<查看全部标签 </a> 
+  ◆   <a href="{{ site.url -}}/blog"> 查看精选文章>>> </a></h3>
   
 <center><b> * * * </b></center>
