@@ -22,7 +22,7 @@ title: 精选文章
               {% endif %}
               </small></sup>
           </h3>
-            <div class="vice"><span class="v_date">{{ post.date | date: "%Y-%m-%d" }}</span><span>{{ post.excerpt | strip_html | strip_newlines | truncate:150 }}</span></div>
+            <div class="vice"><span class="v_date">{{ post.date | date: "%Y-%m-%d" }}</span><span>{{ post.excerpt | strip_html | strip_newlines | truncate:130 }}</span></div>
         </div></li>
     {% endif %}
   {% endfor %}
