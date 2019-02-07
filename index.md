@@ -8,7 +8,7 @@ title: 首页
 <img src="/assets/images/treasure-161753.svg" width="25%" class="img-responsive" alt=""/> 
 <br>欢迎！这里是我陈列包包里的各种有趣的小东西的地方！请四处转转吧~
 
-本站所有文章均由<b><a href="https://oicebot.github.io/about">欧剃</a></b>本人翻译或撰写，大部分投稿在优达学城、果壳网、别瞎玩等媒体，版权所有，转载请先联系。
+本站所有文章均由<b><a href="{{ site.url -}}/about">欧剃</a></b>本人翻译或撰写，大部分投稿在优达学城、果壳网、别瞎玩等媒体，版权所有，转载请先联系。
 
 ## 最新文章
 
@@ -72,20 +72,20 @@ title: 首页
     {% endif %}
  {% endfor %}
     <li><div class="only-info">
-    <div class="art-img" ><a href="https://oicebot.github.io/blog">
+    <div class="art-img" ><a href="{{ site.url -}}/blog">
       <img width="100%" height="120px" src="/assets/images/beaker-2026885.svg" alt="更多精选文章">
     </a></div>
     </div>
     <div class="rt-tit-box">
-      <h3><a href="https://oicebot.github.io/blog"> 更多精选文章… </a> </h3>
+      <h3><a href="{{ site.url -}}/blog"> 更多精选文章… </a> </h3>
       <div class="vice"><span>自 2017 年以来，我陆续为果壳网、优达学城等媒体供稿，主要为翻译/编译，以介绍国外科技新闻和编程技术为主，偶尔也动笔写写科普文章。欢迎约稿~ 😊</span></div>
     </div></li>  
 </ul></div>
 
 ## 全部文章
 
-<h3><a href="https://oicebot.github.io/tags"> <<<查看全部标签 </a> 
-  ◆   <a href="https://oicebot.github.io/titles"> 查看全部文章>>> </a></h3>
+<h3><a href="{{ site.url -}}/tags"> <<<查看全部标签 </a> 
+  ◆   <a href="{{ site.url -}}/titles"> 查看全部文章>>> </a></h3>
 
 ## 译个漫画
 
