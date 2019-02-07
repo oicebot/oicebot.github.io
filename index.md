@@ -12,7 +12,7 @@ title: 首页
 
 <div class="info-list" style="padding-top: 0px">
 <div style="float:left;"><h2>最新文章</h2></div>
-<div style="float:right;text-align:right;"><a href="{{ site.url -}}/titles"> 阅读更多>>> </a></div>
+<div style="float:right;padding-top:10px"><a href="{{ site.url -}}/titles"> 阅读更多>>> </a></div>
  <ul class="list-a">
 {% for post in site.posts limit:2 %}
     <li><div class="only-info">
@@ -42,7 +42,7 @@ title: 首页
 
 <div class="info-list"> <ul class="list-a">
 <div style="float:left;"><h2>精选文章</h2></div>
-<div style="float:right;text-align:right;"><a href="{{ site.url -}}/blog"> 阅读更多>>> </a></div>
+<div style="float:right;padding-top:10px"><a href="{{ site.url -}}/blog"> 阅读更多>>> </a></div>
   {% assign my_index = 0 %}
   {% for post in site.posts %}
     {% if post.star %}
