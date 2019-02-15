@@ -30,7 +30,7 @@ Atom 的特色在于它极其丰富的可定制性，以及赏心悦目的界面
  
 ## 2. Vim
 
-<img src="/img/20190215/003.jpg" alt="" />
+<img src="/img/20190215/003.jpg" style="max-width:350px;" alt="" />
 
 **Vim** 是一款高度可定制的文本编辑器，可以用于包括编写代码在内的各种文本创建与编辑工作。在大部分的 UNIX 系统，以及苹果 OSX 里都已经预装了它，你可以用 vi 命令启动。
 
@@ -42,7 +42,7 @@ Vim 的特色在于，它可以仅仅通过键盘来在插入、执行命令、�
 
 ## 3. VS Code
 
-<img src="/img/20190215/005.svg" style="max-width:427px;" class="img-responsive"alt="" />
+<img src="/img/20190215/005.svg" style="max-width:350px;" alt="" />
 
 VS Code 的全称是 Visual Studio Code，刚一问世，它就以强大的功能、美观的界面、高度的可定制性，被誉为微软的良心之作。微软还一改往日旧习，将 VS Code 开了源，支持 Windows、Linux 和 macOS 平台。
 
@@ -54,7 +54,7 @@ VS Code 的全称是 Visual Studio Code，刚一问世，它就以强大的功�
 
 ## 4. Notepad++
 
-<img src="/img/20190215/007.jpg" alt="" />
+<img src="/img/20190215/007.svg" style="max-width:350px;" alt="" />
  
 Notepad++ 是一款 Windows 下的开源文本/代码编辑器。它由侯今吾用 C++ 编写，目前已被下载超过3000万次，并两度获得 SourceForge 社群选择奖——最佳开发工具。
 
@@ -66,7 +66,7 @@ Notepad++ 不仅有语法高亮度显示，也有语法折叠功能，并且支�
  
 ## 5. Sublime Text
 
-<img src="/img/20190215/009.jpg" alt="" />
+<img src="/img/20190215/009.jpg" style="max-width:350px;" alt="" />
 
 Sublime Text 是一款跨平台的文本编辑器，支持基于 Python 编写的插件。它原生支持许多不同的编程语言和标记语言（比如 Markdown），也支持用户自己编写插件包（package）扩展编辑器的功能。大多数的插件包使用自由软件授权发布，并由社群维护。
 
