@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 英国政府拟提修法草案：自动驾驶汽车应为事故负责，车内乘客免责
-date: 2017-02-24
 tags: selfdriving translate
 from: https://news.slashdot.org/story/17/02/23/2220219/self-driving-cars-should-be-liable-for-accidents-not-the-passengers-uk-government
 thumb: "/img/pY_ZLEi50qpQrSTJLCEkqLhFFDdxd6yZYodQcav_T640AwAAIwIAAEpQ.jpg"
