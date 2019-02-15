@@ -31,7 +31,7 @@ excerpt: "你可能会问，我为什么要学习这么多语言？我觉得，�
 
 我的第一个想法是用 python，因为我确信我能找到一个现成的 python 库，让我可以控制我电脑的蓝牙设置。然而，我失败了，并没有这样的第三方库。而下一个明显的选项是 Node.js。果不其然，很快就我找到了一个 Javascript 库来控制笔记本电脑上的蓝牙。通过运行这个简单的 Nodejs 脚本，我能够让笔记本立即连接到 AirPods 上：
 
-```JS
+```javascript
 // App.js
 const device = new bluetooth.DeviceINQ();
 
@@ -51,7 +51,6 @@ device.findSerialPortChannel(airpodsAddress, function (channel) {
         
     });
 });
-
 ```
 
 现在我需要在屏幕上弄一个方便点击的按钮，以便运行上面的代码。我以为我可以简单地把那个脚本文件放在任务栏上，但是 Windows 不让。我试着写了一个 bat 批处理脚本，想包装一下放进任务栏，然而我失败了。于是，我就想，该用什么语言打包一个 .exe 可执行文件，以便把它放到任务栏上？这时 Golang 进入了我的视线。于是，我写了几行简单的 go 代码，用它运行我的 nodejs 脚本：
@@ -73,7 +72,6 @@ func main() {
 	}
 	fmt.Println(string(output))
 }
-
 ```
 
 接下来，我把它编译成 .exe 文件，并在桌面上为它创建了一个快捷方式，并给了它这个可爱的图标。 
