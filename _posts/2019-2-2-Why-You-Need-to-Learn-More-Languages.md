@@ -31,7 +31,7 @@ excerpt: "你可能会问，我为什么要学习这么多语言？我觉得，�
 
 我的第一个想法是用 python，因为我确信我能找到一个现成的 python 库，让我可以控制我电脑的蓝牙设置。然而，我失败了，并没有这样的第三方库。而下一个明显的选项是 Node.js。果不其然，很快就我找到了一个 Javascript 库来控制笔记本电脑上的蓝牙。通过运行这个简单的 Nodejs 脚本，我能够让笔记本立即连接到 AirPods 上：
 
-```Javascript
+```JavaScript
 
 // App.js
 const device = new bluetooth.DeviceINQ();
