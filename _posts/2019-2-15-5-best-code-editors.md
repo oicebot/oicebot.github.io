@@ -3,7 +3,6 @@ layout: post
 title: 新手必看：这 5 个程序员最爱的代码编辑器，你一定得了解下
 tags: udacity
 from: https://www.zeroequalsfalse.press/2019/02/10/developer-text-editor/
-author: Marty Jacobs
 excerpt: "程序员的代码编辑器，就如同学生的笔，医生的手术刀一样，是每天都离不开的必备工具。因此，一个趁手的编辑器对你的编程学习可以说是非常至关重要啦。今天，我们给大家推荐 5 款最受人民群众喜爱的代码编辑器，让我们来了解一下吧！"
 thumb: "/assets/images/two-screen.svg"
 ---
@@ -84,4 +83,4 @@ Sublime Text 的特色功能有：
 那么，你是否已经确定了你心爱的编辑器呢？希望大家畅所欲言，也欢迎分享你最喜爱的代码编辑器给我们！
 
 
-_（本文已投稿给「[优达学城](https://cn.udacity.com)」，作者：欧剃，撰写时参考了： [{{ page.author }}]({{ page.from }}) 的文章。转载请保留此信息）_
+_（本文已投稿给「[优达学城](https://cn.udacity.com)」，作者：欧剃，撰写时参考了： [Marty Jacobs]({{ page.from }}) 的文章。转载请保留此信息）_
