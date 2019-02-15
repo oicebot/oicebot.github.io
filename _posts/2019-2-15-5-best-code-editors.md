@@ -18,7 +18,7 @@ thumb: "/assets/images/two-screen.svg"
 
 ## 1. Atom
 
-<img src="/img/20190215/001.jpg" alt="" />
+<img src="/img/20190215/001.jpg" style="max-width:350px;" alt="" />
 
 **Atom** 是 Github 打造的一款开源代码编辑器，支持 macOS、Windows 和 Linux 操作系统，支持 Node.js 所写的插件，并内置由 Github 提供的 Git 版本控制系统，也可被当作 IDE 使用。
 
@@ -54,7 +54,7 @@ VS Code 的全称是 Visual Studio Code，刚一问世，它就以强大的功�
 
 ## 4. Notepad++
 
-<img src="/img/20190215/007.svg" style="max-width:350px;" alt="" />
+<img src="/img/20190215/007.png" style="max-width:350px;" alt="" />
  
 Notepad++ 是一款 Windows 下的开源文本/代码编辑器。它由侯今吾用 C++ 编写，目前已被下载超过3000万次，并两度获得 SourceForge 社群选择奖——最佳开发工具。
 
