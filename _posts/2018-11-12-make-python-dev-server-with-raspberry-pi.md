@@ -61,9 +61,8 @@ ssh -R 52698:localhost:52698 pi@192.168.0.12
 <img src="/img/20181112/002.png" alt="" /><br><small>
 成功连接上树莓派之后，命令行窗口会出现类似这样的信息。</small>
 
-## Step 4. Create a project directory
-第4步：建立一个工作文件夹
-You should now be in the home directory of the Pi. Let’s create a directory for the website we wish to build. Use the following command to create the directory:
+## 第4步：建立一个工作文件夹
+
 你现在应该已经在树莓派的 `home` 文件夹中了。让我们先创建一个工作文件夹，之后网站的所有内容都会在这里面。用下面这个命令新建一个文件夹：
 
 ```bash
@@ -135,7 +134,7 @@ python app.py
 <img src="/img/20181112/009.png" alt="" /><br><small>
 运行网站服务软件</small>
 
-看到上面的输出之后，你就可以用局域网内的任意设备，打开浏览器，访问树莓派的 IP（我们这个例子中是 192.168.0.12 ）加上上面的端口号（5000），来访问刚才这个服务程序建立的网页。完整地址应该是 http://192.168.0.12:5000/
+看到上面的输出之后，你就可以用局域网内的任意设备，打开浏览器，访问树莓派的 IP（我们这个例子中是 192.168.0.12 ）加上上面的端口号（5000），来访问刚才这个服务程序建立的网页。完整地址应该是 <http://192.168.0.12:5000/>
 
 如果一切正常，你应该能在网页上看到上面代码中的那行字：“This is my flask website and it is so cool.”
 
@@ -151,7 +150,7 @@ python app.py
 <img src="/img/20181112/011.png" alt="" /><br><small>
 增加一个 meow 的路径</small>
 
-为了检查新添加的路径是否正常工作，你可以访问 http://192.168.0.12:5000/meow ，如果一切正常，网页上将会显示一个大大的 MEOW（喵）。
+为了检查新添加的路径是否正常工作，你可以访问 <http://192.168.0.12:5000/meow> ，如果一切正常，网页上将会显示一个大大的 MEOW（喵）。
 
 <img src="/img/20181112/012.png" alt="" /><br><small>
 检查新增的路径是否正常工作</small>
