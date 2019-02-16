@@ -41,8 +41,7 @@ Vim 的特色在于，它可以仅仅通过键盘来在插入、执行命令、�
 
 ## 3. VS Code
 
-<img src="/img/20190215/005.svg" style="max-width:350px;" alt="" />
-
+<div id="VSCode"><img src="/img/20190215/005.svg" style="max-width:350px;" alt="" /></div>
 VS Code 的全称是 Visual Studio Code，刚一问世，它就以强大的功能、美观的界面、高度的可定制性，被誉为微软的良心之作。微软还一改往日旧习，将 VS Code 开了源，支持 Windows、Linux 和 macOS 平台。
 
 作为大名鼎鼎的 Visual Studio 家族的一员，VS Code 内置了代码调试、Git 版本控制、代码高亮、智能代码补完、代码片段管理、代码重构等丰富的功能。此外，VS Code 的用户个性配置选项也很丰富，能方便地修改主题颜色、键盘快捷方式等各种属性和参数，还在内置了扩展程序管理的功能。
