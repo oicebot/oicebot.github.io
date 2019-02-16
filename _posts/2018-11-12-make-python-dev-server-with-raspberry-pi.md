@@ -259,4 +259,4 @@ sudo shutdown -h now
 
 我们下次再见～
 
-_（本文已投稿给「[优达学城](https://cn.udacity.com)」，原作：[{{ page.author }}]({{ page.from }}) ,译者：欧剃。转载请保留此信息）_
+_（本文已投稿给「[优达学城](https://cn.udacity.com)」并发表在[知乎专栏](https://zhuanlan.zhihu.com/p/49748475)，原作：[{{ page.author }}]({{ page.from }}) ,译者：欧剃。转载请保留此信息）_
