@@ -5,6 +5,7 @@ tags: udacity translate
 from: https://medium.com/@traversymedia/10-bad-habits-to-avoid-as-a-developer-64a1677c60fe
 author: Brad Traversy
 thumb: "/img/20170616/image34.jpg"
+star: true
 excerpt_separator: <!--more-->
 ---
 <img src="/img/20181226/tz58NuOcsP278JpoZAke_Q.jpeg">
