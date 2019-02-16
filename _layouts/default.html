@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="/assets/css/lanyon.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">    
     <!-- Windows Phone -->
@@ -51,20 +52,21 @@
 
     </div>
 
-    <script>
+    <script defer>
       // ===== Scroll to Top ==== 
-      $(window).scroll(function() {
-          if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-              $('#return-to-top').fadeIn(200);    // Fade in the arrow
+      $(window).scroll(function () {
+          if ($(this).scrollTop() >= 50) {// If page is scrolled more than 50px
+              $('#return-to-top').fadeIn(200); // Fade in the arrow
           } else {
-              $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+              $('#return-to-top').fadeOut(200); // Else fade out the arrow
           }
       });
-      $('#return-to-top').click(function() {      // When arrow is clicked
+      $('#return-to-top').click(function () {// When arrow is clicked
           $('body,html').animate({
-              scrollTop : 0                       // Scroll to top of body
+              scrollTop: 0 // Scroll to top of body
           }, 500);
       });
+      //# sourceURL=pen.js
     </script>
   </body>
 </html>
