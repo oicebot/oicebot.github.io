@@ -4,7 +4,7 @@ title: 仅需10步，手把手教你用树莓派打造 Python 开发服务器
 tags: udacity translate python
 from: https://medium.freecodecamp.org/how-to-make-your-own-python-dev-server-with-raspberry-pi-37651156379f
 author: Karan Asher
-thumb: "/img/20181112/thumb.jpg"
+thumb: "/img/20181112/thumb.png"
 excerpt: "基本上一台普通的 Linux 电脑能做的事情，树莓派也能完成。今天这篇教程玩的可能会比较“高级”一丁点，我们将手把手带你用树莓派打造一个你自己的 Python 开发服务器。"
 ---
 
