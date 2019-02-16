@@ -5,6 +5,7 @@ tags: udacity translate nanodegree
 from: https://blog.udacity.com/2019/01/new-year-new-skills-career-story.html
 author: Adam Lane
 thumb: "/img/20190109/thumb.jpg"
+excerpt: "今天要跟我们分享成功喜悦的是 **Nicola Poerio**，他是无人驾驶工程师纳米学位项目的毕业学员。在从优达学城毕业之后，之前从未有过自动驾驶系统开发工作经验的他，在老雇主菲亚特·克莱斯勒汽车集团公司里获得了一个无人驾驶汽车部门的新职位。"
 ---
 
 <img src="/img/20190109/001.jpg" alt="" />
