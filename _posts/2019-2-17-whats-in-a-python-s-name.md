@@ -67,7 +67,6 @@ import nameScript as ns
 ns.myFunction()
 ```
 
-We then have two scopes: one of importingScript and the second scope of nameScript. In the illustration, you’ll see how it differs from the first use case.
 这时，我们就有了两个不同的作用域：一个是 `importingScript` 的，一个是 `nameScript` 的。让我画个示意图，你就能看出这和之前的区别了：
 
 <img src="/img/20190217/003.png" alt="" />
@@ -82,7 +81,6 @@ We then have two scopes: one of importingScript and the second scope of nameScri
 
 ## 总结
 
-In this short article, I explained how you can use the __name__ variable to write modules. You can also run these modules on their own. This can be done by making use of how the values of these variables change depending on where they occur.
 今天我和大家一起讨论了 `__name__` 变量在模组中的特性，分析了不同的调用方式对它的值有什么影响。利用这个特性，你既可以在程序中导入模组来使用，也可以直接把模组本身作为程序来运行。
 
 那么，大家都掌握了吗？欢迎在下面留言讨论！
