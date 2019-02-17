@@ -2,7 +2,7 @@
 layout: post
 title: 全球最深的海沟，也逃不出违禁化学品的污染
 date: 2017-02-24
-tags: guokr nature translate
+tags: guokr Science translate
 star: true
 thumb: "/img/ZY05ewY1a7ve8YY0rBacAprwBgJInxq0zxglyeiIzD-UAgAAcwEAAEpQ.jpg"
 ---
