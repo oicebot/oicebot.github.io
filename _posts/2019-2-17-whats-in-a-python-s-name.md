@@ -7,6 +7,9 @@ from: https://medium.freecodecamp.org/whats-in-a-python-s-name-506262fe61e8
 excerpt: "本文详细介绍了 Python 中的内置变量 __name__，以及它的用法，希望对各位新近接触 Python 语言的同学能有所帮助。"
 thumb: "/img/20190217/snake.svg"
 ---
+<script>
+document.title = "答疑解惑：Python 的 __name__ 变量，到底是个什么东西？";
+</script>
 
 <img src="/img/20190217/snake.svg" style="max-width:300px;" alt="" />
 
