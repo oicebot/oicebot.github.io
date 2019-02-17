@@ -45,4 +45,6 @@ thumb: "/img/20180615/thumb.jpg"
 
 说的好有道理，我也去配副眼镜…
 
-_本文已于2017年8月发布于[果壳网](https://www.guokr.com/article/443017/)（有删改），原作： [{{ page.author }}]({{ page.from }}) 译者：欧剃，译文版权属于果壳网（guokr.com），禁止转载。如有需要，请联系sns@guokr.com_
+(vicko238、Ent/校)
+
+_本文已发布于[果壳网](https://www.guokr.com/article/443017/)（有删改），原作： [{{ page.author }}]({{ page.from }}) 译者：欧剃，译文版权属于果壳网（guokr.com），禁止转载。如有需要，请联系sns@guokr.com_
