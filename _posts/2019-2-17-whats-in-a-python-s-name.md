@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 答疑解惑：Python 的 __name__ 变量，到底是个什么东西？
+title: "答疑解惑：Python 的 __name__ 变量，到底是个什么东西？"
 tags: udacity python 
 author: Bert Carremans
 from: https://medium.freecodecamp.org/whats-in-a-python-s-name-506262fe61e8
