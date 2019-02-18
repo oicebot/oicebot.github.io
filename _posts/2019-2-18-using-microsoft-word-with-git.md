@@ -4,7 +4,7 @@ title: 还能这样玩？用 git 追踪 Word 文档的版本
 tags: github
 author: Martin Fenner
 from: http://blog.martinfenner.org/2014/08/25/using-microsoft-word-with-git/
-excerpt: "本文详细介绍了 Python 中的内置变量 __name__，以及它的用法，希望对各位新近接触 Python 语言的同学能有所帮助。"
+excerpt: "在写文章的时候，我们经常会遇到许多需要追踪文件版本的难题。现在你可以用流行的版本控制工具 Git 来为你服务啦！"
 ---
 在写文章的时候，我们经常会遇到许多需要追踪文件版本的难题。不论是随着你的编辑和修改不断变化的文件版本，还是和其他合作者一起编写文章，要想保留文档的修改痕迹往往要费时费力，效果还差强人意。
 
