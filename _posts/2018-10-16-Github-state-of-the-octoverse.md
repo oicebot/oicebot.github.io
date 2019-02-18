@@ -11,6 +11,7 @@ thumb: "/img/20181016/thumb.jpg"
 <img src="/img/20181016/001.jpg">
 
 2018年10月16日，GitHub 发布了 2018 年度状况报告，对2017年10月1日至2018年9月30日 GitHub 上的代码仓库进行了统计。如果用一个词概括今年的报告，那就是<span class="hightlight_words">协作”</span>。过去的一年里，GitHub 上的开发者共提交了11亿次有效贡献，社区协作贡献的程度是前所未有的，项目数量也远超往年。
+
 那么，今年的报告里又有哪些亮点呢？GitHub 用几个数字概括了一下：
 
 ## 开发者数量超过 3100 万
@@ -25,7 +26,9 @@ thumb: "/img/20181016/thumb.jpg"
 
 ## 代码仓库数量超过 9600 万
 
-截至 2018 年 9 月 30 日，已有超过 9600 万个代码仓库托管在 GitHub 上。这比去年多了超过 40％。所有的代码仓库中，大约有三分之一是在最近 12 个月内新增的，这其中就包括了许多有趣的新项目，比如在 Electron App 里跑 Windows 95 系统的 [felixrieseberg/windows95](https://github.com/felixrieseberg/windows95)，还有教你用 Python 来玩微信跳一跳的 [wangshub/wechat_jump_game](https://github.com/wangshub/wechat_jump_game) 等。
+截至 2018 年 9 月 30 日，已有超过 9600 万个代码仓库托管在 GitHub 上。这比去年多了超过 40％。
+
+所有的代码仓库中，大约有三分之一是在最近 12 个月内新增的，这其中就包括了许多有趣的新项目，比如在 Electron App 里跑 Windows 95 系统的 [felixrieseberg/windows95](https://github.com/felixrieseberg/windows95)，还有教你用 Python 来玩微信跳一跳的 [wangshub/wechat_jump_game](https://github.com/wangshub/wechat_jump_game) 等。
 
 <img src="/img/20181016/004.jpg">
 
@@ -85,8 +88,7 @@ GitHub 上的 MarketPlace 社区软件市场今年安装量翻了一番。同时
 
 今年，TypeScript 一跃到了第七名，首次进入前十榜单，Python 自从 2015 年超过 PHP 后，一直紧跟在 Java 后面，而 Ruby 则不幸从第五的位置掉到了第十。
 
-<img src="/img/20181016/012.jpg">
- 
+<img src="/img/20181016/012.jpg"> 
 
 ## 出现次数最多的标签
 最近这一年，又有好几百万的标签在各种仓库上出现，目前最热门的标签还是来自 JavaScript (前后端都有)、机器学习、移动软件开发、容器化等方面。
