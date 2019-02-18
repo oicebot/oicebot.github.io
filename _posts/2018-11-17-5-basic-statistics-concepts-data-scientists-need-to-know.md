@@ -1,9 +1,10 @@
 ---
 layout: post
-title: 新手必看：这 5 个程序员最爱的代码编辑器，你一定得了解下
-tags: udacity
+title: 新手必看：数据科学家必学必会的 5 个基本统计概念
+tags: udacity translate Data-Science
 star: true
-from: https://www.zeroequalsfalse.press/2019/02/10/developer-text-editor/
+author: George Seif
+from: https://towardsdatascience.com/the-5-basic-statistics-concepts-data-scientists-need-to-know-2c96740377ae
 excerpt: "利用统计学，我们将能以一种更有针对性，更”信息驱动“的方式来处理数据。这其中涉及的数学知识能帮助我们形成关于数据的具体结论，而不仅仅是猜测。使用统计数据，我们可以获得更深入、更细微的洞察能力，可以了解我们的数据是如何构建的。在了解结构的基础上，我们将能发现应用其他数据科学技术的最佳方式，并以此获取更多信息。"
 thumb: "/img/20181117/thumb.jpg"
 ---
