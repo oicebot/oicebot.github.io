@@ -1,16 +1,12 @@
 ---
 layout: post
-title: "答疑解惑：Python 的 __name__ 变量，到底是个什么东西？"
+title: "答疑解惑：Python 的 \_\_name\_\_ 变量，到底是个什么东西？"
 tags: udacity python 
 author: Bert Carremans
 from: https://medium.freecodecamp.org/whats-in-a-python-s-name-506262fe61e8
 excerpt: "本文详细介绍了 Python 中的内置变量 __name__，以及它的用法，希望对各位新近接触 Python 语言的同学能有所帮助。"
 thumb: "/img/20190217/snake.svg"
 ---
-<script>
-document.title = "答疑解惑：Python 的 __name__ 变量，到底是个什么东西？";
-</script>
-
 <img src="/img/20190217/snake.svg" style="max-width:300px;" alt="" />
 
 我想，你应该已经在很多 Python 脚本里见到过这个 `__name__` 变量了吧？它经常是以类似这样的方式出现在我们的程序里：
