@@ -42,7 +42,7 @@ Git 是一个在你电脑上运行的开源软件，你无需付费即可在电�
 *.docx diff=pandoc
 ```
 
-```
+```ini
 # 在你的用户主目录里的 .gitconfig 中，添加：
 [diff "pandoc"]
   textconv=pandoc --to=markdown
