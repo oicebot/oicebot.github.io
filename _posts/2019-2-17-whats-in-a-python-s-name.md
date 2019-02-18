@@ -1,16 +1,12 @@
 ---
 layout: post
-title: "答疑解惑：Python 的 __name__ 变量，到底是个什么东西？"
+title: 答疑解惑：Python 的 &#95;&#95;name&#95;&#95; 变量，到底是个什么东西？
 tags: udacity python 
 author: Bert Carremans
 from: https://medium.freecodecamp.org/whats-in-a-python-s-name-506262fe61e8
-excerpt: "本文详细介绍了 Python 中的内置变量 __name__，以及它的用法，希望对各位新近接触 Python 语言的同学能有所帮助。"
+excerpt: "本文详细介绍了 Python 中的内置变量 &#95;&#95;name&#95;&#95;，以及它的用法，希望对各位新近接触 Python 语言的同学能有所帮助。"
 thumb: "/img/20190217/snake.svg"
 ---
-<script>
-document.title = "答疑解惑：Python 的 __name__ 变量，到底是个什么东西？";
-</script>
-
 <img src="/img/20190217/snake.svg" style="max-width:300px;" alt="" />
 
 我想，你应该已经在很多 Python 脚本里见到过这个 `__name__` 变量了吧？它经常是以类似这样的方式出现在我们的程序里：
@@ -22,7 +18,7 @@ if __name__ == '__main__':
 
 今天，我就带大家详细八一八这个内置变量的用法，示范一下在你写的 Python 模组里要怎么用到它。
 
-## 这个 __name__ 拿来作什么的？
+## 这个 \_\_name\_\_ 拿来做什么的？
 
 <span class="hightlight_words">作为 Python 的内置变量，`__name__` 变量（前后各有两个下划线）还是挺特殊的。它是每个 Python 模块必备的属性，但它的值取决于你是如何执行这段代码的。</span>
 
@@ -30,7 +26,7 @@ if __name__ == '__main__':
 
 所以，在 `__name__` 变量的帮助下，你可以判断出这时代码是被直接运行，还是被导入到其他程序中去了。
 
-## 这个 __name__ 变量可能取什么值？
+## 这个 \_\_name\_\_ 变量可能取什么值？
 
 当你直接执行一段脚本的时候，这段脚本的  `__name__` 变量等于 `'__main__'`，当这段脚本被导入其他程序的时候，`__name__` 变量等于脚本本身的名字。
 
