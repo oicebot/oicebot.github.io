@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "答疑解惑：Python 的 \_\_name\_\_ 变量，到底是个什么东西？"
+title: 答疑解惑：Python 的 &#95;&#95;name&#95;&#95; 变量，到底是个什么东西？
 tags: udacity python 
 author: Bert Carremans
 from: https://medium.freecodecamp.org/whats-in-a-python-s-name-506262fe61e8
-excerpt: "本文详细介绍了 Python 中的内置变量 __name__，以及它的用法，希望对各位新近接触 Python 语言的同学能有所帮助。"
+excerpt: "本文详细介绍了 Python 中的内置变量 &#95;&#95;name&#95;&#95;，以及它的用法，希望对各位新近接触 Python 语言的同学能有所帮助。"
 thumb: "/img/20190217/snake.svg"
 ---
 <img src="/img/20190217/snake.svg" style="max-width:300px;" alt="" />
@@ -18,7 +18,7 @@ if __name__ == '__main__':
 
 今天，我就带大家详细八一八这个内置变量的用法，示范一下在你写的 Python 模组里要怎么用到它。
 
-## 这个 \_\_name\_\_ 拿来作什么的？
+## 这个 \_\_name\_\_ 拿来做什么的？
 
 <span class="hightlight_words">作为 Python 的内置变量，`__name__` 变量（前后各有两个下划线）还是挺特殊的。它是每个 Python 模块必备的属性，但它的值取决于你是如何执行这段代码的。</span>
 
