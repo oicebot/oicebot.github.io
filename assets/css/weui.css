@@ -348,7 +348,7 @@ input.weui-btn_plain-default{
 }
 .weui-cells{
   margin-top:1.17647059em;
-  background-color:#FFFFFF;
+  background-color:rgba(0, 0, 0, 0.096);
   line-height:1.47058824;
   font-size:17px;
   overflow:hidden;
@@ -361,8 +361,8 @@ input.weui-btn_plain-default{
   top:0;
   right:0;
   height:1px;
-  border-top:1px solid #e5e5e5;
-  color:#e5e5e5;
+  border-top:1px solid #929191;
+  color:#929191;
   -webkit-transform-origin:0 0;
           transform-origin:0 0;
   -webkit-transform:scaleY(0.5);
@@ -376,8 +376,8 @@ input.weui-btn_plain-default{
   bottom:0;
   right:0;
   height:1px;
-  border-bottom:1px solid #e5e5e5;
-  color:#e5e5e5;
+  border-bottom:1px solid #5f5f5f;
+  color:#4d4c4c;
   -webkit-transform-origin:0 100%;
           transform-origin:0 100%;
   -webkit-transform:scaleY(0.5);
@@ -389,7 +389,7 @@ input.weui-btn_plain-default{
   margin-bottom:.3em;
   padding-left:15px;
   padding-right:15px;
-  color:#808080;
+  color:#b8b8b8;
   font-size:14px;
 }
 .weui-cells__title + .weui-cells{
@@ -419,7 +419,7 @@ input.weui-btn_plain-default{
   top:0;
   right:0;
   height:1px;
-  border-top:1px solid #e5e5e5;
+  border-top:1px solid #5c5c5c;
   color:#e5e5e5;
   -webkit-transform-origin:0 0;
           transform-origin:0 0;
@@ -452,7 +452,7 @@ input.weui-btn_plain-default{
 .weui-cell_swiped > .weui-cell__bd{
   position:relative;
   z-index:1;
-  background-color:#FFFFFF;
+  background-color:rgb(53, 53, 53);
 }
 .weui-cell_swiped > .weui-cell__ft{
   position:absolute;
@@ -462,7 +462,7 @@ input.weui-btn_plain-default{
   display:-webkit-box;
   display:-webkit-flex;
   display:flex;
-  color:#FFFFFF;
+  color:rgb(83, 83, 83);
 }
 .weui-swiped-btn{
   display:block;
