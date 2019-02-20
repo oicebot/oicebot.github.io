@@ -2415,8 +2415,7 @@ input[type="search"]::-webkit-search-results-decoration{
   font-weight:normal;
   font-variant:normal;
   text-transform:none;
-  text-align:center;
-  speak:none;
+  text-align:center;  
   display:inline-block;
   vertical-align:middle;
   text-decoration:inherit;
