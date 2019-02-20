@@ -1,0 +1,73 @@
+---
+layout: page
+title: 小工具
+---
+
+<link rel="stylesheet" href="/assets/css/weui.css">
+<div style="text-align:center">
+    <canvas id="clock" width="200" height="200"></canvas>
+</div>
+<div id="time" style="text-align:center">
+    <big><b>--:--:--</b></big>
+</div>
+<hr>
+<h2>日期计算</h2>
+<div class="weui-cells weui-cells_form">
+    <div class="weui-cells weui-cells_radio">
+        <div class="weui-cells__title">选择计算方式</div>
+        <label class="weui-cell weui-check__label" for="radio1">
+            <div class="weui-cell__bd">
+                <p>计算两个日期的间距</p>
+            </div>
+            <div class="weui-cell__ft">
+                <input type="radio" class="weui-check" name="date" id="radio1" checked="true">
+                <span class="weui-icon-checked"></span>
+            </div>
+        </label>
+        <label class="weui-cell weui-check__label" for="radio2">
+            <div class="weui-cell__bd">
+                <p>计算日期前后多少天</p>
+            </div>
+            <div class="weui-cell__ft">
+                <input type="radio" name="date" class="weui-check" id="radio2">
+                <span class="weui-icon-checked"></span>
+            </div>
+        </label>
+    </div>
+    <div class="weui-cells__title">日期计算</div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">第一个日期</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="date" id="date1" />
+        </div> 
+    </div>
+
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">第二个日期</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="date" id="date2" />
+        </div> 
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">日期间距</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="number" id="days" pattern="[0-9]*" value="0" placeholder="0" />
+        </div> 
+    </div>
+    <a href="javascript:;" onclick="displayDateResult()" class="weui-btn weui-btn_primary">
+            计算
+    </a>
+    <a href="javascript:;" onclick="emptyResults()" class="weui-btn weui-btn_primary">
+            清空
+    </a>
+    <!--
+    <button type="button" onclick="displayDateResult()">&nbsp;&nbsp;</button>   
+    <button type="button" onclick="emptyResults()">&nbsp;清空&nbsp;</button>   
+    -->
+  
+
+    <div id="date_result"></div>
+</div>
+
+
+<script src="/script/tools.js"></script>
