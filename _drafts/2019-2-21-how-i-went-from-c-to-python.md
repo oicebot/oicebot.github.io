@@ -15,9 +15,11 @@ thumb: "/img/20190221/thumb.png"
 
 People say that coding in Python is so easy that even a 6 year old can do it. This was the thought that I had in mind when I started coding in Python at work. I had been a full-time software developer for 4 years at that time, writing mainly in C++ on Linux, heavily using the QT library. However, I wrote bad Python code at first.
 
-有人说，用 Python 写代码实在太简单了，就连 6 岁小孩子都能搞定。
+有人说，用 Python 写代码实在太简单了，就连 6 岁小孩子都能搞定。是啊，我刚开始转用 Python 编程的时候，心里也是这么认为的。毕竟，我那时已经是有 4 年 C++ 编程经验的全职程序员，而且主要是在 Linux 下用 QT 库进行编程的。然而，我始料未及的是，我一开始差点搞砸了。
 
 It has been around 3 years since I’ve made that switch and I think that it’s a good point to sum-up the progress that I’ve made during this time. When looking back, I didn’t only change my main programming language, but also changed my work environment and the way I think about code.
+
+那大概是 3 年前吧。
 
 I won’t go into the details and differences between C++ and Python, as there are [numerous resources online](https://www.educba.com/python-vs-c-plus-plus/), but rather will describe my own experience. I hope that this post would be useful for people going through the same transition that I did.
 
