@@ -9,9 +9,13 @@ thumb: "/img/20190221/thumb.jpg"
 ---
 <img src="/img/20190221/001.jpg" />
 
-## Introduction
+
+
+## 介绍
 
 People say that coding in Python is so easy that even a 6 year old can do it. This was the thought that I had in mind when I started coding in Python at work. I had been a full-time software developer for 4 years at that time, writing mainly in C++ on Linux, heavily using the QT library. However, I wrote bad Python code at first.
+
+有人说，用 Python 写代码实在太简单了，就连 6 岁小孩子都能搞定。
 
 It has been around 3 years since I’ve made that switch and I think that it’s a good point to sum-up the progress that I’ve made during this time. When looking back, I didn’t only change my main programming language, but also changed my work environment and the way I think about code.
 
