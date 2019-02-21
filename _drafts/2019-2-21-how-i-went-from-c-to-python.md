@@ -5,9 +5,9 @@ tags: udacity python
 author: asya f
 from: https://medium.freecodecamp.org/how-i-went-from-c-to-python-a-conceptual-change-8bf29d059428
 excerpt: ""
-thumb: "/img/20190221/thumb.jpg"
+thumb: "/img/20190221/thumb.png"
 ---
-<img src="/img/20190221/001.jpg" />
+<img src="/img/20190221/001.jpeg" />
 
 
 
@@ -21,7 +21,7 @@ It has been around 3 years since I’ve made that switch and I think that it’s
 
 I won’t go into the details and differences between C++ and Python, as there are [numerous resources online](https://www.educba.com/python-vs-c-plus-plus/), but rather will describe my own experience. I hope that this post would be useful for people going through the same transition that I did.
 
-<img src="/img/20190221/002.jpg" />
+<img src="/img/20190221/002.jpeg" />
 
 ## C++ is diving, Python is snorkeling
 
@@ -35,7 +35,7 @@ As a C++ programmer I cared more about syntax tweaks and weird examples. I alway
 
 My main everyday tools were `Vim` with numerous plugins for writing code, `GDB` for debugging and `Valgrind` for analyzing my memory usage and errors. I compiled with `g++` and wrote my own `Makefiles`. Back then, I didn’t feel that an IDE would benefit me, but would rather slow things down and make me lose touch with my code. In retrospect, I relied heavily on the compiler for finding my type errors.
 
-<img src="/img/20190221/003.jpg" />
+<img src="/img/20190221/003.jpeg" />
 
 ## Shallow swimming in Python
 
@@ -47,7 +47,7 @@ As a Python developer I tend to look first for the library that solves the issue
 
 My everyday tool is `PyCharm` (yes, an IDE) with `IdeaVim` plugin. I started using it mainly due to the fact that it’s a powerful debugger, which is much friendlier than the default Python debugger, `pdb`. I also use `pip` for installing libraries that I need. I don’t monitor my memory usage anymore unless I really have to.
 
-<img src="/img/20190221/004.jpg" />
+<img src="/img/20190221/004.jpeg" />
 
 ## Some Practical Tips
 
