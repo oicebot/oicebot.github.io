@@ -75,9 +75,9 @@ body {
   top: 0;
   bottom: 0;
   left: -14rem;
-  width: 14rem;
-  visibility: hidden;
+  width: 13rem;
   overflow-y: auto;
+  visibility: hidden;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", STXihei, "华文细黑", "Microsoft YaHei", Terminal, monospace;
   font-size: .875rem; /* 15px */
   color: rgba(255,255,255,.6);
@@ -87,6 +87,13 @@ body {
   .sidebar {
     /* font-size: .75rem; /* 14px */
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+     visibility: hidden;
+
   }
 }
 
@@ -144,8 +151,8 @@ a.sidebar-nav-item:focus {
   /* width: 2.2rem; */
   width: 1rem;
   padding: .5rem .65rem;
-  color: #505050;
-  background-color: #fff;
+  color: #fff;
+  background-color: #505050;
   border-radius: 4px;
   cursor: pointer;
   z-index:999999;
@@ -167,8 +174,8 @@ a.sidebar-nav-item:focus {
 
 .sidebar-toggle:active,
 #sidebar-checkbox:checked ~ .wrap .sidebar-toggle {
-  color: #fff;
-  background-color: #505050;
+  color: #505050;
+  background-color: #fff;
   z-index:999999;
 }
 
