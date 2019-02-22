@@ -10,3 +10,7 @@ star: false
 origin: false
 thumb: "/assets/images/books-42701.svg"
 gitalk: true
+markdown: kramdown
+kramdown:
+  input: GFM  #Github Flavored Markdown
+
