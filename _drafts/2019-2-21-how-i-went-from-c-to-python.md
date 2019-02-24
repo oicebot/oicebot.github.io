@@ -4,12 +4,14 @@ title: "How I went from C++ to Python: a conceptual change"
 tags: udacity python 
 author: asya f
 from: https://medium.freecodecamp.org/how-i-went-from-c-to-python-a-conceptual-change-8bf29d059428
-excerpt: ""
+excerpt_separator: <!--more-->
 thumb: "/img/20190221/thumb.png"
 ---
 <img src="/img/20190221/001.jpeg" />
 
+还记得之前说的[对编程语言就不能“从一而终”]({% post_url 2019-2-2-Why-You-Need-to-Learn-More-Languages %})吗？今天要跟大家分享的是一个程序员的跨语言经历。
 
+<!--more-->
 
 ## 介绍
 
@@ -19,9 +21,12 @@ People say that coding in Python is so easy that even a 6 year old can do it. Th
 
 It has been around 3 years since I’ve made that switch and I think that it’s a good point to sum-up the progress that I’ve made during this time. When looking back, I didn’t only change my main programming language, but also changed my work environment and the way I think about code.
 
-那大概是 3 年前吧。
+差不多 3 年前，我下定决心从 C++ 转到 Python。现在回想起来，这段经历可不仅仅是换个编程语言这么简单。它彻底地改变了我的工作环境，也改变了我思考代码的方式。因此，我要借此机会，回顾一下我这三年的经历和成果，也算对自己的人生有一个阶段性总结。
+
 
 I won’t go into the details and differences between C++ and Python, as there are [numerous resources online](https://www.educba.com/python-vs-c-plus-plus/), but rather will describe my own experience. I hope that this post would be useful for people going through the same transition that I did.
+
+别担心，我不会给你长篇大论什么“两种语言的区别”之类的技术问题，这类文章[网上到处都是](https://www.educba.com/python-vs-c-plus-plus/)，我就不再重复了。我只是希望分享我自己的一些经验，希望给遇到类似问题的读者带来一点点启发。
 
 <img src="/img/20190221/002.jpeg" />
 
