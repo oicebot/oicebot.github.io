@@ -25,8 +25,6 @@ thumb: "/img/20190221/thumb.png"
 
 ## 如果 C++ 是深潜，那 Python 就是浮潜
 
-C++ feels like diving into the magical mysteries of the sea - it is beautiful, but requires more learning and practice, and overall, the distance that you cover is not that big. Python is a bit like snorkeling - you see the beauty as soon as you stick your head into the water, but you don’t go much further down. You keep on swimming in shallow waters, and can cover a long distance easily. From this description it is clear, that each of these languages should be used at its right place and time.
-
 从某种意义上说，使用 C++ 就像是深潜进入神秘的魔法海洋——它充满梦幻，但需要更多的知识和练习才能达成，同时，就算你成功进行了一两次深潜，你能覆盖到的面也不大。另一方面，Python 就像是浮潜，你只要戴好面罩，把脑袋扎进水里，就能看到清澈明亮的海底——然而，你很难再潜入更深的底层，你更多地在浅海里游泳，能轻松接触到很大一片范围。
 
 从这种对比来看，很明显，每种语言都有它独特的长处，必须用在正确的时间和地点，才能发挥最大的效果。
@@ -49,8 +47,6 @@ C++ feels like diving into the magical mysteries of the sea - it is beautiful, b
 
 如今，作为 Python 程序员，我倾向于使用能直接解决问题的库来完成手头的任务。Python 拥有丰富的第三方库生态系统，以及支持它们的社区。基本上，对于任何可能的任务，都有对应的库存在。以下是我每天使用的一些方便的库：用于数字计算的 `NumPy`，用于计算机视觉的 `OpenCV`，用于读取 json 文件的 `json`，用于科学计算的 `SciPy`，用于处理数据库的 `sqlite3`。简直棒呆了。
 
-My everyday tool is `PyCharm` (yes, an IDE) with `IdeaVim` plugin. I started using it mainly due to the fact that it’s a powerful debugger, which is much friendlier than the default Python debugger, `pdb`. I also use `pip` for installing libraries that I need. I don’t monitor my memory usage anymore unless I really have to.
-
 现在，我每天必备的工具是 `PyCharm` （没错，是个 IDE），装了 `IdeaVim` 插件，以便符合我原来的习惯。它是一个功能强大的调试器，它比默认的 Python 调试器 `pdb` 更友好。我还使用 `pip` 包管理工具来安装我需要的库。现在，除非我真的需要，我不再需要监视我的内存使用情况啦。
 
 <img src="/img/20190221/004.jpeg" />
@@ -65,8 +61,6 @@ My everyday tool is `PyCharm` (yes, an IDE) with `IdeaVim` plugin. I started usi
 * <span class="hightlight_words"><b>别忘记了自己的初衷</b></span> ——有的时候，Python 的速度太慢，或者并不适合完成某个目标的时候，别为了用 Python 而用 Python，是时候拿出你的 C++ 技术了。而且，有许多办法（比如 `SIP` 和 `ctypes` 等）可以让你在 Python 里调用你的 C++ 代码，别犹豫，放手干吧。
 
 ## 结语
-
-No matter what other people say, switching to a different programming language, especially to a language that is fundamentally different than the one you are used to, is not easy. Take the time to learn, to dig in, to discover. But most importantly, understand that not only the language should change, but also your coding style and work methodology.
 
 不管其他人怎么说，切换到一门不同的编程语言，尤其是与你原来的习惯完全不同的语言，并不是件容易的事。你必须花时间去学习、去挖掘、去发现。但最重要的是，要明白你改变的不仅仅是语言，还有你的编码风格和工作方法。
 
