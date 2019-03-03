@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How I went from C++ to Python: a conceptual change"
+title: "高级程序员的自白：我是如何从 C++ “叛逃”到 Python 的"
 tags: udacity python 
 author: asya f
 from: https://medium.freecodecamp.org/how-i-went-from-c-to-python-a-conceptual-change-8bf29d059428
