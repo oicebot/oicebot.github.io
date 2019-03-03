@@ -9,7 +9,7 @@ thumb: "/img/20190221/thumb.png"
 ---
 <img src="/img/20190221/001.jpeg" />
 
-还记得之前说的[对编程语言就不能“从一而终”]({% post_url 2019-2-2-Why-You-Need-to-Learn-More-Languages %})吗？今天要跟大家分享的是一个程序员的跨语言经历。
+还记得之前说的《[对编程语言就不能“从一而终”]({% post_url 2019-2-2-Why-You-Need-to-Learn-More-Languages %})》吗？今天要跟大家分享的是一个程序员的跨语言经历。
 
 <!--more-->
 
