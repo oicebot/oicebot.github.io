@@ -30,6 +30,13 @@
                0 0 10px rgba(255, 0, 0, 0.1);
 }
 
+.hl {
+  color: gold;
+  text-shadow: 0 1px 1px rgba(255, 0, 0, 0.938),
+               0 0 5px rgba(236, 18, 18, 0.247),
+               0 0 10px rgba(255, 0, 0, 0.1);
+}
+
 .info-list { margin:0; padding:0px 0 }
 ul.list-a li{ width:100%; border-bottom:1px solid #215e1f; overflow:hidden; padding:10px 0}
 ul.list-a li .only-info{float:left; width:180px; padding-right: 7px}
