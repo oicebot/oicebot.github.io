@@ -4,6 +4,7 @@ title: "人工智能 = 高薪？没错！"
 tags: udacity translate AI Machine-Learning
 author: Stacy Stanford
 from: https://medium.com/mlmemoirs/artificial-intelligence-salaries-heading-skyward-e41b2a7bba7d
+excerpt: "软件工程师平均年薪最高15万美金？不好意思，这个价请不到机器学习工程师。平时我们都说程序员钱多头发少什么的，可其实真正钱多的，要数人工智能科学家……"
 thumb: "/img/20190319/thumb.jpg"
 ---
 在如今风云变幻的求职市场上，人工智能领域可以说是一颗冉冉升起的明日之星。平时我们都说程序员钱多头发少什么的，可其实真正钱多的，要数人工智能科学家……
