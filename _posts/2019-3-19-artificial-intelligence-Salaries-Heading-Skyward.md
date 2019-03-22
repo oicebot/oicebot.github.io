@@ -4,11 +4,8 @@ title: "人工智能 = 高薪？没错！"
 tags: udacity translate AI Machine-Learning
 author: Stacy Stanford
 from: https://medium.com/mlmemoirs/artificial-intelligence-salaries-heading-skyward-e41b2a7bba7d
-excerpt: "https://medium.com/mlmemoirs/artificial-intelligence-salaries-heading-skyward-e41b2a7bba7d"
 thumb: "/img/20190319/thumb.jpg"
 ---
-<img src="/img/20190319/001.jpg" />
-
 在如今风云变幻的求职市场上，人工智能领域可以说是一颗冉冉升起的明日之星。平时我们都说程序员钱多头发少什么的，可其实真正钱多的，要数人工智能科学家……
 
 <img src="/img/20190319/001.jpg" /><br><small>
@@ -16,9 +13,7 @@ thumb: "/img/20190319/thumb.jpg"
 
 说正经的，人工智能领域的薪水，确实高也有高的道理：这是个热门领域，人才稀缺，需求却很高——这是由放之四海皆准的供需法则所决定的。而且现在，任何与人工智能相关的专业领域，对人才都有着很高的需求。
 
-据 Indeed.com 的调查显示，旧金山地区 IT 行业的平均年薪水平为：“AI软件工程师”大约 13.41 万美元，而“机器学习工程师”可达 16.99 万美元上下。
-
-不仅如此，如果你拥有公司需要的特殊资历，可以得到更高的薪资水平。一位终身教授拿到了 Google 的 offer，承诺把他目前的18万美元年薪翻个三倍，而这位教授最后拒绝了 Google 的邀请，去了另一个教学职位。
+据 Indeed.com 的调查显示，旧金山地区 IT 行业的平均年薪水平为：“AI软件工程师”大约 13.41 万美元，而“机器学习工程师”可达 16.99 万美元上下。不仅如此，如果你拥有公司需要的特殊资历，可以得到更高的薪资水平。一位终身教授拿到了 Google 的 offer，承诺把他目前的18万美元年薪翻个三倍，而这位教授最后拒绝了 Google 的邀请，去了另一个教学职位。
 
 截至目前的薪水纪录出现在2018年4月，当时经营时尚购物网站 Zozotown 的日本公司 Start Today 发布了新的职位需求，其中为七名“天才” AI 技术专家提出了高达1亿日元的年薪（约合略低于100万美元）。
 
