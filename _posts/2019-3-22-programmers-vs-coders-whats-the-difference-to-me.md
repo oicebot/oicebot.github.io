@@ -5,7 +5,7 @@ tags: udacity translate
 author: Aussie Tech Tutor
 from: https://blog.usejournal.com/programmers-vs-coders-whats-the-difference-to-me-3c1dbe3b7747
 excerpt: "我读书少，你别忽悠我。程序员不就是写代码的吗，哪个程序员不是“码农”？"
-thumb: "/img/20190322/thumb.jpg"
+thumb: "/img/20190322/thumb.jpeg"
 ---
 <img src="/img/20190322/001.jpg" />
 
