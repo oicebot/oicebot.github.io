@@ -11,25 +11,43 @@ thumb: "/img/20190320/thumb.jpg"
 
 What goes in, must come out. And in terms of a computer program, the inputs we put in, must return an expected output. How the program is written doesn’t matter to a user whatsoever. But what they expect to see when they interact with it does. As I programmer I understand this perspective, and over time I have become much more accepting that a clean code base is not as important as the final outcome.
 
+不管什么时代，做人做事，都贵在有始有终。对计算机程序而言，事情也差不多。一个好的程序，对于各种不同的输入，都应该返回可预期的输出。对用户来说，程序里面的代码优美不优美，牛逼不牛逼完全无关紧要，真正重要的是程序运行起来是不是符合预期，是不是能满足用户的需求。作为一个程序员，我深深地理解这种观点。随着时间的推移，我越来越领悟到，代码是不是很完美跟程序最后能不能完成任务相比，其实真的不怎么重要。
+
 Obviously as developers we spend a lot of time thinking about keeping our code base clean. We implement design patterns, use our best OOP practices, discuss and implement an architecture etc. This is all fantastic, and if you can apply best practices all the time, then obviously do so.
+
+显然，作为开发人员，我们总会在保持代码库的整洁方面花上很多时间和精力。我们采用各种设计模式，使用我们最好的面向对象（OOP）实践，讨论和实现架构等。这些做法都非常棒，如果你可以一直采用这些最优的做法，那么显然应该继续保持下去。
 
 But with times changing and expectations of a speedy delivery from our customers is becoming more apparent, I personally pay less attention to the inner workings of code these days, and try to always ensure I focus on the following instead:
 
+但随着时间的推移，以及客户对快速交付的要求越来越明显，我个人开始把注意力从整理代码的内业工作中挪开，确保我能时刻专注于以下几点：
+
 **Test Driven Development**— Are we ensuring what we are building meets the expected requirements? We should be ensuring we are covering our system with regular automated tests, focusing on different types of tests depending on what we’re building.
 
-<span class="hl"></span> 
+1. <span class="hl">测试驱动开发</span> ：我们是否能确保正在建设的产品满足预期要求？我们应该确保定期的自动化测试能够覆盖到整个系统，并根据当前正在构建的内容，将精力放在不同类型的测试上。
 
 **Extensibility** — Is it easy to quickly extend the software to do more things than what it already does? Sometimes over engineering or over architecting systems can come at a cost of extensibility. So can ignoring architecting or engineering altogether. A balance is needed depending on your software. This is a constant struggle.
 
+2. <span class="hl">可扩展性</span>：是否可以轻松快速地扩展现有软件以实现更多的功能？有时，过度的软件工程或过度的架构系统都可能会牺牲可扩展性。因此，必要的时候可以忽略架构和工程的要求。根据你项目的实际情况，你需要在二者间保持一种平衡。这是一个持续而且动态的过程。
+
 **Automated Delivery** — Are we able to deploy changes to our system quickly? And are we doing this with the ability to roll back if something goes wrong?
+
+3. <span class="hl">自动部署</span>：对系统的更改，我们是否能够快速部署？万一出现问题，是否能够回滚？
 
 **Measurement and Feedback** — Are we measuring how well our system is going? Are we tracking what our users are doing? Analytics is important. With it we can make decisions about how to improve the system.
 
+4. <span class="hl">测量和反馈</span>：我们是否能衡量系统运行的好坏？我们是否能跟踪用户的行为？分析非常重要。只有这样，我们才能决定如何改进。
+
 **Error Management** — Are we handling any unexpected errors correctly? Are we handling expected errors correctly even? Are the right kinds of errors and error messages being returned? And are we able to track these issues reliably (ie log files, dashboards etc)?
+
+5. <span class="hl">错误管理</span>：我们是否正确处理了任何未预期的错误？甚至，可预期的错误是否得到正确处理了？是否返回了正确的错误和错误消息？这些问题能不能被有效地追踪到（比如通过日志文件、控制面板等）？
 
 **Performance**— Is the code we write optimised for performance? If not we need to consider alternative routes to improve what we’ve written. Load tests and the like can help pick up any performance issues.
 
+5. <span class="hl">性能</span>：我们的代码是否针对性能进行了优化？如果不是，我们需要考虑重构，或是换种实现方式来改善代码性能。负载测试之类的方法可以帮助我们发现各种性能问题。
+
 **Scalability, Resiliency and Durability** — Can your system scale reliably if running into a heavy load? Also can your system recover quickly and reliably if something goes terribly wrong? We want to make sure our system does not go down, and if it does, it isn’t down for long.
+
+7. <span class="hl">可伸缩性（Scalability），容错性/韧性（Resiliency）和持久性（Durability）</span>：、
 
 This is not a comprehensive list of things us developers have to consider, but I feel this is the most important of the things we actually do consider. Some of these challenges I will face alone, and others my team and I will face together. But regardless of who deals with it, I know personally I will not feel comfortable with the state of the software, unless we have at least focused on these areas.
 
