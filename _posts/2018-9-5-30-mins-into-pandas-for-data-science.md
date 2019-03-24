@@ -515,7 +515,7 @@ conda install html5lib
 conda install BeautifulSoup4
 ```
 
-举个例子，我们用  让 Pandas 读取这个页面的数据：<https://en.wikipedia.org/wiki/Udacity>。由于一个页面上含有多个不同的表格，我们需要通过下标 `[0, ..., len(tables) - 1]` 访问数组中的不同元素。
+举个例子，我们用 `.read_html()` 让 Pandas 读取这个页面的数据：<https://en.wikipedia.org/wiki/Udacity>。由于一个页面上含有多个不同的表格，我们需要通过下标 `[0, ..., len(tables) - 1]` 访问数组中的不同元素。
 
 下面的这个例子，我们显示的是页面中的第 2 个表格：
 
