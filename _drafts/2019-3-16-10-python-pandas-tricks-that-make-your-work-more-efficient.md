@@ -7,34 +7,43 @@ from: https://towardsdatascience.com/10-python-pandas-tricks-that-make-your-work
 excerpt: "Some commands you may know already but may not know they can be used this way"
 thumb: "/img/20190316/thumb.jpg"
 ---
-<img src="/img/20190316/001.jpg" />
-Photo from https://unsplash.com/
-
 Pandas is a widely used Python package for structured data. There’re many nice tutorials of it, but here I’d still like to introduce a few cool tricks the readers may not know before and I believe they’re useful.
+
+在处理结构化数据方面, Pandas 可能是应用最广泛的 Python 库了吧。也许你们已经看过许多正儿八经的教程、范例，但今天分享的几个秘技，可不是每本书里都会提到的哟~ 好好看看吧，它们一定能让你事半功倍！
+
+<img src="/img/20190316/001.jpg" /><br><small>
+图片来源：unsplash.com</small>
+
 
 ## 1. read_csv
 
 Everyone knows this command. But the data you’re trying to read is large, try adding this argument: `nrows = 5` to only read in a tiny portion of the table before actually loading the whole table. Then you could avoid the mistake by choosing wrong delimiter (it may not always be comma separated).
+是的，是的，这个基础函数你们早就都知道了。不过你们真的会用好它吗？如果你要载入的数据量非常大，试试 `nrows = 5` 这个参数，这样你就可以只载入表格的开头一小部分，而不是一口气读入整个表格啦。通过预览表格开头的几行，你可以对数据的特征有一定的了解，也避免了实际载入时选错分隔符的问题（毕竟有些数据并不都是用逗号隔开的）。
 
 (Or, you can use `head` command in linux to check out the first 5 rows (say) in any text file: `head -c 5 data.txt`)
+（此外，Linux 用户还可以用 `head` 命令来检查文本文件的头若干行，比如 `head -c 5 data.txt` 查看前 5 行。）
 
 Then, you can extract the column list by using `df.columns.tolist()` to extract all columns, and then add `usecols = [‘c1’, ‘c2’, …]` argument to load the columns you need. Also, if you know the data types of a few specific columns, you can add the argument `dtype = {‘c1’: str, ‘c2’: int, …}` so it would load faster. Another advantage of this argument that if you have a column which contains both strings and numbers, it’s a good practice to declare its type to be string, so you won’t get errors while trying to merge tables using this column as a key.
+然后，你可以用 `df.columns.tolist()` 来获取表格的所有列的名称，进而用 `usecols = [‘c1’, ‘c2’, …]` 来载入你需要的列。而且，如果你直到某些列的数据格式，你还可以加上这样的参数来加快载入速度：`dtype = {‘c1’: str, ‘c2’: int, …}` 。一个额外的好处是，如果你数据表中的某一列既有数字又有字符串，你可以用这个方法将它们全部声明成字符串格式，这样你在合并表格的时候就可以用这一行做索引键，而不会碰到错误信息。
 
 ## 2. select_dtypes
 
 If data preprocessing has to be done in Python, then this command would save you some time. After reading in a table, the default data types for each column could be bool, int64, float64, object, category, timedelta64, or datetime64. You can first check the distribution by
+如果你需要用 Python 做数据预处理，那你一定得用好这个函数，它能省下你不少时间。在读取表格之后，每一列都会有一个默认数据类型，比如 bool、int64、float64、object、category、timedelta64 和 datetime64 等。你可以用下面这行代码来检查具体有哪些类型：
 
 ```python
 df.dtypes.value_counts()
 ```
 
 to know all possible data types of your dataframe, then do
+接着用
 
 ```python
 df.select_dtypes(include=[‘float64’, ‘int64’])
 ```
 
 to select a sub-dataframe with only numerical features.
+来选中一个只含有数字类型的子数据表。
 
 ## 3. copy
 
