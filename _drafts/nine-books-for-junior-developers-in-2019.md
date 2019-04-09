@@ -11,8 +11,10 @@ thumb: "/img/20190409/thumb.jpg"
 </small>
 
 Whether you’re a new developer or you’re fairly experienced as a programmer, you’ll come to realize that the amount of time you’ve worked at a job isn’t the best way to determine your skill and knowledge as a programmer (I know, tell that to the recruiters 🤫).
+不管你是刚入门的新手，还是已经有了一定经验的程序员，你一定早晚会意识到，在某一个岗位上干了多长时间，并不是一个评判程序员是否优秀的好指标——因为这既不能反映出一个人的真实水平，也不能真正体现出ta工作经验的多少（是，这句话该说给hr听）。
 
 What you do in your spare time and how you choose to take learning into your own hands is what’s going to ultimately determine your success in this industry. That’s why it’s so important for us as developers to adopt a growth mindset.
+一个人能否在编程领域获得成功，最具有决定性的因素，其实就隐藏在你业余时间所做的事情中，隐藏在你如何主动学习新知识的过程中。
 
 There are some excellent ways to learn and improve as a developer. Some of those ways are pair-programming, online courses, meetups, work experience, building projects and finding a mentor.
 
