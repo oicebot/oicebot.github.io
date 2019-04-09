@@ -17,8 +17,11 @@ What you do in your spare time and how you choose to take learning into your own
 一个人能否在编程领域获得成功，最具有决定性的因素，其实就隐藏在你业余时间所做的事情中，隐藏在你如何主动学习新知识的过程中。
 
 There are some excellent ways to learn and improve as a developer. Some of those ways are pair-programming, online courses, meetups, work experience, building projects and finding a mentor.
+要想提高你的编程技术，有许多很棒的办法，比如结对编程、在线学习、线下聚会，以及额外的工作经验、项目构建经验，还有找一个好导师。
 
 One of my personal favorite ways to learn is to crack open a well-written book and try to absorb something from those who have distilled years of knowledge and insight into a permanent artifact.
+我个人最喜欢的学习方式，是翻开一本书，
+
 
 Here are my personal recommendations that I think all developers (especially junior ones) should read at some point. These books are all highly regarded by professionals in our industry and have the potential to leave a profound impact on the quality of your work and your speed of development & learning.
 
