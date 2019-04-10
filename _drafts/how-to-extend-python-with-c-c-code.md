@@ -11,16 +11,38 @@ thumb: "/img/20190410/thumb.jpg"
 </small>
 
 Have you ever wondered how some calculations (for example in the NumPy library) can be executed very fast although Python (as an interpreted language) is not popular for being the fastest language. This is mainly the case because time critical code within a library is often written in C or C++.
+<span style="background-color:#eaecf0">众所周知，作为解释型语言的 Python 可不是什么超级快速的语言<span><sup><small>[来源请求](https://zh.wikipedia.org/zh-cn/Wikipedia:%E6%9D%A5%E6%BA%90%E8%AF%B7%E6%B1%82)</small></sup>，但许多复杂的库函数（比如 `NumPy` 库）却能执行得相当快速。你有没有想过这是怎么一回事呢？嘿，这主要是因为这些库的核心代码往往是用 C 或者 C++ 写的，没想到吧！
 
 In this short tutorial I will explain how to create a Python module (or package) by writing it in C or C++. The main source for this recipe is the [Python Documentation](https://docs.python.org/3/extending/extending.html#a-simple-example). As an example I will create a math module which has a method for calculating the factorial **n!=n*(n-1)*(n-2)…** written in C. For this purpose we need two files: A python file called `setup.py` and our C File `cmath.c` .
+在这篇短文中，我们将详细聊一聊如何用 C 或者 C++ 写一个 Python 模组（或软件包），内容主要参考 [Python 官方文档](https://docs.python.org/3/extending/extending.html#a-simple-example)。作为范例，我也将用 C 写一个简单的 Python 模组，完成一个简单的数学计算：<span class="hl">n!=n*(n-1)*(n-2)…</span> 。为了实现上面的目标，我们需要两个文件：一个 Python 代码 `setup.py`，以及我们实际编写的 C 语言代码 `cmath.c`。
 
-The `setup.py` file will be used to build our C program properly (compiling, finding the right Python C libraries, linking). In order to get our program/module executed when calling it in a python script, the module needs to communicate properly with the Python Interpreter `CPython` . Therefore we need to bring it in the right structure by using several Objects from the `Python.h` Header File. Basically what we are going to do is to build a wrapper around our actual C method which can be called through the Python Interpreter, so that we can use it in a python script like a normal python function. First we need to include the Header File in our `cmath.c` by typing
+The `setup.py` file will be used to build our C program properly (compiling, finding the right Python C libraries, linking). 
+总的来说，`setup.py` 将用于把 C 语言写的代码构建成一个 Python 包（包括编译、查找 Python C 库、连接等）。
+
+那么，让我们开始吧！
+
+## 原理
+
+In order to get our program/module executed when calling it in a python script, the module needs to communicate properly with the Python Interpreter `CPython` . Therefore we need to bring it in the right structure by using several Objects from the `Python.h` Header File. 
+为了让我们的程序/模组能在 Python 代码中被调用执行，模组需要和 Python 解释器 `CPython` 进行必要的通讯。因此，我们需要 `Python.h` 头文件里面的若干对象，并用它们构建出合适的结构体。
+
+Basically what we are going to do is to build a wrapper around our actual C method which can be called through the Python Interpreter, so that we can use it in a python script like a normal python function. First we need to include the Header File in our `cmath.c` by typing
+基本上，我们要做的是把实际的 C 语言方法包装起来，以便能够被 Python 解释器所调用，这样我们的 Python 代码才能够像使用普通的 Python 函数一样，调用这个方法。
+
+## 编写算法并包装
+
+首先，我们要在 `cmath.c` 里引入头文件：
 
 ```c
 #include Python.h
 ```
 
-All objects and functions we are using to bring our program in the right structure for the python interpreter are declared in the Python Header and start with the prefix `Py` . The main C object (basically an opaque object) which can represent every python object type is called `PyObject` . But before using these objects we need to write our method for calculating the factorial (remember that **0!=1**):
+All objects and functions we are using to bring our program in the right structure for the python interpreter are declared in the Python Header and start with the prefix `Py` . The main C object (basically an opaque object) which can represent every python object type is called `PyObject` . 
+
+在 Python 头文件里，我们需要用来和 Python 解释器对接的对象（以及函数），都以 `Py` 开头。在这里，能代表所有 python 对象的 C 对象（基本上就是一个`opaque`——“不透明”对象）叫做 `PyObject`。
+
+But before using these objects we need to write our method for calculating the factorial (remember that **0!=1**):
+不过，在实际使用这些对象之前，我们先把求阶乘的算法写出来（注意，**0的阶乘是1**）：
 
 ```c
 int fastfactorial(int n){
@@ -31,7 +53,11 @@ int fastfactorial(int n){
 }
 ```
 
-After that, we need to write a wrapper around that function. This wrapper gets a pointer to the arguments which are passed in the python script later represented as a `PyObject` and returns a pointer to the result of the calculation also represented as a `PyObject`. For this purpose we create the following wrapper method
+After that, we need to write a wrapper around that function. This wrapper gets a pointer to the arguments which are passed in the python script later represented as a `PyObject` and returns a pointer to the result of the calculation also represented as a `PyObject`.
+接着，我们给这个函数进行一下包装。这个包裹函数接收一个 `PyObject` 类型的指针（指向今后从 Python 代码传入的参数）作为参数，再返回一个 `PyObject` 类型的指针（指向上面函数的返回值）给外部。
+
+For this purpose we create the following wrapper method
+为此，我们用以下代码来实现这个包裹函数：
 
 ```C
 static PyObject* factorial(PyObject* self, PyObject* args){
@@ -44,8 +70,17 @@ return Py_BuildValue("i",result);
 ```
 
 These wrapper methods always need a `PyObject` pointer `self` pointing to the Module object itself and a `PyObject` pointer `args` that represents the arguments which get passed in the python script later. We parse these arguments by the `PyArg_ParseTuple` method and declare that we are searching for an integer by specifying “i” in the second argument. The parsed value is than saved in the variable `n` . After that our factorial method is called `fastfactorial(n)` and the result is turned to a `PyObject*` again by using the `Py_BuildValue` method from the Python Header. In the end the result object is returned by this wrapper method.
+这个函数始终需要一个指向模组对象本身的 `self` 指针，以及一个指向从 Python 代码传入参数的 `args` 指针（二者都是 `PyObject` 类型的对象）。我们用 `PyArg_ParseTuple` 方法来处理这些参数，并且声明我们需要的是整数类型（第二个参数 `"i"`)，最后将处理结果赋值到变量 `n` 中。
 
-Now that we have build the wrapper method around our actual factorial function we need to create an instance of the `PyModuleDef` struct (which is also declared in the `Python.h`). This struct defines everything the Python Interpreter needs to know about a Module. One part of a module are the definitions of all its methods. This is done by another struct, the `PyMethodDef` struct, or rather an array of those structs that summarizes all methods of the Module. In our case this declaration is done through
+接着自然是调用 `fastfactorial(n)` 来计算阶乘，并用 Python 头文件里的 `Py_BuildValue` 方法把返回值塞回 `PyObject*` 类型里。最后，我们的包裹函数将指向结果的指针对象返回给外部。
+
+## 组装 C 结构体
+
+Now that we have build the wrapper method around our actual factorial function we need to create an instance of the `PyModuleDef` struct (which is also declared in the `Python.h`). This struct defines everything the Python Interpreter needs to know about a Module. One part of a module are the definitions of all its methods. This is done by another struct, the `PyMethodDef` struct, or rather an array of those structs that summarizes all methods of the Module. 
+现在
+
+In our case this declaration is done through
+
 
 ```C
 static PyMethodDef mainMethods[] = {
@@ -71,7 +106,10 @@ PyMODINIT_FUNC PyInit_cmath(void){
  return PyModule_Create(&cmath);
 }
 ```
+
 The `PyMODINIT_FUNC` return type declares that the method actually returns a `PyObject` pointer. This is a pointer to the python module itself (which is in the end also a PyObject) which gets created by `PyModule_Create` . When a module is imported in a python script this method gets called and returns the pointer to the whole Module including all its methods.
+
+## 
 
 Now our C file is ready and has all the methods and the structure the Python Interpreter needs to load the module and execute our factorial method. Therefore we can continue building it. For building the final program the C file has to be compiled and get linked to the right libraries (here the libraries with the definitions for the methods and objects declared in the `Python` Header). To simplify that building process the `setup` and `Extension` methods from the `distutils.core` module in python can be used. The `setup` method basically takes care for the whole build process. We import both methods in our `setup.py` file, which should be located in the same folder as the `cmath.c` . The setup file should look like this
 
