@@ -12,7 +12,7 @@ thumb: "/img/20190412/thumb.jpg"
 
 <span style="background-color:#eaecf0;color:#222222">众所周知，作为解释型语言的 Python 可不是什么超级快速的语言</span><sup><small>[[来源请求]](https://zh.wikipedia.org/zh-cn/Wikipedia:%E6%9D%A5%E6%BA%90%E8%AF%B7%E6%B1%82)</small></sup>，但许多复杂的库函数（比如 `NumPy` 库）却能执行得相当快速。这主要是因为这些库的核心代码往往是用 C 或者 C++ 写好，并经过了编译，比解释执行的 Python 代码有更快的执行速度。
 
-在这篇短文中，我们将详细聊一聊如何用 C 或者 C++ 写一个 Python 模组（或软件包），内容主要参考 [Python 官方文档](https://docs.python.org/3/extending/extending.html#a-simple-example)。作为范例，我也将用 C 写一个简单的 Python 模组，完成一个简单的数学计算：<span class="hl"> n!=n*(n-1)*(n-2)… </span> 。为了实现上面的目标，我们需要两个文件：一个 Python 代码 `setup.py`，以及我们实际编写的 C 语言代码 `cmath.c`。
+在这篇短文中，我们将详细聊一聊如何用 C 或者 C++ 写一个 Python 模组（或软件包），内容主要参考 [Python 官方文档](https://docs.python.org/3/extending/extending.html#a-simple-example)。作为范例，我也将用 C 写一个简单的 Python 模组，完成一个简单的数学计算：<span class="hl"> n!=n×(n-1)×(n-2)… </span> 。为了实现上面的目标，我们需要两个文件：一个 Python 代码 `setup.py`，以及我们实际编写的 C 语言代码 `cmath.c`。
 
 总的来说，我们将用 `setup.py` 把 C 语言写的代码 `cmath.c` 构建成一个 Python 库（这其中包括编译代码、查找 Python C 库、连接等操作）。
 
