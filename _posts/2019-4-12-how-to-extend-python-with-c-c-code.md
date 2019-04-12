@@ -180,6 +180,6 @@ and it outputs 720. Great! We made a C Extension for python and can import and e
 恭喜你已经看完了今天的小教程，你打算给自己的 python 增加哪些威力强大的模块呢？欢迎留言吐槽！
 
 <img src="/img/20190412/002.jpg" /><br><small>
-</small>
+图片来源：unsplash.com</small>
 
 >（本文已投稿给「[优达学城](https://cn.udacity.com)」。 原作： [{{ page.author }}]({{ page.from }}) 编译：欧剃 转载请保留此信息）
