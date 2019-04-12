@@ -5,13 +5,13 @@ tags: udacity translate python
 author: Matthias Bitzer
 from: https://medium.com/@matthiasbitzer94/how-to-extend-python-with-c-c-code-aa205417b2aa
 excerpt: ""
-thumb: "/img/20190410/thumb.jpg"
+thumb: "/img/20190412/thumb.jpg"
 ---
-<img src="/img/20190410/000.png" /><br><small>
-</small>
+<img src="/img/20190412/001.jpeg" /><br><small>
+图片来源：medium.com</small>
 
 Have you ever wondered how some calculations (for example in the NumPy library) can be executed very fast although Python (as an interpreted language) is not popular for being the fastest language. This is mainly the case because time critical code within a library is often written in C or C++.
-<span style="background-color:#eaecf0">众所周知，作为解释型语言的 Python 可不是什么超级快速的语言<span><sup><small>[来源请求](https://zh.wikipedia.org/zh-cn/Wikipedia:%E6%9D%A5%E6%BA%90%E8%AF%B7%E6%B1%82)</small></sup>，但许多复杂的库函数（比如 `NumPy` 库）却能执行得相当快速。你有没有想过这是怎么一回事呢？嘿，这主要是因为这些库的核心代码往往是用 C 或者 C++ 写的，没想到吧！
+<span style="background-color:#eaecf0">众所周知，作为解释型语言的 Python 可不是什么超级快速的语言<span><sup><small>[[来源请求]](https://zh.wikipedia.org/zh-cn/Wikipedia:%E6%9D%A5%E6%BA%90%E8%AF%B7%E6%B1%82)</small></sup>，但许多复杂的库函数（比如 `NumPy` 库）却能执行得相当快速。你有没有想过这是怎么一回事呢？嘿，这主要是因为这些库的核心代码往往是用 C 或者 C++ 写的，没想到吧！
 
 In this short tutorial I will explain how to create a Python module (or package) by writing it in C or C++. The main source for this recipe is the [Python Documentation](https://docs.python.org/3/extending/extending.html#a-simple-example). As an example I will create a math module which has a method for calculating the factorial **n!=n*(n-1)*(n-2)…** written in C. For this purpose we need two files: A python file called `setup.py` and our C File `cmath.c` .
 在这篇短文中，我们将详细聊一聊如何用 C 或者 C++ 写一个 Python 模组（或软件包），内容主要参考 [Python 官方文档](https://docs.python.org/3/extending/extending.html#a-simple-example)。作为范例，我也将用 C 写一个简单的 Python 模组，完成一个简单的数学计算：<span class="hl">n!=n*(n-1)*(n-2)…</span> 。为了实现上面的目标，我们需要两个文件：一个 Python 代码 `setup.py`，以及我们实际编写的 C 语言代码 `cmath.c`。
@@ -175,7 +175,11 @@ print(factorial(6))
 and it outputs 720. Great! We made a C Extension for python and can import and execute it.
 运行一下，得到结果 720。搞定！我们用 C 语言写的这个小模组成功地导入并执行啦！
 
-<img src="/img/20190410/002.jpg" /><br><small>
+<hr>
+
+恭喜你已经看完了今天的小教程，你打算给自己的 python 增加哪些威力强大的模块呢？欢迎留言吐槽！
+
+<img src="/img/20190412/002.jpg" /><br><small>
 </small>
 
 >（本文已投稿给「[优达学城](https://cn.udacity.com)」。 原作： [{{ page.author }}]({{ page.from }}) 编译：欧剃 转载请保留此信息）
