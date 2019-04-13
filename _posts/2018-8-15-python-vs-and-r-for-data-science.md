@@ -5,7 +5,6 @@ tags: udacity translate python Data-Science
 from: https://blog.usejournal.com/python-vs-and-r-for-data-science-833b48ccc91d
 author: Brian Ray
 thumb: "/img/20180815/thumb.jpg"
-star: true
 excerpt: "应读者要求，今天跟大家分享一篇数据科学的干货文章。无论你是纠结于该选 Python 还是 R 的初学者，还是你在犹豫某个项目用哪种语言来分析更好，希望这篇文章能给你一点小小的帮助。"
 ---
 <img src="/img/20180815/001.png" />
