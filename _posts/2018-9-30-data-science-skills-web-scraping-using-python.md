@@ -309,7 +309,7 @@ with open('techtrack100.csv','w', newline='') as f_output:
 
 祝你的爬虫之旅有一个美好的开始！
 
-_（本文已投稿给「[优达学城](https://cn.udacity.com)」并发表。 原作： [{{ page.author }}]({{ page.from }}) 译者：欧剃 转载请保留此信息）_
+> _（本文已投稿给「[优达学城](https://cn.udacity.com)」并发表。 原作： [{{ page.author }}]({{ page.from }}) 译者：欧剃 转载请保留此信息）_
 
 
 
