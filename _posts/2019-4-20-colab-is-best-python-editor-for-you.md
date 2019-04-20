@@ -144,7 +144,7 @@ origin: true
 
 怎么样，对这个超强的“大玩具”，你心动了吗？
 
-快去[这里](https://colab.research.google.com/notebooks/welcome.ipynb)试一试吧！
+快去[colab.research.google.com](https://colab.research.google.com/notebooks/welcome.ipynb)试一试吧！
 
 
 参考资料和图片来源：
