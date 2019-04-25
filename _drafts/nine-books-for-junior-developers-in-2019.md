@@ -31,8 +31,9 @@ Some of them stray from the technical details and focus more on giving you pract
 >**Disclosure**: Some of the links below are affiliate links. But, I’ve only added those books that I personally feel are useful for a junior dev.
 >**译注**：原作者 Khalil Stemmler 推荐的书籍均为英文版，为方便国内读者，译者在亚马逊等站寻找评分较高的对应中文译本，但还是鼓励有能力的读者阅读原版。
 
-## 1. 代码整洁之道（Clean Code）
-> 罗伯特·C.马丁 (Robert C. Martin) 
+## 1. 代码整洁之道
+> _Clean Code_
+> 作者：罗伯特·C.马丁 (Robert C. Martin) 
 
 中文版： <https://www.amazon.cn/dp/B0031M9GHC>
 英文版： <https://www.amazon.ca/gp/product/0132350882>
@@ -69,8 +70,9 @@ Uncle Bob’s “Clean Code” teaches you how to identify what clean code looks
 We’re software craftspeople, you know. Building a house is not much different than building an application in principle. We need to pay attention to the details or else it can all become very expensive to fix in the future if not done right first time.
 你知道，我们就是软件行业的手工匠人。构建软件的原则，和建设房子的原则没有什么太大差别——我们都需要注意细节，否则如果第一次没有做好，将来都要花费昂贵的代价去修复之前犯下的错误。
 
-## 2. 代码整洁之道：程序员的职业素养(The Clean Coder)
-> 罗伯特·C.马丁 (Robert C.Martin)
+## 2. 代码整洁之道：程序员的职业素养
+> _The Clean Coder_
+> 作者：罗伯特·C.马丁 (Robert C.Martin)
 
 中文版：<https://www.amazon.cn/dp/B01LZJ8L9J>
 英文版：<https://www.amazon.ca/gp/product/0137081073>
@@ -87,8 +89,9 @@ One of the best things it teaches, is how to have integrity as a developer, when
 A book about professionalism.
 亚马逊网站的编辑推荐语是：“汇聚编程大师40余年编程生涯的心得体会”。
 
-## 3. 重构：改善既有代码的设计(Refactoring)
-> 马丁·福勒 (Martin Fowler)
+## 3. 重构：改善既有代码的设计
+> _Refactoring_
+> 作者：马丁·福勒 (Martin Fowler)
 中文版： <https://www.amazon.cn/dp/B07PKP87K5>
 英文版： <https://www.amazon.ca/gp/product/0134757599>
 
@@ -101,29 +104,38 @@ Ruby on Rails 的作者曾经说过，你应该“在写下另一行代码之前
 Fowler shows you how to flip between coding and refactoring, how often you should be committing your code and when you should be writing your tests. Highly recommended. The latest version of this book was updated to present the examples in JavaScript, which was an added plus for me since it’s my favorite language.
 福勒在书中展示了如何在写代码和重构代码之间进行切换，应该多久提交一次代码以及何时编写测试等经验之谈。强烈推荐。本书的最新版本已更新，添加了大量 JavaScript 的范例，这对我来说是一个额外的加分项，因为 JavaScript 是我最喜欢的语言。
 
-## 4. Design Patterns: Elements of Reusable Object-Oriented Software
-> by Erich Gamma, Richard Helm, Ralph Johnson, & John Vlissides
+## 4. 设计模式：可复用面向对象软件的基础
+> _Design Patterns: Elements of Reusable Object-Oriented Software_
+> 作者：Erich Gamma、Richard Helm、Ralph Johnson 以及 John Vlissides
 中文版： <https://www.amazon.cn/dp/B001130JN8>
 英文版： <https://www.amazon.ca/dp/0201633612>
 
 This is the seminal book on Design Patterns. What are design patterns, you ask? Design Patterns are well-known solutions to commonly occurring problems in software development. If you’re familiar with the patterns, you’ll find that you’ll be able to greatly reduce the amount of time it takes you to put forth the solutions to those problems.
+这是关于<span class="hl">设计模式</span>的开创性著作。你问什么是设计模式？设计模式是针对软件开发中的常见问题，提出广为人知的解决方案。如果你熟悉这些模式，你将能够大大减少为这些问题提出解决方案所需的时间。
 
 Having a good awareness of design patterns also allows you to communicate your solutions effectively with other developers.
+如果你熟悉设计模式，你还能与其他开发人员更加有效地沟通这些问题的解决方案。
 
-<span class="hl">“Yeah, I just used a Facade overtop of whichever database Adapter gets loaded from the Strategy.”</span>
-
-<span class="hl">“Ahh! Gotcha.”</span>
+>“Yeah, I just used a Facade overtop of whichever database Adapter gets loaded from the Strategy.”
+>“Ahh! Gotcha.”
+>“没错，我就是用一个门面对象覆盖了数据库适配器从策略模式中载入的东西。”
+>“啊！我明白了。”
 
 Yeah, it’s an older book. But it’s still one of the best for reference. If you’d like something on this topic that’s a bit more recent and friendly, I’d also recommend the good “Head First Design Patterns: A Brain-Friendly Guide” by Eric Freeman.
+没错，这本书是有点年头了。但它仍然是最棒的参考书籍之一。如果你希望阅读一些关于这个主题的更新、更友好的书籍，我也推荐你阅读 Eric Freeman 的[《深入浅出设计模式》](https://www.amazon.cn/dp/B0011FBU34)（Head First Design Patterns: A Brain-Friendly Guide）。
 
-## 5. Domain-Driven Design: Tackling Complexity in the Heart of Software
-> by Eric Evans
+## 5. 领域驱动设计:软件核心复杂性应对之道
+> _Domain-Driven Design: Tackling Complexity in the Heart of Software_
+> 作者：埃里克·埃文斯（Eric Evans）
 
 In order for large code bases to continue to scale, we need to logically split up code into different parts. The idea is to partition your code in a way such that it would be possible for separate teams to work on those parts of your system without affecting anyone else.
+为了使大型代码库得以继续扩展，我们需要在逻辑上将代码分成不同的部分。我们的想法是以某种方式对代码进行分区，使得单独的团队可以在不影响其他任何人的情况下处理系统的不同部分。
 
 The underlying concept that enables moving your code base in this direction is Domain-Driven Design (DDD). It’s an approach to software development where we model the problems that exist in the “problem domain” (the real world) to a number of solution domains.
+能够让代码库往这个方向发展，其基本概念被称作“领域驱动设计”（Domain-Driven Design，DDD）。这是一种软件开发方法，我们将存在于“问题域”（现实世界）中的问题建模到若干个解决方案域之中。
 
 DDD is incredibly important when a code base gets sufficiently large. Large enterprise companies employ DDD in order to assign teams to parts of the company’s code base.
+当代码库大到一定程度的时候，DDD 就显得尤为重要了。许多大型企业公司采用 DDD 的方法，以便分配不同的团队到公司代码库的某些部分。
 
 <img src="/img/20190409/001.png" /><br><small>
 Image showing when an anemic model becomes cumbersome; from Vladimir Khorikov’s course on “Refactoring an Anemic Domain Model to a Rich One”.</small>
