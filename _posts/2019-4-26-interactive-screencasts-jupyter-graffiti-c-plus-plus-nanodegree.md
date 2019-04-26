@@ -19,7 +19,7 @@ excerpt: 由于大家在学习课程的时候想问的东西很多，我们决�
 <img src="/img/20190426/002.png"><br><small>
 Jupyter Notebook 加载了 Graffiti 迷你终端用于交互式执行 C++ 代码（图片来源：blog.udacity.com）</small>
 
-## Jupyter Graffiti 把预先录好的互动演示与你的 Notebook 页面结合在一起
+## Graffiti 能把预先录好的互动演示与你的 Notebook 页面结合在一起
 
 通过 Jupyter Graffiti，优达学城的导师能直接在页面上向你展示如何解决每个问题。通过这种方式，他们可以逐段讲解课程内容，指出、选中、键入和执行各种代码，添加删除代码单元格，全程还可以录下语音指导内容。作为学生，你可以根据需要有选择地播放这些记录，随时可以暂停、回放、快进，以便反复观看对应段落的讲解内容。
 
