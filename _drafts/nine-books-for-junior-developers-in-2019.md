@@ -38,7 +38,7 @@ Some of them stray from the technical details and focus more on giving you pract
 
 ## 1. 代码整洁之道
 > _Clean Code_
-> 作者：罗伯特·C.马丁 (Robert C. Martin) 
+> 作者：罗伯特·C.马丁 (Robert C. Martin) ，昵称“鲍勃大叔”
 
 中文版： <https://www.amazon.cn/dp/B0031M9GHC><br>
 英文版： <https://www.amazon.ca/gp/product/0132350882>
@@ -75,7 +75,7 @@ When careful attention isn’t taken to write code that’s readable and maintai
 
 Uncle Bob’s “Clean Code” teaches you how to identify what clean code looks like compared to bad code, and it teaches you how to transform it into good code. A task like this sounds trivial to most, but you’d be surprised at how turning a just a few clean software design principles into habits can help you write much more professional and scalable code.
 
-马丁的《代码整洁之道》将教你认识干净的代码，鉴别出“坏”的代码，并教你如何将其转换为优秀的代码。像这样的任务对大多数人来说听起来微不足道，但当你将这几条简洁的软件设计原则转化为工作习惯之后，这些习惯能让你更加高效地编写出更专业和可扩展的代码。
+鲍勃大叔的《代码整洁之道》将教你认识干净的代码，鉴别出“坏”的代码，并教你如何将其转换为优秀的代码。像这样的任务对大多数人来说听起来微不足道，但当你将这几条简洁的软件设计原则转化为工作习惯之后，这些习惯能让你更加高效地编写出更专业和可扩展的代码。
 
 We’re software craftspeople, you know. Building a house is not much different than building an application in principle. We need to pay attention to the details or else it can all become very expensive to fix in the future if not done right first time.
 
@@ -204,7 +204,7 @@ It’s written in such a way that you can jump into the book at whichever chapte
 
 What? Uncle Bob writes good books, ok?
 
-啥？马丁大叔写的书就是好，不行吗？
+啥？鲍勃大叔写的书就是好，不行吗？
 
 In school, there’s a lot of focus on algorithms and less focus on software design principles. I think it’s kind of unfortunate because in reality, you don’t encounter that many algorithm challenges too often. Instead, it’s more common that you’ll be faced with the challenge of structuring your code in a way that’s modular, flexible, readable and will allow you to add new features quickly when requirements change.
 
@@ -215,38 +215,74 @@ Clean Architecture is about the essential software design principles and pattern
 而《架构整洁之道》中介绍的基本软件设计原则和模式，正是你能够用来应对这些挑战的制胜秘籍。
 
 <img src="/img/20190409/002.png" /><br><small>
+“整洁”的架构模型，感谢鲍勃大叔！
 The “Clean Architecture”, thanks Robert!</small>
 
 Some of the best takeaways from this book are the cost of dependencies, stable vs. non-stable code and the SOLID principles: a way to write code so that it’s more understandable, flexible and maintainable.
 
+本书中提出的原则中，最棒的几点是关于依赖产生的成本，稳定代码与非稳定代码的对比，以及“SOLID”原则：编写代码以使其更易理解，更灵活也更易维护的方法。
+
 Other aspects of this book that were incredibly useful were concepts of “screaming architecture” and “packaging by component” which are opinions on how to organize your modules so that it practically screams to the reader exactly what the project is all about.
+
+本书的其他部分中，非常有用的是“尖叫的架构”和“按组件打包”这几个概念，它们将教会你如何更有效地组织你的模块，这样当别人阅读你的项目代码时，这个架构在某种意义上会向读者“尖叫”出项目的全部情况。
 
 This book goes well hand-in-hand with Domain-Driven Design, which is enabled through the use of a “Layered Architecture” or as Uncle Bob calls it, “The Clean Architecture” (also known as Ports and Adapters). A great book for anyone who wants to up their architecture chops and learn how to effectively design a system at a high level, and do the dance of dependencies at the detail level.
 
-## 8. The Effective Engineer
-> by Edmond Lau
+本书与“领域驱动设计”密切相关，通过使用“分层架构”或鲍勃大叔称之为“整洁”的架构（也就是所谓“端口”和“适配器”）来实现。对于那些想要提升自己架构知识体系，学习如何有效地在高层对系统进行设计，同时又能在细节层面上优雅地处理依赖的人来说，这是一本很棒的书。
+
+## 8. 高效的工程师
+> _The Effective Engineer_
+> 作者：Edmond Lau
+
+本书未找到中译本。<br>
+豆瓣页面： <https://book.douban.com/subject/26360716/><br>
+英文版： <https://www.amazon.ca/gp/product/0996128107>
 
 Time is our single most valuable asset in life, and we should aim to be more efficient with it. It’s easy to get bogged down and spend a lot of time fixing bugs and wasting effort. Doing repeated work. Bleh. The Effective Engineer is all about getting more done in less time and removing repeated work.
 
+时间是我们生命中最宝贵的资产，我们应该将不断提高时间利用率作为目标。但在现实中，我们往往很容易陷入困境，花费大量时间去修复错误、浪费精力、做重复的工作，等等。而《高效的工程师》就是教你如何在更短的时间内完成更多工作，并避免重复劳动。
+
 We can mitigate wasted time and effort on repetitive tasks through a framework called “leverage”.
+
+我们可以通过一个名为“杠杆（leverage）”的机制来减少在重复性任务上浪费的时间和精力。
 
 Leverage helps you identify the activities that you can do that produce the most disproportionate results- per unit of time invested. It’s a framework that can apply to anything, whether that be how you learn, how you code, how you debug… anything!
 
-## 9. The Pragmatic Programmer
-> by Andrew Hunt & David Thomas
+“杠杆”可以帮助你鉴别日常的各项事务，挑出那些投入产出比例最差的工作。它是一个可以应用于任何事情的机制，无论是学习、编程、调试……没错，任何事情！
+
+## 9. 程序员修炼之道:从小工到专家
+> _The Pragmatic Programmer_
+> 作者：安德鲁·亨特（Andrew Hunt）和大卫·托马斯（David Thomas）
+
+中文版：<https://www.amazon.cn/dp/B004GV08CY><br>
+英文版：<https://www.amazon.ca/gp/product/020161622X>
+
 
 Praised for being easy to follow and understand, The Pragmatic Programmer is a book that should be on the desktop of developers of all levels. Andrew and David are programmers that not only spent many years doing what they do, but paying attention to what they were doing **as they were doing it**, and then **trying to determine if they could do that better**.
 
+《程序员修炼之道》是一本应该放在各级开发人员桌面上的书，它以深入浅出、易于理解而著称。 安德鲁和大卫都是程序员，他们不仅在自己的事情上花了很多年时间，还不断地关注**他们正在做的事情**，并**努力确定是否可以做得更好**。
+
 What came out of their years of introspection was this book, which introduces a number of essential programmer philosophies to follow throughout your career, like “programmers should have a “do it once, or automate” philosophy”.
+
+本书凝聚了他们多年的经验和总结，介绍了程序员职业生涯中要遵循的一些基本哲学理念，比如“程序员应该有‘要么只做一次，要么将它自动化’的理念”。
 
 It includes simple yet detailed advice that you should carry with you in the back of your mind before you write another line of code or start a new project.
 
-Final Words
+它包括了许多简明又详尽的建议，在编写另一行代码或启动新项目之前，你应该随身携带，并谨记在心。
+
+## 结语
+
 Books really are some of the best tools to improve your knowledge and skills as a new programmer or Junior Developer. Books tend to have a really high return on investment; did you know you can make a lot of money programming? 😉
+
+作为新手程序员或初级开发者，书籍确实是提高知识和技能的最佳工具，还往往具有很高的投资回报率——你知道学好编程可以赚很多钱吗？😉
 
 These are just a few of the best books out there right now in 2019! None of them are really new, but that’s because programming has maintained the same general philosophies and best practices for years. As a professor I once had to say, **“you can make a lot of money in this industry, you just have to read the damn manual”**.
 
+这些只是我个人认为 2019 年最好的一些书籍。它们并不是最新的，但那不过是因为“编程”这件事多年来一直保持着相同的一般哲学和最佳的实践做法。作为一名教授，我曾经不得不说，“**你只需阅读这些该死的手册，就可以在这个行业赚很多钱**”。
+
 Have you read any of these books? What did you think? Any books not on this list that you think newer developers would really benefit from reading? Let us know in the comments!
+
+那么，亲爱的读者，你读过这些书吗？有没有什么看法？你是否同意较新的开发人员真的会从阅读中受益的任何不在此列表中的书籍？ 让我们在评论中知道！
 
 Additional Resources
 Here’s a list of some really excellent articles that cover some of the topics from these books. If you don’t quite have the time to invest in fully blown books right now, familiarizing yourself with these concepts might assist you in your journey to become a better developer!
