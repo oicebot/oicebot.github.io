@@ -26,7 +26,7 @@ thumb: "/img/20190506/thumb.jpg"
 >**译注**：原作者 Khalil Stemmler 推荐的书籍均为英文版，为方便国内读者，译者在亚马逊等站寻找评分较高的对应中文译本，但还是鼓励有能力的读者阅读原版。
 
 ## 1. 代码整洁之道
-> _Clean Code_
+> _Clean Code_ <br>
 > 作者：罗伯特·C.马丁 (Robert C. Martin) ，昵称“鲍勃大叔”
 
 中文版： <https://www.amazon.cn/dp/B0031M9GHC><br>
@@ -59,7 +59,7 @@ function calculateIt (a, b) {
 你知道，我们就是软件行业的手工匠人。构建软件的原则，和建设房子的原则没有什么太大差别——我们都需要注意细节，否则如果第一次没有做好，将来都要花费昂贵的代价去修复之前犯下的错误。
 
 ## 2. 代码整洁之道：程序员的职业素养
-> _The Clean Coder_
+> _The Clean Coder_ <br>
 > 作者：罗伯特·C.马丁 (Robert C.Martin)
 
 中文版：<https://www.amazon.cn/dp/B01LZJ8L9J><br>
@@ -74,8 +74,9 @@ function calculateIt (a, b) {
 亚马逊网站的编辑推荐语是：“汇聚编程大师40余年编程生涯的心得体会”。
 
 ## 3. 重构：改善既有代码的设计
-> _Refactoring_
+> _Refactoring_ <br>
 > 作者：马丁·福勒 (Martin Fowler)
+
 中文版： <https://www.amazon.cn/dp/B07PKP87K5><br>
 英文版： <https://www.amazon.ca/gp/product/0134757599>
 
@@ -86,7 +87,7 @@ Ruby on Rails 的作者曾经说过，你应该“在写下另一行代码之前
 福勒在书中展示了如何在写代码和重构代码之间进行切换，应该多久提交一次代码以及何时编写测试等经验之谈。强烈推荐。本书的最新版本已更新，添加了大量 JavaScript 的范例，这对我来说是一个额外的加分项，因为 JavaScript 是我最喜欢的语言。
 
 ## 4. 设计模式：可复用面向对象软件的基础
-> _Design Patterns: Elements of Reusable Object-Oriented Software_
+> _Design Patterns: Elements of Reusable Object-Oriented Software_ <br>
 > 作者：Erich Gamma、Richard Helm、Ralph Johnson 以及 John Vlissides
 
 中文版： <https://www.amazon.cn/dp/B001130JN8><br>
@@ -96,13 +97,13 @@ Ruby on Rails 的作者曾经说过，你应该“在写下另一行代码之前
 
 如果你熟悉设计模式，你还能与其他开发人员更加有效地沟通这些问题的解决方案。
 
-> “没错，我就是用一个门面对象覆盖了数据库适配器从策略模式中载入的东西。”
+> “没错，我就是用一个门面对象覆盖了数据库适配器从策略模式中载入的东西。”<br>
 > “啊！我明白了。”
 
 对，这本书是有点年头了。但它仍然是最棒的参考书籍之一。如果你希望阅读一些关于这个主题的更新、更友好的书籍，我也推荐你阅读 Eric Freeman 的[《深入浅出设计模式》](https://www.amazon.cn/dp/B0011FBU34)（Head First Design Patterns: A Brain-Friendly Guide）。
 
 ## 5. 领域驱动设计:软件核心复杂性应对之道
-> _Domain-Driven Design: Tackling Complexity in the Heart of Software_
+> _Domain-Driven Design: Tackling Complexity in the Heart of Software_ <br>
 > 作者：埃里克·埃文斯（Eric Evans）
 
 中文版：<https://www.amazon.cn/dp/B01GZ6T12K><br>
@@ -124,7 +125,7 @@ Ruby on Rails 的作者曾经说过，你应该“在写下另一行代码之前
 最后，这本书是因为封面是蓝色的，往往被人称为蓝皮书。如果你觉得它对新手来说过于艰深，你也可以试试弗农 (Vaughn Vernon) 的[《实现领域驱动设计》](https://www.amazon.cn/dp/B00IYTVWA6)——这本书在业内被称为“红皮书”，它用更加简明易懂的方式描述了领域驱动设计的概念及其实现方式。
 
 ## 6. 软技能:代码之外的生存指南
-> _Soft Skills: The Software Developer’s Life Manual_
+> _Soft Skills: The Software Developer’s Life Manual_ <br>
 > 作者：约翰·森梅兹（John Sonmez）
 
 中文版：<https://www.amazon.cn/dp/B01IB086H4><br>
@@ -137,7 +138,7 @@ Ruby on Rails 的作者曾经说过，你应该“在写下另一行代码之前
 它独特的章节编写方式使得每章的内容相对独立，你可以任意选择适合你的章节开始阅读。
 
 ## 7. 架构整洁之道
-> _Clean Architecture_
+> _Clean Architecture_ <br>
 > 作者：罗伯特·C.马丁（Robert C. Martin）
 
 中文版：<https://www.amazon.cn/dp/B07HN66S4D><br>
@@ -159,7 +160,7 @@ Ruby on Rails 的作者曾经说过，你应该“在写下另一行代码之前
 本书与“领域驱动设计”密切相关，通过使用“分层架构”或鲍勃大叔称之为“整洁”的架构（也就是所谓“端口”和“适配器”）来实现。对于那些想要提升自己架构知识体系，学习如何有效地在高层对系统进行设计，同时又能在细节层面上优雅地处理依赖的人来说，这是一本很棒的书。
 
 ## 8. 高效的工程师
-> _The Effective Engineer_
+> _The Effective Engineer_ <br>
 > 作者：Edmond Lau
 
 本书未找到中译本。<br>
@@ -173,7 +174,7 @@ Ruby on Rails 的作者曾经说过，你应该“在写下另一行代码之前
 “杠杆”可以帮助你鉴别日常的各项事务，挑出那些投入产出比例最差的工作。它是一个可以应用于任何事情的机制，无论是学习、编程、调试……没错，任何事情！
 
 ## 9. 程序员修炼之道:从小工到专家
-> _The Pragmatic Programmer_
+> _The Pragmatic Programmer_ <br>
 > 作者：安德鲁·亨特（Andrew Hunt）和大卫·托马斯（David Thomas）
 
 中文版：<https://www.amazon.cn/dp/B004GV08CY><br>
