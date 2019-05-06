@@ -282,10 +282,13 @@ These are just a few of the best books out there right now in 2019! None of them
 
 Have you read any of these books? What did you think? Any books not on this list that you think newer developers would really benefit from reading? Let us know in the comments!
 
-那么，亲爱的读者，你读过这些书吗？有没有什么看法？你是否同意较新的开发人员真的会从阅读中受益的任何不在此列表中的书籍？ 让我们在评论中知道！
+那么，亲爱的读者，你读过这些书吗？有没有什么看法可以跟我们分享？如果你发现了其他未提及的好书，欢迎留言告诉我！
 
-Additional Resources
+## 拓展阅读
+
 Here’s a list of some really excellent articles that cover some of the topics from these books. If you don’t quite have the time to invest in fully blown books right now, familiarizing yourself with these concepts might assist you in your journey to become a better developer!
+
+
 
 * Refactoring.guru https://refactoring.guru/
 * SOLID Design Principles https://stackify.com/solid-design-principles/
