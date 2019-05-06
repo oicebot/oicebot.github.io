@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 快来最新的 C++ 程序设计纳米学位课程里体验 Jupyter Graffiti 交互式课件的神奇魅力吧！
+title: 这次，我们把导师打包进 Notebook 里，手把手写代码给你看！
 tags: udacity nanodegree translate
 from: https://blog.udacity.com/2019/04/interactive-screencasts-jupyter-graffiti-c-plus-plus-nanodegree.html
 author: Will Kessler
 thumb: "/img/20190426/thumb.jpg"
-excerpt: 由于大家在学习课程的时候想问的东西很多，我们决定把导师打包压进 Notebook 里，手把手写代码给你看。
+excerpt: 你的导师快递到了，请注意查收
 ---
 <img src="/img/20190426/001.jpg"><br><small>
 （图片来源：pixabay.com）</small>
@@ -47,4 +47,4 @@ Graffiti 已经在优达学城的的《[R语言数据科学编程纳米学位](h
 
 我们相信任何使用 Jupyter Notebook 的人都会喜欢上使用 Graffiti，我们也很期待看到大家都会怎样利用它，并渴望听到学生们对这种新学习工具的看法。
 
-> _（本文已投稿给「[优达学城](https://cn.udacity.com)」。 原作： [{{ page.author }}]({{ page.from }}) 译者：欧剃 转载请保留此信息）_
+> _（本文已投稿给「[优达学城](https://cn.udacity.com)」，标题为编辑修改。 原作： [{{ page.author }}]({{ page.from }}) 译者：欧剃 转载请保留此信息）_
