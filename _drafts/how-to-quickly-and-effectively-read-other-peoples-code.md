@@ -11,20 +11,27 @@ thumb: "/img/20190404/thumb.jpg"
 </small>
 
 Just the other day, a fellow STCer (Self-Taught Coder) asked me the following question:
+有一天，一名自学编程的程序员问了我一个问题：
 
 >“How do you go about understanding someone else’s code? I am starting to feel more comfortable with my own code, but whenever I try to look at something someone else wrote I feel totally lost. I know some of this is unavoidable, especially if the code is poorly (or not at all) documented, but right now I have no strategy at all. Any tips would be greatly appreciated!”
+>“你是如何理解别人的代码？我现在看自己的代码感觉很舒服，但每当试着看别人写的东西时，都觉得自己完全晕菜了。我知道读别人的代码不容易，特别是如果一些代码只有很少（或根本没有）文档的话。但我现在根本就一点头绪也没有。能不能给我一点点提示？非常感谢！”
 
 I love this question for a few reasons:
+我很喜欢这个问题，这主要有以下两个原因：
 
 1. The method I’ll recommend for reading and understanding someone else’s code will also help you: 1) better understand your own code; and 2) help you increase the speed and ease with which you understand all new pieces of code you approach.
+   更好地阅读和理解别人代码的方法，也能帮助你**更好地理解自己的代码**，并帮助你**更快速更容易地理解你遇到的各种新代码**。
 2. It sheds light on one of the most important aspects of learning a new skill, like programming: exposure to high quantity, high quality examples of expertise.
+   它揭示了学习一门新技能（如编程）的最重要方面之一：接触大量高质量的专业实例。
 
 There are a lot of wins here. Let’s start at the beginning.
+这需要很多克服许多不同的阻碍。让我们从头开始吧。
 
 <img src="/img/20190404/001.png" /><br><small>
 </small>
 
 ## What’s the best way to read and understand someone else’s code?
+## 阅读并理解其他人的代码，最好的方法是什么？
 
 The best way I’ve ever discovered to read and understand someone else’s code is to:
 
