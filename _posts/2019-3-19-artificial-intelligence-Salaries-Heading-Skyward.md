@@ -107,4 +107,4 @@ AI工程师平均薪资分布情况（图片来源：paysa.com）</small>
 <img src="/img/20190319/009.jpg" /><br><small>
 （图片来源：pixabay.com）</small>
 
-_（本文已投稿给「[优达学城](https://cn.udacity.com)」并发表（有改动），原作： [{{ page.author }}]({{ page.from }}) 编译：欧剃，转载请保留此信息）_
+> _（本文已投稿给「[优达学城](https://cn.udacity.com)」并发表（有改动），原作： [{{ page.author }}]({{ page.from }}) 编译：欧剃，转载请保留此信息）_
