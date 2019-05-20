@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "人工智能 = 高薪？没错！"
+title: "人工智能 == 高薪？没错！"
 tags: udacity translate AI Machine-Learning
 author: Stacy Stanford
 from: https://medium.com/mlmemoirs/artificial-intelligence-salaries-heading-skyward-e41b2a7bba7d
