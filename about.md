@@ -8,7 +8,7 @@ title: 关于
 
 积极拥抱 GNU/Linux，对开源社区有着强烈的向往，不过觉得自己还需要多积淀积淀，才能担负得起技术工作。
 
-曾经是 EVA 死忠，香党；近年来已被《攻壳机动队》深度洗脑，喜欢塔奇科马。
+~~曾经~~现在依然是 EVA 死忠，香党；近年来已被《攻壳机动队》深度洗脑，喜欢塔奇科马。
 
 自 2017 年以来，我陆续为果壳网、优达学城等媒体供稿，主要为翻译/编译，以介绍国外科技新闻和编程技术为主，偶尔也动笔写写科普文章。
 
@@ -29,7 +29,7 @@ title: 关于
 * **Diablo3WeaponReroller**：用 Python2 写的，暗黑3武器附魔强度计算器，主要是为了练习 tkinter 库的使用和用户界面的编写。
 
 ### 联系方式： 
-* Email: oicebot &reg; qq &#46; com 
+* Email: oicebot&reg;qq&#46;com 
 * Weibo: [@游荡的坎德人](https://weibo.com/nervcn/)
 * Twitter: [@Oicebot](https://twitter.com/Oicebot)
 * GitHub: [Oicebot](https://github.com/oicebot/)
