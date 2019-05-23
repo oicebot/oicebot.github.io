@@ -2,8 +2,9 @@
 layout: post
 title: 为什么 Python 程序员有必要学习一下 C++？
 tags: udacity python
-thumb: "/img/20190522/thumb.jpg"
+thumb: "/img/20190522/thumb.png"
 origin: true
+excerpt: “免得他们整天xjb造轮子，一点 common sense 都没有”…… 这只是原因之一
 ---
 在如今这个时代，计算机领域中，各种技术瞬息万变，不断更新迭代。随着人工智能、机器学习等先进技术的兴起，近年来，Python 程序员的数量已经大大超过 C++ 程序员。然而，正如之前提到过的，你永远都[不应该在编程语言上“从一而终”](https://oicebot.github.io/2019/02/02/Why-You-Need-to-Learn-More-Languages.html)，你必须了解一门第二，甚至第三语言。因为只有你了解了不同工具的特性，以及它们擅长解决的问题，你才能更高效地在日常工作中运用它们。为问题选择正确的语言/工具/解决方案，将能大大减少解决问题所需的工作量。
 
