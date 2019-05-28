@@ -12,12 +12,15 @@ Image Source : The Verge</small>
 
 In this article we are going to use Machine Learning to predict the winner of a Pokemon battle. This is going to be exciting because we are going to predict the results of the battles we have never seen before. If you want to follow along then the links to the Jupyter notebook containing code is linked here. Finally feel free to show it to your friends and become a Pokemon wizard by predicting Pokemon battle results like a pro!
 
-https://github.com/saurabhcharde/Pokemon_Battle_Winner_Prediction_using_ML
+今天的文章里，我们将使用机器学习技术，对精灵宝可梦（宠物小精灵/神奇宝贝/口袋妖怪）中的对战结果进行预测。特别令人兴奋的是，我们将会预测许多前所未见的战斗，而你也可以通过我们放在 Github 上的 Jupyter Notebook [代码](https://github.com/saurabhcharde/Pokemon_Battle_Winner_Prediction_using_ML)，亲自调教这个 AI！
 
+快让你的朋友们看看，你是如何专业地预测战斗结果，成为伟大的宝可梦训练家吧！
 
-## Introduction
+## 介绍
 
 We are all familiar with the popular Pokemon series that made an amazing part of our childhood. Recently the Pokemon Go game brought back the same craze for Pokemon within us. Now the problem in our hand is that given some features about each Pokemon such as its attack, defense or its speed value,etc we need to predict the winner of a random Pokemon battle which has never occurred before. Sounds Interesting!!
+
+虽然以前不叫这个名字，但精灵宝可梦系列游戏应该是我们童年中不可或缺的一部分吧。最近，《大侦探皮卡丘》的上映，再次掀起了这一热潮。
 
 But before beginning lets get familiar with the background.
 
