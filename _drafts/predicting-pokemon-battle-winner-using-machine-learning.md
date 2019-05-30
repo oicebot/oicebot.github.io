@@ -20,17 +20,24 @@ In this article we are going to use Machine Learning to predict the winner of a 
 
 We are all familiar with the popular Pokemon series that made an amazing part of our childhood. Recently the Pokemon Go game brought back the same craze for Pokemon within us. Now the problem in our hand is that given some features about each Pokemon such as its attack, defense or its speed value,etc we need to predict the winner of a random Pokemon battle which has never occurred before. Sounds Interesting!!
 
-虽然以前不叫这个名字，但精灵宝可梦系列游戏应该是我们童年中不可或缺的一部分吧。最近，《大侦探皮卡丘》的上映，再次掀起了这一热潮。
+虽然以前不叫这个名字，但精灵宝可梦系列游戏应该是我们童年中不可或缺的一部分吧。最近，《大侦探皮卡丘》的上映，再次掀起了这一热潮。那么，我们现在面对的问题就是，根据不同宝可梦的属性数据（比如攻击、防御、速度等），预测一些之前未发生过的随机对决的胜负情况。听起来是不是很有趣啊？
 
 But before beginning lets get familiar with the background.
 
-## Machine Learning
+不过，在开始之前，让我们先简单介绍一下相关的背景知识。
+
+## 机器学习
 
 The difficulty in predicting the winners lies in fact that, we only know about a handful of Pokemon but in fact there are currently around 800 species of Pokemon present in the Pokemon world. That’s a lot of Pokemon. Now in order to predict the winner of a battle we need to study about all those 800 Pokemon, watch their moves, their special attacks, their matches, etc. In short there is a lot of things (data) to take in account and hence will require us days to acquire sufficient knowledge to correctly predict the winners of a battle. (Convinced?)
 
+实际上，要预测对战结果，最大的困难在于，我们只熟悉不多的一些宝可梦，而其实整个精灵宝可梦的世界中，存在着超过 800 种以上的宝可梦。这可真不少，对吧？那么，为了预测对战结果，我们就需要研究这所有 800 种宝可梦，观察它们的行动，特殊攻击，以及比赛数据等等。简而言之，需要考虑的东西（数据）实在是太多了，导致我们需要许多天时间，才能获取足够的信息，以便正确预测每场比赛的结果。（没错吧？）
+
 This is where Machine Learning becomes useful. When you have a lot of data and you need to make some prediction (Predicting today's weather, Predicting disease based on symptoms,etc.) from it we use Machine Learning (Pretty simple!).
 
+这也就是机器学习技术大显身手的时候啦。当你有非常多的数据，而你需要通过这些数据进行一些预测(比如天气预报，根据症状推测疾病信息等等)，那么我们就可以用上机器学习（是不是很简单？）
+
 ## A Look at the Dataset
+## 熟悉数据集
 
 <img src="/img/20190520/002.png" /><br><small>
 First 5 rows of the dataset</small>
