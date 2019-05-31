@@ -40,20 +40,30 @@ This is where Machine Learning becomes useful. When you have a lot of data and y
 ## 熟悉数据集
 
 <img src="/img/20190520/002.png" /><br><small>
-First 5 rows of the dataset</small>
+数据集中的前五行数据</small>
 
 A dataset is the collection of large amount of data on a specific topic(here Pokemon). This dataset provides us with information like the Hit Points, attack, Special Defense and weather the Pokemon is legendary(1) or not(0). The figure shows the data of the first 5 Pokemon , but there are a total of 800 Pokemon (means 800 rows) in the dataset.
 
+数据集，是针对某个特定主题（比如今天我们的例子是宝可梦）的大量数据的集合。这个数据集中提供了许多宝可梦的信息，比如生命值、攻击值、特殊防御以及是否传说宝可梦（是=1,否=0）等。上图显示的是表中前5行的数据，整个数据集总共有 800 个宝可梦的数据（也就是有 800 行）。
+
 Now having seen the dataset, get ready to apply some Machine Learning on it.
 
+看过数据集之后，我们就可以着手准备对它使用机器学习啦。
+
 ## How to apply Machine Learning
+## 如何应用机器学习
+
 Building a complete ML model involves 3 steps:
+~~把大象放进冰箱~~错了，构建一个机器学习模型，需要 3 个步骤：
 
 1. Build the classifier
+构建分类器
 
 2. Train the classifier
+训练分类器
 
 3. Test the classifier
+测试分类器
 
 ## Build the Classifier
 _Note: A classifier is used to classify or separate the data into classes. For eg. Given an image classify it as a Dog or a Cat._
