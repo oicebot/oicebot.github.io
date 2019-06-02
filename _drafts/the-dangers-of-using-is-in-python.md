@@ -9,7 +9,11 @@ thumb: "/img/20190524/thumb.jpg"
 ---
 This blog post covers a strange integer bug that I encountered, and it corresponds to a talk I gave at PyCon Canada. You can view the slides if that’s your preferred medium. In this post you’ll learn how the bug was discovered, understand why it’s a bug and why the bug only occurs with larger integers. Hopefully you’ll gain an appreciation of how bugs can be your best teachers and be able to prevent more bugs.
 
-https://docs.google.com/presentation/d/1mDeGnYlkYEvIuAfEGTyTk-vUaYvALkdqfnuGIRqz0Hs/edit#slide=id.p
+今天，我们来聊聊我曾经遇到的一个奇怪的整型数字 bug。我之前在[加拿大的 PyCon 2018](https://2018.pycon.ca/talks/talk-PC-55513/) 上也聊过这个话题，如果你喜欢，可以在[这里](https://docs.google.com/presentation/d/1mDeGnYlkYEvIuAfEGTyTk-vUaYvALkdqfnuGIRqz0Hs/edit#slide=id.p)看到在线 PPT 讲义（英文版），也可以在[这里](https://pan.baidu.com/s/1lNXBfMwtmLJRIXiLkLLUog)下载PDF版（提取码: mqbx）。
+
+那么，接下来我就详细讲讲这个 bug 是怎么被发现的，帮助大家理解为啥这是一个 bug，以及为啥这个 bug 只在比较数目较大的整型数字时出现。在我看来，bug 可是最好的老师，希望你们也能有所体会，并注意避免此类 bug 的出现。
+
+## 起因
 
 <img src="/img/20190524/001.png" /><br><small>
 Screenshot of reservation system with a picture of a woman riding a stationary bike on the left, with the caption ‘Ready to Ride Toronto?’, and a list of appointments on the right.</small>
