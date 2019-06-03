@@ -37,6 +37,22 @@
                0 0 10px rgba(255, 0, 0, 0.1);
 }
 
+.result_list {
+  width: 60%;
+  margin:5% 10% 10% 5%;
+}
+
+.result_title {
+  font-weight: normal;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", STXihei, "华文细黑", "Microsoft YaHei", Terminal, monospace;
+  color: $header;
+  letter-spacing: -0.03em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+               0 0 5px rgba(181, 232, 83, 0.1),
+               0 0 10px rgba(181, 232, 83, 0.1);
+  font-size: 26px;
+}
+
 .info-list { margin:0; padding:0px 0 }
 ul.list-a li{ width:100%; border-bottom:1px solid #215e1f; overflow:hidden; padding:10px 0}
 ul.list-a li .only-info{float:left; width:180px; padding-right: 7px}
