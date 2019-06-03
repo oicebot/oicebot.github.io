@@ -4,7 +4,7 @@
 //原文：https://blog.csdn.net/baozhiqiangjava/article/details/80212965 
 
 var divString ='<div class="rows">'+
-'    <span class="weui-article h1"></span>'+
+'    <h2><span class="h2"></span></h2>'+
 '    <div class="details">'+
 '        <span class="date span">时间:<span></span></span><br>'+
 '        <span class="id span">ID:<span></span></span>'+
@@ -33,7 +33,7 @@ function parseContent(data){
 
 function createDiv(data){
 	$div=$(divString);
-	$div.find('.weui-article h1').html("<a href='/spffDetail?id="+data.case_id+"'>"+ data.title + "</a>");
+	$div.find('.h2').html("<a href='/spffDetail?id="+data.case_id+"'>"+ data.title + "</a>");
 	$div.find('.date span').html(data.ctime);
 	$div.find('.id span').html(data.case_id);
 
