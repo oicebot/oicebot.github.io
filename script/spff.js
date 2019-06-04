@@ -3,18 +3,30 @@
 //来源：CSDN 
 //原文：https://blog.csdn.net/baozhiqiangjava/article/details/80212965 
 
-var divString ='<div class="rows">'+
-'    <h2><span class="h2"></span></h2>'+
-'    <div class="details">'+
-'        <span class="date span">时间:<span></span></span><br>'+
-'        <span class="id span">ID:<span></span></span>'+
-'    </div>'+
-'</div>';
+/**
+ * 获取URL参数
+ * @param 参数名
+ * @returns 参数值
+ */
+function GetQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return decodeURI(r[2]);
+    return null;
+}
 
-function getContent(){
+
+function getContent(search_method,search_arg){
 	$("result1").empty();
-	var url="http://spfftmp.campanula.wang/REQ_SEARCH_BY_TIME";
-	var message = 'data={"limit_year_time":"2019"}';
+	if (search_method==null || search_method.length<=0 || search_arg==null || search_arg.length <=0) {
+
+		var url="http://spfftmp.campanula.wang/REQ_SEARCH_BY_TIME";
+		var message = 'data={"limit_year_time":"2019"}';
+	}
+	else {
+		var url="http://spfftmp.campanula.wang/" + search_method;
+		var message = 'data={"limit_year_time":"' + search_arg + '"}';
+	}
 	$(function(){
 		$.getJSON(url,message,function(data){
 			parseContent(data);
@@ -32,13 +44,33 @@ function parseContent(data){
 }
 
 function createDiv(data){
-	$div=$(divString);
-	$div.find('.h2').html("<a href='/spffDetail?id="+data.case_id+"'>"+ data.title + "</a>");
-	$div.find('.date span').html(data.ctime);
-	$div.find('.id span').html(data.case_id);
+	var divString = '<a class="weui-cell weui-cell_access"' +
+	 ' href="/spffDetail?id=' + data.case_id + '">          ' +
+'                <div class="weui-cell__bd">                      ' +
+'                    <p>' + data.title + '</p>                    ' +
+'                </div>                                           ' +
+'                <div class="weui-cell__ft">                      ' + 
+                     data.ctime + '</div>                         ' + 
+'            </a>                                                 ';
 
+	
+	$div = $(divString);
+	//$div.find('.h2').html("<a href='/spffDetail?id="+data.case_id+"'>"+ data.title + "</a>");
+	
 	$div.appendTo( $('div#result1') );
 	//console.log('div inserted');
 }
 
-getContent();
+var search_method = GetQueryString("method");
+var search_arg = GetQueryString("data");
+
+if (search_method==null || search_method.length<=0 || search_arg==null || search_arg.length <=0) {
+	getContent(null,null);
+
+} else {
+	getContent(search_method,search_arg);
+
+}
+
+
+
