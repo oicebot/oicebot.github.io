@@ -96,28 +96,46 @@ To illustrate my previous observation on the shortcomings of copying the path fr
 cheap_results = ‘//a[@data-code = “price”]’
 ```
 
-It’s clearly visible the simplicity of the second option. It searches for an element a which has an attribute data-code equal to price. The first alternative looks for an element with an id equal to wtKI-price_aTab and follows the first div element, four more divs, and two spans. It will work… this time. I can tell you right now that the id element will change next time you load the page. The letters wtKI change dynamically every time a page loads, so your code would be useless as soon as the page reloads. Invest a little time reading about XPath and I promise it will pay off.
+It’s clearly visible the simplicity of the second option. It searches for an element a which has an attribute data-code equal to price. The first alternative looks for an element with an id equal to wtKI-price_aTab and follows the first div element, four more divs, and two spans. It will work… this time. I can tell you right now that the id element will change next time you load the page. The letters wtKI change dynamically every time a page loads, so your code would be useless as soon as the page reloads. **Invest a little time reading about XPath and I promise it will pay off**.
 
+<img src="/img/20190616/006.png" />
 
+* Nevertheless, using the copy method will work on less “sophisticated” websites, and that’s fine too! *
 
+Building on what I displayed above, what if we wanted to get all the search results in several strings, inside a list? Simple. Each result is inside an object with the class “resultWrapper”. Fetching all the results can be achieved with a for loop like the next. **If you understand this part, you should be able to understand most of the code that will follow.** It’s basically pointing to what you want (the results wrapper), using some kind of way (XPath) to get the text there, and placing it in a readable object (first with the `flight_containers` and then with the `flights_list`).
 
+<img src="/img/20190616/007.png" />
 
+The first 3 rows are displayed and we can clearly see everything we need, but we have better alternatives to get the information. We need to scrape each element individually.
 
+## Clear for take-off!
+The easiest function to code is to load more results, so let’s start with that. I want to maximize the amount of flights I get, without triggering the security check, so I will click once in the “load more results” button every time a page is displayed. The only thing new is the try statement, which I added because sometimes the button was not loading properly. If it acts up with you too, simply comment it out in the `start_kayak` function that I will show ahead.
 
+And now, after a long intro (I can get carried away at times!) we’re ready to define the function that will actually scrape the pages.
 
+I already compiled most of the elements in the next function called `page_scrape`. Sometimes, the elements returned lists interpolating first and second legs information. I used a simple method to split them, for instance in the first `section_a_list` and `section_b_list` variables. The function also returns a dataframe `flights_df`, so we can separate the results we get in the different sorts and merge them later.
 
+I’ve tried to make the names clear to follow. Remember that the variables with a are related with the first leg of the trip, and b with the second. On to the next function.
 
+## Wait, there’s more?!
+So far we have a function to load more results, and a function to scrape those results. I could end the article here and you would still be able to use these manually and use the scraping function on a page you browsed by yourself, but I did mention something about sending an email to yourself and some other information! That is all inside the next function `start_kayak`!
 
+It requires you to declare the cities and the dates. From there, it will open the address in the `kayak` string, which goes directly to the sort by “best” results page. After the first scrape, I took the liberty of getting the top matrix with the prices. It will be used to calculate an average and a minimum, to be sent in the email along with Kayak’s prediction (in the page it should be on the top left). This is one of the things that could cause an error on a single date search since there is no matrix element there.
 
+I tested this using an Outlook account (hotmail.com). Although I did not test it using a Gmail account to send the email, there are lots of alternatives you can search, and the book I mentioned earlier has other ways to do it too. If you already have a Hotmail account, it should work if you replace your details.
 
+> If you want to explore what some parts of the script are doing, please copy it and use it outside the functions. That is the only way you will fully understand it
 
+## Using everything we just created
+After all this, we might as well come up with a simple loop to start using the functions we just created and keep them busy. Completed with four “fancy” prompts for you to actually write the cities and dates (the inputs). Since when we’re testing, we don’t want to type these variables every time, alternate it with the explicit way below them when needed.
 
+If you made it this far, **congratulations**! There are plenty of improvements I can think of, like integrating with Twilio to send you a text message instead of an email. You can also use VPN’s or more obscure ways to grind the search results from several servers at the same time. There’s the captcha issue, that may pop up from time to time, but there are workarounds for these sorts of things. I think you have some pretty solid basis here, and I encourage you to try and add some extra features. Maybe you want the excel file sent as an attachment. I always welcome constructive feedback, so feel free to leave a comment below. I try to respond to every one!
 
+>By popular request in the comments section, here’s the [link](https://github.com/fnneves/flight_scraper) to a full Jupyter Notebook with all the code!
 
+<img src="/img/20190616/008.png" />
 
-
-
-
+If you want to learn more about Web Scraping, I strongly recommend the book [Web Scraping with Python](https://amzn.to/2YzJIR4). I really liked the examples and the clear explanation of how the code is working. And if you prefer social media scraping, there’s also an excellent book exclusively on the subject. I’m using the latter for my next article using the Twitter API, but there is stuff there to scrape even LinkedIn! (If you decide to purchase and use my links, I receive a small fee at no extra cost to you. I do need a lot of coffee to write these articles! Thanks in advance!)
 
 
 
