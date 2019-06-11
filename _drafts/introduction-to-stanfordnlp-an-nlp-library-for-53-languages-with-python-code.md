@@ -4,13 +4,17 @@ title: "Introduction to StanfordNLP: An NLP Library for 53 Languages (with Pytho
 tags: udacity translate python
 author: Mohd Sanad Zaki Rizvi
 from: https://medium.com/analytics-vidhya/introduction-to-stanfordnlp-an-nlp-library-for-53-languages-with-python-code-d7c3efdca118
-excerpt: "A tutorial on Stanford’s latest library — StanfordNLP. I showcase an implementation on basic NLP tasks in Python + an awesome case study!"
+excerpt: 今天的教程里，我们就手把手带你在 Python 上使用 StanfordNLP，进行一些自然语言处理实战
 thumb: "/img/20190612/thumb.jpg"
 ---
 
-_A tutorial on Stanford’s latest library — StanfordNLP. I showcase an implementation on basic NLP tasks in Python + an awesome case study!_
+> 不久之前，斯坦福大学公开了它最新的自然语言处理代码库—— StanfordNLP。它不但包含了完整的语义分析工具链，还带有 73 个不同的高精度神经网络模型，能解析 53 种不同的语言。是不是很牛×啊？今天的教程里，优达菌就手把手带你在 Python 上使用 StanfordNLP，进行一些自然语言处理实战。
+
+----
 
 A common challenge I came across while [learning Natural Language Processing (NLP)](https://trainings.analyticsvidhya.com/courses/course-v1:AnalyticsVidhya+NLP101+2018_T1/about?utm_source=blog&utm_medium=stanfordnlp-nlp-library-python) — can we build models for non-English languages? The answer has been no for quite a long time. Each language has its own grammatical patterns and linguistic nuances. And there just aren’t many datasets available in other languages.
+
+在学习自然语言处理（NLP）的过程中，我们常常会遇到这样一个问题：“我们能不能为除英语之外的其他语言——比如中文——构建模型呢？”在很长一段时间里，
 
 That’s where Stanford’s latest NLP library steps in — StanfordNLP.
 
