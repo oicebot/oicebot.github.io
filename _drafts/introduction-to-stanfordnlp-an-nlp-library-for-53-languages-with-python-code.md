@@ -4,82 +4,117 @@ title: "Introduction to StanfordNLP: An NLP Library for 53 Languages (with Pytho
 tags: udacity translate python
 author: Mohd Sanad Zaki Rizvi
 from: https://medium.com/analytics-vidhya/introduction-to-stanfordnlp-an-nlp-library-for-53-languages-with-python-code-d7c3efdca118
-excerpt: 今天的教程里，我们就手把手带你在 Python 上使用 StanfordNLP，进行一些自然语言处理实战
+excerpt: 今天的教程里，我们将手把手带你在 Python 上使用 StanfordNLP，进行自然语言处理实战
 thumb: "/img/20190612/thumb.jpg"
 ---
 
-> 不久之前，斯坦福大学公开了它最新的自然语言处理代码库—— StanfordNLP。它不但包含了完整的语义分析工具链，还带有 73 个不同的高精度神经网络模型，能解析 53 种不同的语言。是不是很牛×啊？今天的教程里，优达菌就手把手带你在 Python 上使用 StanfordNLP，进行一些自然语言处理实战。
+> 不久之前，斯坦福大学公开了它最新的自然语言处理代码库—— StanfordNLP。它不但包含了完整的语义分析工具链，还带有 73 个不同的高精度神经网络模型，能解析 53 种不同的人类语言。是不是很牛×啊？今天的教程里，优达菌就手把手带你在 Python 上使用 StanfordNLP，进行一些自然语言处理实战。
 
 ----
 
-A common challenge I came across while [learning Natural Language Processing (NLP)](https://trainings.analyticsvidhya.com/courses/course-v1:AnalyticsVidhya+NLP101+2018_T1/about?utm_source=blog&utm_medium=stanfordnlp-nlp-library-python) — can we build models for non-English languages? The answer has been no for quite a long time. Each language has its own grammatical patterns and linguistic nuances. And there just aren’t many datasets available in other languages.
+在学习自然语言处理（NLP）的过程中，我们常常会遇到这样一个问题：“我们能不能为除英语之外的其他语言——比如中文——构建模型呢？”在很长一段时间里，这都是一个难以完成的任务。要知道，每种语言都有自己独特的语法模式和细微的语言差别，而且除了英语之外，其他语言的数据集实在是少之又少。
 
-在学习自然语言处理（NLP）的过程中，我们常常会遇到这样一个问题：“我们能不能为除英语之外的其他语言——比如中文——构建模型呢？”在很长一段时间里，
+但如今，我们有了 StanfordNLP 这一神器。
 
-That’s where Stanford’s latest NLP library steps in — StanfordNLP.
+当我第一次看到 StanfordNLP 的介绍时，我简直无法抑制自己的激动之情。作者声称它可以支持超过 53 中不同的人类语言！（没错，你没看错，确实是 53 种……我当时也觉得自己一定是眼花了。）
 
-I could barely contain my excitement when I read the news last week. The authors claimed StanfordNLP could support more than 53 human languages! Yes, I had to double-check that number.
-
-I decided to check it out myself. There’s no official tutorial for the library yet so I got the chance to experiment and play around with it. And I found that it opens up a world of endless possibilities. StanfordNLP contains pre-trained models for rare Asian languages like Hindi, Chinese and Japanese in their original scripts.
+在 StanfordNLP 的[官方网站](https://stanfordnlp.github.io/stanfordnlp/models.html#human-languages-supported-by-stanfordnlp)上，作者列出了目前支持的所有 53 种人类语言，其中包含了许多其他 NLP 库所没有的语言，比如印地语、日语和我们最爱的中文。这简直是为我们打开了通往无限可能的新世界的大门啊！
 
 <img src="/img/20190612/001.jpeg" />
 
-## What is StanfordNLP and Why Should You Use it?
-*StanfordNLP is a collection of pre-trained state-of-the-art models.* These models were used by the researchers in the CoNLL 2017 and 2018 competitions. All the models are built on PyTorch and can be trained and evaluated on your own annotated data. Awesome!
+## StanfordNLP 到底是何方神圣，我为啥需要用它？
+
+<span class="hl">简单地说，StanfordNLP 是一系列预训练好的，高水平的神经网络模型。</span>目前的 73 个模型都是来自 2017、18 年 CoNLL 会议上的研究者。它们都是用 PyTorch 训练而来的，你也可以用自己的语料库来训练和评估它们，是不是很酷炫？
 
 <img src="/img/20190612/002.jpg" />
 
-Additionally, **StanfordNLP also contains an official wrapper to the popular behemoth NLP library — [CoreNLP](https://stanfordnlp.github.io/CoreNLP/)**. This had been somewhat limited to the Java ecosystem until now. You should check out [this tutorial](https://www.analyticsvidhya.com/blog/2017/12/introduction-computational-linguistics-dependency-trees?utm_source=blog&utm_medium=stanfordnlp-nlp-library-python) to learn more about CoreNLP and how it works in Python.
+此外，StanfordNLP 还包含了一个官方的 [CoreNLP](https://stanfordnlp.github.io/CoreNLP/) 封装。CoreNLP 作为一款广受好评的史诗级 NLP 库，在此之前，你只能依靠 Java 才能用上它。对有兴趣的读者，我建议你看看[这个教程](https://www.analyticsvidhya.com/blog/2017/12/introduction-computational-linguistics-dependency-trees?utm_source=blog&utm_medium=stanfordnlp-nlp-library-python)，了解更多有关 CoreNLP 的信息，以及它在 Python 中的工作原理。
 
-What more could an NLP enthusiast ask for? Now that we have a handle on what this library does, let’s take it for a spin in Python!
+对 NLP 爱好者来说，真是夫复何求啊！现在，就让我们在 Python 中实际操作一下吧！
 
-## Setting up StanfordNLP in Python
-There are some peculiar things about the library that had me puzzled initially. For instance, you need **Python 3.6.8/3.7.2** or later to use StanfordNLP. To be safe, I set up a separate environment in Anaconda for **Python 3.7.1**. Here’s how you can do it:
+## 在 Python 中安装设置 StanfordNLP 库
 
-1. Open conda prompt and type this:
+最初，这个库里有一些奇怪的东西，让我感到十分困惑。例如，你需要使用 Python 3.6 / 3.7 或更高版本才能使用 StanfordNLP。为了安全起见，我在 Anaconda 中设置了一个单独的 Python 3.7.1 环境。具体步骤如下：
+
+1. 打开 conda 命令行，输入：
 
 ```
 conda create -n stanfordnlp python=3.7.1
 ```
 
-2. Now activate the environment:
+一般来说一路 yes 到底即可。
+
+2. 接着激活刚建立的环境：
+
 ```
 source activate stanfordnlp
 ```
-3. Install the StanfordNLP library:
+
+conda 4.6 或更高版本可以用：
+
+```
+conda activate stanfordnlp
+```
+
+3. 在新环境里安装 StanfordNLP 库：
+
 ```
 pip install stanfordnlp
 ```
+
 4. We need to download a language’s specific model to work with it. Launch a python shell and import StanfordNLP:
+4. 接下来，我们需要手动下载对应自然语言的模型。打开一个 Python 命令行，导入 StanfordNLP 库：
+
 ```python
 import stanfordnlp
 ```
+
 then download the language model for English (“en”):
+接着下载对应的语言模型，以英语（“en”）为例：
+
 ```
 stanfordnlp.download('en')
 ```
-This can take a while depending on your internet connection. These language models are pretty huge (the English one is 1.96GB).
 
-### A couple of important notes
+This can take a while depending on your internet connection. These language models are pretty huge (the English one is 1.96GB).
+根据你网络速度的不同，这可能需要花费一些时间。这些语言模型一般来说都挺大的（英语的大约1.96GB）。
+
+### A couple of important notes、
+### 一些注意事项
 
 * **StanfordNLP is built on top of PyTorch 1.0.0.** It might crash if you have an older version. Here’s how you can check the version installed on your machine:
+* <span class="hl">StanfordNLP 是基于 PyTorch 1.0.0 构建的。</span>如果你尝试在更早的版本上运行它，可能会遇到一些奇怪的问题。你可以在命令行运行这样的命令来检查你的 PyTorch 版本：
+
 ```
 pip freeze | grep torch
 ```
+
 which should give an output like `torch==1.0.0`
+
+正常情况下你应该看到类似 `torch==1.0.0` 这样的输出。
 
 * I tried using the library without GPU on my Lenovo Thinkpad E470 (8GB RAM, Intel Graphics). I got a memory error in Python pretty quickly. Hence, I switched to a GPU enabled machine and would advise you to do the same as well. You can try [Google Colab](https://colab.research.google.com/) which comes with free GPU support
 
+* 我试过在没有独立显示芯片的机器上跑这个库，比如我的联想 Thinkpad E470（8G 内存，英特尔核显），结果是，Python 很快就甩了一个 memory error 给我。因此，我换到一台有独立显卡的机器上来运行这些代码，我强烈建议你也这么做。对了，你可以试试 Google 出品的[地表最强 Python 编辑器](https://oicebot.github.io/2019/04/20/colab-is-best-python-editor-for-you.html)——[Google Colab](https://colab.research.google.com/)，它提供了巨大的内存，以及免费的 GPU 算力。
+
 That’s all! Let’s dive into some basic NLP processing right away.
 
+好啦，说了这么多，你应该已经装好了相关的库和模型了吧？让我们试着开始一些基本的 NLP 处理吧。
+
 ## Using StanfordNLP to Perform Basic NLP Tasks
+## 使用 StanfordNLP 完成简单的 NLP 任务
+
 Let’s start by creating a text pipeline:
+假设我们要分析一段英文材料，那么可以这样建立一个文字管道：
+
 ```python
 nlp = stanfordnlp.Pipeline(processors = "tokenize,mwt,lemma,pos")
 doc = nlp("""The prospects for Britain’s orderly withdrawal from the European Union on March 29 have receded further, even as MPs rallied to stop a no-deal scenario. An amendment to the draft bill on the termination of London’s membership of the bloc obliges Prime Minister Theresa May to renegotiate her withdrawal agreement with Brussels. A Tory backbencher’s proposal calls on the government to come up with alternatives to the Irish backstop, a central tenet of the deal Britain agreed with the rest of the EU.""")
 ```
 
 The `processors = ""` argument is used to specify the task. All five processors are taken by default if no argument is passed. Here is a quick overview of the processors and what they can do:
+
+其中 `processors = ""` 参数用于指定需要分析的具体目标。如果不传入任何参数，将调用默认的 5 个分析器进行处理。具体可见下表：
 
 <img src="/img/20190612/003.png" /> //TODO：需要翻译
 
