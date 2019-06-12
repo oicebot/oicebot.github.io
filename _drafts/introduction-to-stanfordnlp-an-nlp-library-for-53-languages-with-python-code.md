@@ -233,14 +233,20 @@ Notice the big dictionary in the above code? It is just a mapping between PoS ta
 
 The output would be a data frame with three columns — word, pos and exp (explanation). The explanation column gives us the most information about the text (and is hence quite useful).
 
-程序将输出一个数据表对象，其中包含 3 列：单词（Word）、词性标签（pos）以及解释（exp）。我们
+程序将输出一个数据表对象，其中包含 3 列：单词（Word）、词性（pos）以及对应的解释（exp）。解释列中的内容包含了最多的语义信息，也是对我们最有用的部分。
 
 <img src="/img/20190612/006.png" />
 
 Adding the explanation column makes it much easier to evaluate how accurate our processor is. I like the fact that the tagger is on point for the majority of the words. It even picks up the tense of a word and whether it is in base or plural form.
 
+增加了解释列之后，我们就能更容易地看出分析器处理词句时的准确性如何。让我欣喜的是，绝大部分的词语都能够被正确地标记起来，它甚至能正确地判断出一个词的时态和词性，包括它是单数还是复数形式等。
+
 ### Dependency Extraction
+### 依存关系解析
+
 Dependency extraction is another out-of-the-box feature of StanfordNLP. You can simply call `print_dependencies()` on a sentence to get the dependency relations for all of its words:
+
+依存关系解析也是 StanfordNLP 里开箱即用的工具之一。你只需要在程序中调用 `print_dependencies()` 方法，就能方便地获取到句子中所有元素的依存关系：
 
 ```
 doc.sentences[0].print_dependencies()
@@ -250,15 +256,25 @@ doc.sentences[0].print_dependencies()
 
 The library computes all of the above during a single run of the pipeline. This will hardly take you a few minutes on a GPU enabled machine.
 
+总的来说，程序将在一次管道处理过程中计算上述的每一个步骤。对于能使用 GPU 的机器来说，整个运算过程一般要不了几分钟就能搞定。
+
 We have now figured out a way to perform basic text processing with StanfordNLP. It’s time to take advantage of the fact that we can do the same for 51 other languages!
 
+于是，我们已经摸清了用 StanfordNLP 库完成简单文字处理任务的基本操作，现在我们该试试在各种不同语言上进行同样的操作啦！
 
 ## Implementing StanfordNLP on the Hindi Language
+## 对印地语使用 StanfordNLP 进行处理
 
 **StanfordNLP really stands out in its performance and multilingual text parsing support.** Let’s dive deeper into the latter aspect.
 
+**StanfordNLP 在处理性能和多语言文本解析支持方面都拥有非常突出的表现。**我们现在就来深入研究一下后面这部分。
+
 ### Processing text in Hindi (Devanagari Script)
+### 处理印地语文字（梵文文本）
+
 First, we have to download the Hindi language model (comparatively smaller!):
+
+首先，我们先下载印地语的模型（相对来说小多了！）：
 
 ```python
 stanfordnlp.download('hi')
@@ -266,11 +282,15 @@ stanfordnlp.download('hi')
 
 Now, take a piece of text in Hindi as our text document:
 
+接着，把一段印地语文字放进去，作为目标文本：
+
 ```python
 hindi_doc = nlp("""केंद्र की मोदी सरकार ने शुक्रवार को अपना अंतरिम बजट पेश किया. कार्यवाहक वित्त मंत्री पीयूष गोयल ने अपने बजट में किसान, मजदूर, करदाता, महिला वर्ग समेत हर किसी के लिए बंपर ऐलान किए. हालांकि, बजट के बाद भी टैक्स को लेकर काफी कन्फ्यूजन बना रहा. केंद्र सरकार के इस अंतरिम बजट क्या खास रहा और किसको क्या मिला, आसान भाषा में यहां समझें""")
 ```
 
 This should be enough to generate all the tags. Let’s check the tags for Hindi:
+
+要生成所有的标签，这样就已经足够了，让我们检查一下吧：
 
 ```python
 extract_pos(hindi_doc)
@@ -280,24 +300,42 @@ extract_pos(hindi_doc)
 
 The PoS tagger works surprisingly well on the Hindi text as well. Look at “अपना” for example. The PoS tagger tags it as a pronoun — I, he, she — which is accurate.
 
+毫不意外，词性分析器很完美地处理了印地语文本。看看这个“अपना”吧，词性分析器指出这是个人称代词（我、他、她），这还是比较准确的。
+
 ## Using CoreNLP’s API for Text Analytics
+## 调用 CoreNLP 的 API 进行文字分析
+
 [CoreNLP](https://stanfordnlp.github.io/CoreNLP/) is a time tested, industry grade NLP tool-kit that is known for its performance and accuracy. StanfordNLP takes three lines of code to start utilizing CoreNLP’s sophisticated API. Literally, just three lines of code to set it up!
 
+[CoreNLP](https://stanfordnlp.github.io/CoreNLP/) 是一个久经考验的工业级自然语言处理工具集，它的高性能和准确性都是相当有名的。要想调用 CoreNLP 复杂的 API，你只需要在 StanfordNLP 里写上三行代码。你没看错，确实只需要 3 行代码就能设置好了！
+
 1. Download the CoreNLP package. Open your Linux terminal and type the following command:
+1. ~~打开冰箱门~~ 不，是下载 CoreNLP 包。打开你的 Linux 终端，输入以下命令：
+
 ```bash
 wget http://nlp.stanford.edu/software/stanford-corenlp-full-2018-10-05.zip
 ```
+
 2. Unzip the downloaded package:
+2. 解压下载好的软件包：
+
 ```bash
 unzip stanford-corenlp-full-2018-10-05.zip
 ```
+
 3. Start the CoreNLP server:
+3. 启动 CoreNLP 服务器：
+
 ```bash
 java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
 ```
+
 _**Note**: CoreNLP requires Java8 to run. Please make sure you have JDK and JRE 1.8.x installed.p_
+_**注意**： CoreNLP 需要 Java8 才能运行，请务必确保你已经安装好了 JDK 和 JRE 1.8.x 以上版本。_
 
 Now, make sure that StanfordNLP knows where CoreNLP is present. For that, you have to export `$CORENLP_HOME` as the location of your folder. In my case, this folder was in **the home** itself so my path would be like
+
+接着，
 
 ```
 export CORENLP_HOME=stanford-corenlp-full-2018-10-05/
