@@ -62,21 +62,18 @@ conda activate stanfordnlp
 pip install stanfordnlp
 ```
 
-4. We need to download a language’s specific model to work with it. Launch a python shell and import StanfordNLP:
-4. 接下来，我们需要手动下载对应自然语言的模型。打开一个 Python 命令行，导入 StanfordNLP 库：
+4. 接下来，我们需要下载对应自然语言的模型。打开一个 Python 命令行，导入 StanfordNLP 库：
 
 ```python
 import stanfordnlp
 ```
 
-then download the language model for English (“en”):
 接着下载对应的语言模型，以英语（“en”）为例：
 
 ```
 stanfordnlp.download('en')
 ```
 
-This can take a while depending on your internet connection. These language models are pretty huge (the English one is 1.96GB).
 根据你网络速度的不同，这可能需要花费一些时间。这些语言模型一般来说都挺大的（英语的大约1.96GB）。
 
 ### A couple of important notes、
@@ -114,13 +111,24 @@ doc = nlp("""The prospects for Britain’s orderly withdrawal from the European 
 
 The `processors = ""` argument is used to specify the task. All five processors are taken by default if no argument is passed. Here is a quick overview of the processors and what they can do:
 
-其中 `processors = ""` 参数用于指定需要分析的具体目标。如果不传入任何参数，将调用默认的 5 个分析器进行处理。具体可见下表：
+我们通过 `processors = ""` 参数指定需要分析的具体任务。如果不传入任何参数，程序将默认调用全部 5 个处理模块进行分析。具体可见下表：
 
-<img src="/img/20190612/003.png" /> //TODO：需要翻译
+  参数名 | 标注器（Annotator）类名 | 工作方式/结果 | 备注
+   --- | --- | --- | ---
+   tokenize | TokenizeProcessor | 将一个文档（ `Document` ）分成许多句子（ `Sentence` ）,每个句子都包含着一个分词结果的列表，列表的元素是 `Token`。分词处理器还会预测哪些单词/字会组成多字词/词组，以便后续用 MWT 处理模块进行扩展。 | 常规的分词工具，用来对输入的文字进行分词处理。
+  mwt | MWTProcessor | 对上一步预测的多字词/词组进行处理，将它们进行扩展 |   
+  lemma | LemmaProcessor | 利用单词（ `Word` ）的 `Word.text` 和 `Word.upos` 属性，对每个单词进行词形还原。处理结果将存放在 `Word.lemma` 中。 |   
+  pos | POSProcessor | 产生 UPOS、XPOS 以及 UFeats 标注，存放在 `Word` 对象的 `pos` 、 `xpos` 以及 `ufeats` 属性中。 | 对每个 `token` 都进行全局词性分析（universal POS，UPOS）和基于语料库的词性分析（treebank-specific POS，XPOS) 标注，以及全局的形态特征（universal morphological features ，UFeats)标注。 
+  depparse | DepparseProcessor | 确定句子中每个单词的句法核心（syntactic head），以及两个单词之间的依存关系。分析结果保存在 `Word` 对象的 `governor` 和 `dependency_relation` 属性中。 | 它提供了一个准确的句法依存关系解析器。
+
+<small>表格内容翻译自 [StanfordNLP 项目主页](https://stanfordnlp.github.io/stanfordnlp/processors.html)</small>
 
 Let’s see each of them in action.
+让我们在实战中检验一下这些分析器吧。
 
 ### Tokenization
+### 分词处理
+
 This process happens implicitly once the Token processor is run. It is actually pretty quick. You can have a look at tokens by using `print_tokens()`:
 
 ```python
