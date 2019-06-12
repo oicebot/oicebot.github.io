@@ -362,18 +362,18 @@ print('---')
 print('starting up Java Stanford CoreNLP Server...')
 # 启动客户端进程
 with CoreNLPClient(annotators=['tokenize','ssplit','pos','lemma','ner','depparse','coref'], timeout=30000, memory='16G') as client:
-    # submit the request to the server
+    # 把处理请求发送给服务器
     ann = client.annotate(text)
-    # get the first sentence
+    # 获取返回对象的第 1 个句子
     sentence = ann.sentence[0]
 ```
 ### 2. Dependency Parsing and POS
-
+### 2. 依存关系分析及词性分析
 
 ```python
-#FireName: corenlp_depparse.py 
+# 文件名: corenlp_depparse.py 
 
-    #get the dependency parse of the first sentence
+    # 获取第 1 个句子的依存关系
     print('---')
     print('dependency parse of first sentence')
     dependency_parse = sentence.basicDependencies
