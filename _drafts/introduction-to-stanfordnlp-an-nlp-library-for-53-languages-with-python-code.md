@@ -335,7 +335,7 @@ _**注意**： CoreNLP 需要 Java8 才能运行，请务必确保你已经安�
 
 Now, make sure that StanfordNLP knows where CoreNLP is present. For that, you have to export `$CORENLP_HOME` as the location of your folder. In my case, this folder was in **the home** itself so my path would be like
 
-接着，
+接着，你需要让 StanfordNLP 获取到 CoreNLP 所在的路径。你需要把 CoreNLP 的路径写入环境变量 `$CORENLP_HOME` 中。在我上面的例子中，CoreNLP 所在的文件夹是**直接放在用户的 home 目录**中，所以我的环境变量是这样：
 
 ```
 export CORENLP_HOME=stanford-corenlp-full-2018-10-05/
@@ -343,31 +343,32 @@ export CORENLP_HOME=stanford-corenlp-full-2018-10-05/
 
 After the above steps have been taken, you can start up the server and make requests in Python code. Below is a comprehensive example of starting a server, making requests, and accessing data from the returned object.
 
-### 1. Setting up the CoreNLPClient
+上面的准备工作完成之后，你就可以启动服务进程，并用 Python 代码给它发送请求。接下来，我们将启动服务器，设置客户端，发送处理请求，并最后从返回的对象中获取所需的数据。让我们一起看看这个综合性的实例吧。
+
+### 1. Setting up the CoreNLP Client
+### 1. 构建一个 CoreNLP 客户端
 
 ```python
-#FireName: corenlp_setup.py 
+# 文件名: corenlp_setup.py 
 from stanfordnlp.server import CoreNLPClient
-# example text
+# 输入实例文本
 print('---')
 print('input text')
 print('')
 text = "Chris Manning is a nice person. Chris wrote a simple sentence. He also gives oranges to people."
 print(text)
-# set up the client
+# 显示服务器启动信息
 print('---')
 print('starting up Java Stanford CoreNLP Server...')
-# set up the client
+# 启动客户端进程
 with CoreNLPClient(annotators=['tokenize','ssplit','pos','lemma','ner','depparse','coref'], timeout=30000, memory='16G') as client:
     # submit the request to the server
     ann = client.annotate(text)
     # get the first sentence
     sentence = ann.sentence[0]
 ```
-
-https://gist.github.com/mohdsanadzakirizvi/770fb04192a2f1731ccfa854eda352d4#file-corenlp_setup-py
-
 ### 2. Dependency Parsing and POS
+
 
 ```python
 #FireName: corenlp_depparse.py 
