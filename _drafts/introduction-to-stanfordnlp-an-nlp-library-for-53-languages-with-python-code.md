@@ -76,60 +76,49 @@ stanfordnlp.download('en')
 
 根据你网络速度的不同，这可能需要花费一些时间。这些语言模型一般来说都挺大的（英语的大约1.96GB）。
 
-### A couple of important notes、
 ### 一些注意事项
 
-* **StanfordNLP is built on top of PyTorch 1.0.0.** It might crash if you have an older version. Here’s how you can check the version installed on your machine:
 * <span class="hl">StanfordNLP 是基于 PyTorch 1.0.0 构建的。</span>如果你尝试在更早的版本上运行它，可能会遇到一些奇怪的问题。你可以在命令行运行这样的命令来检查你的 PyTorch 版本：
 
 ```
 pip freeze | grep torch
 ```
 
-which should give an output like `torch==1.0.0`
-
 正常情况下你应该看到类似 `torch==1.0.0` 这样的输出。
 
-* I tried using the library without GPU on my Lenovo Thinkpad E470 (8GB RAM, Intel Graphics). I got a memory error in Python pretty quickly. Hence, I switched to a GPU enabled machine and would advise you to do the same as well. You can try [Google Colab](https://colab.research.google.com/) which comes with free GPU support
-
-* 我试过在没有独立显示芯片的机器上跑这个库，比如我的联想 Thinkpad E470（8G 内存，英特尔核显），结果是，Python 很快就甩了一个 memory error 给我。因此，我换到一台有独立显卡的机器上来运行这些代码，我强烈建议你也这么做。对了，你可以试试 Google 出品的[地表最强 Python 编辑器](https://oicebot.github.io/2019/04/20/colab-is-best-python-editor-for-you.html)——[Google Colab](https://colab.research.google.com/)，它提供了巨大的内存，以及免费的 GPU 算力。
-
-That’s all! Let’s dive into some basic NLP processing right away.
+* 我试过在没有独立显示芯片的机器上跑这个库，比如我的联想 Thinkpad E470（8G 内存，英特尔核显），结果是，Python 很快就甩了一个 memory error 给我。因此，我换到一台有独立显卡的机器上来运行这些代码，我强烈建议你也这么做。对了，你可以试试 Google 出品的[地表最强 Python 编辑器](https://oicebot.github.io/2019/04/20/colab-is-best-python-editor-for-you.html)——[Google Colab](https://colab.research.google.com/)，它提供了 12-14G 的内存，以及免费的 GPU 算力。
 
 好啦，说了这么多，你应该已经装好了相关的库和模型了吧？让我们试着开始一些基本的 NLP 处理吧。
 
-## Using StanfordNLP to Perform Basic NLP Tasks
 ## 使用 StanfordNLP 完成简单的 NLP 任务
 
-Let’s start by creating a text pipeline:
-假设我们要分析一段英文材料，那么可以这样建立一个文字管道：
+假设我们要分析一段英文材料，首先，我们需要建立一个文字处理管道（pipeline）：
 
 ```python
 nlp = stanfordnlp.Pipeline(processors = "tokenize,mwt,lemma,pos")
 doc = nlp("""The prospects for Britain’s orderly withdrawal from the European Union on March 29 have receded further, even as MPs rallied to stop a no-deal scenario. An amendment to the draft bill on the termination of London’s membership of the bloc obliges Prime Minister Theresa May to renegotiate her withdrawal agreement with Brussels. A Tory backbencher’s proposal calls on the government to come up with alternatives to the Irish backstop, a central tenet of the deal Britain agreed with the rest of the EU.""")
 ```
 
-The `processors = ""` argument is used to specify the task. All five processors are taken by default if no argument is passed. Here is a quick overview of the processors and what they can do:
-
 我们通过 `processors = ""` 参数指定需要分析的具体任务。如果不传入任何参数，程序将默认调用全部 5 个处理模块进行分析。具体可见下表：
 
-  参数名 | 标注器（Annotator）类名 | 工作方式/结果 | 备注
-   --- | --- | --- | ---
-   tokenize | TokenizeProcessor | 将一个文档（ `Document` ）分成许多句子（ `Sentence` ）,每个句子都包含着一个分词结果的列表，列表的元素是 `Token`。分词处理器还会预测哪些单词/字会组成多字词/词组，以便后续用 MWT 处理模块进行扩展。 | 常规的分词工具，用来对输入的文字进行分词处理。
-  mwt | MWTProcessor | 对上一步预测的多字词/词组进行处理，将它们进行扩展 |   
+  参数名 | 标注器（Annotator）类名 | 工作方式/结果 
+   --- | --- | --- 
+   tokenize | TokenizeProcessor | 分词工具。它将一个文档（ `Document` ）分成许多句子（ `Sentence` ）,每个句子都包含着一个分词结果的列表，列表的元素是 `Token`。分词处理器还会预测哪些单词/字会组成多字词/词组，以便后续用 MWT 处理模块进行扩展。 
+  mwt | MWTProcessor | 对上一步预测的多字词/词组进行处理，将它们进行扩展 
   lemma | LemmaProcessor | 利用单词（ `Word` ）的 `Word.text` 和 `Word.upos` 属性，对每个单词进行词形还原。处理结果将存放在 `Word.lemma` 中。 |   
-  pos | POSProcessor | 产生 UPOS、XPOS 以及 UFeats 标注，存放在 `Word` 对象的 `pos` 、 `xpos` 以及 `ufeats` 属性中。 | 对每个 `token` 都进行全局词性分析（universal POS，UPOS）和基于语料库的词性分析（treebank-specific POS，XPOS) 标注，以及全局的形态特征（universal morphological features ，UFeats)标注。 
-  depparse | DepparseProcessor | 确定句子中每个单词的句法核心（syntactic head），以及两个单词之间的依存关系。分析结果保存在 `Word` 对象的 `governor` 和 `dependency_relation` 属性中。 | 它提供了一个准确的句法依存关系解析器。
+  pos | POSProcessor | 对每个 `token` 都进行全局词性分析（universal POS，UPOS）和基于语料库的词性分析（treebank-specific POS，XPOS) 标注，以及全局的形态特征（universal morphological features ，UFeats)标注，最后存放在 `Word` 对象的 `pos` 、 `xpos` 以及 `ufeats` 属性中。 
+  depparse | DepparseProcessor | 它提供了一个准确的句法依存关系解析器，用来确定句子中每个单词的句法核心（syntactic head），以及两个单词之间的依存关系。分析结果保存在 `Word` 对象的 `governor` 和 `dependency_relation` 属性中。 
 
 <small>表格内容翻译自 [StanfordNLP 项目主页](https://stanfordnlp.github.io/stanfordnlp/processors.html)</small>
 
-Let’s see each of them in action.
 让我们在实战中检验一下这些分析器吧。
 
 ### Tokenization
 ### 分词处理
 
 This process happens implicitly once the Token processor is run. It is actually pretty quick. You can have a look at tokens by using `print_tokens()`:
+
+当 TokenizeProcessor 运行的时候，分词处理过程将在后台运行，事实上，它的处理速度相当快。你可以使用 `print_tokens()` 方法来查看分词结果：
 
 ```python
 doc.sentences[0].print_tokens()
@@ -139,11 +128,16 @@ doc.sentences[0].print_tokens()
 
 The token object contains the index of the token in the sentence and a list of word objects (in case of a multi-word token). **Each word object contains useful information, like the index of the word, the lemma of the text, the pos (parts of speech) tag and the feat (morphological features) tag.**
 
+结果就类似上面这样。每个 `token` 对象都包含了句子中每个词的索引，以及一个包含了 `Word` 对象的列表（以防有一些由多个单词/字组成的短语/词组。<span class="hl">每一个 Word 对象都包含了详细的信息，包括序号、单词原形、词性、形态特征等标签。</span>
+
 ### Lemmatization
+### 词形还原
 This involves using the “lemma” property of the words generated by the lemma processor. Here’s the code to get the lemma of all the words:
 
+这就要用到 LemmaProcessor 给每个 `Word` 对象生成的 `lemma` 属性了（参见上面分词结果图中的 `lemma=` 部分）。我们只需要简单的几行代码就可以对所有单词进行词形还原：
+
 ```python
-# FileName： lemma.py
+# 文件名： lemma.py
 
 import pandas as pd
 
@@ -151,67 +145,70 @@ def extract_lemma(doc):
     parsed_text = {'word':[], 'lemma':[]}
     for sent in doc.sentences:
         for wrd in sent.words:
-            #extract text and lemma
+            # 提取文本和原形
             parsed_text['word'].append(wrd.text)
             parsed_text['lemma'].append(wrd.lemma)
-    #return a dataframe
+    # 返回值是一个 DataFrame 对象
     return pd.DataFrame(parsed_text)
 extract_lemma(doc)
 ```
 
-https://gist.github.com/mohdsanadzakirizvi/b81a65d1dfde36f9ef07e5a1093989ce#file-lemma-py
-
 This returns a pandas data frame for each word and its respective lemma:
+
+这将返回一个 pandas 的数据表（DataFrame 对象），列出了每个单词及其对应的单词原形：
 
 <img src="/img/20190612/005.png" />
 
 ### Parts of Speech (PoS) Tagging
+### 词性分析与标注
 The PoS tagger is quite fast and works really well across languages. Just like lemmas, PoS tags are also easy to extract:
 
-```python
-# FileName： parts_of_speech.py
+用于词性分析的 POSProcessor 可以又快又准地处理多种不同语言
 
-#dictionary to hold pos tags and their explanations
+```python
+# 文件名： parts_of_speech.py
+
+# 定义一个存放 POS 值及对应词性描述的字典对象
 pos_dict = {
-'CC': 'coordinating conjunction',
-'CD': 'cardinal digit',
-'DT': 'determiner',
-'EX': 'existential there (like: \"there is\" ... think of it like \"there exists\")',
-'FW': 'foreign word',
-'IN':  'preposition/subordinating conjunction',
-'JJ': 'adjective \'big\'',
-'JJR': 'adjective, comparative \'bigger\'',
-'JJS': 'adjective, superlative \'biggest\'',
-'LS': 'list marker 1)',
-'MD': 'modal could, will',
-'NN': 'noun, singular \'desk\'',
-'NNS': 'noun plural \'desks\'',
-'NNP': 'proper noun, singular \'Harrison\'',
-'NNPS': 'proper noun, plural \'Americans\'',
-'PDT': 'predeterminer \'all the kids\'',
-'POS': 'possessive ending parent\'s',
-'PRP': 'personal pronoun I, he, she',
-'PRP$': 'possessive pronoun my, his, hers',
-'RB': 'adverb very, silently,',
-'RBR': 'adverb, comparative better',
-'RBS': 'adverb, superlative best',
-'RP': 'particle give up',
-'TO': 'to go \'to\' the store.',
-'UH': 'interjection errrrrrrrm',
-'VB': 'verb, base form take',
-'VBD': 'verb, past tense took',
-'VBG': 'verb, gerund/present participle taking',
-'VBN': 'verb, past participle taken',
-'VBP': 'verb, sing. present, non-3d take',
-'VBZ': 'verb, 3rd person sing. present takes',
-'WDT': 'wh-determiner which',
-'WP': 'wh-pronoun who, what',
-'WP$': 'possessive wh-pronoun whose',
-'WRB': 'wh-abverb where, when',
-'QF' : 'quantifier, bahut, thoda, kam (Hindi)',
-'VM' : 'main verb',
-'PSP' : 'postposition, common in indian langs',
-'DEM' : 'demonstrative, common in indian langs'
+    'CC': 'coordinating conjunction',
+    'CD': 'cardinal digit',
+    'DT': 'determiner',
+    'EX': 'existential there (like: \"there is\" ... think of it like \"there exists\")',
+    'FW': 'foreign word',
+    'IN':  'preposition/subordinating conjunction',
+    'JJ': 'adjective \'big\'',
+    'JJR': 'adjective, comparative \'bigger\'',
+    'JJS': 'adjective, superlative \'biggest\'',
+    'LS': 'list marker 1)',
+    'MD': 'modal could, will',
+    'NN': 'noun, singular \'desk\'',
+    'NNS': 'noun plural \'desks\'',
+    'NNP': 'proper noun, singular \'Harrison\'',
+    'NNPS': 'proper noun, plural \'Americans\'',
+    'PDT': 'predeterminer \'all the kids\'',
+    'POS': 'possessive ending parent\'s',
+    'PRP': 'personal pronoun I, he, she',
+    'PRP$': 'possessive pronoun my, his, hers',
+    'RB': 'adverb very, silently,',
+    'RBR': 'adverb, comparative better',
+    'RBS': 'adverb, superlative best',
+    'RP': 'particle give up',
+    'TO': 'to go \'to\' the store.',
+    'UH': 'interjection errrrrrrrm',
+    'VB': 'verb, base form take',
+    'VBD': 'verb, past tense took',
+    'VBG': 'verb, gerund/present participle taking',
+    'VBN': 'verb, past participle taken',
+    'VBP': 'verb, sing. present, non-3d take',
+    'VBZ': 'verb, 3rd person sing. present takes',
+    'WDT': 'wh-determiner which',
+    'WP': 'wh-pronoun who, what',
+    'WP$': 'possessive wh-pronoun whose',
+    'WRB': 'wh-abverb where, when',
+    'QF' : 'quantifier, bahut, thoda, kam (Hindi)',
+    'VM' : 'main verb',
+    'PSP' : 'postposition, common in indian langs',
+    'DEM' : 'demonstrative, common in indian langs'
 }
 
 def extract_pos(doc):
