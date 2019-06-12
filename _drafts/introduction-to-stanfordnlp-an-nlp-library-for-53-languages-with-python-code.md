@@ -163,7 +163,7 @@ This returns a pandas data frame for each word and its respective lemma:
 ### 词性分析与标注
 The PoS tagger is quite fast and works really well across languages. Just like lemmas, PoS tags are also easy to extract:
 
-用于词性分析的 POSProcessor 可以又快又准地处理多种不同语言
+用于词性分析的 POSProcessor 可以又快又准地处理多种不同语言。和词形还原一样，词性分析的标签也很容易读取和输出：
 
 ```python
 # 文件名： parts_of_speech.py
@@ -227,11 +227,13 @@ def extract_pos(doc):
 extract_pos(doc)
 ```
 
-https://gist.github.com/mohdsanadzakirizvi/745e150f7c15e360dc6ac2693f09f16c#file-parts_of_speech-py
-
 Notice the big dictionary in the above code? It is just a mapping between PoS tags and their meaning. This helps in getting a better understanding of our document’s syntactic structure.
 
+注意到上面那个巨大的字典对象了吗？那是为了把词性分析的标签和人类能懂的描述一一对应起来。这能让我们更好地理解文件的语法结构。
+
 The output would be a data frame with three columns — word, pos and exp (explanation). The explanation column gives us the most information about the text (and is hence quite useful).
+
+程序将输出一个数据表对象，其中包含 3 列：单词（Word）、词性标签（pos）以及解释（exp）。我们
 
 <img src="/img/20190612/006.png" />
 
