@@ -12,7 +12,7 @@ thumb: "/img/20190612/thumb.jpg"
 
 ----
 
-在学习自然语言处理（NLP）的过程中，我们常常会遇到这样一个问题：“我们能不能为除英语之外的其他语言——比如中文——构建模型呢？”在很长一段时间里，这都是一个难以完成的任务。要知道，每种语言都有自己独特的语法模式和细微的语言差别，而且除了英语之外，其他语言的数据集实在是少之又少。
+在学习自然语言处理（NLP）的过程中，我们常常会遇到这样一个问题：“我们能不能为除英语之外的其他语言构建模型呢？”在很长一段时间里，这都是一个难以完成的任务。要知道，每种语言都有自己独特的语法模式和细微的语言差别，而且除了英语之外，其他语言的数据集实在是少之又少。
 
 但如今，我们有了 StanfordNLP 这一神器。
 
@@ -38,55 +38,57 @@ thumb: "/img/20190612/thumb.jpg"
 
 1. 打开 conda 命令行，输入：
 
-```
-conda create -n stanfordnlp python=3.7.1
-```
+    ```
+    conda create -n stanfordnlp python=3.7.1
+    ```
 
-一般来说一路 yes 到底即可。
+    一般来说一路 yes 到底即可。
 
 2. 接着激活刚建立的环境：
 
-```
-source activate stanfordnlp
-```
+    ```
+    source activate stanfordnlp
+    ```
 
-conda 4.6 或更高版本可以用：
+    conda 4.6 或更高版本可以用：
 
-```
-conda activate stanfordnlp
-```
+    ```
+    conda activate stanfordnlp
+    ```
 
 3. 在新环境里安装 StanfordNLP 库：
 
-```
-pip install stanfordnlp
-```
+    ```
+    pip install stanfordnlp
+    ```
 
 4. 接下来，我们需要下载对应自然语言的模型。打开一个 Python 命令行，导入 StanfordNLP 库：
 
-```python
-import stanfordnlp
-```
+    ```python
+    import stanfordnlp
+    ```
 
-接着下载对应的语言模型，以英语（“en”）为例：
+    接着下载对应的语言模型，以英语（“en”）为例：
 
-```
-stanfordnlp.download('en')
-```
+    ```
+    stanfordnlp.download('en')
+    ```
 
-根据你网络速度的不同，这可能需要花费一些时间。一般来说你得下载大概 300M 的内容。
+    根据你网络速度的不同，这可能需要花费一些时间。一般来说你得下载大概 300M 的内容。
 
 ### 一些注意事项
 
 * <span class="hl">StanfordNLP 是基于 PyTorch 1.0.0 构建的。</span>如果你尝试在更早的版本上运行它，可能会遇到一些奇怪的问题。你可以在命令行运行这样的命令来检查你的 PyTorch 版本：
 
-```
-pip freeze | grep torch
-```
+    ```
+    pip freeze | grep torch
+    ```
 
-正常情况下你应该看到类似 `torch==1.0.0` 这样的输出。
+    正常情况下你应该看到类似 `torch==1.0.0` 这样的输出。
 
-* 我试过在没有独立显示芯片的机器上跑这个库，比如我的联想 Thinkpad E470（8G 内存，英特尔核显），结果是，Python 很快就甩了一个 memory error 给我。因此，我换到一台有独立显卡的机器上来运行这些代码，我强烈建议你也这么做。对了，你可以试试 Google 出品的[地表最强 Python 编辑器](https://oicebot.github.io/2019/04/20/colab-is-best-python-editor-for-you.html)——[Google Colab](https://colab.research.google.com/)，它提供了 12-14G 的内存，以及免费的 GPU 算力。
+* 我试过在没有独立显示芯片的机器上跑这个库，比如我的联想 Thinkpad E470（8G 内存，英特尔核显）。
+    结果是，Python 很快就甩了一个 memory error 给我。因此，我换到一台有独立显卡的机器上来运行这些代码，我强烈建议你也这么做。
+    对了，你可以试试 Google 出品的[地表最强 Python 编辑器](https://oicebot.github.io/2019/04/20/colab-is-best-python-editor-for-you.html)——[Google Colab](https://colab.research.google.com/)，它提供了 12-14G 的内存，以及免费的 GPU 算力。
 
 好啦，说了这么多，你应该已经装好了相关的库和模型了吧？让我们试着开始一些基本的 NLP 处理吧。
 
@@ -96,15 +98,21 @@ pip freeze | grep torch
 
 ```python
 nlp = stanfordnlp.Pipeline(processors = "tokenize,mwt,lemma,pos")
-doc = nlp("""The prospects for Britain’s orderly withdrawal from the European Union on March 29 have receded further, even as MPs rallied to stop a no-deal scenario. An amendment to the draft bill on the termination of London’s membership of the bloc obliges Prime Minister Theresa May to renegotiate her withdrawal agreement with Brussels. A Tory backbencher’s proposal calls on the government to come up with alternatives to the Irish backstop, a central tenet of the deal Britain agreed with the rest of the EU.""")
+doc = nlp("""The prospects for Britain’s orderly withdrawal from the European Union
+ on March 29 have receded further, even as MPs rallied to stop a no-deal scenario. 
+ An amendment to the draft bill on the termination of London’s membership of the 
+ bloc obliges Prime Minister Theresa May to renegotiate her withdrawal agreement 
+ with Brussels. A Tory backbencher’s proposal calls on the government to come up 
+ with alternatives to the Irish backstop, a central tenet of the deal Britain agreed 
+ with the rest of the EU.""")
 ```
 
 我们通过 `processors = ""` 参数指定需要分析的具体任务。如果不传入任何参数，程序将默认调用全部 5 个处理模块进行分析。具体可见下表：
 
-  参数名 | 标注器（Annotator）类名 | 工作方式/结果 
+  参数名 | 标注器类名（Annotator） | 工作方式/结果 
    --- | --- | --- 
    tokenize | TokenizeProcessor | 分词工具。它将一个文档（ `Document` ）分成许多句子（ `Sentence` ）,每个句子都包含着一个分词结果的列表，列表的元素是 `Token`。分词处理器还会预测哪些单词/字会组成多字词/词组，以便后续用 MWT 处理模块进行扩展。 
-  mwt | MWTProcessor | 对上一步预测的多字词/词组进行处理，将它们进行扩展 
+  mwt | MWTProcessor | 对上一步预测的多字词/词组进行处理，将它们进行扩展。 
   lemma | LemmaProcessor | 利用单词（ `Word` ）的 `Word.text` 和 `Word.upos` 属性，对每个单词进行词形还原。处理结果将存放在 `Word.lemma` 中。 |   
   pos | POSProcessor | 对每个 `token` 都进行全局词性分析（universal POS，UPOS）和基于语料库的词性分析（treebank-specific POS，XPOS) 标注，以及全局的形态特征（universal morphological features ，UFeats)标注，最后存放在 `Word` 对象的 `pos` 、 `xpos` 以及 `ufeats` 属性中。 
   depparse | DepparseProcessor | 它提供了一个准确的句法依存关系解析器，用来确定句子中每个单词的句法核心（syntactic head），以及两个单词之间的依存关系。分析结果保存在 `Word` 对象的 `governor` 和 `dependency_relation` 属性中。 
@@ -272,21 +280,21 @@ extract_pos(hindi_doc)
 
 1. ~~打开冰箱门~~ 不，是下载 CoreNLP 包。打开你的 Linux 终端，输入以下命令：
 
-```bash
-wget http://nlp.stanford.edu/software/stanford-corenlp-full-2018-10-05.zip
-```
+    ```bash
+    wget http://nlp.stanford.edu/software/stanford-corenlp-full-2018-10-05.zip
+    ```
 
 2. 解压下载好的软件包：
 
-```bash
-unzip stanford-corenlp-full-2018-10-05.zip
-```
+    ```bash
+    unzip stanford-corenlp-full-2018-10-05.zip
+    ```
 
 3. 启动 CoreNLP 服务器：
 
-```bash
-java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
-```
+    ```bash
+    java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
+    ```
 
 > _**注意**： CoreNLP 需要 Java8 才能运行，请务必确保你已经安装好了 JDK 和 JRE 1.8.x 以上版本。_
 
@@ -313,7 +321,8 @@ print(text)
 print('---')
 print('starting up Java Stanford CoreNLP Server...')
 # 启动客户端进程
-with CoreNLPClient(annotators=['tokenize','ssplit','pos','lemma','ner','depparse','coref'], timeout=30000, memory='16G') as client:
+with CoreNLPClient(annotators=['tokenize','ssplit','pos','lemma','ner','depparse','coref'],
+ timeout=30000, memory='16G') as client:
     # 把处理请求发送给服务器
     ann = client.annotate(text)
     # 获取返回对象的第 1 个句子
