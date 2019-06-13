@@ -9,41 +9,65 @@ thumb: "/img/20190616/thumb.jpg"
 ---
 
 <img src="/img/20190616/001.png" /><br><small>
-source: videoblocks.com</small>
+图片来源: videoblocks.com</small>
 
 ## Simply put
+## 目标简介
 
 The goal of this project is to build a web scraper that will run and perform searches on flight prices with flexible dates (up to 3 days before and after the dates you select first), for a particular destination. It saves an excel with the results and sends an email with the quick stats. Obviously, the objective is to help us find the best deals!
 
+简单地说，我们的目标是建立一个网络爬虫，帮你自动搜索飞往特定目的地，时间在一个弹性范围（在首选日期前后最多3天）内的航班价格。它会把搜索结果保存在一个 Excel 表格中，并把精炼过的统计信息通过电子邮件发送给你。显然，这一切都是为了帮我们找到最优惠的价格！
+
 If you get lost in some part, try to have a look at my article about the Instagram bot, as it uses Selenium too.
+
+如果你在阅读本文的时候遇到困难，建议试着看看我们的往期文章，特别是介绍用 Python 编写网络爬虫的那些。
 
 > The real life application for this is up to you. I’ve used it to search both holidays and recently also some short trips to my hometown!
 
+<span class="hl">在现实生活中，爬虫的用途完全取决于你。我曾经用它安排了两个假期的旅行，还搜索过一些回老家的短途旅行信息。</span>
+
 If you’re serious about it, you can run the script on a server (a simple Raspberry Pi will do), and make it start once or twice each day. The results will be mailed to you, and I suggest saving the excel file to a Dropbox folder, so you can access it from anywhere, anytime.
 
-<img src="/img/20190616/002.png" /><br><small>
-I did not find any error fare yet, but I suppose it’s possible!</small>
-
+如果你想要弄得专业一点，你可以把这个程序放在服务器（一个简单的树莓派就够了）上，让它一天运行上一两次。程序将会把统计结果发到你的邮箱里，我建议你把生成的 Excel 表格保存到网盘中（比如 Dropbox），这样你就能方便地在任何地方查阅数据。
 
 It searches through “flexible dates” so it will look for flights up to 3 days before and after the dates you select first. Although the script works for one pair of destinations at a time, you can easily adapt it to run several inside each loop. You might even end up finding some error fares… which would be awesome!
 
+它会搜索“弹性日期范围”，以便查找在你首选日期前后 3 天内的航班信息。尽管这个脚本一次只能查询一对目的地（出发-到达），但你很容以就能对它进行调整，以在每个循环内运行多次。你甚至可能发现一些标注错误的超低票价……那简直是棒极了！
+
+<img src="/img/20190616/002.png" /><br><small>
+I did not find any error fare yet, but I suppose it’s possible!
+我目前还没发现这类出错的机票，不过我想我会成功的！</small>
+
 ## Yet another scraper
+## 又一个爬虫？
+
 When I first started to do some web scraping I was not particularly interested in the topic. There… I said it! I wanted to do more projects with predictive modeling, financial analysis and maybe some sentiment analysis, but it turns out that it was a lot of fun figuring out how to build the first web crawler. As I keep learning, I realized web scraping is what makes the internet “work”.
 
+当我第一次开始做网络抓取工作的时候，我对这个方面并不是太感兴趣。没错，这是真心话。我那时候更希望搞些预测性的建模，或是金融分析，甚至一些语义情绪分析之类的项目。但事实证明，想方设法编写出第一个网络爬虫的过程，还是相当有趣的。随着我学习的不断深入，我逐渐意识到，网络抓取正是驱动互联网“工作”的主要推手。
+
 <img src="/img/20190616/003.jpeg" /><br><small>
-Yep… Just like Larry and Sergey, you can hit the jacuzzi after you initiate the scraper! (image: wired.com)</small>
+Yep… Just like Larry and Sergey, you can hit the jacuzzi after you initiate the scraper! (image: wired.com)
+没错，就像 Larry 和 Sergey 一样，等爬虫开始工作之后，你就可以躺在按摩浴缸里享受人生了！（图片来源：wired.com）</small>
 
 You might think it’s a really bold claim, but what if I told you that Google started out with a web scraper Larry Page built with Java and Python? It crawled, and still does, the whole internet trying to provide you the best possible answer for your questions. There are endless applications for web scraping, and even if you prefer other subjects in Data Science, you’ll still need some scraping skills to get your data.
 
-> Some of the techniques I use here come from an awesome book I recently bought that covers everything related with [web scraping](https://amzn.to/2K0mQGB). Plenty of simple examples and lots of practical applications. There’s even a very interesting chapter about solving reCaptcha checks which blew my mind — I was not aware of the existing tools and even services to deal with it! (Disclaimer: if you purchase the book through my link, I receive a small fee at no extra cost to you. So if you feel like buying me a coffee by the end of this article, I appreciate it!)
+你可能觉得我是章口就莱，但如果你知道，Google 最开始就是建立在 Larry Page 用 Java 和 Python 写的一个爬虫上的呢？这个爬虫差不多是字面意义上地把整个互联网都抓了下来（即使现在也是如此），以便当你在搜索框里输入关键字的时候，能够给你提供最佳的答案。网络爬虫在互联网上的实际应用几乎是无穷无尽的，即使你可能更喜欢数据科学中的其他领域，你仍然需要一些网络抓取技能来帮你获取数据。
+
+> 本教程中涉及到的一些技巧，在我往期的文章中有所涉猎，例如《[数据科学必备技能：用 Python 爬取网页](https://oicebot.github.io/2018/09/30/data-science-skills-web-scraping-using-python.html)》。也欢迎你在下面留言，共同探讨这方面的技巧。
 
 ## “Do you like traveling?!”
+## “你喜欢旅行吗？”
+
 This simple and innocuous question often meets a positive answer and a subsequent story or two about a previous adventure. Most of us would agree that traveling is a great way to experience new cultures and broaden our own perspectives. But if the question was “Do you like the process of searching for plane tickets?”, I’m sure the reaction would be a lot less enthusiastic…
 
-* Python to the rescue. *
+这个简单而无害的问题，常常能得到一个肯定的答复，偶尔还会收获一两个之前的冒险故事。我想大部分人应该都同意，旅行是体验新文化，拓展自己眼界的好办法。但是，如果问题变成“你喜欢订机票的过程吗？”，我想大家的热情一定会打上许多折扣吧…
 
+<span class="hl"> Python to the rescue. 
+这就是 Python 大显身手的时候啦。</span>
 
 The first challenge was to choose which platform to scrape the information from. It was not easy, but I settled with *Kayak*. I tried Momondo, Skyscanner, Expedia and a few more, but the reCaptchas on those websites were ruthless. After a few attempts selecting traffic lights, crosswalks and bicycles in those “are you human” checks, I concluded Kayak was my best alternative even though it throws out a security check if you load too many pages in a short period of time. I managed to keep the bot querying the website in *4 to 6 hour intervals* and it was ok. There may be an occasional hiccup here and there, but if you start getting reCaptcha checks, either solve them manually and start the bot after that, or wait a few hours and it should reset. Feel free to adapt the code to another platform, and you’re welcome to share it in the comments section!
+
+第一个挑战是，该选择从哪个平台获取信息。这并不是个容易的决定。最后，我选择了 Kayak。在这个过程中，我也考虑过 Momondo、Skyscanner、Expedia 以及一些其他的网站，不过对初学者来说，这些网站的人机验证实在是……比较无情。在选过几次哪个是红绿灯，哪个是人行道和自行车，点过几次“我不是机器人”之后，我觉得还是 Kayak 比较友好一点。
 
 If you’re new to web scraping or if you don’t know why some websites go a long way to prevent it, please do yourself a big favor before writing your first line of code towards a scraper. Google “web scraping etiquette”. Your endeavour might be over much sooner than you think if you just start scraping like a madman.
 
