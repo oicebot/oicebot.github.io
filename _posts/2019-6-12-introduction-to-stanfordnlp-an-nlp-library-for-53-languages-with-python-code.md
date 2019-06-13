@@ -296,7 +296,7 @@ extract_pos(hindi_doc)
     java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
     ```
 
-> _**注意**： CoreNLP 需要 Java8 才能运行，请务必确保你已经安装好了 JDK 和 JRE 1.8.x 以上版本。_
+_**注意**： CoreNLP 需要 Java8 才能运行，请务必确保你已经安装好了 JDK 和 JRE 1.8.x 以上版本。_
 
 接着，你需要让 StanfordNLP 获取到 CoreNLP 所在的路径。你需要把 CoreNLP 的路径写入环境变量 `$CORENLP_HOME` 中。在我上面的例子中，CoreNLP 所在的文件夹是**直接放在用户的 home 目录**中，所以我的环境变量是这样：
 
