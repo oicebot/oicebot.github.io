@@ -67,37 +67,94 @@ This simple and innocuous question often meets a positive answer and a subsequen
 
 The first challenge was to choose which platform to scrape the information from. It was not easy, but I settled with *Kayak*. I tried Momondo, Skyscanner, Expedia and a few more, but the reCaptchas on those websites were ruthless. After a few attempts selecting traffic lights, crosswalks and bicycles in those “are you human” checks, I concluded Kayak was my best alternative even though it throws out a security check if you load too many pages in a short period of time. I managed to keep the bot querying the website in *4 to 6 hour intervals* and it was ok. There may be an occasional hiccup here and there, but if you start getting reCaptcha checks, either solve them manually and start the bot after that, or wait a few hours and it should reset. Feel free to adapt the code to another platform, and you’re welcome to share it in the comments section!
 
-第一个挑战是，该选择从哪个平台获取信息。这并不是个容易的决定。最后，我选择了 Kayak。在这个过程中，我也考虑过 Momondo、Skyscanner、Expedia 以及一些其他的网站，不过对初学者来说，这些网站的人机验证实在是……比较无情。在选过几次哪个是红绿灯，哪个是人行道和自行车，点过几次“我不是机器人”之后，我觉得还是 Kayak 比较友好一点。
+第一个挑战是，该选择从哪个平台获取信息。这并不是个容易的决定。最后，我选择了 Kayak。在这个过程中，我也考虑过 Momondo、Skyscanner、Expedia 以及一些其他的网站，不过对初学者来说，这些网站的人机验证实在是……比较无情。在选过几次“哪个是红绿灯，哪个是人行道和自行车”，点过几次“我不是机器人”之后，我觉得还是 Kayak 比较友好一点——虽然如果你在短时间内同时读取太多页面的话，它也会给你弹一些安全检查什么的。
+
+我目前让脚本大约**每隔 4 到 6 个小时**就抓一次网页，虽然偶尔会出现一些小问题，但总体上还是比较 OK 的。如果你发现脚本开始碰到验证码，你可以试着手动提交验证然后重启脚本，也可以等上几个小时再访问这个网站，那时候验证码应该就消失了。
+
+你也可以试着把这些代码用在其他平台上，也欢迎大家在下面留言分享你的成果！
 
 If you’re new to web scraping or if you don’t know why some websites go a long way to prevent it, please do yourself a big favor before writing your first line of code towards a scraper. Google “web scraping etiquette”. Your endeavour might be over much sooner than you think if you just start scraping like a madman.
 
+如果你还不熟悉网络抓取，或者如果你不知道为什么某些网站费尽全力要阻止爬虫，那么在你写下第一行爬虫代码之前，请先 Google 一下“网络爬虫礼仪”。 如果你像疯子一样开始扒别人的网站，你的努力可能很快就全白费了。
+
 ## Fasten your seatbelts…
-Pun intended
+## 系紧安全带
+
+> 准备加速出发！
 
 After importing and opening a chrome tab, we’ll define some functions that will be used inside a loop. The idea of the structure is more or less like this:
 
-* a function will start the bot, declaring the cities and dates we want to search
-* this function gets the first search results, sorted by “best” flights, and clicks the “load more results”
-* another function will scrape the whole page, and return a dataframe
-* it will repeat step 2 and 3 for the “cheap” and “fastest” sort types
-* an email will be sent to you with a brief summary of the prices (cheapest and average), and the dataframe with the three sort types will be saved as an excel file
-* all the previous steps are repeated in a loop, that runs every X hours.
+在你导入所需的库，并打开一个 Chrome 页面之后，我们需要定义一些之后会在循环中调用的函数。主要的程序结构应该差不多类似这样：
 
-* * * 
+1.  a function will start the bot, declaring the cities and dates we want to search
+1.  一个函数负责启动爬虫，指出我们需要查找的城市和日期
+1.  this function gets the first search results, sorted by “best” flights, and clicks the “load more results”
+1.  这个函数获取到最初的搜索结果，按照“最优”方式排序航班列表，然后点击“载入更多”
+1.  another function will scrape the whole page, and return a dataframe
+1.  另外一个函数爬取整个页面，返回一个 dataframe 数据表对象
+1.  it will repeat step 2 and 3 for the “cheap” and “fastest” sort types
+1.  重复上面的步骤 2 和 3，用“最便宜”和“最快速”的方式排序列表
+1.  an email will be sent to you with a brief summary of the prices (cheapest and average), and the dataframe with the three sort types will be saved as an excel file
+1.  简单地对价格进行统计（最低价、平均价），然后形成简要汇总表，发送到指定邮箱，并把对应的 dataframe 保存成 Excel 表格文件，放在指定目录中
+1.  all the previous steps are repeated in a loop, that runs every X hours.
+1.  每隔 X 小时就重复一遍上面的每一步
 
-Well, every Selenium project starts with a webdriver. I’m using Chromedriver, but there are other alternatives. PhantomJS or Firefox are also popular. After downloading it, place it in a folder and that’s it. These first lines will open a blank Chrome tab.
+---
+
+Well, every Selenium project starts with a webdriver. I’m using Chromedriver, but there are other alternatives. PhantomJS or Firefox are also popular. After downloading it, place it in a folder and that’s it. 
+
+那么，每一个 Selenium 项目都是从一个网页驱动框架（webdriver）开始的。我现在用的是 Chromedriver，它使用的是 Chrome 内核。当然，你也可以选择其他的选项，比如无头浏览器 PhantomJS，或者干脆是火狐，都很不错。下载完，往文件夹里一丢就完事了。
 
 Please bear in mind I’m not breaking new ground here. There are way more advanced ways of finding cheap deals, but I want my posts to share something simple yet practical!
 
-These are the packages I will use for the whole project. I’ll use randint to make the bot sleep a random number of seconds between each search. That is usually a must have feature for any bot. If you ran the previous code, you should have a Chrome window open, which is where the bot will navigate.
+请各位大佬读者注意，我写这篇文章并不是为了展示什么新技术。没错，已经有更先进的方法来寻找更便宜的机票，然而我只希望我的文章能给初学者带来一些简单而实用的东西！
+
+```python
+from time import sleep, strftime
+from random import randint
+import pandas as pd
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import smtplib
+from email.mime.multipart import MIMEMultipart
+```
+
+These are the packages I will use for the whole project. I’ll use randint to make the bot sleep a random number of seconds between each search. That is usually a must have feature for any bot. 
+
+上面这些就是我们的脚本所需的代码库啦。我将用 `randint()`  让爬虫在每次搜索之间暂停上随机的几秒钟，这是基本上每个爬虫都会有的功能。
+
+```python
+driver = webdriver.Chrome(executable_path=chromedriver_path)
+sleep(2)
+```
+
+These first lines will open a blank Chrome tab.If you ran the previous code, you should have a Chrome window open, which is where the bot will navigate.
+
+开头这几行将会打开一个空白的 Chrome 页面。当你运行它的时候，你将会看到一个空白的 Chrome 浏览器窗口出现了，我们接下来就将让爬虫在这个窗口里工作。
 
 So let’s make a quick test and go to kayak.com on a different window. Select the cities you want to fly from and to, and the dates. When selecting the dates, make sure you *select “+-3 days”*. I have written the code with that results page in mind, so there is a high chance you need to make a few adjustments if you want to search specific dates only. I’ll try to point the changes throughout the text, but if you get stuck shoot me a message in the comments.
 
-Hit the search button and get the link in the address bar. It should look something like the link I use below, where I define the variable kayak as the url and execute the get method from the webdriver. Your search results should appear.
+那么，先让我们在另外一个窗口中手动打开 kayak.com 检查一下吧。选择你的出发和到达城市，以及出发日期。在选择日期的时候，记得选上“± 3 天”的选项。我写代码的时候是按这个选项来调试的，所以如果只想搜索某个指定日期的话，需要对代码进行一些调整。
 
 <img src="/img/20190616/003.png" />
 
+我会试着说明需要调整的地方，不过如果你在尝试的时候遇到问题，欢迎在下面留言哈。
+
+Hit the search button and get the link in the address bar. It should look something like the link I use below, where I define the variable kayak as the url and execute the get method from the webdriver. Your search results should appear.
+
+接下来，我们按下搜索按钮，把地址栏里的链接地址复制下来。这个地址长得应该类似下面代码中的那个字符串。我把这个字符串赋值给 `kayak` 变量，并用 webdriver 的 get 方法来访问这个地址。
+
+```python
+kayak = "https://www.kayak.com/flights/LTS-SIN/2019-07-29-flexible/2019-08-15-flexible?sort=bestflight_a"
+driver.get(kayak)
+sleep(3)
+```
+
+这时你的搜索结果页面应该出现了。
+
 Whenever I used the get command more than two or three times in a few minutes, I would be presented with a reCaptcha check. You can actually solve the reCaptcha yourself, and keep doing the tests you want before the next one comes up. From my testing, it seems to be fine for the first search all the times, so it’s really a matter of solving the puzzle yourself if you want to play with the code, and leave the code running by itself with long intervals between them. You really don’t need 10 minute updates on those prices, do you?!
+
+如果我在几分钟内连续执行这个命令两三次，网站就会弹出一个验证码，阻止后续的访问。你可以直接手动
 
 ## Every XPath has its puddle
 So far we’ve opened a window and got a website. In order to start getting prices and other information, we have to use XPath or CSS selectors. I’ve chosen XPath and didn’t feel the need to mix it up with CSS, but it is perfectly possible to do so. Navigating the webpages with XPath can be confusing, and even if you use the methods I described in the Instagram article, where I use the “copy XPath” trick directly from the inspector view, I realized it’s really not the optimal way to get to the elements you want. Sometimes that link is so specific, that it quickly turns obsolete. The book Web Scraping with Python does a phenomenal job explaining the basics of navigating with XPath and CSS selectors.
@@ -161,6 +218,6 @@ If you made it this far, **congratulations**! There are plenty of improvements I
 
 If you want to learn more about Web Scraping, I strongly recommend the book [Web Scraping with Python](https://amzn.to/2YzJIR4). I really liked the examples and the clear explanation of how the code is working. And if you prefer social media scraping, there’s also an excellent book exclusively on the subject. I’m using the latter for my next article using the Twitter API, but there is stuff there to scrape even LinkedIn! (If you decide to purchase and use my links, I receive a small fee at no extra cost to you. I do need a lot of coffee to write these articles! Thanks in advance!)
 
-
+https://github.com/fnneves/flight_scraper/blob/master/FlightScraper%20python%20bot%20for%20kayak.ipynb
 
 > _（本文已投稿给「[优达学城](https://cn.udacity.com)」。 原作： [{{ page.author }}]({{ page.from }}) 编译：欧剃 转载请保留此信息）_
