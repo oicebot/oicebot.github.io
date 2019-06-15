@@ -154,10 +154,16 @@ sleep(3)
 
 Whenever I used the get command more than two or three times in a few minutes, I would be presented with a reCaptcha check. You can actually solve the reCaptcha yourself, and keep doing the tests you want before the next one comes up. From my testing, it seems to be fine for the first search all the times, so it’s really a matter of solving the puzzle yourself if you want to play with the code, and leave the code running by itself with long intervals between them. You really don’t need 10 minute updates on those prices, do you?!
 
-如果我在几分钟内连续执行这个命令两三次，网站就会弹出一个验证码，阻止后续的访问。你可以直接手动
+如果我在几分钟内连续执行这个命令两三次，网站就会弹出一个验证码，阻止后续的访问。 这种情况下，你可以直接手动完成验证，并继续测试你需要搜索的内容，直到下一个验证码跳出来为止。
+
+就我个人的测试而言，头一次的搜索总是不会有问题的，所以如果你还没有跳过验证码的能力，你可以试着先手动完成验证，然后再让爬虫以较低的频率执行搜索操作。——毕竟你完全没必要每隔10分钟就搜索一次价格，对吧？
 
 ## Every XPath has its puddle
+## XPath：一个萝卜一个坑
+
 So far we’ve opened a window and got a website. In order to start getting prices and other information, we have to use XPath or CSS selectors. I’ve chosen XPath and didn’t feel the need to mix it up with CSS, but it is perfectly possible to do so. Navigating the webpages with XPath can be confusing, and even if you use the methods I described in the Instagram article, where I use the “copy XPath” trick directly from the inspector view, I realized it’s really not the optimal way to get to the elements you want. Sometimes that link is so specific, that it quickly turns obsolete. The book Web Scraping with Python does a phenomenal job explaining the basics of navigating with XPath and CSS selectors.
+
+目前，我们打开了一个窗口，读取了一个网页，为了能确切地获取到价格和其他信息，我们需要用到网页的 XPath 
 
 <img src="/img/20190616/004.png" />
 
