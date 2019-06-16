@@ -163,7 +163,9 @@ Whenever I used the get command more than two or three times in a few minutes, I
 
 So far we’ve opened a window and got a website. In order to start getting prices and other information, we have to use XPath or CSS selectors. I’ve chosen XPath and didn’t feel the need to mix it up with CSS, but it is perfectly possible to do so. Navigating the webpages with XPath can be confusing, and even if you use the methods I described in the Instagram article, where I use the “copy XPath” trick directly from the inspector view, I realized it’s really not the optimal way to get to the elements you want. Sometimes that link is so specific, that it quickly turns obsolete. The book Web Scraping with Python does a phenomenal job explaining the basics of navigating with XPath and CSS selectors.
 
-目前，我们打开了一个窗口，读取了一个网页，为了能确切地获取到价格和其他信息，我们需要用到网页的 XPath 
+目前，我们打开了一个窗口，读取了一个网页，为了能确切地获取到价格和其他信息，我们需要用到 XPath 或者 CSS 的选择器。今天的例子中，我选择用 XPath 来定位页面上的元素，因为我觉得这个例子里并不是太需要用到 CSS－－当然，如果你能做到混合使用 CSS 来进行定位，那当然更完美。用 XPath 来在页面中进行跳转有的时候还是容易把人搞晕，即使你用了网上那些文章中的技巧，比如在“检查元素”中直接右键“复制 XPath”等方式来获取对应网页元素的 XPath 信息，也不见得就是最佳的办法－－有的时候，这样获取的链接太特殊了，很快就不能再用了。
+
+> 译注：这里个人推荐一下我个人之前买过的《Python 爬虫开发从入门到实战》（谢乾坤 著），里面比较详细地介绍了 XPath 语法，以及如何构造 XPath 的知识，当然 Selenium 的模拟登录和处理验证码等黑科技的介绍也少不了。建议学有余力的同学可以看一看。
 
 <img src="/img/20190616/004.png" />
 
