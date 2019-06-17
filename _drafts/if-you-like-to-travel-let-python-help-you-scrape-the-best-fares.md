@@ -167,38 +167,82 @@ So far we’ve opened a window and got a website. In order to start getting pric
 
 > 译注：这里个人推荐一下我个人之前买过的《Python 爬虫开发从入门到实战》（谢乾坤 著），里面比较详细地介绍了 XPath 语法，以及如何构造 XPath 的知识，当然 Selenium 的模拟登录和处理验证码等黑科技的介绍也少不了。建议学有余力的同学可以看一看。
 
-<img src="/img/20190616/004.png" />
+```python
+cheap_results = '//a[@data-code = "price"]'
+driver.find_element_by_xpath(cheap_results).click()
+```
 
 Moving on, let’s use Python to select the **cheapest** results. The red text in the code above is the XPath selector, and it can be seen if you right click the webpage anywhere and select *“inspect”*. Click again with the right click where you want to see the code, and inspect again.
 
-<img src="/img/20190616/005.png" />
+那么，让我们用 Python 来选中**最便宜**的搜索结果。上面的代码中，那个字符串就是 XPath 选择器。你可以在网页中任意元素上点击右键，选择 `检查`，当开发者工具弹出时，你就可以在窗口中看到你选中的元素的代码了。
+
+<img src="/img/20190616/004.png" />
 
 To illustrate my previous observation on the shortcomings of copying the path from the inspector, consider these differences:
 
-1. This is what the copy method would return. Right click highlighted rows on the right side and select "copy > Copy XPath"
-```
-//*[@id="wtKI-price_aTab"]/div[1]/div/div/div[1]/div/span/span
-```
-2. This is what I used to define the "Cheapest" button
+为了说明一下我前面提到过的，直接在开发者工具中复制 XPath 可能存在的问题，大家可以对比一下这两个 XPath 代码：
 
-```
-cheap_results = ‘//a[@data-code = “price”]’
-```
+1. This is what the copy method would return. Right click highlighted rows on the right side and select "copy > Copy XPath"
+
+1. 这是在开发者工具中，右键点击并选择 `复制 XPath` 命令后，你得到的 XPath 字符串：
+
+    ```python
+    '//*[@id="wtKI-price_aTab"]/div[1]/div/div/div[1]/div/span/span'
+    ```
+2. This is what I used to define the "Cheapest" button
+2. 这是我实际使用的定位“最便宜”结果的 XPath 语句：
+
+    ```python
+    cheap_results = '//a[@data-code = "price"]'
+    ```
+
+看出问题了吗？
 
 It’s clearly visible the simplicity of the second option. It searches for an element a which has an attribute data-code equal to price. The first alternative looks for an element with an id equal to wtKI-price_aTab and follows the first div element, four more divs, and two spans. It will work… this time. I can tell you right now that the id element will change next time you load the page. The letters wtKI change dynamically every time a page loads, so your code would be useless as soon as the page reloads. **Invest a little time reading about XPath and I promise it will pay off**.
 
-<img src="/img/20190616/006.png" />
+很明显，后面这种写法更简明易懂。它在网页上搜索，并定位一个 `data-code` 属性等于 `"price"` 的元素。
 
-* Nevertheless, using the copy method will work on less “sophisticated” websites, and that’s fine too! *
+而前面这种写法，它先定位一个 ID 是 `wtKI-price_aTab` 的元素，然后找它的第一个子 `div` 然后往下找 4 层 `div` 以及 2 层 `span` …… 怎么说呢，它这次应该是会成功的吧，但一旦网页层次有变化，你的代码就废了。
+
+还是回到上面这个例子，这个 ID 是 `wtKI-price_aTab` 的元素，只要你刷新一下页面，它的 ID 就变了——事实上，这个 `wtKI` 是自动生成的字符串，它在每次搜索的时候都会不一样。也就是说，只要一刷新页面，你这段代码就没法正常工作了。
+
+所以，我的忠告是：<span class="hl">花点时间认真了解网页结构特征，熟悉 XPath，肯定不亏</span>。
+
+<img src="/img/20190616/005.png" />
+
+> Nevertheless, using the copy method will work on less “sophisticated” websites, and that’s fine too!
+> 不过，在没那么“复杂”的网站上，直接用复制 XPath 也是可以的完成任务的。具体问题具体分析吧！
 
 Building on what I displayed above, what if we wanted to get all the search results in several strings, inside a list? Simple. Each result is inside an object with the class “resultWrapper”. Fetching all the results can be achieved with a for loop like the next. **If you understand this part, you should be able to understand most of the code that will follow.** It’s basically pointing to what you want (the results wrapper), using some kind of way (XPath) to get the text there, and placing it in a readable object (first with the `flight_containers` and then with the `flights_list`).
 
-<img src="/img/20190616/007.png" />
+在完成了上面的这些步骤之后，搜索结果应该已经显示出来了。那么，如果我们要把所有搜索结果的字符串都读取出来，保存在一个列表对象里面，该怎么做呢？小菜一碟。观察这个页面，我们能看出，每一个搜索结果都属于 `resultWrapper` 类下的一个对象。那么，我们只需要用 xpath 把所有包含这个类的元素都抓下来，再弄个循环把它们塞进列表里就完事了。<span class="hl">如果你能理解这个部分，那接下来的绝大部分代码应该都难不住你啦。</span>
+
+基本上，它的工作方式就是指向你想要的某个对象（比如这里的 `resultWrapper` ），用某种方式（XPath 选择器）把文字都抓下来，然后把内容都放在某个方便读取的对象（先是 `flight_containers`，接着是 `flights_list` ）中，就搞定咯。
+
+这段的代码类似这样：
+
+```python
+xp_results_table = '//*[@class = "resultWrapper"]'
+flight_containers = driver.find_elements_by_xpath(xp_results_table)
+flights_list = [flight.text for flight in flight_containers]
+
+# 列出前 3 个结果
+flights_list[0:3]
+```
+
+运行结果如下：
+
+<img src="/img/20190616/006.png" />
 
 The first 3 rows are displayed and we can clearly see everything we need, but we have better alternatives to get the information. We need to scrape each element individually.
 
+我把前三行显示出来，这样我们就能比较直观地看出程序有没有正确地获取到我们需要的信息。不过，为了方便处理多页数据，我打算单独爬取每个页面上的每个元素，最后再整合进数据表中。
+
 ## Clear for take-off!
+## 准备起飞！
 The easiest function to code is to load more results, so let’s start with that. I want to maximize the amount of flights I get, without triggering the security check, so I will click once in the “load more results” button every time a page is displayed. The only thing new is the try statement, which I added because sometimes the button was not loading properly. If it acts up with you too, simply comment it out in the `start_kayak` function that I will show ahead.
+
+
 
 And now, after a long intro (I can get carried away at times!) we’re ready to define the function that will actually scrape the pages.
 
@@ -222,7 +266,7 @@ If you made it this far, **congratulations**! There are plenty of improvements I
 
 >By popular request in the comments section, here’s the [link](https://github.com/fnneves/flight_scraper) to a full Jupyter Notebook with all the code!
 
-<img src="/img/20190616/008.png" />
+<img src="/img/20190616/007.png" />
 
 If you want to learn more about Web Scraping, I strongly recommend the book [Web Scraping with Python](https://amzn.to/2YzJIR4). I really liked the examples and the clear explanation of how the code is working. And if you prefer social media scraping, there’s also an excellent book exclusively on the subject. I’m using the latter for my next article using the Twitter API, but there is stuff there to scrape even LinkedIn! (If you decide to purchase and use my links, I receive a small fee at no extra cost to you. I do need a lot of coffee to write these articles! Thanks in advance!)
 
