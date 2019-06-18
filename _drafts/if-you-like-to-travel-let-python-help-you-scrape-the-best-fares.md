@@ -38,6 +38,8 @@ It searches through “flexible dates” so it will look for flights up to 3 day
 I did not find any error fare yet, but I suppose it’s possible!
 我目前还没发现这类出错的机票，不过我想我会成功的！</small>
 
+> 译注：本文的完整源代码可以在[作者的 Github 页面上](https://github.com/fnneves/flight_scraper/blob/master/FlightScraper%20python%20bot%20for%20kayak.ipynb)下载到，有需要的读者可以对照代码阅读本文，以方便理解。
+
 ## Yet another scraper
 ## 又一个爬虫？
 
@@ -240,13 +242,20 @@ The first 3 rows are displayed and we can clearly see everything we need, but we
 
 ## Clear for take-off!
 ## 准备起飞！
+
 The easiest function to code is to load more results, so let’s start with that. I want to maximize the amount of flights I get, without triggering the security check, so I will click once in the “load more results” button every time a page is displayed. The only thing new is the try statement, which I added because sometimes the button was not loading properly. If it acts up with you too, simply comment it out in the `start_kayak` function that I will show ahead.
 
+首先，也是最容易的函数，就是实现「加载更多」功能。我们的目标是，在一页里尽可能多地获取航班信息，同时又不触发验证码检查。所以，我的做法是，在一页内容载入进来之后，点一下（就一下！）页面上的「加载更多结果」按钮。这基本上和我们上面讲过的代码没啥区别，只多了一个 `try` 语句——我加上这行是因为有的时候这个按钮会没能正确加载，而我不希望程序在这种情况下就此崩溃。
 
+要开启这个功能，你只需要在 `start_kayak` 函数中把 `# load_more()` 前面的注释去掉就行啦。
 
 And now, after a long intro (I can get carried away at times!) we’re ready to define the function that will actually scrape the pages.
 
+那么，在拉拉杂杂地说了这么多之后（有的时候我真的容易跑题），我们终于到了实际抓取页面内容的函数啦！
+
 I already compiled most of the elements in the next function called `page_scrape`. Sometimes, the elements returned lists interpolating first and second legs information. I used a simple method to split them, for instance in the first `section_a_list` and `section_b_list` variables. The function also returns a dataframe `flights_df`, so we can separate the results we get in the different sorts and merge them later.
+
+我把大部分
 
 I’ve tried to make the names clear to follow. Remember that the variables with a are related with the first leg of the trip, and b with the second. On to the next function.
 
