@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "If you like to travel, let Python help you scrape the best cheap flights!"
+title: "Python 带你去旅行：手把手教你自动查询航班信息"
 tags: udacity translate python
 author: Fábio Neves
 from: https://towardsdatascience.com/if-you-like-to-travel-let-python-help-you-scrape-the-best-fares-5a1f26213086
-excerpt: ""
+excerpt: "简单地说，今天我们将建立一个网络爬虫，帮你自动搜索指定目标的航班价格。它会把搜索结果保存在一个 Excel 表格中，并把精炼过的统计信息通过电子邮件发送给你。"
 thumb: "/img/20190616/thumb.jpg"
 ---
 
@@ -255,30 +255,49 @@ And now, after a long intro (I can get carried away at times!) we’re ready to 
 
 I already compiled most of the elements in the next function called `page_scrape`. Sometimes, the elements returned lists interpolating first and second legs information. I used a simple method to split them, for instance in the first `section_a_list` and `section_b_list` variables. The function also returns a dataframe `flights_df`, so we can separate the results we get in the different sorts and merge them later.
 
-我把大部分
+我已经把页面上大部分需要处理的元素都丢给 `page_scrape` 函数来处理了。有的时候，处理结果的列表中会混杂插入第一站和第二站的经停信息，我用一个简单的方法把它们分开，存在 `section_a_list` 和 `section_b_list` 两个变量中。这个函数还返回一个数据表对象 `flights_df` 以便我们可以把各种不同排序的结果分门别类，并最后整合在一起。
 
 I’ve tried to make the names clear to follow. Remember that the variables with a are related with the first leg of the trip, and b with the second. On to the next function.
 
+我试着让变量名看起来比较清晰易懂一些。请记住，带有 A 的变量与行程第一段相关，而 B 与第二段相关。让我们看看下一个函数吧。
+
 ## Wait, there’s more?!
+## 什么，还有其他函数？
+
 So far we have a function to load more results, and a function to scrape those results. I could end the article here and you would still be able to use these manually and use the scraping function on a page you browsed by yourself, but I did mention something about sending an email to yourself and some other information! That is all inside the next function `start_kayak`!
+
+是的。目前我们已经载入了一个页面，构建了一个读取更多内容的函数，以及一个爬取并处理内容的函数。其实，我大可以在这里就把文章结束掉，你还是可以用这段代码来打开某个页面，并读取对应的内容。但我之前提到过，我们的程序要能自动保存、发邮件通知你等等，这些功能我都已经放在 `start_kayak` 函数里面啦！
 
 It requires you to declare the cities and the dates. From there, it will open the address in the `kayak` string, which goes directly to the sort by “best” results page. After the first scrape, I took the liberty of getting the top matrix with the prices. It will be used to calculate an average and a minimum, to be sent in the email along with Kayak’s prediction (in the page it should be on the top left). This is one of the things that could cause an error on a single date search since there is no matrix element there.
 
+首先，你需要指定出发/到达的城市和乘机日期。接着，程序将会根据你输入的数据，构造对应的 `kayak` 地址字符串，再打开这个网页地址——这会直达“最佳”排序的搜索结果页面。在第一次爬取之后，我就悄摸摸地把页面顶部的价格和时间对照表给存了下来。我将用这个表格来计算出最低价格和平均价等数据，和 Kayak 的预测推荐数据（一般在页面的左上角）一起用电子邮件发给你。**如果你的搜索不含有弹性日期的话，就不会有一个对照表对象出现在页面上，那么你的这段代码就可能会出问题。**
+
 I tested this using an Outlook account (hotmail.com). Although I did not test it using a Gmail account to send the email, there are lots of alternatives you can search, and the book I mentioned earlier has other ways to do it too. If you already have a Hotmail account, it should work if you replace your details.
 
-> If you want to explore what some parts of the script are doing, please copy it and use it outside the functions. That is the only way you will fully understand it
+我使用 Outlook 帐户（hotmail.com）进行了一下电子邮件发送测试。如果你没有 Outlook，也可以在网上搜索到许多替代方案，还有其他方法可以实现。如果您已经拥有 Hotmail 帐户，那你直接替换一下相关的账户信息应该就能用了。
+
+> 译注：请注意，永远不要把密码直接写在代码里，版本管理系统里的东西是删不掉的。
+
+**If you want to explore what some parts of the script are doing, please copy it and use it outside the functions. That is the only way you will fully understand it**
+<span class="hl">如果你想要理解这些代码的每个部分到底产生了什么作用，请把它们复制出来，在函数外运行它，观察一下。只有这样，你才能真正理解其中的原理。</span>
 
 ## Using everything we just created
+## 把所有代码都用上
+
 After all this, we might as well come up with a simple loop to start using the functions we just created and keep them busy. Completed with four “fancy” prompts for you to actually write the cities and dates (the inputs). Since when we’re testing, we don’t want to type these variables every time, alternate it with the explicit way below them when needed.
+
+在写完了上面这些代码之后，我们需要把这些函数都组装起来，让它们开始工作。
+
+为了保持例子的简单，我们不妨就用一个简单的循环来重复调用它们。在循环的前面，我加了四个“花哨”（并不）的提示，让你可以直接输入出发和到达的城市，以及搜索的日期范围（用的就是 `input` 函数）。不过在我们测试的时候，我并不想每次都输入这些变量，所以我在下面写入了 4 个测试数据，在实际使用的时候，你只需要把这 4 个测试数据注释掉就好啦。
 
 If you made it this far, **congratulations**! There are plenty of improvements I can think of, like integrating with Twilio to send you a text message instead of an email. You can also use VPN’s or more obscure ways to grind the search results from several servers at the same time. There’s the captcha issue, that may pop up from time to time, but there are workarounds for these sorts of things. I think you have some pretty solid basis here, and I encourage you to try and add some extra features. Maybe you want the excel file sent as an attachment. I always welcome constructive feedback, so feel free to leave a comment below. I try to respond to every one!
 
->By popular request in the comments section, here’s the [link](https://github.com/fnneves/flight_scraper) to a full Jupyter Notebook with all the code!
+如果你已经看到了这里，**恭喜**！你已经学完了今天这个短短的教程。
+
+对于学有余力的读者，可以考虑一下如何改进我们这段简单的小程序，比如我想到的有：使用微信机器人，把搜索结果文字通过微信发给你自己；使用 VPN 或是其他更隐蔽的方式从多个服务器同时获取搜索结果；把保存搜索结果的 Excel 文件作为附件发送；使用更高级的功能来搞定验证码等问题……等等等等。
+
+我总是欢迎大家的建议和意见，有任何想法都可以在下面给我留言！我会尽可能回复的！
 
 <img src="/img/20190616/007.png" />
-
-If you want to learn more about Web Scraping, I strongly recommend the book [Web Scraping with Python](https://amzn.to/2YzJIR4). I really liked the examples and the clear explanation of how the code is working. And if you prefer social media scraping, there’s also an excellent book exclusively on the subject. I’m using the latter for my next article using the Twitter API, but there is stuff there to scrape even LinkedIn! (If you decide to purchase and use my links, I receive a small fee at no extra cost to you. I do need a lot of coffee to write these articles! Thanks in advance!)
-
-https://github.com/fnneves/flight_scraper/blob/master/FlightScraper%20python%20bot%20for%20kayak.ipynb
 
 > _（本文已投稿给「[优达学城](https://cn.udacity.com)」。 原作： [{{ page.author }}]({{ page.from }}) 编译：欧剃 转载请保留此信息）_
