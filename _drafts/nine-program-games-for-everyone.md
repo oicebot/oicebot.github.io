@@ -52,35 +52,54 @@ while True: learn()    | ⭐⭐⭐       | ⭐⭐⭐⭐    | ⭐⭐⭐        | 
 让我们赶快放松一下，看看这款轻松愉快，适合小朋友入门学习编程思想的游戏吧。
 
 
-Programming, or Coding, is simply the way people tell a computer what to do using instructions that the computer understands.
-——Danny Yaroslavski，Lightbot的作者
+> Programming, or Coding, is simply the way people tell a computer what to do using instructions that the computer understands.
+> ——Danny Yaroslavski，Lightbot的作者
 
 ## 6. TIS-100
 
 如果你对编程的历史有一定了解，你大概听说过汇编语言这种用在微处理器、微控制器，或其他可编程器件上的低级编程语言——在高级编程语言大行其道的今天，汇编语言已不再被广泛用于程序设计。由于基本就是把机器码变成一些晦涩难懂的字母而已，汇编语言可算是被全世界绝大多数程序员一致认为是无趣到爆炸的东西。
+
 但是，如果突然有人告诉你，你的一个搞挨踢的远房亲戚去世的时候，遗留下一台神秘的旧机器给你，这机器里包含着一个未知的秘密，需要你去解开呢？
+
 这台“机器”就是TIS-100，它随机带了一本仅14页的说明书（谢天谢地，不算太长），你必须利用说明书上的知识，逐步修复机器里的问题程序，最终解开遗产的谜团——而这一切都要求你用一种特制的……汇编语言来完成！
+
 游戏界面长这样，里面还自带一个沙盒，让你可以不断挑战程序的效率和代码之美：
 
 ——怎么样，是不是让你感觉到了一种奇特的怀旧体验呢？不，其实我宁愿去学Python（逃
 
+> “单身玩家比率最高的游戏”
+> ——Xenox，奶牛关
+
 ## 5. SHENZHEN I/O
 
 
-对程序员来说，这款游戏最大的问题其实和刚才说到的 TIS-100 是一样的……“我为什么要花几十块钱，在家里加班！？”
+对程序员来说，这款游戏最大的问题其实和刚才说到的 TIS-100 是一样的……
+
+> “作为一个嵌入式工程师，我为什么要花几十块钱，在家里加班！？”
+> ——YTFZ，Steam 玩家、工程师
 
 ## 4. EXAPUNKS
 
 > “它考的是编程里的关键概念：指针!”
-> ——Steam 评测者、程序员 Jasy
+> ——Jasy，Steam 玩家、程序员 
 
 ## 3. 任天堂 Labo
 
 Nintendo Labo 真是老少（码农）咸宜，特别适合家长和孩子一起学编程！（不，我真的不是为了自己玩买的 Switch！）
 
+> “这都是借口！你买了之后还不是都在玩塞尔达！”
+> ——一个愤怒的家长
 
-## 2. 人力资源机器（Human Resource Machine）
+
+## 2. 程序员升职记（Human Resource Machine）
+
+
+> “什么？你说你已经是这方面的专家了？ 呵呵，对于你这种人， 公司专门开了间‘强迫症中心’！”
+> ——Tomorrow Corporation，游戏开发商
 
 ## 1. while True: learn()
 
+
+> “请问能帮我Debug的猫在哪能买到？急，在线等”
+> ——Steam 社区评论
 
