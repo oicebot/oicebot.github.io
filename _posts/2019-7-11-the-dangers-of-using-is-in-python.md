@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "The dangers of using ‘is’ in Python"
+title: "不是我吓你，在 Python 里用 is 进行比较的后果很危险！"
 tags: udacity translate python
 author: Brad Dettmer
 from: https://medium.com/peloton-engineering/the-dangers-of-using-is-in-python-f42941124027
-excerpt: ""
+excerpt: "开发：“我这里是好的！”"
 thumb: "/img/20190711/thumb.jpg"
 ---
 
