@@ -67,7 +67,7 @@ Paul 和 Brad 分别指向一张不同的狗狗钞票，它们的面值都是“
 <img src="/img/20190711/005.png" /><br><small>
 Python 解释器中的调用栈（Call Stack）,以及分配的内存中的私有堆（Private Heap）与 PyObject 对象。调用栈中的帧（frame）指向堆中的某个 PyObject 对象。</small>
 
-Python 解释器是一个基于栈的虚拟机，它将所有对象都存储在其私有堆中。你可以把这个“堆”理解成分配好的一段内存，或是一个保护数据的巨大数组。
+Python 解释器是一个基于栈的虚拟机，它将所有对象都存储在其私有堆中。你可以把这个“堆”理解成分配好的一段内存，或是一个包含数据的巨大数组。
 
 接着，让我们看看堆里存储的这些对象：
 
@@ -88,7 +88,7 @@ Python 解释器是一个基于栈的虚拟机，它将所有对象都存储在�
 
 让我们看看 CPython 里的源代码，以便理解一下为什么会出现上面的结果。下面这段代码用于获取一个小整数的对象实例：
 
-```C
+```c
 get_small_int(sdigit ival)
 {
     PyObject *v;
@@ -107,7 +107,7 @@ get_small_int(sdigit ival)
 
 下面这段 CPython 源码将会对两个 PyObject 对象进行比较。换句话说，它比较的是两个地址，或是指针。指针对象其实也是一种变量，它的值是其他变量的地址。运用 C 语言的知识，我们发现，这个比较函数 `PyObject_RichCompareBool()` 比较的是两个参数的指针（或地址），因为在参数 `v` 和 `w` 前面都有一个星号( `*` )。
 
-```C
+```c
 /* Perform a rich comparison with integer result.
    This wraps PyObject_RichCompare(),
    returning -1 for error, 0 for false, 1 for true.
