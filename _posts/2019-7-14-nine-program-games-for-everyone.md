@@ -19,7 +19,7 @@ excerpt: 在玩中学，在学中玩，不论你是对编程完全陌生的新�
 ## 9. 守望先锋（Overwatch）
 
 <img src="/img/20190714/A9_Overwatch.jpg" /><br><small>
-图片来源：ow.blizzard.cn/media</small>
+图片来源：ow.blizzard.cn/media/</small>
 
 什么什么？我读书少，你不要骗我！今天不是说编程游戏的吗，这个多人竞技射击游戏是怎么混进来的？
 
