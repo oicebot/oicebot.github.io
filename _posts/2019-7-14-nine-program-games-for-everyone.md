@@ -2,7 +2,7 @@
 layout: post
 title:  这里有九个有趣的编程游戏，值得每个人都体验一下
 tags: udacity python
-thumb: "/img/20190714/thumb.png"
+thumb: "/img/20190714/thumb.jpg"
 origin: true
 excerpt: 在玩中学，在学中玩，不论你是对编程完全陌生的新手，还是硬核老鸟，今天总有一款游戏适合你。
 ---
