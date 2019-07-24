@@ -18,9 +18,9 @@ thumb: "/img/20190725/thumb.jpg"
 
 如果你想要通过许多不同的协议（比如 HTTP/HTTPS/FTP 甚至 Telnet）从各种不同的服务器获取数据，那么 cURL 一定能大显身手。
 
-举个栗子，我们用 cURL 来获取一些公开可用的数据集吧。[UCI 机器学习数据库](https://archive.ics.uci.edu/ml/index.php)是一个很棒的机器学习项目所需的数据集。
+举个栗子，我们用 cURL 来获取一些公开可用的数据集吧。[UCI 机器学习数据库](https://archive.ics.uci.edu/ml/index.php)就是一个不错的机器学习数据集来源。
 
-你只需要使用一个简单的 curl 命令，就能从这个网站下载到来自台湾新竹市输血中心的数据集。命令语法是 `curl [网址]`，在我们的例子中是：
+你只需要使用一个简单的 curl 命令，就能从这个网站下载到来自台湾省新竹市捐血中心的数据集。命令语法是 `curl [网址]`，在我们的例子中是：
 
 ```
 curl https://archive.ics.uci.edu/ml/machine-learning-databases/blood-transfusion/transfusion.data
@@ -57,17 +57,17 @@ pip install csvkit
 
 在这个例子中，我将用上面那个从 UCI 机器学习数据库里获取的 CSV 文件作为范例。
 
-第一个出场的是  `csvclean` 命令。它能保证接下来要处理的 CSV 文件格式正确无误。这个命令将自动修复常见的 CSV 错误，并删除任何有问题的行。贴心的是，它默认是输出一个新的清理过的 CSV 文件，而不会覆盖你的原始数据。新文件的文件名始终是 `[原文件]_out.csv`。如果你确实希望直接覆盖原文件，你可以给命令加上一个 `-n` 参数。
+第一个出场的是  `csvclean` 命令。它能保证接下来要处理的 CSV 文件格式正确无误。这个命令将自动修复常见的 CSV 错误，并删除任何有问题的行。贴心的是，它默认会输出一个新的清理过的 CSV 文件，而不会覆盖你的原始数据。新文件的文件名始终是 `[原文件]_out.csv`。如果你确实希望直接覆盖原文件，你可以给命令加上一个 `-n` 参数。
 
 ```
 csvclean data_dl.csv
 ```
 
-在这个示例文件中，并没有什么错误存在。但你今后实际操作工作数据的时候，用这个命令先对文件进行处理，能有效地帮你避免许多问题。
+在这个示例文件中，并没有什么错误存在。但在今后实际处理数据的时候，用这个命令先对文件进行处理，能有效地帮你避免许多问题。
 
 接着，假设我们想要快速检查一下这个文件的内容，我们可以用 `csvcut` 和 `csvgrep` 来实现。
 
-比如，显示所有的列名：
+比如，用 `csvcut` 显示所有的列名：
 
 ```
 csvcut -n data_dl_out.csv | cut -c6-
@@ -78,7 +78,7 @@ Time (months)
 whether he/she donated blood in March 2007
 ```
 
-让我们检查一下 `whether he/she donated blood in March 2007` 这列中有多少种不同的数据：
+再比如，让我们检查一下 `whether he/she donated blood in March 2007` 这列中有多少种不同的数据：
 
 ```
 csvcut -c "whether he/she donated blood in March 2007" data_dl_out.csv | sed 1d | sort | uniq
@@ -86,7 +86,7 @@ csvcut -c "whether he/she donated blood in March 2007" data_dl_out.csv | sed 1d 
 1
 ```
 
-`csvgrep` 命令能让你用正则表达式对 CSV 文件的内容进行筛选过滤。
+而 `csvgrep` 命令能让你用正则表达式对 CSV 文件的内容进行筛选，输出过滤后的结果。
 
 让我们使用这个命令来显示所有该列数据为 1 的行：
 
@@ -112,7 +112,11 @@ csvstat --mean data_dl_out.csv
 
 使用 IPython，你可以在终端里访问增强的交互式 python 环境。本质上来说，这意味着你可以在命令行里执行 Jupyter Notebook 中可以执行的大部分操作。
 
-你可以按照这些[步骤](https://ipython.org/ipython-doc/3/install/install.html)来安装 IPython。
+你可以按照这些[步骤](https://ipython.org/ipython-doc/3/install/install.html)来安装 IPython，不过最简单的方式就是：
+
+```
+pip install ipython
+```
 
 安装完毕之后，在命令行输入  `ipython` 即可启动 IPython 环境。默认进入的是交互式命令行界面，你可以在这里导入 python 库，也可以在这里进行许多简单的数据分析操作。
 
@@ -187,9 +191,13 @@ results = output
 predictions = output
 ```
 
-然后，我们只需要运行命令 `run_experiment -l predict-donations.cfg`。
+然后，我们运行命令：
 
-于是这个机器学习程序将自动开始运行，读取配置文件的内容，创建一个输出文件夹，并把运行结果放在里面。
+```
+run_experiment -l predict-donations.cfg
+```
+
+不出意外的话，这个机器学习程序将自动开始运行，读取配置文件的内容，创建一个输出文件夹，并把运行结果放在里面。
 
 最后，我们可以用 SQL 查询来分析一下 `Blood_Donations_summary.tsv` 文件中包含的结果：
 
