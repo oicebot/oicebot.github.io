@@ -3,7 +3,7 @@ layout: post
 title: "5 Powerful Ways to Make Your Code Run Faster."
 tags: udacity translate 
 author: Ravi Shankar Rajan
-from: https://blog.hackster.io/benchmarking-tensorflow-lite-on-the-new-raspberry-pi-4-model-b-3fd859d05b98
+from: https://medium.com/swlh/5-powerful-ways-to-make-your-code-run-faster-b99ef1e20626
 excerpt: "Good Code is Clean, Robust and Fast, in that order."
 thumb: "/img/20190801/thumb.png"
 ---

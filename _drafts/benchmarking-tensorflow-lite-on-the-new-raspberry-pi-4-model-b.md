@@ -4,13 +4,24 @@ title: "Benchmarking TensorFlow Lite on the New Raspberry Pi 4, Model B"
 tags: udacity translate python Machine-Learning
 author: Alasdair Allan
 from: https://blog.hackster.io/benchmarking-tensorflow-lite-on-the-new-raspberry-pi-4-model-b-3fd859d05b98
-excerpt: "“不！”"
+excerpt: "How much faster is the new Raspberry Pi? It’s a lot faster."
 thumb: "/img/20190730/thumb.png"
 ---
 
-When the Raspberry Pi 4 was launched, I sat down to update the benchmarks I’ve been putting together for the new generation of accelerator hardware intended for machine learning at the edge. Unfortunately, while there was a version of the official TensorFlow wheel ready for the launch of the Raspberry Pi 4, there were still problems with the community build of TensorFlow Lite.
+Raspberry Pi 4型号B.
 
-That just changed, so here goes…
+* 1.5GHz 四核 64 位 ARM Cortex-A72 芯片
+* 可选 1 / 2 / 4GB LPDDR4 SDRAM 内存
+* 全双工千兆以太网接口
+* 板载双频802.11ac无线网络
+* 板载蓝牙5.0
+* 带有两个 USB 3.0 和两个 USB 2.0 接口
+* 2 个 micro HDMI 输出，支持同时驱动双显示器，分辨率高达 4K
+* VideoCore VI 显示芯片，支持 OpenGL ES 3.x.
+* 支持 HEVC 视频 4Kp60 硬解码
+* USB Type-C 供电接口
+
+
 
 ## Headline Results From Benchmarking
 
@@ -122,7 +133,8 @@ We should now be ready to run our benchmarking scripts.
 
 The code from our previous benchmarks was reused unchanged.
 
-><><><><><><><><><>
+> 链接: https://pan.baidu.com/s/1DzUpkF89bYGccMXExXJMNQ 提取码: e7fr 
+
 
 ## In Closing
 
