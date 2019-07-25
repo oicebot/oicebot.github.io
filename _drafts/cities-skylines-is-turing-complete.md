@@ -9,7 +9,11 @@ thumb: "/img/20190809/thumb.png"
 ---
 Cities: Skylines is a city simulation game that is complex enough to build universal logic gates in it. Using universal logic gates it is possible to construct any circuit including Turing complete machines. So, just like in Minecraft one can build a computer inside Cities: Skylines. However, it would be very complicated to build a fully fledged computer using these gates, so I will demonstrate a 4-bit adder instead. Everything is done in the vanilla version of the game, no mods or add-ons are required.
 
+《城市：天际线》是一款城市模拟游戏，它具有足够的复杂性，你甚至可以在游戏里构建通用的逻辑“门”元件。逻辑门是现代半导体技术的基础元件，我们可以用它们构建任何电路，也包括图灵完备的电子计算机。所以，就像在《我的世界》中一样，你可以在《城市：天际线》中构建一台计算机。但是，受到游戏的限制，使用这些门元件来构建一个现代的集成电路将会相当的复杂，所以今天，我只演示一下如何构建一个 4 位加法器。下面做的一切都是在游戏的原版中完成的，不需要开 mod 或创意工坊的附加组件就能实现。
+
 The game, just like other city builder games, requires the player to manage power and water for the city. Power plants produce electricity and require both clean water and sewage. Water towers provide clean water, sewage pipes get rid of waste — both of these require electricity. This sort of duality between sewage and water towers allows the construction of AND as well as OR gates.
+
+与其他城市建设类游戏一样，你需要管理城市的电力和供水。在游戏中发电厂需要清洁的水和污水管道输送的污物才能发电。水塔需要电力才能提供清洁的水，污水管道需要电力才能输送污物。污水管道和水塔的特性就让我们得以建造与门（AND）和非门（NOT）。
 
 <img src="/img/20190809/001.jpg"><br><small>
 The main cast left to right: oil power plant, water tower, sewage pipe. Wind turbine in the background.</small>
@@ -36,12 +40,12 @@ Jagged lines shown because the game engine doesn’t handle sharp edges really w
 
 Building the circuit was very tedious and I had to restart multiple times due to miscalculations. One problem I came across was crossing wires. Fortunately power lines can cross each other without intersection if there is a sufficient height difference.
 
-<img src="/img/20190809/005.jpg"><br><small>
+<img src="/img/20190809/006.jpg"><br><small>
 1-bit adder. I have 4 of these interconnected.</small>
 
 Finally, I needed to build a city nearby that produces enough sewage to flood up to 8 wind turbines at the same time. **Yes, this computer is powered by poop.** I would not call it a green solution though, each gate uses an oil power plant so the pollution is quite bad. Debugging was pretty hard, sometimes I found that storm lightning disconnected my power lines. Just like cosmic rays, but more permanent.
 
-<img src="/img/20190809/006.jpg"><br><small>
+<img src="/img/20190809/007.jpg"><br><small>
 A spiderweb of power lines leading to one of the 4-bit inputs.</small>
 
 I made videos to show that addition indeed works. In the first one I set the input by connecting wires to a power grid that’s always on (like the IC power-supply). On the left side I set 1001 (=9), in the middle 1110 (=14). After the inputs are set I speed up the game and the output on the rightmost 5 wires jumps to all 1s. After a long time the final value settles to 10111 (=23). It works indeed!
