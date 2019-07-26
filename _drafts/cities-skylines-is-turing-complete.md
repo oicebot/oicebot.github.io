@@ -7,6 +7,13 @@ from: https://medium.com/@balidani/cities-skylines-is-turing-complete-e5ccf75d1c
 excerpt: "还为了证明《城市：天际线》是图灵完备的！"
 thumb: "/img/20190726/thumb.jpg"
 ---
+
+# 我用便便淹没半个城市，就为了算 20 以内的加法
+
+——还为了证明《城市：天际线》是图灵完备的！
+
+----
+
 Cities: Skylines is a city simulation game that is complex enough to build universal logic gates in it. Using universal logic gates it is possible to construct any circuit including Turing complete machines. So, just like in Minecraft one can build a computer inside Cities: Skylines. However, it would be very complicated to build a fully fledged computer using these gates, so I will demonstrate a 4-bit adder instead. Everything is done in the vanilla version of the game, no mods or add-ons are required.
 
 《城市：天际线》是一款城市模拟游戏，它具有足够的复杂性，你甚至可以在游戏里构建通用的逻辑“门”元件。逻辑门是现代半导体技术的基础元件，我们可以用它们构建任何电路，也包括图灵完备的电子计算机。所以，就像在《我的世界》中一样，你可以在《城市：天际线》中构建一台计算机。但是，受到游戏的限制，使用这些门元件来构建一个现代的集成电路将会相当的复杂，所以今天，我只演示一下如何构建一个 4 位加法器。下面做的一切都是在游戏的原版中完成的，不需要开 mod 或创意工坊的附加组件就能实现。
