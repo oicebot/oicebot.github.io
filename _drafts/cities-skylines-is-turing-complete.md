@@ -8,68 +8,65 @@ excerpt: "还为了证明《城市：天际线》是图灵完备的！"
 thumb: "/img/20190726/thumb.jpg"
 ---
 
-# 我用便便淹没半个城市，就为了算 20 以内的加法
+> ——还为了证明《城市：天际线》是图灵完备的！
 
-——还为了证明《城市：天际线》是图灵完备的！
+总所周知，逻辑门是现代半导体技术的基础元件，我们可以用它们构建任何电路，也包括图灵完备的电子计算机。
 
-----
+今天要说的《城市：天际线》是一款城市模拟游戏。它具有足够的复杂性，你甚至可以在游戏里构建出通用的逻辑门元件。
 
-Cities: Skylines is a city simulation game that is complex enough to build universal logic gates in it. Using universal logic gates it is possible to construct any circuit including Turing complete machines. So, just like in Minecraft one can build a computer inside Cities: Skylines. However, it would be very complicated to build a fully fledged computer using these gates, so I will demonstrate a 4-bit adder instead. Everything is done in the vanilla version of the game, no mods or add-ons are required.
+没错，就像在《我的世界》中一样，你可以在《城市：天际线》中构建一台计算机。但由于游戏机制的限制，使用这些元件来构建一个现代的集成电路将会相当复杂。
 
-《城市：天际线》是一款城市模拟游戏，它具有足够的复杂性，你甚至可以在游戏里构建通用的逻辑“门”元件。逻辑门是现代半导体技术的基础元件，我们可以用它们构建任何电路，也包括图灵完备的电子计算机。所以，就像在《我的世界》中一样，你可以在《城市：天际线》中构建一台计算机。但是，受到游戏的限制，使用这些门元件来构建一个现代的集成电路将会相当的复杂，所以今天，我只演示一下如何构建一个 4 位加法器。下面做的一切都是在游戏的原版中完成的，不需要开 mod 或创意工坊的附加组件就能实现。
+今天，我只打算演示一下如何构建一个 4 位加法器。下面做的一切都是在游戏的原版中完成的，不需要开 mod 或创意工坊的附加组件就能实现。
 
-The game, just like other city builder games, requires the player to manage power and water for the city. Power plants produce electricity and require both clean water and sewage. Water towers provide clean water, sewage pipes get rid of waste — both of these require electricity. This sort of duality between sewage and water towers allows the construction of AND as well as OR gates.
+那么，让我们开始吧！
 
-与其他城市建设类游戏一样，你需要管理城市的电力和供水。在游戏，中发电厂需要清洁的水和排污口才能发电。水塔能提供清洁的水，排污口能排出污物，而这俩都需要电力才能正常工作。因此，排污口和水塔的特性就让我们得以建造与门（AND）和或门（OR）。
+<img src="/img/20190726/000.jpg"><br><small>
+图片来源：Steam官网</small>
+
+与其他城市建设类游戏一样，你需要管理城市的电力和供水。在游戏中，发电厂需要清洁的水和排污口才能发电。水塔能提供清洁的水，排污口能排出污物，而这俩都需要电力才能正常工作。因此，排污口和水塔的特性就让我们得以建造与门（AND）和或门（OR）。
 
 <img src="/img/20190726/001.jpg"><br><small>
 需要用到的主要设施：燃油发电厂，水塔，污水管道（排污口），风力发电机</small>
-
-You can see an AND gate built below. The 2 inputs are the power lines leading into the water tower (top) and the sewage pipe (bottom). The output is the power line attached to the power plant. Even though the inputs are zero in the screenshots, the power plant is still producing electricity — it takes a while for it to shut down even without water and waste management. The buildings are placed far apart because otherwise power would freely flow between them.
 
 下图是一个与门（AND）单元的设计图。两个输入端分别是水塔（图中上方）的电源线，以及排污口（图中下方）的电源线。输出端则是发电站的输电线路。虽然在图中两个输入端都是低电平（断开），游戏内的发电站依然会在缺少供水和排污设施的情况下工作上一小段时间，然后才关闭。这些建筑互相之间都要隔开一小段距离，因为如果放的太近（见中图的蓝圈范围），发电厂会直接给上下两个设施供电，导致逻辑门失效。
 
 <img src="/img/20190726/002.jpg"><br><small>
 与门的结构，分别展示了通常视图（上）电力线路图（中）供水线路图（下）中的布局</small>
 
-We need one more component for functional completeness: an inverter, or NOT gate. To achieve this we will make use of the game’s simulation of fluid dynamics. Improper use of dams, canals or abuse of sewage pipes can result in buildings getting flooded. A flooded power plant will not produce electricity. This is enough to build a NOT gate, as seen below.
-
 接下来，为了实现完整的逻辑功能，我们还需要另外一个组件——反相器，或称非门（NOT)。为了实现这个元件，我们需要利用游戏里动态模拟液体流动的机制。在游戏中，配置错误的大坝、运河或是被滥用的排污口，都有可能导致某个建筑物被淹没。被淹没的发电厂将不会产生电力。我们可以利用这个机制，来构建一个非门元件，如下图所示：
 
 <img src="/img/20190726/003.jpg"><br><small>
 非门的结构，分别展示了电力线路图（上）排污口关闭（中）排污口打开（下）的情况</small>
-
-A 1-bit adder can be built using 9 mixed gates according to the schema in the picture below. 4 of these adders can be chained to create a 4-bit adder. I placed the gates in a grid structure to reflect how they we laid out on a map.
 
 接下来，我们就可以按照下面的逻辑电路设计图，使用 9 个混合的逻辑门元件，构建一个 1 位全加器。4 个这样的全加器可以链接在一起，组成一个 4 位二进制加法器（脉动进位加法器）。我将下图这些组件按网格进行了一下对齐，方便之后在游戏地图上以对应的方式进行布置。
 
 <img src="/img/20190726/004.png"><br><small>
 带有进位输入/输出的 1 位加法器（全加器）</small>
 
-To make life easier I decided to use unlimited money and a custom map that I created in the map editor. You can import PNG images in the map editor to load a height map. I created a map with blocks of land where I can place my gates, almost like a PCB! Here is what the map looks like. You can see the 4 1-bit adders repeated in a 2x2 grid in the pictures.
+为了不自虐，我选择了无限资金的游戏模式，并且用上了我在地图编辑器中制作的基础地图。
 
-为了不自虐，我选择了无限资金的游戏模式，并且用上了我在地图编辑器中制作的基础地图。在游戏自带的地图编辑器中，你可以导入一个带有透明度信息的 PNG 图片，编辑器会按照图片自动生成对应高度和形状的游戏底图。如下图所示，我创建了一个由许多正方形岛屿组成的地图，以便我将对应的“逻辑元件”布设在上面——这看起来是不是很像 PCB 电路板？你可以看到，我将整个地图划分成了 上下左右四片区域，每片区域里都有 4x4 的格子来容纳一个全加器。
+在游戏自带的地图编辑器中，你可以导入一个带有透明度信息的 PNG 图片，编辑器会按照图片自动生成对应高度和形状的游戏底图。如下图所示，我创建了一个由许多正方形岛屿组成的地图，以便我将对应的“逻辑元件”布设在上面——这看起来是不是很像 PCB 电路板？
+
+你可以看到，我将整个地图划分成了“上下左右”四片区域，每片区域里都有 4x4 的格子来容纳一个 1 位全加器。
 
 <img src="/img/20190726/005.jpg"><br><small>
 地图编辑器里的地形图（上）与实际生成的结果（下），确实很像 PCB 有没有</small>
 
-Building the circuit was very tedious and I had to restart multiple times due to miscalculations. One problem I came across was crossing wires. Fortunately power lines can cross each other without intersection if there is a sufficient height difference.
+实际连接逻辑电路的过程简直是又麻烦又漫长。因为计算失误，我还被迫重头再来了好几次。
 
-实际连接逻辑电路的过程简直是又麻烦又漫长。因为计算失误，我还被迫重头再来了好几次。我遇到的其中一个问题是，电路相互跨越的时候容易连接在一起。最后我发现，需要有足够的高度差，相互交叉的电路才能做到互不干扰。
+我遇到的问题之一是，电路相互跨越的时候容易连接在一起。
+
+最后我发现，需要有足够的高度差，相互交叉的电路才能做到互不干扰。
 
 <img src="/img/20190726/006.jpg"><br><small>
 一个完成了的 1 位全加器。整个图上我做了 4 个这样的东西</small>
 
-Finally, I needed to build a city nearby that produces enough sewage to flood up to 8 wind turbines at the same time. **Yes, this computer is powered by poop.** I would not call it a green solution though, each gate uses an oil power plant so the pollution is quite bad. Debugging was pretty hard, sometimes I found that storm lightning disconnected my power lines. Just like cosmic rays, but more permanent.
+最后，我需要在附近建设一个城市，以便产生足够同时淹没 8 个风力发电机的污水。<span class="hl">没错，这个“计算机”是靠粑粑来运作的。</span>这可不是什么环保解决方案，每个逻辑门单元都需要用到一座燃油发电厂，所以产生的（游戏内）污染还是挺大的。
 
-最后，我需要在附近建设一个城市，以便产生足够同时淹没 8 个风力发电机的污水。<span class="hl">没错，这个“计算机”是靠粑粑来运作的。</span>此外，这可不是什么环保解决方案，每个逻辑门单元都需要用到一座燃油发电厂，所以产生的（游戏内）污染还是挺大的。
-
-调试过程也是充满了艰辛，更别提偶尔发生的雷暴天气还会干掉我的一些输电线路。这挺像宇宙射线对电路产生的影响，只不过更加“永久”一点。
+调试过程也是充满了艰辛，更别提偶尔发生的雷暴天气还会摧毁一些已经布置好了的输电线路。这挺像宇宙射线对电路产生的影响，只不过更加“永久”一点。
 
 <img src="/img/20190726/007.jpg"><br><small>
 4 位加法器输入端中的一条线路。为了这些复杂的蜘蛛网，死了不知道多少脑细胞了</small>
-
-I made videos to show that addition indeed works. In the first one I set the input by connecting wires to a power grid that’s always on (like the IC power-supply). On the left side I set 1001 (=9), in the middle 1110 (=14). After the inputs are set I speed up the game and the output on the rightmost 5 wires jumps to all 1s. After a long time the final value settles to 10111 (=23). It works indeed!
 
 为了更好地显示这些组件是如何工作的，我录了两个视频。在下面这个视频中，我把输入端电路连接上一条高电平的输电线路（就像你给开发板接上直流电源），这些元件就开始工作了。在左边的输入端我设置了 1001（二进制的 9），在中间的输入端我输入了 1110（二进制的 14）。设置完输入之后，我把游戏运行速度调到最快，大概 1 秒之后，右边的5条输出线路全都跳到了 1。接下来就是漫长的运算过程，最后，输出稳定在了 10111（二进制的 23），成功了！
 
@@ -77,15 +74,11 @@ I made videos to show that addition indeed works. In the first one I set the inp
 </iframe><br><small>
 4 位加法器运行视频，原网址在[YouTube](https://youtu.be/dD7Bi25IPaA)</small>
 
-In the second video I focus on one of the adders. You can see the state of the components change over time until the final output (0 as the sum and 1 as the carry) is settled.
-
 在第二个视频中，我专门录下了第一个加法器的工作过程。你可以看到，每个元件的状态都在不断变化，直到最后输出一个稳定的结果——求和端口输出为 0，进位端口输出为 1。
 
 <iframe height=498 width=510 src='http://player.youku.com/embed/XNDI4ODUxMTIxNg==' frameborder=0 'allowfullscreen'>
 </iframe><br><small>
 1 位加法器运行视频，原网址在[YouTube](https://youtu.be/Oa2otcfXCtY)</small>
-
-Some caveats. This would make a very slow computer, one 4-bit addition took roughly 15 months in game which is about 20 minutes in real life. There are also problems with size. Due to how power is implemented in the game, components of a gate need to be placed relatively far apart, otherwise power would flow between them. The 4-bit adder took up much of the 9 tiles available in a normal game, although I did not optimize it very much. With mods it is possible to use up to 25 tiles. If you have ideas on how to do more efficient computation using game mechanics, please let me know in the comments!
 
 一些说明。
 
