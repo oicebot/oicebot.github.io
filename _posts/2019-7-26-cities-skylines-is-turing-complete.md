@@ -1,13 +1,12 @@
 ---
 layout: post
 title: "我用便便淹没半个城市，就为了算 20 以内的加法"
-tags: Game translate  
+tags: Game translate udacity 
 author: Daniel Bali
 from: https://medium.com/@balidani/cities-skylines-is-turing-complete-e5ccf75d1c3a
 excerpt: "还为了证明《城市：天际线》是图灵完备的！"
 thumb: "/img/20190726/thumb.jpg"
 ---
-
 > ——还为了证明《城市：天际线》是图灵完备的！
 
 总所周知，逻辑门是现代半导体技术的基础元件，我们可以用它们构建任何电路，也包括图灵完备的电子计算机。
@@ -21,7 +20,7 @@ thumb: "/img/20190726/thumb.jpg"
 那么，让我们开始吧！
 
 <img src="/img/20190726/000.jpg"><br><small>
-图片来源：Steam官网</small>
+图片来源：Steam 商店页面</small>
 
 与其他城市建设类游戏一样，你需要管理城市的电力和供水。在游戏中，发电厂需要清洁的水和排污口才能发电。水塔能提供清洁的水，排污口能排出污物，而这俩都需要电力才能正常工作。因此，排污口和水塔的特性就让我们得以建造与门（AND）和或门（OR）。
 
@@ -92,6 +91,6 @@ thumb: "/img/20190726/thumb.jpg"
 最后，如果你有更高效地利用游戏机制构建运算单元的思路，欢迎在下面留言分享！谢谢！
 
 <img src="/img/20190726/008.jpg"><br><small>
-图片来源：Steam官网</small>
+图片来源：Steam 商店页面</small>
 
-> _（ 原作： [{{ page.author }}]({{ page.from }}) ，编译：欧剃，感谢 shadowlsh 对游戏机制的解释。转载请保留此信息）_
+> _（本文已投稿给「[优达学城](https://cn.udacity.com)」。原作： [{{ page.author }}]({{ page.from }}) ，编译：欧剃，感谢 shadowlsh 对游戏机制的解释。转载请保留此信息）_
