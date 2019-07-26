@@ -67,16 +67,20 @@ thumb: "/img/20190726/thumb.jpg"
 
 为了更好地显示这些组件是如何工作的，我录了两个视频。在下面这个视频中，我把输入端电路连接上一条高电平的输电线路（就像你给开发板接上直流电源），这些元件就开始工作了。在左边的输入端我设置了 1001（二进制的 9），在中间的输入端我输入了 1110（二进制的 14）。设置完输入之后，我把游戏运行速度调到最快，大概 1 秒之后，右边的5条输出线路全都跳到了 1。接下来就是漫长的运算过程，最后，输出稳定在了 10111（二进制的 23），成功了！
 
+<div>
 <iframe height=498 width=510 src='https://player.youku.com/embed/XNDI4ODUwODYzMg==' frameborder=0 'allowfullscreen'>
-</iframe><br>
+</iframe>
+</div>
 <small>4 位加法器运行视频，原网址在[YouTube](https://youtu.be/dD7Bi25IPaA)</small>
 
 
 
 在第二个视频中，我专门录下了第一个加法器的工作过程。你可以看到，每个元件的状态都在不断变化，直到最后输出一个稳定的结果——求和端口输出为 0，进位端口输出为 1。
 
+<div>
 <iframe height=498 width=510 src='https://player.youku.com/embed/XNDI4ODUxMTIxNg==' frameborder=0 'allowfullscreen'>
-</iframe><br>
+</iframe>
+</div>
 <small>1 位加法器运行视频，原网址在[YouTube](https://youtu.be/Oa2otcfXCtY)</small>
 
 
