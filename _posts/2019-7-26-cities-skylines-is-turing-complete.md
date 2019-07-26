@@ -80,10 +80,10 @@ thumb: "/img/20190726/thumb.jpg"
     </div>
     <small> 4 位加法器的运行视频，原网址在 https://youtu.be/dD7Bi25IPaA </small>
 </p>
-</p>
+<p>
 在第二个视频中，我专门录下了第一个加法器的工作过程。你可以看到，每个元件的状态都在不断变化，直到最后输出一个稳定的结果——求和端口输出为 0，进位端口输出为 1。
 </p>
-</p>
+<p>
     <div class="video-container">
         <iframe height="95%" width="450" src="https://player.youku.com/embed/XNDI4ODUxMTIxNg==" frameborder="0" allowfullscreen>
         </iframe>
