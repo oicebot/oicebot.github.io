@@ -7,7 +7,7 @@ from: https://medium.com/@balidani/cities-skylines-is-turing-complete-e5ccf75d1c
 excerpt: "还为了证明《城市：天际线》是图灵完备的！"
 thumb: "/img/20190726/thumb.jpg"
 ---
-> ——还为了证明《城市：天际线》是图灵完备的！
+> **——还为了证明《城市：天际线》是图灵完备的！**
 
 总所周知，逻辑门是现代半导体技术的基础元件，我们可以用它们构建任何电路，也包括图灵完备的电子计算机。
 
@@ -53,9 +53,7 @@ thumb: "/img/20190726/thumb.jpg"
 
 实际连接逻辑电路的过程简直是又麻烦又漫长。因为计算失误，我还被迫重头再来了好几次。
 
-我遇到的问题之一是，电路相互跨越的时候容易连接在一起。
-
-最后我发现，需要有足够的高度差，相互交叉的电路才能做到互不干扰。
+我遇到的问题之一是，电路相互跨越的时候容易连接在一起。经过多次的尝试，我发现需要有足够的高度差，相互交叉的电路才能做到互不干扰。
 
 <img src="/img/20190726/006.jpg"><br><small>
 一个完成了的 1 位全加器。整个图上我做了 4 个这样的东西</small>
@@ -69,7 +67,7 @@ thumb: "/img/20190726/thumb.jpg"
 
 为了更好地显示这些组件是如何工作的，我录了两个视频。在下面这个视频中，我把输入端电路连接上一条高电平的输电线路（就像你给开发板接上直流电源），这些元件就开始工作了。在左边的输入端我设置了 1001（二进制的 9），在中间的输入端我输入了 1110（二进制的 14）。设置完输入之后，我把游戏运行速度调到最快，大概 1 秒之后，右边的5条输出线路全都跳到了 1。接下来就是漫长的运算过程，最后，输出稳定在了 10111（二进制的 23），成功了！
 
-<iframe height=498 width=510 src='http://player.youku.com/embed/XNDI4ODUwODYzMg==' frameborder=0 'allowfullscreen'>
+<iframe height=498 width=510 src='https://player.youku.com/embed/XNDI4ODUwODYzMg==' frameborder=0 'allowfullscreen'>
 </iframe><br>
 <small>4 位加法器运行视频，原网址在[YouTube](https://youtu.be/dD7Bi25IPaA)</small>
 
@@ -77,7 +75,7 @@ thumb: "/img/20190726/thumb.jpg"
 
 在第二个视频中，我专门录下了第一个加法器的工作过程。你可以看到，每个元件的状态都在不断变化，直到最后输出一个稳定的结果——求和端口输出为 0，进位端口输出为 1。
 
-<iframe height=498 width=510 src='http://player.youku.com/embed/XNDI4ODUxMTIxNg==' frameborder=0 'allowfullscreen'>
+<iframe height=498 width=510 src='https://player.youku.com/embed/XNDI4ODUxMTIxNg==' frameborder=0 'allowfullscreen'>
 </iframe><br>
 <small>1 位加法器运行视频，原网址在[YouTube](https://youtu.be/Oa2otcfXCtY)</small>
 
