@@ -5,7 +5,7 @@ tags: Game translate
 author: Daniel Bali
 from: https://medium.com/@balidani/cities-skylines-is-turing-complete-e5ccf75d1c3a
 excerpt: "How to building a 4-bit adder in Cities:Skylines"
-thumb: "/img/20190726/thumb.png"
+thumb: "/img/20190726/thumb.jpg"
 ---
 Cities: Skylines is a city simulation game that is complex enough to build universal logic gates in it. Using universal logic gates it is possible to construct any circuit including Turing complete machines. So, just like in Minecraft one can build a computer inside Cities: Skylines. However, it would be very complicated to build a fully fledged computer using these gates, so I will demonstrate a 4-bit adder instead. Everything is done in the vanilla version of the game, no mods or add-ons are required.
 
@@ -36,7 +36,7 @@ A 1-bit adder can be built using 9 mixed gates according to the schema in the pi
 
 接下来，我们就可以按照下面的逻辑电路设计图，使用 9 个混合的逻辑门元件，构建一个 1 位全加器。4 个这样的全加器可以链接在一起，组成一个 4 位二进制加法器（脉动进位加法器）。我将下图这些组件按网格进行了一下对齐，方便之后在游戏地图上以对应的方式进行布置。
 
-<img src="/img/20190726/004.jpg"><br><small>
+<img src="/img/20190726/004.png"><br><small>
 带有进位输入/输出的 1 位加法器（全加器）</small>
 
 To make life easier I decided to use unlimited money and a custom map that I created in the map editor. You can import PNG images in the map editor to load a height map. I created a map with blocks of land where I can place my gates, almost like a PCB! Here is what the map looks like. You can see the 4 1-bit adders repeated in a 2x2 grid in the pictures.
