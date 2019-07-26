@@ -13,10 +13,10 @@ Cities: Skylines is a city simulation game that is complex enough to build unive
 
 The game, just like other city builder games, requires the player to manage power and water for the city. Power plants produce electricity and require both clean water and sewage. Water towers provide clean water, sewage pipes get rid of waste — both of these require electricity. This sort of duality between sewage and water towers allows the construction of AND as well as OR gates.
 
-与其他城市建设类游戏一样，你需要管理城市的电力和供水。在游戏中发电厂需要清洁的水和污水管道输送的污物才能发电。水塔需要电力才能提供清洁的水，污水管道需要电力才能输送污物。污水管道和水塔的特性就让我们得以建造与门（AND）和非门（NOT）。
+与其他城市建设类游戏一样，你需要管理城市的电力和供水。在游戏中发电厂需要清洁的水和污水管道才能发电。水塔需要电力才能提供清洁的水，污水管道需要电力才能排出污物。污水管道和水塔的特性就让我们得以建造与门（AND）和非门（NOT）。
 
 <img src="/img/20190809/001.jpg"><br><small>
-The main cast left to right: oil power plant, water tower, sewage pipe. Wind turbine in the background.</small>
+需要用到的主要设施：石油发电厂，水塔，污水管道，风力发电机</small>
 
 You can see an AND gate built below. The 2 inputs are the power lines leading into the water tower (top) and the sewage pipe (bottom). The output is the power line attached to the power plant. Even though the inputs are zero in the screenshots, the power plant is still producing electricity — it takes a while for it to shut down even without water and waste management. The buildings are placed far apart because otherwise power would freely flow between them.
 
