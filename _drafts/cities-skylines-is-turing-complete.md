@@ -13,7 +13,7 @@ Cities: Skylines is a city simulation game that is complex enough to build unive
 
 The game, just like other city builder games, requires the player to manage power and water for the city. Power plants produce electricity and require both clean water and sewage. Water towers provide clean water, sewage pipes get rid of waste — both of these require electricity. This sort of duality between sewage and water towers allows the construction of AND as well as OR gates.
 
-与其他城市建设类游戏一样，你需要管理城市的电力和供水。在游戏，中发电厂需要清洁的水和污水管道才能发电。水塔能提供清洁的水，污水管道能排出污物，而这俩都需要电力才能正常工作。因此，污水管道和水塔的特性就让我们得以建造与门（AND）和非门（NOT）。
+与其他城市建设类游戏一样，你需要管理城市的电力和供水。在游戏，中发电厂需要清洁的水和排污口才能发电。水塔能提供清洁的水，排污口能排出污物，而这俩都需要电力才能正常工作。因此，排污口和水塔的特性就让我们得以建造与门（AND）和或门（OR）。
 
 <img src="/img/20190726/001.jpg"><br><small>
 需要用到的主要设施：燃油发电厂，水塔，污水管道（排污口），风力发电机</small>
@@ -27,7 +27,7 @@ You can see an AND gate built below. The 2 inputs are the power lines leading in
 
 We need one more component for functional completeness: an inverter, or NOT gate. To achieve this we will make use of the game’s simulation of fluid dynamics. Improper use of dams, canals or abuse of sewage pipes can result in buildings getting flooded. A flooded power plant will not produce electricity. This is enough to build a NOT gate, as seen below.
 
-接下来，为了实现完整的逻辑功能，我们还需要另外一个组件——翻转器，或成非门（NOT)。为了实现这个元件，我们需要利用游戏里动态模拟液体流动的机制。在游戏中，配置错误的大坝、运河或是滥用的排污管道，都有可能导致某个建筑物被淹没。被淹没的发电厂将不会产生电力。我们可以利用这个机制，来构建一个非门元件，如下图所示：
+接下来，为了实现完整的逻辑功能，我们还需要另外一个组件——反相器，或称非门（NOT)。为了实现这个元件，我们需要利用游戏里动态模拟液体流动的机制。在游戏中，配置错误的大坝、运河或是被滥用的排污口，都有可能导致某个建筑物被淹没。被淹没的发电厂将不会产生电力。我们可以利用这个机制，来构建一个非门元件，如下图所示：
 
 <img src="/img/20190726/003.jpg"><br><small>
 非门的结构，分别展示了电力线路图（上）排污口关闭（中）排污口打开（下）的情况</small>
