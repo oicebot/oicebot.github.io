@@ -12,11 +12,27 @@ thumb: "/img/20190808/thumb.jpg"
 
 When I start looking around for information about web development I wasn’t quite sure what exactly were the skills I should have to change my career for this field. I remember that I did some job searches and all the information was overwhelming, not just for the number of abilities and languages required, but for the different of job title I found for pretty similar functions. Front-end, Back-end, Full-stack, WHAT? Of course, these are not the only ones that you are going to see when searching for jobs information. But for sure, they are the most common terms for a web developer position.
 
+我是个半路出家的开发者。
+
+在我真正转行之前，我也曾经一遍遍刷着招聘网站上的职位信息，看着那些 Web 开发岗位的要求，想要确定自己在这个领域还需要哪些技能。我还记得，被搜索结果中大量技术名词淹没的无助感。这可不仅仅是因为上面列出的那许许多多能力和语言，还因为我发现很多看起来差不多的职位，却有着不同的岗位名称：“前端”“后端”“全栈”，这都是啥？
+
+当然，在搜索的过程中，你会碰到的岗位名称可远不止这些。但可以确定的一点是，这些对 Web 开发岗位来说，是最常见不过的了。
+
+那么， 今天就让我们好好聊聊这几个岗位，也希望能为将来要进入这个领域的新手指引一下方向。
+
 ## So, why do we need to use many definitions for a developer?
+
+## 所以，为啥要有这么多不同的岗位名称呢？
 
 Each one of the titles is used for specific skills of the employee. The Web is growing fast and becoming more and more complex. Following that path, the job of a programmer has become more specialized in some part of the development process. It means that for each different attribute of a Web application, some specific programming languages, frameworks, or any technical expertise we have a particular job title for the developer that will execute it.
 
+这些岗位名称，每一种都代表了应聘者/员工需要掌握的一大类特定的技术体系。
+
+如今，网络技术的发展不断加快，复杂度也不断提高。随之而来的是，在某些开发流程中，程序员的岗位内容也变得更具专门性。换句话说，对于 Web 应用的每个不同的属性，对某些特定的编程语言、框架或是技术上的专门知识，我们都有一个专门的职位，用于描述在工作中使用这一系列技术的开发者。
+
 For a newbie or beginner trying to find your way in the area, you need to understand what are the differences from a Front-end, Back-end, and Full-stack. To work with any of them, you will be asked for a different set of skills, however, to draw a strict line between them is not easy. Each of them has complementary skills, and yes, to execute your job as a developer better is relevant to have a good comprehension of some attributes from all three of them.
+
+对刚入门新手，或是正在尝试在这一领域求职的人来说，你需要理解“前端”“后端”和“全栈”之间的区别，以便更好地充实自己的技术储备。对于每一种岗位，都会给求职者提出一系列的
 
 OK, it is a lot of information. Let’s talk a little bit about what is a Front-end, Back-end, Full-stack, and how you can prepare yourself to work with it.
 
