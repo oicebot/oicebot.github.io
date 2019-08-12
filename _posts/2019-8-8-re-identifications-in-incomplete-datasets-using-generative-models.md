@@ -56,6 +56,7 @@ excerpt: “安全”的匿名化数据，并不能保护你的隐私
 <small>
 参考文献：</small>
 > <small>1. Estimating the success of re-identiﬁcations in incomplete datasets using generative models，NATURE COMMUNICATIONS，https://doi.org/10.1038/s41467-019-10933-3</small>
+> 
 > <small>2. The "Re-identification" of Governor William Weld's Medical Information: A Critical Re-examination of Health Data Identification Risks and Privacy Protections, Then and Now，Daniel C. Barth-Jones. https://fpf.org/wp-content/uploads/The-Re-identification-of-Governor-Welds-Medical-Information-Daniel-Barth-Jones.pdf</small>
 
 _本文已于2019年8月投稿给[果壳网](https://mp.weixin.qq.com/s?__biz=MTg1MjI3MzY2MQ==&mid=2651714553&idx=2&sn=c55f4dd4365d2fc751d4dcf034960b90&chksm=5da1d76b6ad65e7d980894621ecacd2b1309e33c3c5bc55e362b5d04cb11677749f26c2d1627&mpshare=1&scene=1&srcid=&sharer_sharetime=1565570162503&sharer_shareid=a48de0c3d1189e25e378906db559509f#rd)并发表，作者：欧剃 编辑：八云。译文版权归果壳网（guokr.com）所有，禁止转载。如有需要，请联系sns@guokr.com_
