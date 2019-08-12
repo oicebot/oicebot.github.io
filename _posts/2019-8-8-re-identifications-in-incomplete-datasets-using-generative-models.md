@@ -49,13 +49,13 @@ excerpt: “安全”的匿名化数据，并不能保护你的隐私
 <img src="/img/20190808/004.jpg"><br><small>
 图 | Pixabay</small>
 
-此外，**AI也能分析处理残缺不全的数据集**。研究者对只含有10％、5％、1％，甚至是只含有全部数据0.5％内容的不完整数据集都进行了试验，结果AI对这些条目的预测和识别还是非常准确的，其平均绝对误差（MAE）都小于0.05。也就是说，**即使只公布总量中的一小部分数据，这些信息还是很容易被攻击者识别出来**。
+此外，**AI也能分析处理残缺不全的数据集**。研究者对只含有10％、5％、1％，甚至是只含有全部数据0.5％内容的不完整数据集都进行了试验，结果AI对这些条目的预测和识别还是非常准确的，其平均绝对误差（MAE）都小于0.05。也就是说，<span class="hl">即使只公布总量中的一小部分数据，这些信息还是很容易被攻击者识别出来</span>。
 
 针对这样的新技术与新威胁，研究者认为，当前国际通用的匿名化处理标准需要进一步提高，包括欧盟在内的各个国家和地区的信息安全机构也应进一步完善隐私保护体系，实施安全措施，以求既保证数据可用，又能保护人们的隐私安全。
 
 <small>
-参考文献：
-> 1. Estimating the success of re-identiﬁcations in incomplete datasets using generative models，NATURE COMMUNICATIONS，https://doi.org/10.1038/s41467-019-10933-3
-> 2. 2. The "Re-identification" of Governor William Weld's Medical Information: A Critical Re-examination of Health Data Identification Risks and Privacy Protections, Then and Now，Daniel C. Barth-Jones. https://fpf.org/wp-content/uploads/The-Re-identification-of-Governor-Welds-Medical-Information-Daniel-Barth-Jones.pdf
+参考文献：</small>
+> <small>1. Estimating the success of re-identiﬁcations in incomplete datasets using generative models，NATURE COMMUNICATIONS，https://doi.org/10.1038/s41467-019-10933-3</small>
+> <small>2. The "Re-identification" of Governor William Weld's Medical Information: A Critical Re-examination of Health Data Identification Risks and Privacy Protections, Then and Now，Daniel C. Barth-Jones. https://fpf.org/wp-content/uploads/The-Re-identification-of-Governor-Welds-Medical-Information-Daniel-Barth-Jones.pdf</small>
 
 _本文已于2019年8月投稿给[果壳网](https://mp.weixin.qq.com/s?__biz=MTg1MjI3MzY2MQ==&mid=2651714553&idx=2&sn=c55f4dd4365d2fc751d4dcf034960b90&chksm=5da1d76b6ad65e7d980894621ecacd2b1309e33c3c5bc55e362b5d04cb11677749f26c2d1627&mpshare=1&scene=1&srcid=&sharer_sharetime=1565570162503&sharer_shareid=a48de0c3d1189e25e378906db559509f#rd)并发表，作者：欧剃 编辑：八云。译文版权归果壳网（guokr.com）所有，禁止转载。如有需要，请联系sns@guokr.com_
