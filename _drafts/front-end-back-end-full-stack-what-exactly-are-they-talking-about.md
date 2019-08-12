@@ -32,7 +32,7 @@ Each one of the titles is used for specific skills of the employee. The Web is g
 
 For a newbie or beginner trying to find your way in the area, you need to understand what are the differences from a Front-end, Back-end, and Full-stack. To work with any of them, you will be asked for a different set of skills, however, to draw a strict line between them is not easy. Each of them has complementary skills, and yes, to execute your job as a developer better is relevant to have a good comprehension of some attributes from all three of them.
 
-对刚入门新手，或是正在尝试在这一领域求职的人来说，你需要理解“前端”“后端”和“全栈”之间的区别，以便更好地充实自己的技术储备。对于每一种岗位，都会给求职者提出一系列的
+对刚入门新手，或是正在尝试在这一领域求职的人来说，你需要理解“前端”“后端”和“全栈”之间的区别，以便更好地充实自己的技术储备。每一种岗位，你都必须具备一套不同的技术储备。然而，要在它们之间画出一条严格的界限，并不是件容易的事。这些岗位
 
 OK, it is a lot of information. Let’s talk a little bit about what is a Front-end, Back-end, Full-stack, and how you can prepare yourself to work with it.
 
