@@ -10,7 +10,7 @@ thumb: "/img/20190814/thumb.jpg"
 
 Traditionally, software development teams are split into two dedicated functions — Software Engineers and Operations/Information Technology (Ops/IT) Specialists. Software engineers were responsible for writing code to solve a customer problem. Once the code was ready, an Ops/IT professional would deploy it to production servers and monitor it to ensure everything was running smoothly. It’s easy to forget that there used to be physical networking equipment and servers for every project not so long ago. At the time, software groups were not equipped to handle the technical challenges of working with these physical devices.
 
-传统上，软件开发团队被分为两个不同的职责：软件工程师和IT运维专员。在过去的认知里，软件工程师负责写代码，以解决客户的问题；当代码准备好之后，IT运维工程师负责将代码部署到生产服务器，并对其进行监控，确保一切都能顺利运行。但容易被忘记的是，在不久之前，每个项目都有它专用的物理服务器和网络设备——在那个时候，软件开发小组没有能力应对使用这些物理设备带来的技术挑战。
+传统上，软件开发团队被分为两个不同的职责：软件工程师和IT运维专员。在过去的认知里，软件工程师负责写代码，以解决客户的问题；当代码准备好之后，IT运维工程师负责将代码部署到生产服务器，并对其进行监控，确保一切都能顺利运行。但我们可能容易忘记，在不久之前，每个项目都有它专用的物理服务器和网络设备——在那个时候，软件开发小组没有能力应对使用这些物理设备带来的技术挑战。
 
 These roles are now blurring with the adoption of cloud computing services, giving birth to a new discipline known as Developer Operations Engineering or DevOps. Using software as their main tool, DevOps engineers work on internal development problems. Similar to how a software engineer optimizes an algorithm, a DevOps engineer’s goal is to optimize the software engineering process. In other words, dedicated developers use software to solve customer problems and DevOps engineers use software to solve their team’s software engineering problems. Since the tools used by DevOps are usually code-based, it’s becoming a critical skill for any software developer.
 
@@ -42,17 +42,28 @@ The release process is the final step. The “CD” part of the system deploys t
 
 Again, we believe DevOps skills are fundamental for any cloud developer. In my course for full-stack engineering on Amazon Web Services (AWS) in Udacity’s Cloud Developer Nanodegree program, I lay the framework for the skills you’ll need as a cloud developer to begin understanding how to practice DevOps for your cloud deployments. In the course, we build an imageboard with image style filters using modern technologies like TypeScript and Node to build the server. We cover how to write scripts to build the code for production and then use AWS Elastic Beanstalk to configure infrastructure and deploy.
 
-
+同样，我们认为 DevOps 技术是每一个云计算软件开发者应该掌握的基础技能。想要理解如何在的云上部署并练习 DevOps 相关技能，在优达学城云计算软件开发纳米学位的 AWS 全栈应用开发课程中，我给出了作为一名云计算开发者所必须的技能框架。在这门课程中，我们将构建一个带有图片风格滤镜的图片板网站，并使用 TypeScript 和 Node 服务器等现代技术搭建所需的服务器。我们还将介绍如何编写脚本来构建生产代码，并使用 AWS Elastic Beanstalk 来完成配置基础架构与部署工作。
 
 ## Any Dev Can DevOps
+## 你是 Dev 也就能是 DevOps
+
 Learning necessary DevOps is a logical professional development leap for any developer:
 
+学习必要的 DevOps 技能，对每个开发者来说，都是一个合理的专业发展与提升的过程：
+
 * Frontend developers can ship and test features faster
+* 前端开发者能更快地部署并测试功能
 * Fullstack engineers can deliver updates without breakage concerns
+* 全栈工程师能无缝地提交更新
 * Machine learning researchers can deliver new, more accurate models and optimize infrastructure
+* 机器学习研究者能提交新的、更准确的模型，并优化基础架构
 
 Although some teams have dedicated DevOps groups, many rely on their top software engineers for this function. This shared responsibility promotes a DevOps culture across all team members. Usually, there are a few high caliber engineers who begin doing less Dev and more DevOps and assume the title DevOps Engineer. DevOps allows you to help your team reduce costs, improve collaboration, minimize downtime, and decrease the time to ship new features. We’ve taken care to design the Cloud Developer curriculum to lay out a path towards DevOps in your engineering practice.
 
-Enroll Now!
+虽然有些团队会有专门的 DevOps 小组，但大部分企业还是需要依靠他们的顶级软件工程师来实现。这项共同的责任使得 DevOps 文化在开发团队中愈加普及开来，而一些高素质的工程师将会率先从开发者（Dev）变成 DevOps 工程师，将更多的时间花在 DevOps 上，以帮助团队减少开支、改善协作，最小化停机时间，减少发布新功能的周期。
+
+我们也精心设计了云计算开发者/DevOps纳米学位的相关课程，希望能为你通往 DevOps 工程师的职业生涯铺平道路。
+
+现在就报名参加吧！
 
 > _（本文已投稿给「[优达学城](https://cn.udacity.com)」。 原作： [{{ page.author }}]({{ page.from }}) ，译者：欧剃 转载请保留此信息）_
