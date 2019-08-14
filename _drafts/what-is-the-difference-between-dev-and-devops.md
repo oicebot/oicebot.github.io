@@ -19,14 +19,22 @@ These roles are now blurring with the adoption of cloud computing services, givi
 <img src="/img/20190820/001.png" />
 
 ## Operations as development
+## 开发即运维
 
 When defining a new software system, engineers must decide what platform they’ll use to deploy. Different applications require different resources. For example, an image processing application might require specialized equipment like a graphics processing unit (GPU). These decisions have historically been made by system administrators and set up by hand. More recently, DevOps engineers have been responsible for these decisions and written template files that define the architecture. Rules can be written to scale system capabilities to address how systems should react to high volumes of user requests. Writing these files makes the system clearly defined, extensible, and reproducible. Multiple programming languages like Python, Bash, webpack, and gulp are used by DevOps teams to achieve these goals.
 
+在着手构建一个新的软件系统时，工程师们必须决定他们将使用什么平台来部署这些代码。不同的应用程序需要不同的资源。举个栗子，要做个图形处理应用可能会需要一些专业设备，比如图形处理器（GPU）。在过去，这些都是由系统管理员来决定，并手动配置实施的。如今，DevOps 工程师负责制定这些决策，并撰写模板文件来定义项目的架构。写下的这些规则将决定系统的性能，并确定系统应当如何应对大量的用户请求。编写这些文件使得系统定义明确，具备良好的可扩展性和可重现性。DevOps 团队将会使用多种不同的编程语言，例如 Python、Bash、webpack 和 gulp 等，来实现这些目标。
+
 In the Cloud Developer Nanodegree program, we cover a variety of technologies from databases and filestores to various computation platforms like Docker, AWS EC2, and AWS Lambda (Serverless). An understanding of these platforms is a requirement for becoming a DevOps engineer and we believe these skills are fundamental to developing on the cloud.
 
+在云计算软件开发/DevOps纳米学位中，我们的课程涵盖了从数据库、文件存储到各种不同的计算平台（例如 Docker，AWS EC2 以及无服务器的 AWS Lambda）等各种技术。我们认为，这些技能是晕计算软件开发的基础，了解这些平台也是成为一名合格 DevOps 工程师的必要条件。
+
 ## More development and fewer operations
+## 强化开发力量，减少运维成本
 
 DevOps engineers are usually obsessed with automating the medial tasks that slow down software development. One frequent automation is a code deployment pipeline. Known as continuous integration/continuous deployment (CI/CD), these pipelines monitor version control system changes. The system checks the changes for accuracy using automated testing called “unit tests.” These tests are run in a dedicated test environment where the broken code can’t affect users. 
+
+
 
 The release process is the final step. The “CD” part of the system deploys the tested code to production servers—which provide the software product to real users. By automating this task, engineering teams can deploy multiple times a day or quickly respond to critical bug requests. Travis CI and CircleCI are some popular tools used to automate deployment.
 
