@@ -14,7 +14,7 @@ Traditionally, software development teams are split into two dedicated functions
 
 These roles are now blurring with the adoption of cloud computing services, giving birth to a new discipline known as Developer Operations Engineering or DevOps. Using software as their main tool, DevOps engineers work on internal development problems. Similar to how a software engineer optimizes an algorithm, a DevOps engineer’s goal is to optimize the software engineering process. In other words, dedicated developers use software to solve customer problems and DevOps engineers use software to solve their team’s software engineering problems. Since the tools used by DevOps are usually code-based, it’s becoming a critical skill for any software developer.
 
-随着云计算服务的不断普及，这些角色划分变得越来越模糊，从而诞生了被称为 DevOps 的新也就是把 Development 和 Operations 组合在一起Developer Operations Engineering，开发运维工程师）
+随着云计算服务的不断普及，这些角色划分变得越来越模糊，从而诞生了被称为 DevOps 的新角色——所谓 Developer Operations Engineering，开发运维工程师。DevOps 工程师用软件为主要工具，解决各种内部开发问题。就像传统的软件工程师优化算法一样，DevOps 工程师的目标是优化整个软件工程的流程。换句话说，专门的开发者使用软件来解决客户的业务问题，DevOps 工程师使用软件来解决团队的软件工程问题。由于 DevOps 使用的工具通常是基于代码的，这也就成为了每一个软件开发者的关键技能。
 
 <img src="/img/20190820/001.png" />
 
@@ -34,11 +34,15 @@ In the Cloud Developer Nanodegree program, we cover a variety of technologies fr
 
 DevOps engineers are usually obsessed with automating the medial tasks that slow down software development. One frequent automation is a code deployment pipeline. Known as continuous integration/continuous deployment (CI/CD), these pipelines monitor version control system changes. The system checks the changes for accuracy using automated testing called “unit tests.” These tests are run in a dedicated test environment where the broken code can’t affect users. 
 
-
+在软件开发过程中，许多中间任务都会拖慢整个软件的开发进度，而 DevOps 工程师的任务常常是将这些工作自动化。一种常见的自动化手段是构建代码部署管道。这些管道被称为持续集成（CI）或持续交付（CD），将会持续监控版本控制系统中的变化。系统将会使用被称为“单元测试”的自动化测试，对更改的准确性进行测试。这些测试将会在一个专用的测试环境中进行，保证有故障的代码不会影响到最终的用户。
 
 The release process is the final step. The “CD” part of the system deploys the tested code to production servers—which provide the software product to real users. By automating this task, engineering teams can deploy multiple times a day or quickly respond to critical bug requests. Travis CI and CircleCI are some popular tools used to automate deployment.
 
+发布过程是流程的最后一步。系统的“CD”部分将经过测试的代码部署到生产服务器，也就是将软件产品提供给真实用户。通过自动化执行这项任务，工程师团队能每天多次部署产品，或对一些关键的 Bug 请求做出快速响应。常用的自动部署工具包括 Travis CI 和 CircleCI 等。
+
 Again, we believe DevOps skills are fundamental for any cloud developer. In my course for full-stack engineering on Amazon Web Services (AWS) in Udacity’s Cloud Developer Nanodegree program, I lay the framework for the skills you’ll need as a cloud developer to begin understanding how to practice DevOps for your cloud deployments. In the course, we build an imageboard with image style filters using modern technologies like TypeScript and Node to build the server. We cover how to write scripts to build the code for production and then use AWS Elastic Beanstalk to configure infrastructure and deploy.
+
+
 
 ## Any Dev Can DevOps
 Learning necessary DevOps is a logical professional development leap for any developer:
