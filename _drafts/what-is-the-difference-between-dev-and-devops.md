@@ -10,7 +10,11 @@ thumb: "/img/20190814/thumb.jpg"
 
 Traditionally, software development teams are split into two dedicated functions — Software Engineers and Operations/Information Technology (Ops/IT) Specialists. Software engineers were responsible for writing code to solve a customer problem. Once the code was ready, an Ops/IT professional would deploy it to production servers and monitor it to ensure everything was running smoothly. It’s easy to forget that there used to be physical networking equipment and servers for every project not so long ago. At the time, software groups were not equipped to handle the technical challenges of working with these physical devices.
 
+传统上，软件开发团队被分为两个不同的职责：软件工程师和IT运维专员。在过去的认知里，软件工程师负责写代码，以解决客户的问题；当代码准备好之后，IT运维工程师负责将代码部署到生产服务器，并对其进行监控，确保一切都能顺利运行。但容易被忘记的是，在不久之前，每个项目都有它专用的物理服务器和网络设备——在那个时候，软件开发小组没有能力应对使用这些物理设备带来的技术挑战。
+
 These roles are now blurring with the adoption of cloud computing services, giving birth to a new discipline known as Developer Operations Engineering or DevOps. Using software as their main tool, DevOps engineers work on internal development problems. Similar to how a software engineer optimizes an algorithm, a DevOps engineer’s goal is to optimize the software engineering process. In other words, dedicated developers use software to solve customer problems and DevOps engineers use software to solve their team’s software engineering problems. Since the tools used by DevOps are usually code-based, it’s becoming a critical skill for any software developer.
+
+随着云计算服务的不断普及，这些角色划分变得越来越模糊，从而诞生了被称为 DevOps 的新也就是把 Development 和 Operations 组合在一起Developer Operations Engineering，开发运维工程师）
 
 <img src="/img/20190820/001.png" />
 
