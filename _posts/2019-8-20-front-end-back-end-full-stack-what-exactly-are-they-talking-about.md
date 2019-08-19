@@ -5,12 +5,10 @@ tags: udacity translate
 author: girl learning tech
 from: https://blog.usejournal.com/front-end-back-end-full-stack-what-exactly-are-they-talking-about-fbd5d3fd4939
 excerpt: "今天就让我们好好聊聊这几个岗位，也希望能为将来要进入这个领域的新手指引一下方向。"
-thumb: "/img/20190808/thumb.jpg"
+thumb: "/img/20190820/thumb.jpg"
 ---
 
-<img src="/img/20190808/001.jpg">
-
-When I start looking around for information about web development I wasn’t quite sure what exactly were the skills I should have to change my career for this field. I remember that I did some job searches and all the information was overwhelming, not just for the number of abilities and languages required, but for the different of job title I found for pretty similar functions. Front-end, Back-end, Full-stack, WHAT? Of course, these are not the only ones that you are going to see when searching for jobs information. But for sure, they are the most common terms for a web developer position.
+<img src="/img/20190820/001.jpeg">
 
 我是个半路出家的开发者。
 
@@ -20,35 +18,22 @@ When I start looking around for information about web development I wasn’t qui
 
 那么，今天就让我们好好聊聊这几个岗位，也希望能为将来要进入这个领域的新手指引一下方向。
 
-## So, why do we need to use many definitions for a developer?
-
 ## 所以，为啥要有这么多不同的岗位名称呢？
-
-Each one of the titles is used for specific skills of the employee. The Web is growing fast and becoming more and more complex. Following that path, the job of a programmer has become more specialized in some part of the development process. It means that for each different attribute of a Web application, some specific programming languages, frameworks, or any technical expertise we have a particular job title for the developer that will execute it.
 
 这些岗位名称，每一种都代表了应聘者/员工需要掌握的一大类特定的技术体系。
 
 如今，网络技术的发展不断加快，复杂度也不断提高。随之而来的是，在某些开发流程中，程序员的岗位内容也变得更具专门性。换句话说，对于 Web 应用的每个不同的属性，对某些特定的编程语言、框架或是技术上的专门知识，我们都有一个专门的职位，用于描述在工作中使用这一系列技术的开发者。
 
-For a newbie or beginner trying to find your way in the area, you need to understand what are the differences from a Front-end, Back-end, and Full-stack. To work with any of them, you will be asked for a different set of skills, however, to draw a strict line between them is not easy. Each of them has complementary skills, and yes, to execute your job as a developer better is relevant to have a good comprehension of some attributes from all three of them.
-
 对刚入门新手，或是正在尝试在这一领域求职的人来说，你需要理解“前端”“后端”和“全栈”之间的区别，以便更好地充实自己的技术储备。每一种岗位，你都必须具备一套不同的技术储备。然而，要在它们之间画出一条严格的界限，并不是件容易的事。每一个岗位都带有一系列
-必须掌握的附加技能，对，如果你希望能成为一名更好的开发者，你就需要对这三种岗位的特性有比较好的理解。
-
-OK, it is a lot of information. Let’s talk a little bit about what is a Front-end, Back-end, Full-stack, and how you can prepare yourself to work with it.
+必须掌握的附加技能。是的，如果你希望能成为一名更好的开发者，你就需要对这三种岗位的特性有比较好的理解。
 
 好吧，我啰里啰唆地讲了这么多，现在就让我们详细聊一聊“前端”“后端”“全栈”工程师都要做些什么，以及你需要哪些技能才能胜任这些工作。
 
-## Front-end Developer
 ## 前端开发者
 
-<img src="/img/20190808/002.jpg">
-
-The front-end developer is responsible for the part that you see and interact in the Web application. To make it simple, imagine that a graphic designer created a logo for a website, them a photographer was hired to take some pictures, and the writers had provided text and context for that website. The front-end is the one that takes all these separated pieces and put together making possible for us to navigate the Web pages.
+<img src="/img/20190820/002.jpeg">
 
 前端开发者的工作，就是构建一个网页 APP 中你能直接看到并与之交互的部分。想象一下，对一个网站来说，它可能有设计师设计好了 Logo，有摄影师提供的精彩照片，还有作者们提供的文字与内容等各种素材。那么，简单地说，前端开发者就是把这些素材都整合在一起，形成一个我们可以浏览的网站页面。
-
-For that, front-end devs have in-depth knowledge of three languages: **HTML, CSS, and Javascript**. HTML — HyperText Markup Language, is the bones of the page structure, they are required in every website that you visit. Simple like that, the HTML documents are composed by opening and closing tags to keep the document consistent. CSS — Cascading Style Sheets, is what gives a better look to the HTML. Making possible to include colors, fonts, background image. The CSS can be used to manage page elements and the way these elements are arranged on the page. And finally, the Javascript is the last piece of magic that will make all the interactions and animations, building a full Web application.
 
 为此，前端开发者需要深入掌握三种语言： <span class="hl">HTML、CSS 以及 Javascript</span>。
 
@@ -58,65 +43,39 @@ CSS——层叠样式表——是让HTML结果变得更加好看的样式规则�
 
 最后是 Javascript，它是网页动画与交互的魔法之源，也是构建一个 Web 应用的核心部分。
 
-These are the primary skills if you are thinking about a career as a front-end dev, but there are not the only ones, adding to each language there are frameworks, like **Bootstrap, Semantic-UI, Foundation**. They assist with the look and usability of the application. There are the libraries: **jQuery, React, Angular**. With the code packed into a useful and straightforward way, saving time in the coding process. Include in the list **Node.js** a cross-platform environment that executes Javascript and can be used by both front and back-end devs. And even some **Ajax** technique to turn the page more dynamic and integrated with the data server for the back-end devs.
-
 如果你想要从事前端开发，上面这些就是你必须掌握的基础技能。但前端开发可远不止于此。有许多框架可以被用在这些语言上，比如  **Bootstrap、Semantic-UI 以及 Foundation** 等。它们能让你的应用更加美观，也更易使用。此外，还有许多代码库，比如 **jQuery、React 以及 Angular** 等。在这些已经包装好的代码库的帮助下，你能方便而直接地引入许多有用的功能，省下许多重复造轮子的时间。此外，你可能还会碰到 <span class="hl">Node.js</span>，在这一跨平台环境的加持下，你能用 Javascript 给前端和后端程序编写代码。最后，一些 <span class="hl">Ajax</span> 技术能让网页更加动态化，还能让网页更好地和后端的数据服务器协同工作。
-
-Applying these abilities, the front-end developer is a person working between the web designers and the back-end developers. They can provide analysis for the user experience, build mock-ups and wire-frames, giving recommendations for the design team. The front-end will give life, style, beauty for the construction build in the back-end.
 
 使用这些技术，前端开发者能连接起网站设计者和后端开发者之间的桥梁。他们能提供用户体验方面的分析，构建模型和线框，给设计团队提出建议。他们能给后端编写的服务应用赋予生命，提升格调，营造美感。
 
-## Back-end Developer
 ## 后端开发者
 
-<img src="/img/20190808/003.jpg">
-
-While the front-end devs take care of everything that you see and interact, all the backstage action is part of the back-end developers’ work. The websites that you navigate only exist because the servers are sending information to your computer or mobile device. And it’s not only that, the data that are transmitted to the webpage, forms, users account, and all personal information is stored and manipulated by the back-end team.
+<img src="/img/20190820/003.jpeg">
 
 前端开发关注的是用户见到并交互的内容，而这一切的幕后驱动力，则来自后端开发者的劳动。你访问的这个网站之所以会存在，完全是因为后端服务器将这些数据发送到了你的计算机或者移动设备上。不仅如此，被传送的这些网页、表单、用户账号，以及所有相关的个人信息等数据，全部都是由后端团队进行存储和操作的。
-
-The back-end devs keep the servers, applications, and databases communicating and operating in a group. Because of that, they use server-side programming languages, like **PHP, Ruby, Python, Java, and .Net**, to build the robust structure of the Web applications. And others tools as **MySQL, Oracle, and SQL Server** to save, change, update, and delete data from the servers. The jobs in back-end can also require some specific frameworks like **Zend, Symfony, CakePHP**, and even some experience with Linux. When looking for a job as a back-end developer is common to find in the job title the name of the primary language that the vacancy is asking for: _Ruby developers or PHP developers_. The programming language is an essential key for the job search because the application you will work with, probably, will be built in that language.
 
 后端开发者的工作就是保证服务器、应用程序和数据库之间的正常通信和协作。因此，他们使用的更多是服务器端的编程语言—— **PHP、Ruby、Python、Java 甚至 .Net**，一边构建出足够健壮的服务器程序，驱动网页应用的正常运作。此外，他们需要使用诸如 **MySQL、Oracle 以及 SQL Server** 等数据库，来保存、修改、更新以及删除服务器上的数据。后端开发的工作还可能需要掌握一些特定的框架，比如 **Zend、Symfony 以及 CakePHP**，或许还需要一些 Linux 方面的知识。
 
 如果你想找一个后端开发的工作，你会发现许多岗位往往都被冠以某一个基础语言的名字，比如 __**Ruby 程序员**__ 或者 __**PHP 程序员**__。编程语言是这一职位的关键要素，因为你在后端开发时使用的这些应用，往往也都是用同一门语言编写的。
 
-You could be thinking now, “_if the Javascript can create animation and interactions do I really need a back-end language?_”. Well, the JS had much more limitations in the past than nowadays, and it’s possible to build infinite solutions just in JS. However, there some performance issues for large and complex applications that will demand a back-end programming language. Learning different languages will make possible to you think about what is better one for distinct situations. Back-end devs need to write code that can be compatible with business strategies, translating the company necessity into the technical requirements in the most efficient architecture solution for the server and databases.
-
 说到这里，你可能会想，“_如果 Javascript 已经能搞定动画创建和交互逻辑，我真的会需要一门后端语言吗？_”。确实，现在的 JS 已经摆脱了许多以往存在的限制与不足，并且纯 JS 已经能完成几乎无限的可能。然而，对于大型且复杂的后端应用来说，为了保证性能，一个专业的后端编程语言还是非常有必要的。况且，学习多门编程语言，能让你从不同的角度进行思考，并针对某个特定的情况选择最适合的解决方案。
 
 后端开发者需要编写出与业务策略相协调的代码，将企业的需要翻译成技术需求，并最终确定最高效的服务器与数据库架构。
 
-## Full-stack Developer
-
 ## 全栈开发者
 
-<img src="/img/20190808/004.jpg">
-
-Full-stack in the developer that can deal with both, front-end and back-end part of the development for the web applications. The “stack,” in this case, is related to layers, so the developer that has skills in servers, data structuring or modeling, user interface, and user experience, encompassing all the need stages for the business is considered full-stack devs. Yes, yes, this person needs to understand the entire flow thoroughly.
+<img src="/img/20190820/004.jpeg">
 
 全栈开发者，顾名思义，就是前端和后端的活儿都能干。这里的“栈”指的是网页应用的各个层，也就是这样的开发者具备了包括服务器程序、数据结构与模型、用户界面、用户体验等多层次的技术，掌握了业务中所需要的每一个阶段的技术。没错，没错，“全栈”意味着你已经完全了解整个开发流程中的每一个环节。
-
-But contrary from what you are thinking, the full-stack don’t necessarily mean someone that build the whole web application by itself. In the majority the cases, the full-stack dev will spend more time in the front-end or the back-end of the development process. Different from the others developers, it can cross the line during part of the project help with the user experience and modeling the database in the same job. Another common practice for the full-stack devs is that they are specialized generally in one back-end language, like Ruby full-stack developer or Python full-stack developer.
 
 不过，和你想的不太一样，全栈开发并不意味着整个项目都是你一个人来干。在大多数情况下，全栈开发者还是会将主要的精力花在前端或者后端之一的开发流程上。但和其他开发者不同的是，全栈开发者能在需要的时候跨越项目中的界限，比如能在改善用户体验的同时，优化数据库的模型。
 
 全栈开发者的一个常见情况是，他们通常会专用一种后端编程语言，比如 Ruby 全栈开发者，或者 Python 全站开发者等等。
 
-
-## And now, which skills should you learn?
-
-## 现在，我该学些什么呢？
-
-Well, the technology field is in constant change, as you can see by the new models of phone and computers that are always pop-up. For a career in tech, the things are not different, the most used languages and frameworks may change over time, or even update their version and grammar. Learning front-end and back-end is essential to turn yourself in a versatile developer, more valuable for the changes to come.
+## 那么，我该学些什么呢？
 
 事实上，技术的领域始终处于变化之中，正如你能看到各种新型的手机和电脑不断出现一样。对于技术岗位而言也是如此。最常用的语言、最热门的框架随着时间的推移也总会改变，甚至它们的版本和语法都会不一样。要想变成一名多才多艺的开发者，前端和后端的各项技术都是至关重要的，能让你更好地面对未来可能发生的改变。
 
-However, whatever language you choose to focus on first, to clearly understand the details, frameworks, and libraries of the language of your choice, put you at a significant advantage in the job market. When hiring for a project, employers are looking for people with knowledge in the languages, as in the frameworks and libraries that can make the code more clean and simple, and people that can follow the application documentation.
-
 但是，无论您选择首先将精力放在哪种语言上，你都要清楚地理解这门语言的各种细节、可使用的框架和第三方库等。这会使你在就业市场中获得较为显著的优势。在争取某个项目职位的时候，那些掌握了足够语言知识的人，那些熟悉框架和库并让代码更加简洁的人，以及那些更好地遵循应用文档的人，总是更容易脱颖而出。
-
-That is it!
 
 就是这样！让我们一起努力吧！
 
