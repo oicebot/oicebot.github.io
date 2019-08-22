@@ -13,7 +13,12 @@ thumb: "/img/20190825/thumb.png"
 
 As web developers, we have the luxury of making use of web browser extensions. Web browser extensions are extremely helpful when it comes to enhancing your work environment and boosting coding productivity.
 
+作为 Web 开发者，网页浏览器可以说是吃饭的工具啦。如今，现代的浏览器都带有丰富的扩展插件，我们可以充分利用它们，让工作环境更加便捷，提高工作效率，简化工作流程。
+
 We’re approaching 2020, and many new extensions have popped up. I’ve decided to gather the most useful extensions for web developers and put them in a list.
+
+
+
 
 > “If I have seen further it is by standing on the shoulders of giants” — Isaac Newton
 
