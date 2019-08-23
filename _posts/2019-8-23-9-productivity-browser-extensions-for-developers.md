@@ -27,8 +27,8 @@ Refined Github</small>
 > “我们希望 GitHub 能够注意到，甚至把这个插件中提供的一些改进整合到网站上去。因此，如果你喜欢我们做出的这些改进，请发送电子邮件给 GitHub。” —— Refined Github 开发者
 
 ### 安装方式
-Chrome 插件：  https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf
-Firefox 插件： https://addons.mozilla.org/en-US/firefox/addon/refined-github-/
+Chrome 插件：  https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf 
+<br>Firefox 插件： https://addons.mozilla.org/en-US/firefox/addon/refined-github-/
 
 ## Hacker Tab
 
@@ -39,7 +39,7 @@ Hacker Tab </small>
 
 ### 安装方式
 Chrome 插件：  https://github.com/huchenme/hacker-tab-extension
-Firefox 插件： https://addons.mozilla.org/en-US/firefox/addon/hacker-tab/
+<br>Firefox 插件： https://addons.mozilla.org/en-US/firefox/addon/hacker-tab/
 
 ## Daily 2.0 — Source for Busy Developers
 
@@ -52,7 +52,7 @@ Daily 2.0</small>
 
 ### 安装方式
 Chrome 插件：  https://chrome.google.com/webstore/detail/daily-20-source-for-busy/jlmpjdjjbgclbocgajdjefcidcncaied?hl=en 
-Firefox 插件： https://addons.mozilla.org/en-US/firefox/addon/daily/
+<br>Firefox 插件： https://addons.mozilla.org/en-US/firefox/addon/daily/
 
 ## No Coin
 
@@ -65,7 +65,7 @@ No Coin 如今已经受到数千名用户的信赖，能为你提供安全可靠
 
 ### 安装方式
 Chrome 插件：  https://chrome.google.com/webstore/detail/no-coin-block-miners-on-t/gojamcfopckidlocpkbelmpjcgmbgjcl?hl=en
-Firefox 插件： https://addons.mozilla.org/en-US/firefox/addon/no-coin/
+<br>Firefox 插件： https://addons.mozilla.org/en-US/firefox/addon/no-coin/
 
 ## JSON Formatter
 
@@ -78,7 +78,7 @@ JSON Formatter 能让你在页面上一键美化 Json。与其他类似的扩展
 
 ### 安装方式
 Chrome 插件：  https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en
-Firefox 插件： https://addons.mozilla.org/en-US/firefox/addon/basic-json-formatter/
+<br>Firefox 插件： https://addons.mozilla.org/en-US/firefox/addon/basic-json-formatter/
 
 ## Pomodoro Timer
 
@@ -98,7 +98,7 @@ Pomodoro Timer</small>
 
 ### 安装方式
 Chrome 插件：  https://chrome.google.com/webstore/detail/marinara-pomodoro%C2%AE-assist/lojgmehidjdhhbmpjfamhpkpodfcodef?hl=en
-Firefox 插件： https://addons.mozilla.org/en-US/firefox/addon/tomato-clock/
+<br>Firefox 插件： https://addons.mozilla.org/en-US/firefox/addon/tomato-clock/
 
 ## Meta SEO Inspector
 
@@ -113,7 +113,7 @@ Firefox 插件： https://addons.mozilla.org/en-US/firefox/addon/tomato-clock/
 
 ### 安装方式
 Chrome 插件：  https://chrome.google.com/webstore/detail/meta-seo-inspector/ibkclpciafdglkjkcibmohobjkcfkaef?hl=en
-Firefox 插件： https://addons.mozilla.org/en-US/firefox/addon/seo-inspector/
+<br>Firefox 插件： https://addons.mozilla.org/en-US/firefox/addon/seo-inspector/
 
 ## OctoLinker
 
@@ -126,7 +126,7 @@ GitHub 源代码在这里： https://github.com/OctoLinker/OctoLinker
 
 ### 安装方式
 Chrome 插件：  https://chrome.google.com/webstore/detail/octolinker/jlmafbaeoofdegohdhinkhilhclaklkp
-Firefox 插件： https://addons.mozilla.org/en-US/firefox/addon/octolinker/
+<br>Firefox 插件： https://addons.mozilla.org/en-US/firefox/addon/octolinker/
 
 ## Octotree
 
@@ -137,7 +137,7 @@ Octotree</small>
 
 ### 安装方式
 Chrome 插件：  https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc
-Firefox 插件： https://addons.mozilla.org/en-US/firefox/addon/octotree/
+<br>Firefox 插件： https://addons.mozilla.org/en-US/firefox/addon/octotree/
 
 ## 结语
 
