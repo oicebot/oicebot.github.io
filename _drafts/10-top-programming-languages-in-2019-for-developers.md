@@ -20,24 +20,33 @@ And for those harnessing these programming languages for their needs, be it pers
 
 不管你是个人开发者，还是专业公司，只要是靠编程吃饭的，都逃不开选择编程语言这个问题。正如我们在往期文章中讨论过的那样，对编程语言你不能“从一而终”，有时候你甚至需要同时动用多种语言，才能方便高效地解决问题。但最终，你都必须根据实际需要——比如个人职业规划，或者公司技术栈的要求——来选择你需要使用的编程语言。
 
-I’ve tried to find the most productive and popular programming languages for developers to learn- for those that can put the languages to practice and build something out of it.
-
-这不是一件简单的事情。
+因此，作为刚入门的新手，或者是打算再学一门语言充实一下的你，或许需要了解一下当前最热门的编程语言都有哪些。于是，下面就是我们2019年最新的编程语言流行榜，希望能对你有用。
 
 ## Top Programming Languages 2019 for developers
+## 2019年最热门的编程语言都有哪些？
 
 <img src="/img/20190829/002.gif"><br><small>
 The popularity of Top Programming languages as per Google trends</small>
 
 Before I list the top programming languages for developers, I would like to provide a brief overview of the research that went into its making. So here is a briefing of the parameters used for my research:
 
+在正式开始之前，请容我卖点关子，介绍一下我们这个榜单是怎么统计出来的。嫌太长不想看的同学，请继续往下拉。
+
+在本榜单统计排名的过程中，我们主要分析了以下几种因素：
+
 ### 1. The highest paying top programming languages (Collected from StackOverflow Developer Survey 2019 and Indeed).
 
-> Note: The greatness of a language isn’t determined by the developer salary packages. Similarly, it doesn’t matter how much developers are paid for a particular on-demand top programming language. What matters the most, in the long run, is how developers build their skills and work on the languages they already know.
+1. 这门语言的开发者的薪资等级情况
+
+这个数据来源于 StackOverflow 网站的 2019 程序员调查结果，以及 Indeed 招聘网的搜索结果。
+
+在这里，我要先声明一下：我完全同意一门语言好不好，和程序员的工资高不高并没有什么关系。我也同意程序员的薪资水平主要是由他们的技术能力决定的。但如果你希望少走一点弯路，找到适合你的编程语言，那一门语言的开发者能拿到的薪资水平将会是一个重要的参考指标。这个指标的重要程度完全不亚于用户对这门语言的热情——毕竟热情不能当饭吃啊。
 
 However, I have considered this metric for the research because Salaries are if not more, but as equally important as passion.
 
 ### 2. Preferences of developers based on Surveys from StackOverflow.
+
+2. StackOverflow 网站的 2019 程序员调查结果
 
 Over the past decade, the development of top programming languages is being focused more on making things easier for developers. So it is only fair that their fondness towards programming languages be used as a metric here.
 
