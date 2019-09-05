@@ -10,15 +10,19 @@ thumb: "/img/20190829/thumb.png"
 
 <img src="/img/20190829/001.png">
 
-It is the combination of hardware & software that makes for most of the progress in Technology. The top programming languages are a core part of the modern & emerging technologies we see today.
-
 Developers of the present-day deal with more programming languages than ever before. Similarly, many IT Outsourcing Companies are now working with a huge set of languages for building all different types of software applications.
+
+我们正处在一个编程语言大爆炸的时代。
+
+现如今的软件开发行业，同时使用许多不同的语言，来构建各种不同类型的软件应用程序，已经是家常便饭了。
 
 And for those harnessing these programming languages for their needs, be it personal or commercial- there are myriad options to choose from. It is further difficult for businesses to find and Hire Programmers for their Custom Software Development projects due to the diverse range of languages to choose from.
 
-But for those harnessing these programming languages for their needs, be it personal or commercial- there are myriad options to choose from. It is even difficult for businesses to find and hire developers due to the diverse range of languages to choose from.
+不管你是个人开发者，还是专业公司，只要是靠编程吃饭的，都逃不开选择编程语言这个问题。正如我们在往期文章中讨论过的那样，对编程语言你不能“从一而终”，有时候你甚至需要同时动用多种语言，才能方便高效地解决问题。但最终，你都必须根据实际需要——比如个人职业规划，或者公司技术栈的要求——来选择你需要使用的编程语言。
 
 I’ve tried to find the most productive and popular programming languages for developers to learn- for those that can put the languages to practice and build something out of it.
+
+这不是一件简单的事情。
 
 ## Top Programming Languages 2019 for developers
 
