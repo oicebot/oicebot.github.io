@@ -20,10 +20,10 @@ And for those harnessing these programming languages for their needs, be it pers
 
 不管你是个人开发者，还是专业公司，只要是靠编程吃饭的，都逃不开选择编程语言这个问题。正如我们在往期文章中讨论过的那样，对编程语言你不能“从一而终”，有时候你甚至需要同时动用多种语言，才能方便高效地解决问题。但最终，你都必须根据实际需要——比如个人职业规划，或者公司技术栈的要求——来选择你需要使用的编程语言。
 
-因此，作为刚入门的新手，或者是打算再学一门语言充实一下的你，或许需要了解一下当前最热门的编程语言都有哪些。于是，下面就是我们2019年最新的编程语言流行榜，希望能对你有用。
+因此，作为刚入门的新手，或者是打算再学一门语言充实一下的你，或许需要了解一下当前最热门的编程语言都有哪些。于是，下面就是我们整理的2019年顶级编程语言排行榜，希望能对你有用。
 
 ## Top Programming Languages 2019 for developers
-## 2019年最热门的编程语言都有哪些？
+## 2019年最好的编程语言都有哪些？
 
 <img src="/img/20190829/002.gif"><br><small>
 The popularity of Top Programming languages as per Google trends</small>
@@ -36,7 +36,7 @@ Before I list the top programming languages for developers, I would like to prov
 
 ### 1. The highest paying top programming languages (Collected from StackOverflow Developer Survey 2019 and Indeed).
 
-1. 这门语言的开发者的薪资等级情况
+<span class="hl">1. 这门语言的程序员的薪资等级情况</span>
 
 这个数据来源于 StackOverflow 网站的 2019 程序员调查结果，以及 Indeed 招聘网的搜索结果。
 
@@ -46,31 +46,38 @@ However, I have considered this metric for the research because Salaries are if 
 
 ### 2. Preferences of developers based on Surveys from StackOverflow.
 
-2. StackOverflow 网站的 2019 程序员调查结果
+<span class="hl">2. 这门语言受到程序员欢迎的程度</span>
+
+数据来源也是 StackOverflow 网站的 2019 程序员调查结果。
 
 Over the past decade, the development of top programming languages is being focused more on making things easier for developers. So it is only fair that their fondness towards programming languages be used as a metric here.
 
+如今的编程语言，都在向着方便程序员，提高开发效率方向发展。越优秀的编程语言，它的表达能力就越强，也就越容易受到使用者的欢迎。要想找到最好的编程语言，肯定得考虑最受用户喜欢的那些。
+
 ### 3. Analysis of developer activity on GitHub (Rankings taken from GitHut 2.0 results for Q1 2019).
+
+<span class="hl">3. 这门语言的项目在 GitHub 上提交代码的情况</span>
+
+数据来源是 GitHut 2.0 的 2019 年第一季度统计结果。
 
 While there have been no updates to the first version of GitHut since Q2 2014, GitHut 2.0 might perhaps offer similar value in terms of analyzing activity on GitHub.
 
-### 4. Google search trends worldwide from June 2018 — May 2019.
-
-So based on the following parameters, the top programming languages 2019 for developers came to be these:
-
-1. JavaScript
-2. Python
-3. Java
-4. Go
-5. Elixir
-6. Ruby
-7. Kotlin
-8. TypeScript
-9. Scala
-10. Clojure
+这个也不难理解，用这个语言写的开源项目越多，这个语言自然也越有活力。
 
 <img src="/img/20190829/003.gif"><br><small>
 Top Programming languages as per GitHut 2.0</small>
+
+### 4. Google search trends worldwide from June 2018 — May 2019.
+
+<span class="hl">4. 近一年的 Google 搜索趋势</span>
+
+数据来源是 Google 放出的全球搜索趋势数据，时间范围为 2018 年 6 月至 2019 年 5 月。
+
+Google 趋势说明了世界各地的用户搜索的最多的是什么，能从侧面反映一个语言受到的关注情况。
+
+----
+
+那就让我们开始吧！
 
 ## 10. Clojure
 
