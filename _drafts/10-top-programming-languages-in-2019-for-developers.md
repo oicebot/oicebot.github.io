@@ -84,26 +84,33 @@ Google 趋势说明了世界各地的用户搜索的最多的是什么，能从�
 <img src="/img/20190829/004.png">
 
 * Average global salary for development on Clojure: $90k. The average salary for Clojure developers in the US is $139k.
+* Clojure 程序员全球平均年薪：$90k。美国国内平均年薪可达 $139k 美金。
 * As per Stack Overflow developer survey 2019, Clojure is the most highly paid programming language globally, and the 2nd most highly paid in the US.
+* 据统计，Clojure 是全球平均薪资最高的编程语言，也是美国第二高的。
 * However, Clojure isn’t one of the most active top programming languages in 2019 on GitHub. In fact, its ranking has gone down one place since the last year.
+* 然而 Clojure 在 2019 年 Github 活跃榜上排名并不靠前，事实上，从去年开始它的热度就逐渐下降了。
 * The google search trends for Clojure programming language remain more or less the same.
+* Google 搜索趋势里，Clojure 的搜索总量保持相对平稳。
 
 ## 9. Scala
 
 <img src="/img/20190829/005.png">
 
-
 * Average global salary for development on Scala: $78k. The average salary for Scala developers in the US is $143k.
+* Scala 程序员全球平均年薪：$78k，美国国内平均年薪可达 $143k 美金。
 * As per Stack Overflow annual developer survey 2019, Scala is the highest-paid programming language in the US, and the 4th most highly paid programming language globally.
+* 据统计，Scala 程序员的平均薪资水平排行全球第四，在美国国内则是排行第一。
 * Scala is the 12th most active top programming language in 2019 on Github.
+* 2019 年，Scala 的活跃度在 Github 上排到第 12 位。
 * Scala’s popularity in Google search trends has remained more or less the same since the past year.
+* Google 搜索趋势里，Scala 的搜索热度和数量都和去年差不多。
 
 ## 8. TypeScript
 
 <img src="/img/20190829/006.png">
 
-* Average global salary for development on TypeScript: $60k. The average salary for
-* TypeScript developers in the US is $115k.
+* Average global salary for development on TypeScript: $60k. The average salary for TypeScript developers in the US is $115k.
+* TypeScript 程序员全球平均年薪：$60k，美国国内平均年薪可达 $115k 美金。
 * TypeScript is the 10th most popular top programming language as per Stack Overflow developer survey.
 * The Microsoft-nurtured programming language is the 8th most active on GitHub.
 * The popularity of TypeScript as per Google search peaked in May this year, as compared to its score of 84 in June 2018.
