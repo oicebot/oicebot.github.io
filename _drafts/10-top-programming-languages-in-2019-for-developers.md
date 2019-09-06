@@ -112,15 +112,20 @@ Google 趋势说明了世界各地的用户搜索的最多的是什么，能从�
 * Average global salary for development on TypeScript: $60k. The average salary for TypeScript developers in the US is $115k.
 * TypeScript 程序员全球平均年薪：$60k，美国国内平均年薪可达 $115k 美金。
 * TypeScript is the 10th most popular top programming language as per Stack Overflow developer survey.
+* TypeScript 是 Stackoverflow 上第十大最受欢迎的编程语言。
 * The Microsoft-nurtured programming language is the 8th most active on GitHub.
+* TypeScript 有微软这个大靠山，同时它的活跃度在 Github 上也排到第 8 位。
 * The popularity of TypeScript as per Google search peaked in May this year, as compared to its score of 84 in June 2018.
+* TypeScript 在 Google 趋势上的全球搜索热度在今年 6 月份达到了顶峰，相比之下，2018 年 6 月份的分数只占当前的大约 69%。
 
 ## 7. Kotlin
 
 <img src="/img/20190829/007.png">
 
 * Average global salary for development on Kotlin: $57k. The average salary for Kotlin developers in the US is $125k.
+* Kotlin 程序员全球平均年薪：$57k，美国国内平均年薪可达 $125k 美金。
 * Although kotlin isn’t one of the most highly paid languages as of right now, its demand as soaring thanks to Google declaring it as the official language for android app development.
+* 虽然 Kotlin 不是当前报酬最高的编程语言，但拜 Google 所赐，它成为了安卓应用开发的官方语言，未来将会炙手可热。
 * Kotlin is the 15th most active top programming language on GitHub, having risen by one rank since the last year.
 * Kotlin’s popularity has rapidly soared this year. In 2018, the score of Kotlin in Google trends was a mere 71, and as of May 2019, it scores 90 out of 100.
 
