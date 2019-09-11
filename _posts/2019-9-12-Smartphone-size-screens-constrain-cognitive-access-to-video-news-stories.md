@@ -94,13 +94,13 @@ excerpt: 建议换成 65 吋大彩电
 <img src="/img/20190912/009.gif"><br><small>
 这就是你用手机看新闻时的表情吧 | Giphy</small>
 
-> 参考文献：
-> 1、  Johanna Dunaway & Stuart Soroka (2019): Smartphone-size screens constrain cognitive access to video news stories, Information, Communication & Society, DOI: 10.1080/1369118X.2019.1631367
-> 2、  Weidmann, N. B., Benitez-Baleato, S., Hunziker, P., Glatz, E., & Dimitropolous, X. (2016). Digital Discrimination: Political bias in Internet service provision across ethnic groups. Science, 353 (6304), 1151–1155.
-> 3、  Philip M. Napoli & Jonathan A. Obar (2014) The Emerging Mobile Internet Underclass: A Critique of Mobile Internet Access, The Information Society, 30:5, 323-334, DOI: 10.1080/01972243.2014.944726
+> 参考文献：<br><br>
+> 1、  Johanna Dunaway & Stuart Soroka (2019): Smartphone-size screens constrain cognitive access to video news stories, Information, Communication & Society, DOI: 10.1080/1369118X.2019.1631367<br>
+> 2、  Weidmann, N. B., Benitez-Baleato, S., Hunziker, P., Glatz, E., & Dimitropolous, X. (2016). Digital Discrimination: Political bias in Internet service provision across ethnic groups. Science, 353 (6304), 1151–1155.<br>
+> 3、  Philip M. Napoli & Jonathan A. Obar (2014) The Emerging Mobile Internet Underclass: A Critique of Mobile Internet Access, The Information Society, 30:5, 323-334, DOI: 10.1080/01972243.2014.944726<br>
 
 
-<span class="hl">一个 AI：</span><br>然而这条消息你也是从小屏幕上看到的。
+<span class="hl">一个 AI：</span><br>——然而这条消息你也是从小屏幕上看到的。
 
 <img src="/img/20190912/010.webp">
 
