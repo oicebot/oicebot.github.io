@@ -12,6 +12,8 @@ layout: default
 </small></p>
 <h1>{{ page.title }}</h1>
 
+<p> —— <span>{{ page.excerpt | strip_html | strip_newlines | truncate:80 }}</span></p>
+
 <p class="view" style="color:#449444;">作者：{{ page.author | default: site.author }}</p>
 
 <hr>
