@@ -13,26 +13,51 @@ Image Credits: Unsplash.com Harley Davidson</small>
 
 My 1st “**Make this code fast**”(_code optimization in technical terms_)assignment was a humongous SAP custom application having more than 30,000 lines of code.
 
+“**让这代码跑得快一点**！！”——我碰到的第一件代码优化任务就是这么开始的。那个项目是一个巨大的 SAP 云平台应用程序，总共含有超过 3 万行的代码。
+
 The application was very slow in loading up data and obviously, the users were not happy about it.
+
+整个 App 加载数据的过程非常之慢，显然用户并不喜欢这种体验。
+
 And I must admit, the application was well written. The database calls were optimally made. The loops were only used as required and modularity was well taken care of in the application. For two days, I sweated over the application, ran various tests and reviewed the code logic, but I could not find anything that made the application slow.
+
+然而，我必须承认，这个项目的代码写的挺不错，数据库调用很合适，只在有需要的地方进行循环，模组化也实现的很到位。我花了两天时间，绞尽脑汁地进行各种测试，审查代码逻辑，但完全没发现到底是什么地方让这个程序变得如此之慢。
+
 I was at my wit’s end. I was running out of options. Then, on the 3rd day, I found the issue.
+
+就在第三天，在我穷尽了所有的办法，最后一点理智也快要消失的时候，我终于发现了问题所在。
+
 And it was a Wait statement in one of the loading pages —
 
-```
-WAIT FOR 20 SECONDS.
-```
+在其中的一个读取页面上，被塞了一个等待语句，程序到这里就停上 20 秒。
+
+？？？
 
 It seems some developer in the past while debugging, had inserted a wait statement and forgot to remove it before moving the code to production. That it has been called from an exit, within the standard code, further magnified the issue. I removed the statement. BINGO!!! It started working.
 
+这大约是原来调试这段代码的程序员，在排查的过程中插入的等待命令，结果在将代码合并进生产环境的时候忘记把这行东西去掉了。而在生产代码中，每次调用读取的时候，这段等待命令都会被执行，这就进一步放大了产生的问题。
+
+于是，我把这行代码删掉了。好家伙，一切都正常了！
+
 ## That said, Code optimization is a double-edged sword.
+
+## 有人说，代码优化是一把双刃剑
 
 Optimizing software is a good thing, but it is not a guaranteed good thing.
 
+优化你的软件是一件好事，但这并不能保证它永远都会有好结果。
+
 If you optimize your software for the wrong things, or in the wrong way, optimization can run up costs, slow down production, and actually make the software sub-optimal for its purpose.
+
+如你是在错误的原因驱动下，或是通过错误的方法进行代码优化，这种所谓的优化往往可能增加成本，减缓生产速度，甚至可能会让软件的质量下降。
 
 And most of the times there are serious tradeoffs involved. Improving, say, speed may cost you in resource utilization, and making more efficient use of storage easily can slow things down. You need to carefully consider what tradeoffs you are willing to make in other areas in order to achieve your primary goal.
 
+此外，大多数时候，优化并不是没有代价的，你必须做出谨慎的权衡。例如，提高速度可能会使你在资源利用方面付出代价，更高效地利用存储则很容易减慢运行速度。你需要仔细考虑你在其他方面做出的权衡，这样你的软件才能够实现它的主要目标。
+
 And here are a few pointers you can consider to make your code more responsive and cut down on the amount of stress you cause to your clients’ devices and their connected databases.
+
+下面有一些值得你考虑的要点，遵循它们能使你的代码更具响应性，并减少你对客户的设备及其连接到的数据库造成的压力。
 
 ## 1. Don’t do it.
 
