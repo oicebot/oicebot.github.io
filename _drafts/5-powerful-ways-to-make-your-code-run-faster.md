@@ -57,34 +57,73 @@ And most of the times there are serious tradeoffs involved. Improving, say, spee
 
 And here are a few pointers you can consider to make your code more responsive and cut down on the amount of stress you cause to your clients’ devices and their connected databases.
 
-下面有一些值得你考虑的要点，遵循它们能使你的代码更具响应性，并减少你对客户的设备及其连接到的数据库造成的压力。
+也许你会问，那我该怎么办？
+
+下面是一些值得你考虑的要点，遵循这些原则，可以让你的代码更具响应性，也能减少你给用户的设备以及它们连接到的数据库带来的额外压力。
 
 ## 1. Don’t do it.
 
+## 1. **不要**进行优化
+
 The first principle of optimization is “Don’t”.
+
+代码优化的第一条原则就是，“不要”优化它。
 
 Is the program good enough already? Knowing how the program is going to be used and the environment in which it runs, is there any benefit of making it faster? These are some questions you should ask prior to optimizing the code.
 
+这个程序是不是已经足够好了？你要去理解这个程序将会被如何使用，知道它是在怎样的环境下运行的，明白如果让它运行的更快到底有没有好处。在真正开始代码优化之前，你必须要问自己这几个问题。
+
 Yes. Optimization only makes sense in terms of effort and cost if the program is important and it is genuinely slow and there is some expectation that it can be made faster while maintaining robustness, correctness, and clarity.
+
+没错，代码优化所耗费的经历和成本，只有在这样的情况下是有意义的：
+
+1. 这个软件很重要
+2. 它运行的确实很慢
+3. 在保证代码健壮、正确、清楚的情况下，它确实还有改进的余地
 
 A fast program that gets the wrong results is of no use to anybody. Effectively optimized software has more advantages than disadvantages, but if you do the optimization wrong, the opposite is true.
 
+一个程序，就算它运行得再快，如果无法得到正确的结果，那就毫无用处。有效的优化，给软件带来的好处应该总要比坏处多。但如果你的优化走错了路，那往往还不如别动它。
+
 So the very first thing is setting the goals for optimization.
+
+所以，你要做的第一件事，应该是设置一个合理的优化目标。
 
 You need to start out with a clear understanding of what you’re trying to accomplish and how the various optimizations relate to those goals. This goal needs to be stated clearly and simply — simple enough that the least tech-savvy department manager can understand and articulate it — and you need to stick to those goals throughout the process.
 
+首先，你需要清楚地了解你要达成的目标是什么，以及各种优化手段与这个目标之间的关系。
+
+其次，你需要明确而简单地说明这个目标，简单到就算技术理解能力最差的部门经理也能够理解和复述它。
+
+最后，你需要在整个过程中坚持这些目标。
+
 **And the best way to start is to prioritize what you’re going to work on according to the impact it has on your goals. And whatever you are working on should be measurable. Intuition is always a very lousy guide on which to depend on.**
 
+<span class="hl">要开始这项工作，最好的办法是，根据对目标的影响确定每项任务的优先顺序。你要做的每一件事情，都必须是可计量的。不要相信直觉，它基本上总是把你引向非常糟糕的方向。</span>
+
 ## 2. Use a Profiler
+
+## 2. 使用一个分析器
+
 Don’t tune anything without profiling it first. The most common performance tuning mistake is to spend a day rewriting code that consumes a tiny portion of the overall running time.
+
+在没有经过分析之前，不要贸然调整任何东西。最常见的错误做法就是，花了一整天去重构优化一段代码，结果在运行的时候发现，这段代码平时根本用不到。
 
 A profile is a measurement of where the program spends its time. Some profiles list each function, the number of times it is called, and the fraction of execution time it consumes.
 
+分析器能精确地测量出你的程序把时间都花在什么步骤上了。有些分析器能列出每一个函数，包括它们被调用的次数，以及每次执行的时候耗时的占比等。
+
 Others show counts of how many times each statement was executed. Statements that are executed frequently contribute more to run time, while statements which are never executed may indicate useless code or code which has not been tested properly.
+
+还有的分析器能列出每个命令的执行次数，被频繁执行的那些命令，在总占用时间上的权重肯定更高，而完全没被运行的那些命令，往往就是一些无用的代码，或者没有经过合适测试的代码。
 
 And the greatest advantage of a good profiling tool is to find **hotspots** in a program, the functions or sections of code that consume most of the computing time. Most of the time you find the hotspot, you find the issue.
 
+一个好的分析工具，最有用的地方就是能让你发现软件中的“<span class="hl">热点</span>”，也就是消耗了最多运行时间的那些函数或者命令语句。基本上如果你发现了一个热点，你也就发现了问题所在。
+
 **The best way to use profiling is to identify the hotspot, improve them to the degree possible, and then measure again to see if a new hotspot has surfaced.**
+
+<span class="hl">性能分析的最佳使用方法就是识别出“热点”，然后尽可能地优化它们，接着再次测量，以查看是不是有新的热点冒了出来。</span>
 
 ## 3. Enable Compiler Optimizations
 
