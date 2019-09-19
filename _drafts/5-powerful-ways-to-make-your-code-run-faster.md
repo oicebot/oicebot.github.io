@@ -127,23 +127,49 @@ And the greatest advantage of a good profiling tool is to find **hotspots** in a
 
 ## 3. Enable Compiler Optimizations
 
+## 3. 启用编译器优化
+
 Usually, one sure shot way to optimize is to turn on whatever optimizations the compiler provides inbuilt.
+
+通常情况下，有种比较靠谱的优化方式，那就是打开编译器提供的那些内置的优化选项。
 
 Compiler optimizations usually improve runtime from a few percents to a factor of 2. Sometimes it may also slow the product so just measure carefully before taking the final call. Modern compilers however do sufficiently well in this regard as they obviate much of the need for small scale changes by programmers.
 
+编译器优化通常会给你的程序带来几个百分点到两倍的运行速度提升。但某些情况下，这也可能反而降低速度，所以你需要在最终交付之前仔细测量性能优化的结果。不过总的来说，现代的编译器在这方面已经做的足够好了，程序员基本上再也不需要像以前那样，不停地对编译参数做各种频繁的小调整。
+
 And some modern compilers also have global optimizers which analyze the entire program for potential improvements. If such a compiler is available in your system, try it by all means. It might reduce a few more seconds.
+
+一些现代的编译器还具备全局优化能力，可以分析你的整个程序，以获得潜在的提升。如果你的系统中有这样的编译器，请一定要试试。它可能会把运行时间减少个几秒钟。
 
 **The point is that the more aggressively the compiler optimizes, the more likely it might introduce bugs in the compiled program. So it is always advisable to rerun regression tests after enabling the compiler optimization to prevent any surprises.**
 
+<span class="hl">注意：编译器的优化设置越激进，最终编译出来的程序中出现不明 Bug 的可能性也越高。所以，强烈建议你在开启编译器的优化选项后，务必重新进行回归测试，以避免出现一些奇怪的意外。</span>
+
 ## 4. Tuning the Code
 
+## 4. 调整代码
+
 There are several techniques we can use to tune the code once the hotspot is found. However, these should be used with care, considering the fact that compiler might be doing a majority of things for you and you might be further complicating the program by your efforts. Whatever you try, make sure to measure its impact before proceeding. Here are a few tuning suggestions.
+
+只有到这时，你才真正开始修改调整代码。在此之前，你必须已经通过第二步的性能分析发现了“热点”，并且试过使用编译器进行优化——毕竟绝大多数这些问题能让编译器帮你解决，也避免了你把这些代码弄得过于复杂。
+
+那么，一般来说，有几种比较成熟的方法来处理这些“热点”。再次提醒，你必须非常谨慎，确保在提交每个更改之前，对它产生的影响进行测量。
+
+那么，让我们看看这几个方法吧。
 
 ### Collect common subexpressions.
 If an expensive computation occurs in multiple places, it is better to compute in one place and remember the result. Don’t put such computations within a loop unless required.
 
+### 将常用的表达式计算归集在一起
+
+如果同一个非常消耗性能的计算在多个地方重复出现，最好能只在一个地方进行计算，然后记住计算结果。除非必要，否则不要在循环中进行这样的计算。
+
 ### Replace expensive operations by Cheap ones.
 String manipulation is probably one of the most common operations in any program. However, it can be an expensive operation if done incorrectly. Similarly, in some cases, you can improve performance by replacing multiplication with a series of shift operations. Even where this is effective (and it isn’t always) it produces very confusing code. So take the decision considering the readability of code also.
+
+### 用简单的计算代替消耗性能的算法
+
+字符串处理对于任何一个程序来说，都算是非常常见的运算了。但如果你用错误的办法去处理字符串，它们也有可能消耗大量的性能。类似的，在某些情况下，你可以用一系列移位操作来代替乘法运算。但请务必注意，这种方式或许能带来一些性能提升(并不一定)，也有可能让你写出非常崎岖复杂的代码。所以在重构的时候，你还是得非常注意代码可读性。
 
 ### Eliminate Loops.
 Loops are mostly overheads. Try to avoid loops wherever possible if iterations are not much.
