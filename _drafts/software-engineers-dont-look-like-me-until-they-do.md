@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 学员访谈：Software Engineers don’t look like me until they do.
+title: Software Engineers don’t look like me until they do.
 tags: udacity translate nanodegree
 from: https://medium.com/@camille_66528/https-medium-com-camille-66528-software-engineers-dont-look-like-me-until-they-do-6b2d9b39bdb0
 author: Camille Hall
@@ -8,15 +8,20 @@ excerpt: Below are some helpful quick tips to keep in mind when you’re ready t
 thumb: "/img/20191011/thumb.jpg"
 ---
 
-> 欢迎收看最新一期的学员访谈，今天来和大家分享的是
-
+> 今天来和大家分享自己求职经历的是来自美国德克萨斯州的 Camille Hall，这位非计算机专业出身的黑人单身妈妈是如何通过自己的努力，成为一名货真价实的软件工程师的？让我们一起看看她是怎么说的吧。
 
 Hot girl summer would not be complete without me sharing some big wins and even bigger announcements. These past few months have been exciting, challenging, and eventful to say the least. Thankfully, I’m happy to report my life has been completely redefined in major ways due to accepting my first full-time role as a Software Engineer for a local Austin, TX tech startup!
+
+炎炎夏日即将过去，我们正在迎来一个收获的季节。回首过去的几个月，既令人兴奋，又富有挑战。经历过这丰富多彩的点滴时光，我终于能满怀喜悦和感激地向大家报告，我的人生已经焕然一新，我终于实现了自己的梦想，在我的家乡德州奥斯丁的一家科技初创企业中，成为一名货真价实的软件工程师了！
 
 <img src="/img/20190203/portrait.jpg" alt="" /><br><small>Camille Hall
 近照（图片来源：medium.com）</small>
 
-As an African-American single mother with a non-CS degree, this huge leap into tech brings forth so many new opportunities and gains. While some of us know the saying “it ain’t no fun ‘less we all get some” let me break it down for the folks at home who don’t know what that means. Outside of coding, a lot of my goals revolve around tech outreach and specifically motivating underrepresented groups in tech. So it is with my purest intent to write this piece in hopes to motivate others who may feel that Computer Science jobs are out of their league while also cheering on recent grads who are just a few more code tests away from landing their first CS job. Below are some helpful quick tips to keep in mind when you’re ready to join in on all the fun:
+As an African-American single mother with a non-CS degree, this huge leap into tech brings forth so many new opportunities and gains. While some of us know the saying “it ain’t no fun ‘less we all get some” let me break it down for the folks at home who don’t know what that means. Outside of coding, a lot of my goals revolve around tech outreach and specifically motivating underrepresented groups in tech. So it is with my purest intent to write this piece in hopes to motivate others who may feel that Computer Science jobs are out of their league while also cheering on recent grads who are just a few more code tests away from landing their first CS job. 
+
+作为一名非计算机专业出身的非裔美国人单身母亲，跨入科技岗位应该是我人生中最大的一次飞越。
+
+Below are some helpful quick tips to keep in mind when you’re ready to join in on all the fun:
 
 1. Have clear goals about what you want and what you don’t want
 
