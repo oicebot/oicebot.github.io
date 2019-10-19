@@ -23,8 +23,7 @@ thumb: "/img/20191019/thumb.jpg"
 用石头和枝条做个斧头，砍下树木，开挖矿石……经典农场游戏中包含的要素，它可一点也不少。从收集原材料，到建造、烹饪、钓鱼、缝纫、种田、畜牧等等，应有尽有。不过，在这里每片木板都必须由原木手工切割而成，每个工具都必须用加工后的材料手工组装，每个新建筑都必须在施工开始之前手动把建材放在工地上……而你只有孤身一人。
 
 <p>
-<span width=99%>
-<video controls="" autoplay="" name="media" width="750px"><source src="https://steamcdn-a.akamaihd.net/steam/apps/256762852/movie_max.webm?t=1569331543" type="video/webm"></video></span><br><small>
+<video controls="" autoplay="false" name="media" width="750px"><source src="https://steamcdn-a.akamaihd.net/steam/apps/256762852/movie_max.webm?t=1569331543" type="video/webm"></video><br><small>
 我就想吃个派而已，这不就是“小派一碟”吗… | 视频来源：游戏官网</small>
 </p>
 
