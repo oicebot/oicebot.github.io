@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 在《耻辱2》里，你将会看到不一样的法兰西
-date: 2016-09-08
-tags: guokr XiaWan Game translate
+tags: Guokr XiaWan Game Translate
 excerpt_separator: <!--more-->
 from: http://motherboard.vice.com/read/Dishonored-2-world-design
 author: Ian Birnbaum

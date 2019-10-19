@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 答疑解惑：Python 的 &#95;&#95;name&#95;&#95; 变量，到底是个什么东西？
-tags: udacity python 
+tags: Udacity Python Translate
 author: Bert Carremans
 from: https://medium.freecodecamp.org/whats-in-a-python-s-name-506262fe61e8
 excerpt: "本文详细介绍了 Python 中的内置变量 &#95;&#95;name&#95;&#95;，以及它的用法，希望对各位新近接触 Python 语言的同学能有所帮助。"

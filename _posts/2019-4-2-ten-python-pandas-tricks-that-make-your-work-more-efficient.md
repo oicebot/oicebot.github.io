@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "让你事半功倍的 10 个 Pandas 秘籍"
-tags: udacity translate Data-Science python
+tags: Udacity Translate Data-Science Python
 author: Shiu-Tang Li
 from: https://towardsdatascience.com/10-python-pandas-tricks-that-make-your-work-more-efficient-2e8e483808ba
 excerpt: "也许你们已经看过许多正儿八经的教程、范例，但今天分享的几个秘技，可不是每本书里都会提到的哟~"

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 这件神器，每个 Python 学习者都值得一试
-date: 2018-7-14
-tags: udacity translate python
+tags: Udacity Translate Python
 from: https://medium.com/codingthesmartway-com-blog/getting-started-with-jupyter-notebook-for-python-4e7082bd5d46
 author: Sebastian Eschweiler
 thumb: "/img/20180714/image2.png"

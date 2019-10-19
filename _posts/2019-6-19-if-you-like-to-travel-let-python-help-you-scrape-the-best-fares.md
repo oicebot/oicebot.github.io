@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python 带你去旅行：手把手教你自动查询航班信息"
-tags: udacity translate python
+tags: Udacity Translate Python
 author: Fábio Neves
 from: https://towardsdatascience.com/if-you-like-to-travel-let-python-help-you-scrape-the-best-fares-5a1f26213086
 excerpt: "简单地说，今天我们将手把手制作一个网络爬虫，帮你自动搜索指定目标的航班价格。它会把搜索结果保存在一个 Excel 表格中，并把精炼过的统计信息通过电子邮件发送给你。"

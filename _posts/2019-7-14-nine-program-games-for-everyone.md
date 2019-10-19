@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  这里有九个有趣的编程游戏，值得每个人都体验一下
-tags: udacity python Game AI Machine-Learning
+tags: Udacity Python Game AI Machine-Learning
 thumb: "/img/20190714/thumb.jpg"
 origin: true
 star: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 学好这门基础课，许自己一个更美好的未来
-tags: udacity python nanodegree
+tags: Udacity Python Nanodegree
 excerpt: 编入中小学教材、高考加分，连国务院都发文扶持相关技术的培训…你有什么理由不好好学学它？
 star: true
 origin: true

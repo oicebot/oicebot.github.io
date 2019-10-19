@@ -2,7 +2,7 @@
 layout: post
 title: 世上最慢“动物”之一，为啥程序员却很爱“它”
 date: 2019-01-22
-tags: udacity python translate
+tags: Udacity Python Translate
 from: https://medium.com/@trungluongquang/why-python-is-popular-despite-being-super-slow-83a8320412a9
 author: Bobby
 excerpt_separator: <!--more-->

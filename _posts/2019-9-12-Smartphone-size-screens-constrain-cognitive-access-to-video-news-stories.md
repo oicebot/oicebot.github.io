@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  看过的新闻总觉得白看了？全怪屏幕太小
-tags: guokr Science
+tags: Guokr Science
 thumb: "/img/20190912/thumb.jpg"
 origin: true
 star: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 没有哪个软件工程师像我这样，但我做到了
-tags: udacity translate nanodegree
+tags: Udacity Translate Nanodegree
 from: https://medium.com/@camille_66528/https-medium-com-camille-66528-software-engineers-dont-look-like-me-until-they-do-6b2d9b39bdb0
 author: Camille Hall
 excerpt: 非计算机专业出身的黑人单身妈妈是如何通过自己的努力，成为一名货真价实的软件工程师的？

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "终极教程：如何快速有效地阅读别人的代码"
-tags: udacity translate 
+tags: Udacity Translate 
 author: Alex Coleman
 from: https://selftaughtcoders.com/how-to-quickly-and-effectively-read-other-peoples-code/
 excerpt: "包学包会，无效退款"

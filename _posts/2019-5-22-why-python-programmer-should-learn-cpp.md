@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 为什么 Python 程序员有必要学习一下 C++？
-tags: udacity python
+tags: Udacity Python C++
 thumb: "/img/20190522/thumb.png"
 origin: true
 excerpt: “免得他们整天xjb造轮子，一点 common sense 都没有”…… 这只是原因之一

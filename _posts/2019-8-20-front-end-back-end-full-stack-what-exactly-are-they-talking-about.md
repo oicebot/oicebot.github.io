@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "前端后端和全栈，它们都是啥？"
-tags: udacity translate
+tags: Udacity Translate
 author: girl learning tech
 from: https://blog.usejournal.com/front-end-back-end-full-stack-what-exactly-are-they-talking-about-fbd5d3fd4939
 excerpt: "今天就让我们好好聊聊这几个岗位，也希望能为将来要进入这个领域的新手指引一下方向。"

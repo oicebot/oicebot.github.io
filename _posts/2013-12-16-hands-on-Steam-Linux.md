@@ -2,7 +2,7 @@
 layout: post
 title: SteamOS Beta 动手玩
 date: 2013-12-16
-tags: linux Game
+tags: Linux Game
 origin: true
 thumb: "/img/20131216/thumb.jpg"
 from: http://www.omgubuntu.co.uk/2013/12/hands-on-steamos-beta

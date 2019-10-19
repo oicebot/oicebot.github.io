@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 年底总结？快来学学这份不可描述的数据分析报告！ 
-tags: udacity translate Data-Science
+tags: Udacity Translate Data-Science
 from: https://www.pornhub.com/insights/2018-year-in-review
 author: PornHub Team
 thumb: "/img/ph2018/thumb.jpg"

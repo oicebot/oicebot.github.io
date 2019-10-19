@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 学员访谈：吹尽狂沙始到金
-tags: udacity translate nanodegree
+tags: Udacity Translate Nanodegree
 from: https://blog.udacity.com/2017/04/overcoming-obstacles-career-change.html
 author: Elyse Kolin
 thumb: "/img/20190203/portrait.jpg"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "我用便便淹没半个城市，就为了算 20 以内的加法"
-tags: Game translate udacity 
+tags: Game Translate Udacity 
 author: Daniel Bali
 from: https://medium.com/@balidani/cities-skylines-is-turing-complete-e5ccf75d1c3a
 excerpt: "还为了证明《城市：天际线》是图灵完备的！"

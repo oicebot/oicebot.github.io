@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 还能这样玩？用 git 追踪 Word 文档的版本
-tags: github
+tags: Github 
 author: Martin Fenner
 from: http://blog.martinfenner.org/2014/08/25/using-microsoft-word-with-git/
 excerpt: "在写文章的时候，我们经常会遇到许多需要追踪文件版本的难题。现在你可以用流行的版本控制工具 Git 来为你服务啦！"

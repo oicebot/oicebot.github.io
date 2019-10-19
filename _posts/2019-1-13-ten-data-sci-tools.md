@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 必看！最新出炉的十大实用数据分析工具！
-tags: udacity translate Data-Science
+tags: Udacity Translate Data-Science
 from: https://towardsdatascience.com/10-data-science-tools-i-explored-in-2018-d8226f99f342
 author: Ben Weber
 thumb: "/assets/images/thumb_computer-tools.png"

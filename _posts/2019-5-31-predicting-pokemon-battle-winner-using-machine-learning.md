@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "机器学习怎么玩？不如先来盘精灵宝可梦对战？"
-tags: udacity translate Machine-Learning
+tags: Udacity Translate Machine-Learning
 author: Saurabh Charde
 from: https://medium.com/ai-enigma/predicting-pokemon-battle-winner-using-machine-learning-d1ed055ac50
 excerpt: "快让你的朋友们看看，你是如何专业地预测战斗结果，成为伟大的宝可梦训练家吧！"

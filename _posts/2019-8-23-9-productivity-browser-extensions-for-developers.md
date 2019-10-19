@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "网络开发者必备的 9 大实用浏览器插件"
-tags: udacity translate github
+tags: Udacity Translate Github
 author: Indrek Lasn
 from: https://medium.com/better-programming/9-productivity-browser-extensions-for-developers-2020-edition-eb84cda6f038
 excerpt: "用了的都说好，谁用谁知道"

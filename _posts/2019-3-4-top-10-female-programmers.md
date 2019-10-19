@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "打破刻板印象：史上最强的 10 大「程序媛」，你认识几个？"
-tags: udacity translate 
+tags: Udacity Translate 
 author: VICKY SINGH RAO
 from: https://www.technotification.com/2018/05/top-10-female-programmers.html
 excerpt: "“大多数成功的程序员都是男的？”小心来自海军准将的怒火！"

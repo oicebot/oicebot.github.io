@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 面对危险与无助，我们能做些什么？
-tags: guokr Science
+tags: Guokr Science
 origin: true
 author: 朱珠
 thumb: "/img/20180428/thumb.jpg"

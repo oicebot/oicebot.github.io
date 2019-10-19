@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "StanfordNLP，让你在 Python 里一手掌握 53 种自然语言分析"
-tags: udacity translate python Machine-Learning
+tags: Udacity Translate Python Machine-Learning
 author: Mohd Sanad Zaki Rizvi
 from: https://medium.com/analytics-vidhya/introduction-to-stanfordnlp-an-nlp-library-for-53-languages-with-python-code-d7c3efdca118
 excerpt: 不久之前，斯坦福大学公开了它最新的自然语言处理代码库—— StanfordNLP。它不但包含了完整的语义分析工具链，还带有 73 个不同的高精度神经网络模型，能解析 53 种不同的人类语言。今天的教程里，我们将手把手带你在 Python 上使用 StanfordNLP，进行自然语言处理实战

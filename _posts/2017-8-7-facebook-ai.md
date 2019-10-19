@@ -2,7 +2,7 @@
 layout: post
 title: Facebook的人工智能开发出了自己的秘密语言？还早着呢
 date: 2017-08-7
-tags: guokr AI Machine-Learning
+tags: Guokr AI Machine-Learning
 from: https://www.guokr.com/article/442345/
 star: true
 origin: true

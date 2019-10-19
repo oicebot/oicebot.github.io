@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 戴眼镜不仅显得更聪明，你可能真的更聪明！
-tags: guokr Science translate
+tags: Guokr Science Translate
 star: true
 author: Arwa Mahdawi
 from: https://www.theguardian.com/science/2018/may/30/glasses-smarter-study-intelligence-bad-eyesight-link-health-benefits

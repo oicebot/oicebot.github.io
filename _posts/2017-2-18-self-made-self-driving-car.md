@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 天啊！这个大学生居然把破本田升级成了自动驾驶汽车！
-tags: guokr selfdriving translate
+tags: Guokr Selfdriving Translate
 from: https://www.technologyreview.com/s/603637/how-a-college-kid-made-his-honda-civic-self-driving-for-700/
 author: Tom Simonite
 thumb: "/img/Yz19H6il92M9HRO58LbpjGwGcn-ATySitUS9fFGX6OBYAgAAjAEAAEpQ.jpg"

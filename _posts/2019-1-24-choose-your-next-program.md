@@ -2,7 +2,7 @@
 layout: post
 title: 2019编程语言评测：真只有Python最适合你？
 date: 2019-01-24
-tags: udacity python translate
+tags: Udacity Python Translate
 from: https://medium.freecodecamp.org/which-programming-language-should-you-learn-next-487d077baa32
 author: Constantin
 excerpt_separator: <!--more-->

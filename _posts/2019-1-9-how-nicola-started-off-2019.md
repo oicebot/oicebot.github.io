@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 学员访谈：我的梦想之旅，从无人驾驶开始
-tags: udacity translate nanodegree
+tags: Udacity Translate Nanodegree
 from: https://blog.udacity.com/2019/01/new-year-new-skills-career-story.html
 author: Adam Lane
 thumb: "/img/20190109/thumb.jpg"

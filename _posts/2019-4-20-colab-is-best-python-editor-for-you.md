@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 史上最强 Python 编辑器，是 Google 做的？
-tags: udacity python Machine-Learning
+tags: Udacity Python Machine-Learning
 thumb: "/img/20190420/thumb.png"
 origin: true
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 新手必看：这 5 个程序员最爱的代码编辑器，你一定得了解下
-tags: udacity
+tags: Udacity
 from: https://www.zeroequalsfalse.press/2019/02/10/developer-text-editor/
 excerpt: "程序员的代码编辑器，就如同学生的笔，医生的手术刀一样，是每天都离不开的必备工具。因此，一个趁手的编辑器对你的编程学习可以说是非常至关重要啦。今天，我们给大家推荐 5 款最受人民群众喜爱的代码编辑器，让我们来了解一下吧！"
 thumb: "/assets/images/two-screen.svg"

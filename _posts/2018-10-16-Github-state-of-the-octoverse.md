@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GitHub 年度报告出炉：今年程序员们最爱搞什么事？
-tags: udacity translate
+tags: Udacity Translate Github
 author: GitHub.com
 from: https://blog.github.com/2018-10-16-state-of-the-octoverse/
 thumb: "/img/20181016/thumb.jpg"

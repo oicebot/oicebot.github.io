@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "如何用 C 语言武装你的 Python 代码"
-tags: udacity translate python
+tags: Udacity Translate Python C++
 author: Matthias Bitzer
 from: https://medium.com/@matthiasbitzer94/how-to-extend-python-with-c-c-code-aa205417b2aa
 excerpt: "作为解释型语言的 Python 可不是什么超级快速的语言，但许多复杂的库函数却能执行得相当快速。你有没有想过这是怎么一回事呢？"

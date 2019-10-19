@@ -4,7 +4,7 @@ title: LABO 编程入门，从入门到收购废纸皮
 star: true
 origin: true
 thumb: "/img/labo/thumb_img1.jpg"
-tags: udacity Game
+tags: Udacity Game
 excerpt: "今年，任天堂又搞了个大新闻，开发了一套名为 Nintendo Labo 的破纸皮，给 Switch 带来了更加丰富独特的体感游戏体验，有些人评论说这货就像是种“魔术”，还有人说它能吊打索尼微软的最新科技…我读书少，你不要骗我啊！这个 Labo 到底是个啥，真的这么牛逼？"
 ---
 <img src="/img/labo/img1.jpg">

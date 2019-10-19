@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 30分钟带你入门数据分析工具 Pandas
-tags: udacity translate python Data-Science
+tags: Udacity Translate Python Data-Science
 from: https://towardsdatascience.com/quick-dive-into-pandas-for-data-science-cc1c1a80d9c4
 author: Ehi Aigiomawu
 star: true

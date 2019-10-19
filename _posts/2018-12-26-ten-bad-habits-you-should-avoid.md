@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 就算是Top程序员，也有可能沾染的10个坏毛病 
-tags: udacity translate
+tags: Udacity Translate
 from: https://medium.com/@traversymedia/10-bad-habits-to-avoid-as-a-developer-64a1677c60fe
 author: Brad Traversy
 thumb: "/img/20170616/image34.jpg"

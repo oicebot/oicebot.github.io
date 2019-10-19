@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "数据科学必备技能：用 Python 爬取网页"
-tags: udacity translate python Data-Science
+tags: Udacity Translate Python Data-Science
 from: https://towardsdatascience.com/data-science-skills-web-scraping-using-python-d1a85ef607ed
 author: Kerry Parker
 thumb: "/img/20180930/thumb.jpg"

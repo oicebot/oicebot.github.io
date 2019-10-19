@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 我这样精致的人，当然能完美地把香薰蜡烛用到极致
-tags: guokr translate Science
+tags: Guokr Translate Science
 from: https://www.vogue.com/article/how-to-make-a-candle-last-longer
 author: MACKENZIE WAGONER
 thumb: "/img/20180117/thumb.jpg"

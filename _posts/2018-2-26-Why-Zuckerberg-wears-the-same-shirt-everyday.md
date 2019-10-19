@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "为啥扎克伯格天天都穿同一件T啊？他的审美阵亡了吗？"
-tags: udacity translate Science
+tags: Udacity Translate Science
 author: Peter Schroeder 
 from: https://hackernoon.com/the-reason-why-mark-zuckerberg-wears-the-same-shirt-everyday-68e4f907f661
 excerpt: "才不是！"

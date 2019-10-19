@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 新手必看：数据科学家必学必会的 5 个基本统计概念
-tags: udacity translate Data-Science
+tags: Udacity Translate Data-Science
 star: true
 author: George Seif
 from: https://towardsdatascience.com/the-5-basic-statistics-concepts-data-scientists-need-to-know-2c96740377ae

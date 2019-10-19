@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "答疑：Dev 和 DevOps 有啥区别？"
-tags: udacity translate 
+tags: Udacity Translate 
 author: Gabriel Ruttner 
 from: https://blog.udacity.com/2019/07/what-is-the-difference-between-dev-and-devops.html
 excerpt: "新时代，新技术，新角色"

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 学了编程，你就脱离了麻瓜的行列
-date: 2017-06-16
-tags: udacity python 
+tags: Udacity Python 
 excerpt_separator: <!--more-->
 star: true
 origin: true

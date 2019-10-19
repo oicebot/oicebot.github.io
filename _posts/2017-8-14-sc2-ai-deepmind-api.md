@@ -2,7 +2,7 @@
 layout: post
 title: 人工智能转战电竞！《星际2》人机大战要出现了吗？
 date: 2017-08-14
-tags: guokr AI Game
+tags: Guokr AI Game
 excerpt_separator: <!--more-->
 from: https://www.guokr.com/article/442356/
 star: true

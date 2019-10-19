@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 命令行下发送飞信到好友爪机
-tags: linux
+tags: Linux
 origin: true
 thumb: "/assets/images/code-1839406_640.jpg"
 ---

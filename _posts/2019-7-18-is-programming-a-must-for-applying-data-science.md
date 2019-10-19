@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "想玩数据科学，是不是一定得学编程？"
-tags: udacity translate python Data-Science 
+tags: Udacity Translate Python Data-Science 
 author: Piyanka Jain
 from: https://medium.com/dataseries/is-programming-a-must-for-applying-data-science-87f4ea0dfc44
 excerpt: "“不！”"

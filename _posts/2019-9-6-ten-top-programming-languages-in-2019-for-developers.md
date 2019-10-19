@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "2019 年最好的十大编程语言，来看看你已经学了哪一门？"
-tags: udacity translate python
+tags: Udacity Translate Python
 author: Ruchika Singh Aggarwal
 from: https://codeburst.io/10-top-programming-languages-in-2019-for-developers-a2921798d652
 excerpt: "不论你是刚入门，还是打算再学一门语言提升一下自己，你一定需要了解一下哪些是当前最热门的编程语言。"

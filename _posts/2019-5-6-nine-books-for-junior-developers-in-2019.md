@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "成为优秀开发者之前，这 9 本书你一定得读透"
-tags: udacity translate 
+tags: Udacity Translate 
 author: Khalil Stemmler
 from: https://medium.freecodecamp.org/9-books-for-junior-developers-in-2019-e41fc7ecc586
 excerpt: "通往优秀程序员世界的作弊码都写在这些书里呢。"

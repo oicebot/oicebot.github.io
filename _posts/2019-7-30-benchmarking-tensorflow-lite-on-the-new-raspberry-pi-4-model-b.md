@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "单片机中的神器，在机器学习领域也是性价比王者！"
-tags: udacity translate python Machine-Learning
+tags: Udacity Translate Python Machine-Learning
 author: Alasdair Allan
 from: https://blog.hackster.io/benchmarking-tensorflow-lite-on-the-new-raspberry-pi-4-model-b-3fd859d05b98
 excerpt: "先不说了，我这就去买个树莓派 4B！"

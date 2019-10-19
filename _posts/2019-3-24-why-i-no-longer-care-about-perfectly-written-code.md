@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "别追求完美的代码了，这7个关键点你搞清楚没有？"
-tags: udacity translate
+tags: Udacity Translate
 author: Aussie Tech Tutor
 from: https://medium.com/design-and-tech-co/why-i-no-longer-care-about-perfectly-written-code-bedafa2110b
 excerpt: "抛弃你膨胀的自尊吧，对用户来说，程序里面的代码优美不优美，牛逼不牛逼完全无关紧要，真正重要的是程序运行起来是不是符合预期，是不是能满足用户的需求。随着时间的推移，我才发现，代码是不是很完美跟程序最后能不能完成任务相比，其实真的不怎么重要。"

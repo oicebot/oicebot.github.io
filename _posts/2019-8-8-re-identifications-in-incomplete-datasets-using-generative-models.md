@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  为保护隐私不在网上透露真名？想找到你，只要3个匿名数据就够了
-tags: guokr AI Machine-Learning Data-Science
+tags: Guokr AI Machine-Learning Data-Science
 thumb: "/img/20190808/thumb.jpg"
 origin: true
 star: true

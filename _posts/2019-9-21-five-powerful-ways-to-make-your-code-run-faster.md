@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "我们拿到了代码优化的 5 个原则，可第一条就叫你别优化了"
-tags: udacity translate 
+tags: Udacity Translate 
 author: Ravi Shankar Rajan
 from: https://medium.com/swlh/5-powerful-ways-to-make-your-code-run-faster-b99ef1e20626
 excerpt: "好的代码必须首先干净，接着稳定，最后才是快速。"

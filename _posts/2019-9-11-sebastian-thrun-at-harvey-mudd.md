@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "“保持好奇心，相信自己”—— Sebastian Thrun 给 2019 年毕业生的致辞"
-tags: udacity translate nanodegree
+tags: Udacity Translate Nanodegree
 author: Ritika Pradhan 
 from: https://blog.udacity.com/2019/05/sebastian-thrun-at-harvey-mudd.html
 excerpt: "我们相信，每个学生都有能力去创造新的机遇，去改变这个世界，你们需要的只是扎实的专业技能，以及强烈的好奇心。"

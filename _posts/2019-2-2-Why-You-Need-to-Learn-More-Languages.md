@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 学几个不同的编程语言有啥好处？
-tags: udacity translate
+tags: Udacity Translate
 from: https://blog.usejournal.com/why-you-need-to-learn-more-programming-languages-9160d609eac3
 author: Akshat Giri
 thumb: "/img/20190202/thumb.jpg"

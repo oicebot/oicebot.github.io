@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 手机跑团软件 AndChat 简明教程
-tags: linux Game
+tags: Linux Game
 origin: true
 thumb: "/img/20120711/thumb.png"
 ---

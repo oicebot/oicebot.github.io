@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "掌握这 5 大神器，在命令行里处理数据科学问题就是小菜一碟"
-tags: udacity translate python Data-Science 
+tags: Udacity Translate Python Data-Science 
 author: Rebecca Vickery
 from: https://towardsdatascience.com/five-command-line-tools-for-data-science-29f04e5b9c16
 excerpt: "事实证明，能在简单的命令行中完成的工作，远比我原本预想的要多得多，希望它们也能帮上你的忙"

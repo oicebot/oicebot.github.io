@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 优达学城云计算纳米学位介绍
-tags: udacity translate nanodegree
+tags: Udacity Translate Nanodegree
 from: https://blog.udacity.com/2019/05/udacity-school-cloud-computing.html
 author: Neha Garg 
 thumb: "/img/20190516/thumb.jpg"

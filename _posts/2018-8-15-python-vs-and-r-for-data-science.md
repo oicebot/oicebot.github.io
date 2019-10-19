@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "聊聊用 Python 和/或 R 搞数据科学的异同"
-tags: udacity translate python Data-Science
+tags: Udacity Translate Python Data-Science
 from: https://blog.usejournal.com/python-vs-and-r-for-data-science-833b48ccc91d
 author: Brian Ray
 thumb: "/img/20180815/thumb.jpg"

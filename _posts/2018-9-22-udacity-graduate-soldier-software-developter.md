@@ -2,7 +2,7 @@
 layout: post
 title: 学员访谈：从部队转业回来，一不留神就变成了码农？
 date: 2018-09-22
-tags: udacity translate nanodegree
+tags: Udacity Translate Nanodegree
 from: https://blog.udacity.com/2018/09/udacity-graduate-soldier-software-developer.html
 author: Adam Lane
 thumb: "/img/thumb_v2-44b60c9d2f44e799d29b8d55f7d53c52_1200x500.jpg"

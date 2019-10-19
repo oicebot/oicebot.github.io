@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "不是我吓你，在 Python 里用 is 进行比较的后果很危险！"
-tags: udacity translate python
+tags: Udacity Translate Python
 author: Brad Dettmer
 from: https://medium.com/peloton-engineering/the-dangers-of-using-is-in-python-f42941124027
 excerpt: "开发：“我这里是好的！”"

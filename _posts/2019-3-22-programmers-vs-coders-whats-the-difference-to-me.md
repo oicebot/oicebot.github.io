@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "想当程序员，那你就不能变成码农"
-tags: udacity translate
+tags: Udacity Translate
 author: Aussie Tech Tutor
 from: https://blog.usejournal.com/programmers-vs-coders-whats-the-difference-to-me-3c1dbe3b7747
 excerpt: "我读书少，你别忽悠我。程序员不就是写代码的吗，哪个程序员不是“码农”？"

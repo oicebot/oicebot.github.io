@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 这次，我们把导师打包进 Notebook 里，手把手写代码给你看！
-tags: udacity nanodegree translate
+tags: Udacity Nanodegree Translate
 from: https://blog.udacity.com/2019/04/interactive-screencasts-jupyter-graffiti-c-plus-plus-nanodegree.html
 author: Will Kessler
 thumb: "/img/20190426/thumb.jpg"

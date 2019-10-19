@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 以麻辣火锅为例，解释机器学习原理（口水流了一地）
-tags: udacity translate Machine-Learning
+tags: Udacity Machine-Learning
 thumb: "/img/thumb_v2-44b60c9d2f44e799d29b8d55f7d53c52_1200x500.jpg"
 star: true
 origin: true

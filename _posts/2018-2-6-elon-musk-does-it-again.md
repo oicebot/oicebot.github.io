@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 马一龙老师又调皮了，把敞篷跑车发射到太空是个什么神操作？
-date: 2018-02-06
-tags: udacity SpaceX translate
+tags: Udacity SpaceX Translate
 from: https://blogs.scientificamerican.com/observations/elon-musk-does-it-again/
 author: Lee Billings
 star: true
