@@ -7,25 +7,45 @@ from: https://towardsdatascience.com/3-essential-python-skills-for-data-scientis
 excerpt: "Maybe you are still not aware of everything pure Python has to offer."
 thumb: "/img/20191020/thumb.jpg"
 ---
+随着数据科学和机器学习领域的不断发展，最前沿的技术可谓层出不穷，但它们终究都是建立在 Python 的基础上的。
+
+最近，微博上出了篇文章，说是一个英伟达工程师小姐姐，发了套名叫 python-is-cool 的“ Python 酷炫功能合集”，“里面都是‘从前没发现，或者从前不太敢用’的机器学习技巧”。或许是因为合集里的东西太过于基础，这篇文章被大 V 们嘲笑为标题党，因为“里面没有任何一条是‘机器学习’技巧，都是 Python 语法”……
+
+好吧，我承认我也笑了。但笑过之后，我不禁扪心自问了一下，难道基础语法就没什么用吗？
+
+不是的。
+
+诚然，如果只会基础语法，拿不出什么像样的实用技术，那不管是作为机器学习工程师、还是数据分析师，肯定是拿不出手的。但对于刚进入这一领域的新人来说，基础语法的熟练掌握，语言特性的灵活使用，还是具有相当重要的意义——最起码，能帮你减轻许多工作量。
 
 Learning Pandas is great. Numpy is also tons of fun. But have you maybe started using libraries **to early**? Maybe you are still not aware of everything pure Python has to offer.
 
+是啊，我也是一个数据科学方面的新人。Pandas 牛逼，Numpy 超神，这我都知道。但你有没有想过，这些库你会不会用得**太早了**？你是不是还没意识到纯 Python 的语言特性本身就能给你带来哪些神奇的玩法？
+
 If that sounds like you, you’ll like this article.
 
-<img src="/img/20191020/001.jpg" /><small>Photo by fabio on Unsplash</small>
+如果你也是这样的，那么今天这篇文章一定适合你。
+
+<img src="/img/20191020/001.jpg" /><br><small>图片来源：Unsplash</small>
 
 
 This article will cover a couple of pretty cool pure Python functionalities that I use the most often in my daily Data science job. I’m using them exhaustively through the entire data preparation phase _(a lot for data cleaning)_, and even later to aggregate data before plotting.
 
+今天要介绍的内容其实是我在日常的数据分析工作中经常用到的几个纯 Python 语言特性或者函数。平时我在整个数据准备过程中都会超频繁地使用它们（大部分是为了数据清洗），甚至在可视化绘图前的数据整合偶尔也会用到。
+
+对于已经将这些技巧烂熟于心的大佬，欢迎在下面留言嘲笑我。
 
 I hope that you can also incorporate those into your projects. While there’s no runtime speed or performance benefit, you will save a lot of time then when you’re implementing this logic from scratch. So without further ado, let’s jump into the first point!
 
-<img src="/img/20191020/002.gif" /><small>By GIPHY</small>
+对于正在学习的新人，我个人建议你可以把这些技巧用到你自己的项目中去。虽然它们并不会带来多少运行速度或是效率提升，但起码你不用自己从头实现这些功能，能省下大把的编码时间。那么，话不多说，让我们从第一个特性开始吧！
+
+<img src="/img/20191020/002.gif" /><br><small>图片来源：GIPHY</small>
 
 
-## Lambda Functions
+## Lambda 表达式
 
 Lambda functions are just so powerful. Yeah, you won’t use them when you have to clean multiple columns the same way — but that’s not something that happened to me very often — more often than not, each attribute will require its own logic behind cleaning.
+
+
 
 Lambda functions allow you to create ‘anonymous’ functions. This basically means you can quickly make ad-hoc functions without needing to properly define a function using Pythons `def`.
 
