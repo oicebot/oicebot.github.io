@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "数据科学方向上必知必会的 3 个 Python “酷炫功能”"
-tags: udacity translate python Data-Science
+tags: Udacity Translate Python Data-Science
 author: Dario Radečić
 from: https://towardsdatascience.com/3-essential-python-skills-for-data-scientists-b642a1397ae3
 excerpt: "你是不是还没意识到，纯 Python 的语言特性本身就能给你带来哪些神奇的玩法？"
