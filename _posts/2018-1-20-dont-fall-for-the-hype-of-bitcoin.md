@@ -148,4 +148,7 @@ Dotcom 和数字加密货币的“泡沫大小”比较 | 图片来源：decentr
 
 我们面对的未来将是，比特币使货币获得了自由。
 
+<img src="/img/20180120/013.jpg"><br><small>
+图片来源：pixabay.com</small>
+
 > _（本文已投稿给「[优达学城](https://cn.udacity.com)」。 原作： [{{ page.author }}]({{ page.from }}) 译者：欧剃 转载请保留此信息）_
