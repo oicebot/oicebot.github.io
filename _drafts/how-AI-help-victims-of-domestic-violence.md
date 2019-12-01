@@ -8,7 +8,7 @@ thumb: "/img/20191201/thumb.jpg"
 ---
 
 
-## rAInbow （彩虹AI）
+## 心理援助AI：rAInbow（“彩虹”）
 
 来自南非的 rAInbow 是一个聊天机器人，用户能随时通过网页或是 Facebook 私信进行咨询，告诉 rAInbow 自己身边发生的事情。
 
@@ -21,54 +21,63 @@ thumb: "/img/20191201/thumb.jpg"
 在这些故事中，他们可以直观地感受到自己的经历，并能和别人分享自己的理解。这些故事会和家暴相关，受害者可能听起来会很熟悉，这可以让他们了解到，他们并不是唯一经历过家庭暴力的人。即使有时会感觉孤立无援，但帮助总会在身边。
 
 
-## Deevi
+## 匿名指引AI：Deevi
 
 Deevi 是澳大利亚法律服务网站 Lawpath 利用 IBM Watson 人工智能打造的一个匿名聊天机器人。
 
 Deevi 会向用户提出一些不含个人身份信息的问题，比如性别、年龄、受教育程度、性取向，并向用户了解你（或你认识的人）和潜在的家暴者之间的关系，以及家暴者对你（或你认识的人）做了什么事。通过对话的形式，Deevi 的 AI 会对当前的状况进行分析，帮助你做出正确的应对，并列出你可以取得帮助的方式（例如一些组织、协会，当地政府部门的求助热线等）。
 
-最重要的一点是，Deevi 不会存储你的任何信息，包括聊天内容在内的所有信息都不会被保存。这样不会产生任何聊天记录或是网络搜索历史，也就避免了被家暴者发现产生的风险。
+最重要的一点是，Deevi 不会存储你的任何信息，包括聊天内容在内的所有信息都不会被保存。因此，用户的机器上不会产生任何聊天记录或是网络搜索历史，也就避免了被家暴者发现产生的风险——毕竟大部分的受害者都是和家暴者住在一起的。
+
+
+## 法律援助平台：HelpSelf Legal 
+
+HelpSelf 法律援助目前正式推出了他们的人工智能法律文书服务，名为 Documate。该服务为那些需要填写法律相关文书的普通市民（特别是家暴受害者）提供了一个方便快捷的渠道。用户只需要通过填写问卷并拍照上传相关文件，AI 就能快速地整理好人身保护令申请表或是起诉书草稿之类的法律文书。
+
+
+在 HelpSelf 的问卷中，专门为创伤受害者准备了一系列易于理解、友好的问题，他们在填写问卷的时候还会收到足够详尽的说明，以便受害者可以真正理解问卷所要询问的内容。问题将一步一步进行，每次显示一部分问题，以免给人带来太大压力。如果用户在情感上承受不了，完全可以离开系统，并在之后随时继续完成整个问卷。在问卷过程中，用户可以上传各种证据和屏幕截图。
+
+一旦填写完毕，系统就会自动准备好所需的法律文书，以便根据法庭或律师的要求进行签署。
+
+
+此外 Documate 还为那些提供公益法律援助的律师们打造了一个易于定制，智能高效的自定义文书生成与编辑系统。律师可以在网站上预先定义针对自身工作需求的问卷，并准备好相关的表格，这样寻求法律援助的人只需要简单的提示和指导，就能快速准备完毕所需要的法律文书。
+
+## 报警求助AI：Sis 机器人
+
+Sis 机器人是泰国警方开发的一款聊天机器人，可以通过网页或 Facebook 私信为家暴受害者提供实时的信息服务。
+
+
+例如，面临家庭暴力的妇女可以通过 Facebook 私信向 Sis 机器人发出消息，它将立即回复有关如何向警方举报，如何保存证据以及她们依法应获得哪些支持服务或补偿的信息。在泰国，根据《促进家庭机构发展和保护法》，犯有家庭暴力行为的最高刑罚为监禁六个月或罚款 60000 泰铢（约 14000人民币），或两者并罚。法院还可以命令罪犯向受害者支付额外的赔偿金。
+
+但以往的调查发现，许多性暴力的受害者并不知道她们能够获得这样的庇护和咨询服务。此外，并非所有女性都希望警方展开调查。通过为受害者提供有关法律程序的所有事实， Sis 机器人使她们能够做出明智的决定。
+
+
+## 寻找庇护所：jael.ai
+
+jael.ai 是一个实时人工智能聊天机器人，可以协调各种援助力量，在暴力事件来临时对家暴受害者进行援助。 jael.ai 能对危险情况下的男女提供帮助，让他们为自己和家人找到安全的地方，帮助联系最近的庇护所，并根据求助的时间和地点，提供可用的求助资源信息。
+
+jael.ai 正在建立的全国数据库中，收集了大量有关家暴受害者救助组织和资源的信息。通过直接访问最新数据，jael.ai 可以为求助者提供最实际的救助。
+
+
+jael.ai 用自然语言处理和机器学习技术来理解用户的意图，利用数十年来家庭暴力专业救助人员的知识，反家暴电话热线，甚至执法队伍接入等多种手段，来为陷入暴力环境的人们提供实时的信息帮助。
+
+## 其他可能将会出现的技术
+
+美国田纳西州一名女高中生加布里埃尔（Gabrielle）正在利用课余时间调试训练一个神经网络算法，用以在早期发现家庭暴力存在的迹象。
+
+这个 AI 算法目前能针对不同的语音或文字输入，分析它们的用词，以及对应的情绪状态。加布里埃尔解释说，口头和情感虐待是暴力升级的先兆，如果能开发出一种有针对性的方法来识别语音中的情绪，它就能应用于检测家庭暴力的潜在风险。 “例如，持续增加的愤怒和恐惧可能是一个危险信号。”
+
+她的计划是，当这项技术成熟后，可以被纳入许多 AI 语音助手软件中（比如亚马逊 Alexa 或 Google Home 等），在日常使用的过程中检测言语和情感虐待的潜在迹象。
 
 
 
 
-## HelpSelf Legal (自救法律援助)
-
-->Documate
-
-The HelpSelf site “interviews” users by having them answer a number of easy to understand, friendly questions that are designed to be sensitive to trauma-victims. Explanations are also provided throughout the process so that the victim can truly understand what is being asked. The questions are asked in a bite-size manner so the process doesn’t emotionally overwhelm. If it does become too overwhelming, the user can leave the system and come back to finish the interview at any time. Users can also upload evidence and screenshots throughout the process.
-
-Once the interview is complete, the documents are ready to be e-filed, mailed or filed in person depending on the court’s requirements.
-
-The service aims to help lawyers, not replace them.
-
-## The Sis Bot
-
-The Sis Bot is a chat bot that can provide 24/7 information services for survivors of violence, accessible through their mobile device or a computer. A woman facing domestic violence can for instance, message the Sis Bot via Facebook Messenger and it will immediately respond with information about how to report to the police, how to preserve evidence, and what support services or compensation they are entitled to by law. In Thailand, according to the Promotion of Family Institution Development and Protection Act, the maximum penalty for committing an act of domestic violence is up to six months imprisonment or 60,000 baht (around 1,800 USD) fine or both. The court may also order the offender to pay additional money as reparations to the survivor.
-
-in Thailand
-
-## jael.ai
-
-jael.ai is a fully integrated real time artificial intelligence chatbot that can coordinate care for victims of domestic violence at the point of trauma. jael.ai is training to respond to men and women in dangerous situations by helping them find a safe place for themselves and their families, contact the nearest shelter, and understand the many resources that are available according to the time and location they are needing help.
-
-jael.ai is building a national database with heavily curated information about organizations and resources for victims of domestic violence. By having direct access to the most up-to-date data jael.ai can give the most relevant help to people reaching out for assistance.
-
-jael.ai uses natural language translation and machine learning to understand the intent of the user and turn their questions, statements, and requests into actionable intelligence.
-
-We are using decades of knowledge from domestic violence professionals, domestic violence hotline training and law enforcement to create real time intelligence for people trapped in violent environments.
 
 
 
-## Other AI
 
-Verbal and emotional abuse have been found to be precursors to escalating violence, Gabrielle explained. “I wanted to see if I could develop a targeted approach to recognizing emotions from speech, and apply this to detecting potential risk of domestic violence,” she said.
 
-Gabrielle's motivations have led her to create an algorithm, which can be used by AI assistants like Alexa or Google Home, to detect the risk for verbal and emotional abuse.
 
-Science and technology can be harnessed to address community issues and societal problems.
-
-“The neural network-based algorithm profiles the emotional state of a household over time through verbal interactions,” she explained. “This can provide useful information regarding potential risk for domestic violence. For instance, consistently elevated levels of anger and fear can be a red flag.”
 
 
 <p style="color:grey">参考资料：<small>
