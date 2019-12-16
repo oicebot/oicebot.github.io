@@ -72,12 +72,9 @@ _我曾经遇到的一个面试题是，在纸上写出贝叶斯定理！_
 
 若干真题：
 
-1.	Suppose, you have a dataset with 56000 citizen records and you have to find citizens with age > 80 years. What would you do?
-假设你有一个包含56000条市民记录的数据集，现在需要找出所有年龄（age）大于80岁的人，你要怎么写查询语句？
-2.	Do you know about the ACID property in DBMS?
-DBMS的ACID特性是什么？（译注：DBMS是数据库管理系统Database Management System的缩写）
-3.	What is a correlated query?
-什么是关联查询（correlated query）？
+1.	假设你有一个包含56000条市民记录的数据集，现在需要找出所有年龄（age）大于80岁的人，你要怎么写查询语句？
+2.	DBMS的ACID特性是什么？（译注：DBMS是数据库管理系统Database Management System的缩写）
+3.	什么是关联查询（correlated query）？
 
 
 ## 4. 机器学习
