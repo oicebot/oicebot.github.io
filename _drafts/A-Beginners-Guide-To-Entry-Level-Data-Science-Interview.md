@@ -4,6 +4,8 @@ title: "入门级数据科学面试新手指南"
 tags: Udacity Translate Data-Science
 excerpt: "在参加数据科学入门级面试之前，你必须首先了解一些基础概念"
 thumb: "/img/20191211/thumb.jpg"
+author: Rashi Desai
+from: https://towardsdatascience.com/a-beginners-guide-to-entry-level-data-science-interview-17eb3b431c81
 ---
 
 如今，我们拥有了比以往更大的机会，去有效利用对数据的深刻理解。然而目前，业内并没有足够的专业技术人员，能帮我们理解掌握这一切。所以，如果你想要成为一名数据科学家，在接下来的10~15年里和数据为伍，这正是最好的时机。把握住这些工作机遇！
@@ -166,4 +168,4 @@ _我曾经遇到的一个面试题是，在纸上写出贝叶斯定理！_
 Rashi是一名研究生、数据分析师、用户体验分析师和顾问，还是一名技术发言人和博客作者！她希望组建一个组织，用丰富的资源将从事商业活动的女性联系起来，让她们无所畏惧，并对工作和世界充满热情。
 
 
-> _（本文已投稿给「[优达学城](https://cn.udacity.com)」。 编译：欧剃  编辑：肉松 转载请保留此信息）_
+_（本文已投稿给「[优达学城](https://cn.udacity.com)」。 原作： [{{ page.author }}]({{ page.from }}) 编译：欧剃 转载请保留此信息）_
