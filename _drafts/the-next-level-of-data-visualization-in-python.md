@@ -53,11 +53,13 @@ init_notebook_mode(connected=True)
 ```
 
 ## Single Variable Distributions: Histograms and Boxplots
-## 单变量分布：直方图和箱形图
+## 单变量分布：柱状图和箱形图
 
 Single variable — univariate — plots are a standard way to start an analysis and the histogram is a go-to plot (although it has some issues) for graphing a distribution. Here, using my Medium article statistics (you can see how to get your own stats here or use mine [here](https://github.com/WillKoehrsen/Data-Analysis/tree/master/medium)) let’s make an interactive histogram of the number of claps for articles ( `df` is a standard Pandas dataframe):
 
+单变量分析图往往是开始数据分析时的标准做法，而柱状图基本上算是单变量分布分析时必备的图表之一（虽然它还有一些不足）。
 
+就拿我的博客文章点赞总数为例（原始数据见 Github：https://github.com/WillKoehrsen/Data-Analysis/tree/master/medium ），让我们做一个简单的交互式柱状图（代码中的 `df` 是标准的 Pandas dataframe 对象）：
 
 ```python
 df['claps'].iplot(kind='hist',
@@ -67,11 +69,15 @@ df['claps'].iplot(kind='hist',
 ```
 
 []
-Interactive histogram made with plotly+cufflinks
+使用 plotly+cufflinks 创建的交互式柱状图
 
 For those used to `matplotlib`, all we have to do is add one more letter ( `iplot` instead of `plot`) and we get a much better-looking and interactive chart! We can click on the data to get more details, zoom into sections of the plot, and as we’ll see later, select different categories to highlight.
 
+对于已经习惯 `matplotlib` 的同学，你们只需要多打一个字母（把 `.plot` 改成 `.iplot` ），就能获得看起来更加美观的交互式图表！点击图片上的元素就能显示出详细信息、随意缩放，还带有（我们接下来会提到的）高亮筛选某些部分等超棒功能。
+
 If we want to plot overlaid histograms, that’s just as simple:
+
+如果你想绘制堆叠柱状图，也只需要这样：
 
 ```python
 df[['time_started', 'time_published']].iplot(
@@ -87,6 +93,8 @@ df[['time_started', 'time_published']].iplot(
 
 With a little bit of `pandas` manipulation, we can do a barplot:
 
+对 `pandas` 数据表进行简单的处理，并生成条形图：
+
 ```python
 # Resample to monthly frequency and plot 
 df2 = df[['view','reads','published_date']].\
@@ -100,6 +108,10 @@ df2.iplot(kind='bar', xTitle='Date', yTitle='Average',
 
 as we saw, **we can combine the power of pandas with plotly + cufflinks**. For a boxplot of the fans per story by publication, we use a `pivot` and then plot:
 
+就像上面展示的那样，**我们可以将 plotly + cufflinks 和 pandas 的能力整合在一起**。比如，我们可以先用 `pivot` 进行数据透视表分析，然后再生成条形图。
+
+比如统计不同发表渠道的每篇文章粉丝数分析：
+
 ```python
 df.pivot(columns='publication', values='fans').iplot(
         kind='box',
@@ -111,9 +123,14 @@ df.pivot(columns='publication', values='fans').iplot(
 
 The benefits of interactivity are that we can explore and subset the data as we like. There’s a lot of information in a boxplot, and without the ability to see the numbers, we’ll miss most of it!
 
+交互式图表带来的好处是，我们可以随意探索数据、拆分子项进行分析。箱型图能提供大量的信息，但如果你看不到具体数值，你很可能会错过其中的一大部分！
+
 ## Scatterplots
+## 散点图
 
 The scatterplot is the heart of most analyses. It allows us to see the evolution of a variable over time or the relationship between two (or more) variables.
+
+
 
 ### Time-Series
 A considerable portion of real-world data has a time element. Luckily, plotly + cufflinks was designed with time-series visualizations in mind. Let’s make a dataframe of my TDS articles and look at how the trends have changed.
