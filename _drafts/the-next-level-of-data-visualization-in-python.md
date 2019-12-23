@@ -23,7 +23,6 @@ All of the code for this article is [available on GitHub](https://github.com/Wil
 
 本文中所有代码都已经在 Github 上开源，所有的图表都是可交互的，请使用**NBViewer**查看 。
 
-
 []
 plotly 绘制的范例图表。图片来源：plot.ly
 
@@ -32,26 +31,33 @@ plotly 绘制的范例图表。图片来源：plot.ly
 
 The `plotly` Python package is an open-source library built on **plotly.js** which in turn is built on **d3.js**. We’ll be using a wrapper on plotly called `cufflinks` designed to work with Pandas dataframes. So, our entire stack is cufflinks > plotly > plotly.js > d3.js which means we get the efficiency of coding in Python with the incredible interactive graphics capabilities of d3.
 
-`plotly` 的 Python 软件包是一个开源的代码库，它基于 **plot.js**，而后者基于 **d3.js** 
+`plotly` 的 Python 软件包是一个开源的代码库，它基于 **plot.js**，而后者基于 **d3.js**。我们实际使用的则是一个对 plotly 进行封装的库，名叫 `cufflinks`，它能让你更方便地使用 plotly 和 Pandas 数据表协同工作。
 
 (Plotly itself is a graphics company with several products and open-source tools. The Python library is free to use, and we can make unlimited charts in offline mode plus up to 25 charts in online mode to share with the world.)
 
+（注：Plotly 本身是一个拥有多个不同产品和开源工具集的可视化技术公司。Plotly 的 Python 库是可以免费使用的，在离线模式可以创建数量不限的图表，在线模式因为用到了 Plotly 的共享服务，只能生成并分享 25 张图表。）
+
 All the work in this article was done in a Jupyter Notebook with **plotly + cufflinks** running in offline mode. After installing plotly and cufflinks with `pip install cufflinks plotly` import the following to run in Jupyter:
 
+本文中的所有可视化图表都是在 Jupyter Notebook 中使用离线模式的 plotly + cufflinks 库完成的。在使用  `pip install cufflinks plotly`  完成安装后，你可以用下面这样的代码在 Jupyter 里完成导入：
+
 ```python
-# Standard plotly imports
+# 导入 plotly 库
 import plotly.plotly as py
 import plotly.graph_objs as go
 from plotly.offline import iplot, init_notebook_mode
-# Using plotly + cufflinks in offline mode
+# 在离线模式使用 plotly + cufflinks 库
 import cufflinks
 cufflinks.go_offline(connected=True)
 init_notebook_mode(connected=True)
 ```
 
 ## Single Variable Distributions: Histograms and Boxplots
+## 单变量分布：直方图和箱形图
 
 Single variable — univariate — plots are a standard way to start an analysis and the histogram is a go-to plot (although it has some issues) for graphing a distribution. Here, using my Medium article statistics (you can see how to get your own stats here or use mine [here](https://github.com/WillKoehrsen/Data-Analysis/tree/master/medium)) let’s make an interactive histogram of the number of claps for articles ( `df` is a standard Pandas dataframe):
+
+
 
 ```python
 df['claps'].iplot(kind='hist',
