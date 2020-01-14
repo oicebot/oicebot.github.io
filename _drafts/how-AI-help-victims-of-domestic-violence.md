@@ -1,12 +1,11 @@
 ---
 layout: post
-title: " "
+title: "对暴力威胁，还有AI站在你的身边"
 tags: Udacity AI Data-Science
 origin: True
-excerpt: " "
+excerpt: "希望你们不会需要用到它们。"
 thumb: "/img/20191201/thumb.jpg"
 ---
-
 
 ## 心理援助AI：rAInbow（“彩虹”）
 
@@ -71,15 +70,6 @@ jael.ai 用自然语言处理和机器学习技术来理解用户的意图，利
 
 
 
-
-
-
-
-
-
-
-
-
 <p style="color:grey">参考资料：<small>
 1.   https://thetempest.co/2018/10/25/now-beyond/artificial-intelligence-is-changing-the-way-we-help-domestic-violence-victims/ <br>
 2.   https://www.unwomen.org/en/news/stories/2019/5/feature-using-ai-in-accessing-justice-for-survivors-of-violence <br>
@@ -89,12 +79,9 @@ jael.ai 用自然语言处理和机器学习技术来理解用户的意图，利
 6.   https://riotimesonline.com/brazil-news/rio-politics/in-brazil-i-am-gloria-will-help-women-victims-of-domestic-violence/ <br>
 7.   http://jael.ai/ <br>
 8.   https://www.societyforscience.org/content/ssp-blog/preventing-domestic-violence-technology
-
-
-
 </small></p>
 
 
-> _（本文已投稿给「[优达学城](https://cn.udacity.com)」。 编译：欧剃  编辑：肉松 转载请保留此信息）_
+> _（本文已投稿给「[优达学城](https://cn.udacity.com)」，有改动。 编译：欧剃  编辑：肉松 转载请保留此信息）_
 
 
