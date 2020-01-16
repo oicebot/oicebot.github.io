@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "喵星人教你如何提升工作效率！"
-tags: Udacity Translate Data-Science Python
+tags: Udacity Translate
 excerpt: "确保每天睡上足足14个小时"
 thumb: "/img/20200115/thumb.jpg"
 author: Ella Figg
