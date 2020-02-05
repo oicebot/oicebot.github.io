@@ -3,18 +3,18 @@ layout: post
 title: "喵星人教你如何提升工作效率！"
 tags: Udacity Translate
 excerpt: "确保每天睡上足足14个小时"
-thumb: "/img/20200115/thumb.jpg"
+thumb: "{{site.cdn}}/img/20200115/thumb.jpg"
 author: Ella Figg
 from: https://medium.com/tenderlymag/productivity-tips-from-a-cat-4187f6a823cd
 ---
 
-<img src="/img/20200115/001.jpg">
+<img src="{{site.cdn}}/img/20200115/001.jpg">
 
 嗨，铲屎官们！作为你们的猫主子，我知道你们两脚兽很羡慕我们的生活。你们痴迷我可爱的外表，欣赏我特立独行的生活方式，拜倒在我的喵爪之下，但你们最嫉妒的还是我的工作效率。
 
 虽然你们永远无法拥有我不可抗拒的魅力，但或许我可以大发慈悲给你们一些小提示，提升一下你们的工作效率喵~
 
-<img src="/img/20200115/002.jpg">
+<img src="{{site.cdn}}/img/20200115/002.jpg">
 
 1. <span class="hl">当你睡眠充足的时候，脑子才工作的最好</span>喵~确保每天睡上足足14个小时，这样你醒着的时候才能创造出最好的东西！
 2. <span class="hl">只有填饱肚子，才能把活儿干好</span>。千万别怕大声喊着讨食吃，如果你的老板想要你高效工作，就会把你喂饱喵。
@@ -29,7 +29,7 @@ from: https://medium.com/tenderlymag/productivity-tips-from-a-cat-4187f6a823cd
 
 好啦，说了这么多，那我先小睡一会喵，你们继续加油！
 
-<img src="/img/20200115/003.jpg">
+<img src="{{site.cdn}}/img/20200115/003.jpg">
 
 （本文配图全部来自 pixabay.com。）
 

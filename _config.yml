@@ -4,6 +4,7 @@ SEOTitle: 坎德人的小包包    	 #显示在浏览器上搜索的时候显示
 description: "欧剃，游荡的坎德人，在他的旅途中收集了许许多多有趣的东西。"  			 #网站介绍
 url: "https://oicebot.github.io"          # 这个就是填写你的博客地址
 baseurl: ""
+cdn: "https://cdn.jsdelivr.net/gh/oicebot/oicebot.github.io"
 theme: jekyll-theme-hacker
 author: 欧剃
 star: false
