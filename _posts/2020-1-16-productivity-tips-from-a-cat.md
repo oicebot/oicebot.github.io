@@ -3,7 +3,7 @@ layout: post
 title: "喵星人教你如何提升工作效率！"
 tags: Udacity Translate
 excerpt: "确保每天睡上足足14个小时"
-thumb: "{{site.cdn}}/img/20200115/thumb.jpg"
+thumb: {{site.cdn}}/img/20200115/thumb.jpg
 author: Ella Figg
 from: https://medium.com/tenderlymag/productivity-tips-from-a-cat-4187f6a823cd
 ---
