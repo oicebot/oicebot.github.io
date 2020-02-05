@@ -2,11 +2,12 @@
 layout: post
 title: "流落荒岛怎么办？掏出纸笔发点区块链货币先！"
 tags: Udacity Translate Blockchain
+date: 2018-05-30
 author: Tal Kol
 from: https://hackernoon.com/how-to-run-a-blockchain-on-a-deserted-island-with-pen-and-paper-899949ec555b
 excerpt: "一步到位进入现代社会"
 star: true
-thumb: /img/20180530/thumb.jpg
+thumb: "/img/20180530/thumb.jpg"
 ---
 
 <img src="{{site.cdn}}/img/20180530/001.jpeg">
