@@ -17,7 +17,7 @@ excerpt_separator: <!--more-->
 
 ## 1. Bookdown
 
-<img width="240px" src="/img/20190113/1.webp" />
+<img width="240px" src="{{site.cdn}}/img/20190113/1.webp" />
 
 Bookdown是一个开源的 R 代码库，它可以把用 R Markdown 写的文档转换成多种不同的格式，包括可打印的 PDF、epub 电子书以及自发布网页文档等。
 
@@ -27,7 +27,7 @@ Bookdown是一个开源的 R 代码库，它可以把用 R Markdown 写的文档
 
 ## 2. Cloud DataFlow
 
-<img width="240px" src="/img/20190113/2.webp" />
+<img width="240px" src="{{site.cdn}}/img/20190113/2.webp" />
 
 在 Google 云平台上，我最喜欢的工具之一就是 Cloud DataFlow。Cloud Dataflow 是 Google 提供的一项完全托管式的流式/批量数据处理服务，它提供了一个弹性而高可控的环境，让数据科学家可以在流水线运行时对其进行监控和问题排查。
 
@@ -38,7 +38,7 @@ Bookdown是一个开源的 R 代码库，它可以把用 R Markdown 写的文档
 
 ## 3. Python
 
-<img width="240px" src="/img/20190113/3.webp" />
+<img width="240px" src="{{site.cdn}}/img/20190113/3.webp" />
 
 以往的许多数据科学家，往往喜欢使用 R 语言，我也是如此。然而，近年来随着许多第三方库的出现，特别是机器学习、数据分析方面的第三方库日益完善，使用 Python 进行数据分析的软件生态链逐渐成为人们的第一选择。
 
@@ -49,7 +49,7 @@ Python 的优势之一，就是社区提供了大量的第三方模块，使用�
 
 ## 4. AWS Lambda
 
-<img width="240px" src="/img/20190113/4.webp" />
+<img width="240px" src="{{site.cdn}}/img/20190113/4.webp" />
 
 过去一年，我一直在关注如何让数据科学家能够将模型投入生产之中。而 AWS Lambda 等工具就提供了一个可行的解决方案。
 
@@ -58,7 +58,7 @@ AWS Lambda 是亚马逊提供的一个云代码托管服务，它让数据科学
 
 ## 5. Featuretools
 
-<img height="150px" src="/img/20190113/5.webp" />
+<img height="150px" src="{{site.cdn}}/img/20190113/5.webp" />
 
 Featuretools 库是用 Python 编写的一个自动化特征工程工具。
 
@@ -67,7 +67,7 @@ Featuretools 库是用 Python 编写的一个自动化特征工程工具。
 
 ## 6. Keras
 
-<img width="240px" src="/img/20190113/6.webp" />
+<img width="240px" src="{{site.cdn}}/img/20190113/6.webp" />
 
 Keras 是一个用 Python 编写的高级神经网络 API，它能够以 TensorFlow, CNTK, 或者 Theano 作为后端运行。Keras 的开发重点是支持快速的实验。能够以最小的时延把你的想法转换为实验结果，是做好研究的关键。
 
@@ -76,17 +76,17 @@ Keras 是一个用 Python 编写的高级神经网络 API，它能够以 TensorF
 
 ## 7. Flask
 
-<img width="240px" src="/img/20190113/7.webp" />
+<img width="240px" src="{{site.cdn}}/img/20190113/7.webp" />
 
 Flask 是一个使用 Python 编写的轻量级 Web 应用框架，你只需要编写一个简单的 python 文件就能变成一个全功能的 web 服务：
 
 在学习 Python 之前，Jetty 是我构建 Web 服务的首选方法，毕竟我那时候用的是 Java。而 Flask 是一个用于将 Python 函数变为 Web 调用的神器，对于构建微服务非常有用。我试过使用 Flask 为深度学习分类器打造一个网页终端，而在GDC 2019 上，我还将向大家展示在公司里如何使用 Flask 和 Gunicorn 来构建一个微服务，方便内部使用。
 
-<img src="/img/20190113/7.1.webp" />
+<img src="{{site.cdn}}/img/20190113/7.1.webp" />
 
 ## 8. PySpark
 
-<img width="240px" src="/img/20190113/8.webp" />
+<img width="240px" src="{{site.cdn}}/img/20190113/8.webp" />
 
 PySpark 是一个针对 Spark 的 Python API，它能让你用 Python 语言处理 Spark 的“弹性分布式数据集”（resilient distributed dataset）RDD 对象。
 
@@ -95,14 +95,14 @@ PySpark 是一个针对 Spark 的 Python API，它能让你用 Python 语言处�
 
 ## 9. Pandas UDFs
 
-<img width="240px" src="/img/20190113/9.webp" />
+<img width="240px" src="{{site.cdn}}/img/20190113/9.webp" />
 
 并非所有 Python 代码都可以直接在 PySpark 里用，但是 Pandas UDF 使得在 Spark 中重用 Python 代码变得更加容易。 使用 Pandas 的用户定义函数（UDF，User-Defined Function），我们可以在函数中使用 Pandas 数据表对象，并指定用于拆分数据表的 key。结果就是，一个巨大的 Spark 数据表可以在分配给集群中的各个节点，转换为可以被你的函数所操作的 Pandas 数据表，然后将结果组合回原来的 Spark 表。这意味着我们可以在分布式模式下使用现有的 Python 代码。我目前供职的 Zynga 公司就使用 Pandas UDF 来构建预测模型。
 
 
 ## 10. 开放数据集
 
-<img width="240px" src="/img/20190113/10.webp" />
+<img width="240px" src="{{site.cdn}}/img/20190113/10.webp" />
 
 在过去一年中，为了撰写有关数据科学的文章，我从许多开放数据集里获得示例数据。我使用的实例里，就包括了来自 Kaggle、BigQuery 以及政府开放数据集的数据。
 

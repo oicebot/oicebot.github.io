@@ -8,7 +8,7 @@ thumb: "/img/20170616/image34.jpg"
 star: true
 excerpt_separator: <!--more-->
 ---
-<img src="/img/20181226/tz58NuOcsP278JpoZAke_Q.jpeg">
+<img src="{{site.cdn}}/img/20181226/tz58NuOcsP278JpoZAke_Q.jpeg">
 
 基本上，绝大部分的程序员在职业生涯中，多多少少都会染上些坏毛病，有些坏习惯甚至是在学习的过程中就养成的。今天优达菌给大家带来详细八一八我们身边最常见的一些坏习惯（其中有几个连优达菌自己也还没完全戒掉呢），希望大家互相勉励，也给刚入行的新朋友们提个醒，少走一些弯路。
 
@@ -167,7 +167,7 @@ excerpt_separator: <!--more-->
 
 ----
 
-<img src="/img/20181226/title.webp" />
+<img src="{{site.cdn}}/img/20181226/title.webp" />
 
 那么，今天分享的这些经验也算告一段落啦，不论是老鸟还是新兵，希望这些建议能对你们有用。
 

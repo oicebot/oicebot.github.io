@@ -8,7 +8,7 @@ author: Parul Pandey
 from: https://towardsdatascience.com/10-simple-hacks-to-speed-up-your-data-analysis-in-python-ec18c6396e6b
 ---
 
-<img src="/img/20191220/001.jpeg"><br><small>图片来源：pixabay.com</small>
+<img src="{{site.cdn}}/img/20191220/001.jpeg"><br><small>图片来源：pixabay.com</small>
 
 在编程的世界里，有许多实用的小技巧和小秘技，值得你花时间去掌握。有的时候，一点点黑科技就能帮你节省不少时间和生命，一个不起眼的快捷操作或插件往往会成为救场的及时雨，让生产力突飞猛进。
 
@@ -24,7 +24,7 @@ from: https://towardsdatascience.com/10-simple-hacks-to-speed-up-your-data-analy
 
 对于给出的某个数据库，Pandas Profiling 库能计算出以下这些统计信息：
 
-<img src="/img/20191220/002.png">
+<img src="{{site.cdn}}/img/20191220/002.png">
 
 ### 安装
 
@@ -49,7 +49,7 @@ df.profile_report()
 
 要在 Jupyter notebook 里显示数据预览分析的结果，你只需要这么一行代码就够了。生成的结果相当详细，包含了各种你可能会需要的图表。
 
-<img src="/img/20191220/003.gif">
+<img src="{{site.cdn}}/img/20191220/003.gif">
 
 你还可以用这样的代码把结果导出成一个交互式 HTML 文件：
 
@@ -58,7 +58,7 @@ profile = df.profile_report(title='Pandas Profiling Report')
 profile.to_file(outputfile="Titanic data profiling.html")
 ```
 
-<img src="/img/20191220/004.gif">
+<img src="{{site.cdn}}/img/20191220/004.gif">
 
 你可以在这个库的[官方文档](https://pandas-profiling.github.io/pandas-profiling/docs/)中查询到更详细的用法和实例代码。
 
@@ -97,8 +97,8 @@ cf.set_config_file(offline=False, world_readable=True)
 
 `df.iplot()`
 
-<img src="/img/20191220/005.gif"><br>
-<img src="/img/20191220/006.png"><br><small>df.iplot() 和 df.plot() 的对比</small>
+<img src="{{site.cdn}}/img/20191220/005.gif"><br>
+<img src="{{site.cdn}}/img/20191220/006.png"><br><small>df.iplot() 和 df.plot() 的对比</small>
 
 比起下图的静态图表，上图的交互式图表能显示出更详细的信息，而这一切并不需要太多的语法变化。
 
@@ -110,7 +110,7 @@ cf.set_config_file(offline=False, world_readable=True)
 
 Jupyter Notebooks 中的“魔法命令”是一系列便捷的函数，用于解决标准数据分析时的一些常见问题。你可以用 `%lsmagic` 命令来列出所有的“魔法命令”。
 
-<img src="/img/20191220/007.png"><br><small>所有可用魔法命令的列表</small>
+<img src="{{site.cdn}}/img/20191220/007.png"><br><small>所有可用魔法命令的列表</small>
 
 魔法命令又分成两类，一种是**行魔法**，前缀为单个 `%` 字符，只作用于单行代码；另一种是 **单元格魔法**，以 `%%` 为前缀，能作用于整个单元格。如果 Notebook 的 Automagic 选项设置为1 ，你可以省略单行魔法命令的前缀 `%`。
 
@@ -130,13 +130,13 @@ def foo(x):
 
 在 Jupyter Notebook 里用 `%pastebin` 生成一个分享链接：
 
-<img src="/img/20191220/008.png">
+<img src="{{site.cdn}}/img/20191220/008.png">
 
 ### %matplotlib notebook
 
 `%matplotlib inline` 命令会让静态的 matplotlib 图表在 Jupyter notebook 的运行结果区域内显示。如果你把命令中的 `inline` 换成 `notebook`，你还能轻松获得一个可缩放和调整大小的图表。你应当在导入 matplotlib 库之前先运行 `%matplotlib` 命令。
 
-<img src="/img/20191220/009.png"><br><small>%matplotlib inline 和 %matplotlib notebook 的对比</small>
+<img src="{{site.cdn}}/img/20191220/009.png"><br><small>%matplotlib inline 和 %matplotlib notebook 的对比</small>
 
 ### %run
 
@@ -150,7 +150,7 @@ def foo(x):
 
 `%%writefile` 能将一个单元格的内容保存成文件。下面这段代码就会被写入 `foo.py` 文件中，并保存在当前目录下。
 
-<img src="/img/20191220/010.png">
+<img src="{{site.cdn}}/img/20191220/010.png">
 
 ### %%latex
 
@@ -158,7 +158,7 @@ The `%%latex` function renders the cell contents as LaTeX. It is useful for writ
 
 `%%latex` 命令让你可以用 LaTeX 语法渲染单元格的内容。在编写数学公式和方程的时候很好用。
 
-<img src="/img/20191220/011.png">
+<img src="{{site.cdn}}/img/20191220/011.png">
 
 ----
 
@@ -168,7 +168,7 @@ The `%%latex` function renders the cell contents as LaTeX. It is useful for writ
 
 如果你在运行一个代码单元格的时候出现了异常，你可以新起一行，运行 `%debug` 命令。这将打开一个交互式的调试环境，把你带到异常发生的位置。你可以在此检查程序中各个变量的值，并执行各种操作。输入 `q` 退出调试器。
 
-<img src="/img/20191220/012.gif">
+<img src="{{site.cdn}}/img/20191220/012.gif">
 
 ----
 
@@ -176,7 +176,7 @@ The `%%latex` function renders the cell contents as LaTeX. It is useful for writ
 
 如果你想为数据结构生成美观的输出信息，**pprint** 就是首选的模块。它在输出字典对象或 JSON 数据的时候特别有用。下面是一个用 `print` 和 `pprint` 输出信息的例子：
 
-<img src="/img/20191220/013.png">
+<img src="{{site.cdn}}/img/20191220/013.png">
 
 ----
 
@@ -218,7 +218,7 @@ The `%%latex` function renders the cell contents as LaTeX. It is useful for writ
 
 下面是几种提示的运行效果：
 
-<img src="/img/20191220/014.png">
+<img src="{{site.cdn}}/img/20191220/014.png">
 
 ----
 
@@ -264,7 +264,7 @@ InteractiveShell.ast_node_interactivity = "last_expr"
 
 * 首先，当程序运行结束，或是异常退出的时候，python 解释器并不会被关闭。在这种情况下，我们可以检查变量的值，核对函数是否正常工作等。
 
-    <img src="/img/20191220/015.gif">
+    <img src="{{site.cdn}}/img/20191220/015.gif">
 
 * 其次，既然解释器还在，我们可以很容易地调用 Python 调试器来排查问题：
 
@@ -283,7 +283,7 @@ pdb.pm()
 
 在编辑器中按下 `Ctrl + /`（Mac用户是 `⌘ + /`）快捷键，可以自动注释掉光标所在的行。再按一次取消注释。
 
-<img src="/img/20191220/016.gif">
+<img src="{{site.cdn}}/img/20191220/016.gif">
 
 ----
 
@@ -295,7 +295,7 @@ pdb.pm()
 * 如果你是不小心删除了单元格中的一部分内容，可以用 `Ctrl + Z` 快捷键（Mac用户是 `⌘ + Z`）撤销。
 * 如果你需要恢复整个被删除的单元格，请按 `ESC+Z`，或在菜单上选择编辑（EDIT）-> 撤销删除（Undo Delete Cells）
 
-    <img src="/img/20191220/017.png">
+    <img src="{{site.cdn}}/img/20191220/017.png">
 
 ----
 

@@ -14,7 +14,7 @@ thumb: "/img/20190516/thumb.jpg"
 
 因此，这些企业都在寻找有才华的开发者和 DevOps工程师。 据《福布斯》报道，仅在美国国内，就有超过50000个云计算相关工作岗位，工资中位数达146000美元。“DevOps工程师”职位更是位居2018年LinkedIn“受招募最多的工作岗位”之首。
 
-<img src="/img/20190516/001.png">
+<img src="{{site.cdn}}/img/20190516/001.png">
 
 ## 云计算学院内设纳米学位课程一览
 
@@ -40,7 +40,7 @@ thumb: "/img/20190516/thumb.jpg"
 * Carlos Rivas，Infiniti Consulting集团高级解决方案架构师
 * Noah Gift，Pragmatic AI实验室创始人
 
-<img src="/img/20190516/000.png">
+<img src="{{site.cdn}}/img/20190516/000.png">
 
 ## 云计算软件开发纳米学位课程细节
 

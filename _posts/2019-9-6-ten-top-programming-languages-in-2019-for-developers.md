@@ -8,7 +8,7 @@ excerpt: "不论你是刚入门，还是打算再学一门语言提升一下自�
 thumb: "/img/20190906/thumb.jpg"
 ---
 
-<img src="/img/20190906/001.png">
+<img src="{{site.cdn}}/img/20190906/001.png">
 
 我们正处在一个编程语言大爆炸的时代。
 
@@ -20,7 +20,7 @@ thumb: "/img/20190906/thumb.jpg"
 
 ## 2019 年最好的编程语言都有哪些？
 
-<img src="/img/20190906/002.gif"><br><small>
+<img src="{{site.cdn}}/img/20190906/002.gif"><br><small>
 Google 搜索趋势中显示的编程语言热度历史</small>
 
 在正式开始之前，请容我卖点关子，介绍一下我们这个榜单是怎么统计出来的。嫌太长不想看的同学，请继续往下拉。
@@ -45,7 +45,7 @@ Google 搜索趋势中显示的编程语言热度历史</small>
 
 这个也不难理解，用这个语言写的开源项目越多，这个语言自然也越有活力。
 
-<img src="/img/20190906/003.gif"><br><small>
+<img src="{{site.cdn}}/img/20190906/003.gif"><br><small>
 GitHut 2.0 最佳编程语言榜单</small>
 
 <span class="hl">4. 近一年的 Google 搜索趋势</span>
@@ -60,7 +60,7 @@ Google 趋势说明了世界各地的用户搜索的最多的是什么，能从�
 
 ## 10. Clojure
 
-<img src="/img/20190906/004.png">
+<img src="{{site.cdn}}/img/20190906/004.png">
 
 * Clojure 程序员全球平均年薪：$90k。美国国内平均年薪可达 $139k 美金。
 * 据统计，Clojure 是全球平均薪资最高的编程语言，也是美国第二高的。
@@ -69,7 +69,7 @@ Google 趋势说明了世界各地的用户搜索的最多的是什么，能从�
 
 ## 9. Scala
 
-<img src="/img/20190906/005.png">
+<img src="{{site.cdn}}/img/20190906/005.png">
 
 * Scala 程序员全球平均年薪：$78k，美国国内平均年薪可达 $143k 美金。
 * 据统计，Scala 程序员的平均薪资水平排行全球第四，在美国国内则是排行第一。
@@ -78,7 +78,7 @@ Google 趋势说明了世界各地的用户搜索的最多的是什么，能从�
 
 ## 8. TypeScript
 
-<img src="/img/20190906/006.png">
+<img src="{{site.cdn}}/img/20190906/006.png">
 
 * TypeScript 程序员全球平均年薪：$60k，美国国内平均年薪可达 $115k 美金。
 * TypeScript 是 Stackoverflow 上第十大最受欢迎的编程语言。
@@ -87,7 +87,7 @@ Google 趋势说明了世界各地的用户搜索的最多的是什么，能从�
 
 ## 7. Kotlin
 
-<img src="/img/20190906/007.png">
+<img src="{{site.cdn}}/img/20190906/007.png">
 
 * Kotlin 程序员全球平均年薪：$57k，美国国内平均年薪可达 $125k 美金。
 * 虽然 Kotlin 不是当前报酬最高的编程语言，但拜 Google 所赐，它成为了安卓应用开发的官方语言，未来一定会炙手可热。
@@ -96,7 +96,7 @@ Google 趋势说明了世界各地的用户搜索的最多的是什么，能从�
 
 ## 6. Ruby
 
-<img src="/img/20190906/008.png">
+<img src="{{site.cdn}}/img/20190906/008.png">
 
 * Ruby 程序员全球平均年薪：$76k，美国国内平均年薪可达 $123k 美金。
 * 据统计，Ruby 程序员的平均薪资水平排行全球第六。
@@ -105,7 +105,7 @@ Google 趋势说明了世界各地的用户搜索的最多的是什么，能从�
 
 ## 5. Elixir
 
-<img src="/img/20190906/009.png">
+<img src="{{site.cdn}}/img/20190906/009.png">
 
 * Elixir 程序员全球平均年薪：$76k，美国国内平均年薪可达 $123k 美金。
 * 按照 2019 年 StackOverflow 的统计，Ruby 程序员的平均薪资水平排行全球第五，堪堪胜过 Ruby。
@@ -114,7 +114,7 @@ Google 趋势说明了世界各地的用户搜索的最多的是什么，能从�
 
 ## 4. Go
 
-<img src="/img/20190906/010.png">
+<img src="{{site.cdn}}/img/20190906/010.png">
 
 * Go 程序员全球平均年薪：$109k，美国国内平均年薪可达 $136k 美金。
 * Go 程序员的平均薪资水平排行全球第三。
@@ -123,7 +123,7 @@ Google 趋势说明了世界各地的用户搜索的最多的是什么，能从�
 
 ## 3. Java
 
-<img src="/img/20190906/011.jpeg">
+<img src="{{site.cdn}}/img/20190906/011.jpeg">
 
 * Indeed 求职网上，美国国内的 Java 程序员平均年薪可达 $101k 美金。
 * 在 2019 年最吓人的编程语言榜单中排行第十。
@@ -133,7 +133,7 @@ Google 趋势说明了世界各地的用户搜索的最多的是什么，能从�
 
 ## 2. Python
 
-<img src="/img/20190906/012.jpg">
+<img src="{{site.cdn}}/img/20190906/012.jpg">
 
 * Indeed 求职网上，美国国内的 Python 程序员平均年薪可达 $117k 美金。
 * 2019 Stackoverflow 调查“我最喜爱的编程语言”第二名，同个榜单中“我最想学的编程语言”第一名。
@@ -143,7 +143,7 @@ Google 趋势说明了世界各地的用户搜索的最多的是什么，能从�
 
 ## 1. JavaScript
 
-<img src="/img/20190906/013.jpg">
+<img src="{{site.cdn}}/img/20190906/013.jpg">
 
 * Indeed 求职网上，美国国内的 JavaScript 程序员平均年薪可达 $109k 美金。
 * 2019 Stackoverflow 调查“我最喜爱的编程语言”第一名。

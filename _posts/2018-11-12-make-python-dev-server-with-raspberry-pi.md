@@ -8,7 +8,7 @@ thumb: "/img/20181112/thumb.png"
 excerpt: "基本上一台普通的 Linux 电脑能做的事情，树莓派也能完成。今天这篇教程玩的可能会比较“高级”一丁点，我们将手把手带你用树莓派打造一个你自己的 Python 开发服务器。"
 ---
 
-<img src="/img/20181112/001.png" alt="" /><br><small>
+<img src="{{site.cdn}}/img/20181112/001.png" alt="" /><br><small>
 图片来源： python.org  / wikimedia.org</small>
 
 > 树莓派（Raspberry Pi）基本上就是一台超级便宜的 Linux 电脑，一般就两三百软，大小跟信用卡差不多。
@@ -34,7 +34,7 @@ excerpt: "基本上一台普通的 Linux 电脑能做的事情，树莓派也能
 
 我们将会用到 [VS Code 编辑器]({{ site.url -}}/2019/02/15/5-best-code-editors.html#VSCode)，还需要 Remote VSCode 插件，以便远程编辑树莓派上的文件。我强烈推荐你使用这个编辑器和插件，这样会让修改编辑服务器上的文件方便不少，算是个优势吧。
 
-<img src="/img/20190215/006.jpg" alt="" />
+<img src="{{site.cdn}}/img/20190215/006.jpg" alt="" />
 
 ## 第2步：找到树莓派的 IP 地址
 
@@ -58,7 +58,7 @@ ssh -R 52698:localhost:52698 pi@192.168.0.12
 
 以上命令将在你的电脑和树莓派之间建立一个双向的 SSH 通道。如果你是第一次通过 SSH 连上树莓派，请使用默认密码 raspberry。连接成功之后，你会收到一个更改默认密码的提示。强烈建议你自己设置一个安全的密码。
 
-<img src="/img/20181112/002.png" alt="" /><br><small>
+<img src="{{site.cdn}}/img/20181112/002.png" alt="" /><br><small>
 成功连接上树莓派之后，命令行窗口会出现类似这样的信息。</small>
 
 ## 第4步：建立一个工作文件夹
@@ -70,7 +70,7 @@ mkdir MyFlaskWebsite
 ```
 使用 `ls` 命令检查一下，你可以看到一个名为 MyFlaskWebsite 的文件夹已经生成了。
 
-<img src="/img/20181112/003.png" alt="" /><br><small>
+<img src="{{site.cdn}}/img/20181112/003.png" alt="" /><br><small>
 创建并检查你的工作文件夹</small>
 
 ## 第5步：安装 Flask
@@ -80,7 +80,7 @@ mkdir MyFlaskWebsite
 ```bash
 sudo apt-get install python3-flask
 ```
-<img src="/img/20181112/004.png" alt="" /><br><small>
+<img src="{{site.cdn}}/img/20181112/004.png" alt="" /><br><small>
 安装 Flask</small>
 
 ## 第6步：来点简单的代码
@@ -99,12 +99,12 @@ touch app.py
 
 再用 `ls` 命令检查一下，你应该能看到文件夹里多了一个文件：
 
-<img src="/img/20181112/005.png" alt="" /><br><small>
+<img src="{{site.cdn}}/img/20181112/005.png" alt="" /><br><small>
 进入文件夹，并创建一个新文件</small>
 
 现在，按下 `F1` 键，选择 “Remote: Start Server”。这将使你可以用电脑远程编辑树莓派上的文件。
 
-<img src="/img/20181112/006.png" alt="" /><br><small>
+<img src="{{site.cdn}}/img/20181112/006.png" alt="" /><br><small>
 启动远程服务器</small>
 
 下一步，用这个命令编辑你新建的 `app.py` 文件：
@@ -115,12 +115,12 @@ rmate app.py
 
 第一次载入可能需要几秒钟时间，但这个空文件很快就会在上面的窗口中显示了。
 
-<img src="/img/20181112/007.png" alt="" /><br><small>
+<img src="{{site.cdn}}/img/20181112/007.png" alt="" /><br><small>
 开始远程编辑这个文件</small>
 
 参照下图的代码，编写你的 app.py 文件。在下面这个例子中，我们指定了一个路径，它指向网站首页 '/'，并让它显示一行文字：“This is my flask website and it is so cool.（这是我的 Flask 网站，是不是很酷啊）”。请注意， `host='0.0.0.0'` 参数将让整个局域网中的所有设备都能访问这个网站。
 
-<img src="/img/20181112/008.png" alt="" /><br><small>
+<img src="{{site.cdn}}/img/20181112/008.png" alt="" /><br><small>
 创造一个简单的网页</small>
 
 现在，保存文件，并用下面的代码在树莓派上运行你的网站服务：
@@ -131,14 +131,14 @@ python app.py
 
 运行效果如下：
 
-<img src="/img/20181112/009.png" alt="" /><br><small>
+<img src="{{site.cdn}}/img/20181112/009.png" alt="" /><br><small>
 运行网站服务软件</small>
 
 看到上面的输出之后，你就可以用局域网内的任意设备，打开浏览器，访问树莓派的 IP（我们这个例子中是 192.168.0.12 ）加上上面的端口号（5000），来访问刚才这个服务程序建立的网页。完整地址应该是 <http://192.168.0.12:5000/>
 
 如果一切正常，你应该能在网页上看到上面代码中的那行字：“This is my flask website and it is so cool.”
 
-<img src="/img/20181112/010.png" alt="" /><br><small>
+<img src="{{site.cdn}}/img/20181112/010.png" alt="" /><br><small>
 在浏览器中查看网页内容</small>
 
 这表示你的开发服务器已经激活，并且运行着你刚建立的网站。
@@ -147,12 +147,12 @@ python app.py
 
 目前这个代码只有一个路径，也就是网站的首页。按照下面的代码，你可以增加一个新的路径。你可以在开发服务器上动态调整代码，它会自动捕获代码变更，当你刷新浏览器的时候，它会自动运行一个更新过的版本。
 
-<img src="/img/20181112/011.png" alt="" /><br><small>
+<img src="{{site.cdn}}/img/20181112/011.png" alt="" /><br><small>
 增加一个 meow 的路径</small>
 
 为了检查新添加的路径是否正常工作，你可以访问 <http://192.168.0.12:5000/meow> ，如果一切正常，网页上将会显示一个大大的 MEOW（喵）。
 
-<img src="/img/20181112/012.png" alt="" /><br><small>
+<img src="{{site.cdn}}/img/20181112/012.png" alt="" /><br><small>
 检查新增的路径是否正常工作</small>
 
 ## 第8步：整理项目结构
@@ -168,7 +168,7 @@ mkdir tatic
 
 同样，你可以用 `ls` 命令检验一下文件夹是否被正确创建了。
 
-<img src="/img/20181112/013.png" alt="" /><br><small>
+<img src="{{site.cdn}}/img/20181112/013.png" alt="" /><br><small>
 增加结构，可以让项目更有条理</small>
 
 现在，我们可以给首页添加一个 HTML 模板文件啦。用下面的代码，进入对应的文件夹，并且新建一个 `index.html` ，再用 rmate 命令来编辑：
@@ -179,34 +179,34 @@ touch index.html
 rmate index.html
 ```
 
-<img src="/img/20181112/014.png" alt="" />
+<img src="{{site.cdn}}/img/20181112/014.png" alt="" />
 
 接下来，在 index.html 里写一些首页所需的基本 HTML 代码：
 
-<img src="/img/20181112/015.png" alt="" /><br><small>
+<img src="{{site.cdn}}/img/20181112/015.png" alt="" /><br><small>
 首页中将要显示的 HTML 代码
 
 在 app.py 中进行修改，让首页使用 index.html 文件作为模板。下面的代码将会让服务器从默认的模板文件夹中读取 index.html 文件：
 
-<img src="/img/20181112/016.png" alt="" /><br><small>
+<img src="{{site.cdn}}/img/20181112/016.png" alt="" /><br><small>
 使用新的 index.html 文件，并用 app.py 进行渲染</small>
 
 现在回到上一层目录，再次运行网站服务。
 
-<img src="/img/20181112/017.png" alt="" />
+<img src="{{site.cdn}}/img/20181112/017.png" alt="" />
 
 在浏览器里重新访问首页，你就能看到 index.html 的内容啦。
 
-<img src="/img/20181112/018.png" alt="" /><br><small>
+<img src="{{site.cdn}}/img/20181112/018.png" alt="" /><br><small>
 
 接下来，我们通过在 static 文件夹里添加 main.css 文件，给网站加上 CSS 样式。和之前一样，用 `cd` 命令进入对应文件夹，用 `touch` 命令创建新文件，再用 `rmate` 命令来编辑。
 
-<img src="/img/20181112/019.png" alt="" /><br><small>
+<img src="{{site.cdn}}/img/20181112/019.png" alt="" /><br><small>
 创建并编辑 CSS 样式文件</small>
 
 给 h4 标签加一些样式。注意目前 index.html 里只有一个 h4 标签，我们添加的这个样式应该就会这个标签的样式产生影响。
 
-<img src="/img/20181112/020.png" alt="" /><br><small>
+<img src="{{site.cdn}}/img/20181112/020.png" alt="" /><br><small>
 一些 CSS 代码</small>
 
 和上面一样，再用这个命令重新运行一下网站服务：
@@ -217,7 +217,7 @@ python3 app.py
 
 刷新浏览器看看，这段文字的颜色是不是也改变了？
 
-<img src="/img/20181112/021.png" alt="" />
+<img src="{{site.cdn}}/img/20181112/021.png" alt="" />
 
 ## 第9步：利用好 Jinja 引擎
 
@@ -227,15 +227,15 @@ python3 app.py
 
 对 app.py 和 index.html 做如下改动：
 
-<img src="/img/20181112/022.png" alt="" /><br><small>
+<img src="{{site.cdn}}/img/20181112/022.png" alt="" /><br><small>
 将 my_list 变量作为参数传给 index.html</small>
 
-<img src="/img/20181112/023.png" alt="" /><br><small>
+<img src="{{site.cdn}}/img/20181112/023.png" alt="" /><br><small>
 在网页上显示 my_list 的内容</small>
 
 刷新一下页面，你应该能见到这个水果列表出现在了屏幕上。
 
-<img src="/img/20181112/024.png" alt="" />
+<img src="{{site.cdn}}/img/20181112/024.png" alt="" />
 
 
 怎么样，是不是很简单便捷？Jinja 的强大和便捷可不仅如此呢，你可以在[这里看到更多关于 Jinja 的介绍](http://jinja.pocoo.org/)。

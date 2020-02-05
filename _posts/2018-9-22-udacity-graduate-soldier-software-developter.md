@@ -13,7 +13,7 @@ thumb: "/img/thumb_v2-44b60c9d2f44e799d29b8d55f7d53c52_1200x500.jpg"
 
 今天我们请到了罗伯特·普兰本人，请他分享一下成为程序员的职业经历。
 
-<img src="/img/v2-44b60c9d2f44e799d29b8d55f7d53c52_1200x500.jpg" />
+<img src="{{site.cdn}}/img/v2-44b60c9d2f44e799d29b8d55f7d53c52_1200x500.jpg" />
 
 ## 缘起
 

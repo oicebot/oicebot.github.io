@@ -5,12 +5,10 @@ tags: Udacity Translate Science
 author: Peter Schroeder 
 from: https://hackernoon.com/the-reason-why-mark-zuckerberg-wears-the-same-shirt-everyday-68e4f907f661
 excerpt: "才不是！"
-thumb: "/img/20180226/thumb.jpg"
+thumb: "{{site.cdn}}/img/20180226/thumb.jpg"
 ---
 
-> ——“才不是呢！”
-
-<img src="/img/20180226/001.jpg">
+<img src="{{site.cdn}}/img/20180226/001.jpg">
 
 <span class="hl"><b>太长不看版</b>：任何时候，你拥有的意志力资源都是有限的。你完成的每一件事情，做出的每一个选择都在消耗同一个意志力资源池。所以，怎么能在琐碎的事情上浪费它呢？</span>
 
@@ -28,7 +26,7 @@ thumb: "/img/20180226/thumb.jpg"
 
 ## 极简化各种选项
 
-<img src="/img/20180226/002.jpg">
+<img src="{{site.cdn}}/img/20180226/002.jpg">
 
 过去的十年里，脑力精英们发现了一种非常简单却有效的解决办法。也就是：不要在那些无关的东西上浪费时间和精力，那些事情可以提前决定好，或是用自动化手段来处理。
 
@@ -47,7 +45,7 @@ thumb: "/img/20180226/thumb.jpg"
 
 当你每天处理了太多的选项后，你的潜意识就会变成像这样：
 
-<img src="/img/20180226/003.jpg">
+<img src="{{site.cdn}}/img/20180226/003.jpg">
 
 ## 我可以怎么做？
 
@@ -57,7 +55,7 @@ thumb: "/img/20180226/thumb.jpg"
 
 接下来，你需要逐渐将这些改变在生活中付诸实践。不要以为会像按个开关一样简单，一夜之间你的生活就会变得非常简约，那是不可能的。<span class="hl">你必须循序渐进</span>。
 
-<img src="/img/20180226/004.jpg">
+<img src="{{site.cdn}}/img/20180226/004.jpg">
 
 最好从某些最简单的事情开始，比如养成一个规律的晨间作息习惯，然后每天都严格按照这个习惯来。举个例子：
 

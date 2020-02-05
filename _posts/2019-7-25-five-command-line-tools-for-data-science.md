@@ -10,7 +10,7 @@ thumb: "/img/20190725/thumb.jpg"
 
 > 数据科学最让人头疼的地方之一，是你在工作时得不停地切换各种工具。在处理同一项任务的时候，你可能会发现自己不得不同时用 Jupyter Notebook 修改一些代码，在命令行里安装一些新的工具，说不定还得在某个 IDE 里修改一个函数……有的时候，能在同一个软件中完成更多的事情看起来还真不错。
 
-<img src="/img/20190725/001.jpg">
+<img src="{{site.cdn}}/img/20190725/001.jpg">
 
 在今天的文章中，我将推荐几个在命令行上进行数据处理的超棒工具。事实证明，能在简单的命令行中完成的工作，远比我原本预想的要多得多，希望它们也能帮上你的忙。
 
@@ -146,7 +146,7 @@ corr_matrix = data.corr()
 corr_matrix['target'].sort_values(ascending=False)
 ```
 
-<img src="/img/20190725/002.png">
+<img src="{{site.cdn}}/img/20190725/002.png">
 
 退出 IPython，只需输入 `exit`。
 
@@ -213,7 +213,7 @@ cd output
 
 在数据科学方面，还有许多非常有用的命令行工具，如果你想真正全面地了解如何在命令行中进行数据科学工作，我个人推荐你阅读[《命令行中的数据科学》](https://book.douban.com/subject/26387975/)一书，书中介绍了许多非常实用的命令行工具，以及如何使用它们高效地获取、清洗、探索数据，迅速建立自己的数据分析环境。你也可以在网上免费阅读这本书的[英文版](https://www.datascienceatthecommandline.com/)全文。
 
-<img src="/img/20190725/003.jpg"><br><small>图片来源：豆瓣读书</small>
+<img src="{{site.cdn}}/img/20190725/003.jpg"><br><small>图片来源：豆瓣读书</small>
 
 如果你也有自己中意的命令行工具，也欢迎在下面留言分享！
 

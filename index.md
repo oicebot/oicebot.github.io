@@ -5,7 +5,7 @@ title: 首页
 
 <div>
   <div style="float:left;margin-right: 10px" width="200px">
-    <img src="/assets/images/treasure-161753.svg" width="200px">
+    <img src="{{site.cdn}}/assets/images/treasure-161753.svg" width="200px">
   </div>
   <div style="margin-left: 10px;padding-left:10px"><br>欢迎！这里是我陈列包包里的各种有趣的小东西的地方！请四处转转吧~<br><br>本站所有文章均由<b><a href="{{ site.url -}}/about">欧剃</a></b>本人翻译或撰写，大部分投稿在优达学城、果壳网、别瞎玩等媒体，版权所有，转载请先联系。
   </div>
@@ -99,6 +99,6 @@ title: 首页
 
 **译个漫画**是我发布自己翻译的漫画作品的公众号，目前正在缓慢更新一些冷掉牙的 xkcd 漫画，不知道合不合大家的口味呢。
 
-<img src="/assets/images/wechatID.png" class="img-responsive" alt="欢迎关注！" />
+<img src="{{site.cdn}}/assets/images/wechatID.png" class="img-responsive" alt="欢迎关注！" />
 
 <hr>

@@ -14,12 +14,12 @@ excerpt: 在玩中学，在学中玩，不论你是对编程完全陌生的新�
 
 话不多说，让我们开始吧！
 
-<img src="/img/20190714/001.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/001.jpg" /><br><small>
 图片来源：pixabay.com</small>
 
 ## 9. 守望先锋（Overwatch）
 
-<img src="/img/20190714/A9_Overwatch.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/A9_Overwatch.jpg" /><br><small>
 图片来源：ow.blizzard.cn/media/</small>
 
 什么什么？我读书少，你不要骗我！今天不是说编程游戏的吗，这个多人竞技射击游戏是怎么混进来的？
@@ -28,22 +28,22 @@ excerpt: 在玩中学，在学中玩，不论你是对编程完全陌生的新�
 
 4 月底，守望先锋推出了“地图工坊”功能。在地图工坊中，你可以通过创建“规则”的方式，来设置、修改游戏中几乎一切和玩家角色有关的参数。脚本接收玩家角色输入的各种操作，经过触发器的判断，运行对应的过程“脚本”，这些脚本则会对游戏世界产生影响。
 
-<img src="/img/20190714/002.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/002.jpg" /><br><small>
 图片来源：《守望先锋》游戏截图</small>
 
 可别小看了它，这些“脚本”不但支持将值赋值给变量，也能读取各种参数，还能设置事件触发过程，支持字符串拼接和数组分割，连循环和分支语句也齐全。
 
-<img src="/img/20190714/003.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/003.jpg" /><br><small>
 图片来源：《守望先锋》游戏截图</small>
 
 自从功能开放以来，玩家们已经先后做出了《贪食蛇》、《Flappy Bird》的守望先锋版本，而有些大佬玩家甚至还做出了机制和操作都极其神似《任天堂明星大乱斗》的游戏，实在是太硬核了！
 
-<img src="/img/20190714/004.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/004.jpg" /><br><small>
 图片来源：gamerevolution.com</small>
 
 虽然这“编程”还并不是图灵完备，程序流程也偏简陋，完全没有写代码的地方，全靠鼠标点点点……但做出来之后真的好玩，而且还能方便地分享出去，拉上朋友们跟你一起玩！
 
-<img src="/img/20190714/005.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/005.jpg" /><br><small>
 图片来源：《守望先锋》游戏截图</small>
 
 > "请为你的规则写好说明，以防自己忘了规则的功能！"
@@ -52,7 +52,7 @@ excerpt: 在玩中学，在学中玩，不论你是对编程完全陌生的新�
 
 ## 8. 太空化学（SpaceChem）
 
-<img src="/img/20190714/A8_Spacechem.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/A8_Spacechem.jpg" /><br><small>
 图片来源：store.steampowered.com</small>
 
 > “SpaceChem 真的是给我留下了心理阴影。”
@@ -61,7 +61,7 @@ excerpt: 在玩中学，在学中玩，不论你是对编程完全陌生的新�
 
 太空化学是著名“编程”类游戏开发商 Zachtronics Industries 的名作。在游戏中，你需要在外星球上建造某种高科技化工厂，并布置工业自动化流水线，以最大化生产效率。
 
-<img src="/img/20190714/006.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/006.jpg" /><br><small>
 图片来源：《太空化学》游戏截图</small>
 
 这么说吧，这个游戏看起来是化学，其实是化工编程，并且门槛略高。
@@ -70,36 +70,36 @@ excerpt: 在玩中学，在学中玩，不论你是对编程完全陌生的新�
 
 微观方面，你将从两个来源获取原料（一般为单个元素的原子，或者某种化学物质分子），并在“反应器”中布置自动控制装置，设置它的线路以及操作流程，形成闭环，还要同步多条控制装置的工作线路，协作完成这些化学物质分子的旋转、运输，化学键的连接、断开等操作，以便构建出所需要的新物质。
 
-<img src="/img/20190714/007.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/007.jpg" /><br><small>
 图片来源：《太空化学》游戏截图</small>
 
 宏观方面，你需要建设化工流水线，使用管道、泵、储罐连接多个不同的反应器，协调它们的工作效率和输送速度，以便高效而安全地利用原料进行生产，完成目标。
 
-<img src="/img/20190714/008.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/008.jpg" /><br><small>
 图片来源：《太空化学》游戏截图</small>
 
 原版游戏中就包含有超过 50 个费解的难题，而它的 DLC《63 Corvi》里还提供了 7 个不同的谜题，以及一些全新的机制，放心，它们都足够烧脑。
 
 ## 7. Lightbot
 
-<img src="/img/20190714/A7_Lightbot.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/A7_Lightbot.jpg" /><br><small>
 图片来源：lightbot.com</small>
 
 经历了上面的超难游戏，让我们赶快放松一下，看看这款轻松愉快，适合小朋友入门学习编程思想的游戏吧。
 
 Lightbot 最初是一个 Flash 小游戏，后来被许多计算机老师发现，并推荐给学生玩，于是原作者干脆做了一个“编程一小时”专版，免费给大家玩。
 
-<img src="/img/20190714/009.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/009.jpg" /><br><small>
 图片来源：《Lightbot》游戏截图</small>
 
 游戏画风十分明快，界面也简单易懂，除了刚开始的教程和介绍外，基本不需要文字（编程一小时版支持中文）。玩家需要给憨态可掬的大头机器人下达指令，让它把关卡中地板上的灯全部点亮。
 
-<img src="/img/20190714/010.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/010.jpg" /><br><small>
 图片来源：《Lightbot》游戏截图</small>
 
 你需要在右边的指令框内放入一些简单的命令，比如前进，左/右转弯，跳过台阶，点灯/激活道具等等，还能调用F1、F2两个指令框，以实现较为复杂的循环。
 
-<img src="/img/20190714/011.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/011.jpg" /><br><small>
 图片来源：《Lightbot》游戏截图</small>
 
 > 编程（写代码），其实不过就是人们给计算机下命令，让它按照你的指令行事罢了。
@@ -112,12 +112,12 @@ Lightbot 最初是一个 Flash 小游戏，后来被许多计算机老师发现�
 
 ## 6. TIS-100
 
-<img src="/img/20190714/A6_TIS100.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/A6_TIS100.jpg" /><br><small>
 图片来源：store.steampowered.com</small>
 
 如果你对编程的历史有一定了解，你大概听说过汇编语言这种用在微处理器、微控制器，或其他可编程器件上的低级编程语言——在高级编程语言大行其道的今天，汇编语言已不再被广泛用于程序设计。由于基本就是把机器码变成一些晦涩难懂的字母而已，汇编语言可算是被全世界绝大多数程序员一致认为是无趣到爆炸的东西。
 
-<img src="/img/20190714/012.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/012.jpg" /><br><small>
 图片来源：store.steampowered.com</small>
 
 但是，如果突然有人告诉你，你的一个搞挨踢的远房亲戚去世的时候，遗留下一台神秘的旧机器给你，这机器里包含着一个未知的秘密——或许还有庞大的宝藏——需要你去发掘呢？
@@ -126,7 +126,7 @@ Lightbot 最初是一个 Flash 小游戏，后来被许多计算机老师发现�
 
 游戏界面长这样，里面还自带一个沙盒，让你可以不断挑战程序的效率和代码之美（并没有）：
 
-<img src="/img/20190714/013.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/013.jpg" /><br><small>
 图片来源：store.steampowered.com</small>
 
 怎么样，是不是让你感觉到了一种奇特的怀旧体验呢？（不！）
@@ -137,24 +137,24 @@ Lightbot 最初是一个 Flash 小游戏，后来被许多计算机老师发现�
 
 ## 5. 深圳IO（SHENZHEN I/O）
 
-<img src="/img/20190714/A5_Shenzhen.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/A5_Shenzhen.jpg" /><br><small>
 图片来源：store.steampowered.com</small>
 
 《深圳IO》和刚才我们提到的《TIS-100》《太空化学》等作一样，都是 Zachtronics 的烧脑作品。
 
-<img src="/img/20190714/014.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/014.jpg" /><br><small>
 图片来源：《深圳IO》游戏截图</small>
 
 相对来说，《深圳 IO》的叙事深度更加丰富多彩，你将扮演一名跑到深圳~~华强北~~打工的外国程序员，专门为各种电子设备编写嵌入式程序。在工作中，你不但能接触到其他同事，甚至还能在电脑上开一个麻将版本的空当接龙来摸鱼…
 
-<img src="/img/20190714/015.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/015.jpg" /><br><small>
 图片来源：《深圳IO》游戏截图</small>
 
 作为一个编程模拟游戏，它的工作界面拟真度还是不错。你需要自己完成元件布置、输入输出的走线，最后给各个元件编写内部代码，使元器件实现目标功能。
 
 你需要阅读一本近 50 页的“员工手册”来了解主要的代码文档和元件特性等基础知识，才能开始“工作”。但除此之外，你还能通过往来的工作邮件，了解更多隐藏在背后的信息。
 
-<img src="/img/20190714/016.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/016.jpg" /><br><small>
 图片来源：《深圳IO》游戏截图</small>
 
 对程序员来说，这款游戏最大的问题其实和刚才说到的 TIS-100 是一样的……
@@ -165,7 +165,7 @@ Lightbot 最初是一个 Flash 小游戏，后来被许多计算机老师发现�
 
 ## 4. EXAPUNKS
 
-<img src="/img/20190714/A4_EXA.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/A4_EXA.jpg" /><br><small>
 图片来源：store.steampowered.com</small>
 
 什么什么！？又是 Zachtronics 的游戏？
@@ -174,28 +174,28 @@ Lightbot 最初是一个 Flash 小游戏，后来被许多计算机老师发现�
 
 另一方面，要是不提 EXAPUNKS 这部视角独特、脑洞超大、剧情感人（？）的作品，读者们肯定不会满意的……吧？
 
-<img src="/img/20190714/017.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/017.jpg" /><br><small>
 图片来源：《EXAPUNKS》游戏截图</small>
 
 
 言归正传，EXAPUNKS 的故事背景设定在类似上个世纪 90 年代的世界，这里就是互联网黎明时代的赛博朋克世界。人们用着厚重的计算机，16色的屏幕，用磁带和软盘来传输数据，用电话线拨号上网，打开纯文字的聊天界面……
 
-<img src="/img/20190714/018.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/018.jpg" /><br><small>
 图片来源：《EXAPUNKS》游戏截图</small>
 
 此外，这个世界上存在着名为 EXecution Agent，简称 EXA 的蜘蛛型纳米机器人，它像电脑病毒一样，能在电脑主机间复制、传播，你可以给它们编写“简单”（才怪）的脚本，黑掉街对面的披萨店，破解银行的ATM机（让它往街上喷钱），修改掌上游戏机的代码，编写游戏程序并分享给其他玩家，甚至能用于修复自己的手臂神经……牛逼吧？
 
-<img src="/img/20190714/019.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/019.jpg" /><br><small>
 图片来源：《EXAPUNKS》游戏截图</small>
 
 EXA 机器人的代码是一种基于过程，面向接口的脚本语言，它比上面 TIS-100 的汇编预约好一些，但也好不到哪里去。特别是你要同时操作多个 EXA 机器人并行多线程工作，操作数据流接口、顺序读写文件，甚至对付敌方的 EXA。
 
-<img src="/img/20190714/020.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/020.jpg" /><br><small>
 图片来源：《EXAPUNKS》游戏截图</small>
 
 是不是很带劲？据说开发者为了做这个游戏，还真的采访了一些早期的黑客大佬呢。不过根据 Z 社的一贯风格，你在开始写代码之前，还是得乖乖地打开 PDF 读它的操作手册——这次有两本，70页。
 
-<img src="/img/20190714/021.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/021.jpg" /><br><small>
 图片来源：《EXAPUNKS》游戏截图</small>
 
 > “它考的是编程里的关键概念：指针!”
@@ -204,7 +204,7 @@ EXA 机器人的代码是一种基于过程，面向接口的脚本语言，它�
 
 ## 3. 任天堂 Labo
 
-<img src="/img/20190714/A3_Labo.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/A3_Labo.jpg" /><br><small>
 图片来源：labo.nintendo.com</small>
 
 没想到吧？对，你没有看错，我说的就是任天堂公司为旗下（目前）最新的家庭游戏机 Nintendo Switch 制作的纸板游戏套件: Nintendo Labo。
@@ -213,22 +213,22 @@ Nintendo Labo 里包含了一系列各种不同的手工DIY纸模套件，除了
 
 除了预置的游戏之外，Labo 里还自带了一个编程实验室 Toy-Con Garage，也就是下图中的那个井盖：
 
-<img src="/img/20190714/022.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/022.jpg" /><br><small>
 图片来源：labo.nintendo.com</small>
 
 我们常见到面向对象，面向过程的编程方式，而 Labo 采用的是已经封装好的事件触发驱动的编程方式。简单来说，就是设定好当你对 Joy-Con 、 Toy-Con 或是机器本体做了什么事的时候，该触发什么效果。编程的方式也简单明了，把代表事件的 Input 方块，和代表触发效果的 Output 方块用线连起来就可以了。
 
-<img src="/img/20190714/023.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/023.jpg" /><br><small>
 图片来源：labo.nintendo.com</small>
 
 可不要小看了它哟，Labo 提供了 8 种类型，数十种不同的输入方式（甚至包括红外标记的视觉识别），6种逻辑运算和触发器，4种不同的反馈输出，以及注释方块（我知道你们都不用它）。
 
-<img src="/img/20190714/024.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/024.jpg" /><br><small>
 图片来源：labo.nintendo.com</small>
 
 你可以用它实现相当复杂的脚本，甚至做出自己的游戏，比如模拟《1-2-Switch》里的西部牛仔决斗游戏等等。有大佬甚至用 Labo 模拟了二胡，实在是太厉害了！
 
-<img src="/img/20190714/025.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/025.jpg" /><br><small>
 图片来源：@刘毅宁 的秒拍视频截图</small>
 
 听起来是不是非常有意思？没错，兼顾了趣味丰富、简明直观、功能全面，还有多种传感器和 Toy-Con 加持的 Nintendo Labo 真是老少（码农）咸宜，特别适合家长和孩子一起学编程！
@@ -239,31 +239,31 @@ Nintendo Labo 里包含了一系列各种不同的手工DIY纸模套件，除了
 
 ## 2. 程序员升职记（Human Resource Machine）
 
-<img src="/img/20190714/A2_Human.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/A2_Human.jpg" /><br><small>
 图片来源：store.steampowered.com</small>
 
 隐藏在荒诞怪萌画风之下的，是一个富有教育意义，而又趣味横生的解密游戏。
 
 说实话，我个人并不太喜欢《程序员升职记》这个译名，而更喜欢原来的直译《人力资源机器》——在这个游戏中，你扮演的角色本身并不是一个程序员，而只是在一个庞大机器中不断旋转的小小齿轮，是公司的“人力资源”，而且可能还是低值易耗品。
 
-<img src="/img/20190714/026.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/026.jpg" /><br><small>
 图片来源：《程序员升职记》游戏截图</small>
 
 在游戏过程中，你需要在“工作流”上拖放排列各种指令，让你的角色按照指令完成各种机械化的重复操作，按照关卡提示要求，处理输入的信息，输出正确的数据。
 
-<img src="/img/20190714/027.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/027.jpg" /><br><small>
 图片来源：《程序员升职记》游戏截图</small>
 
 和 TIS-100 差不多（但画风上完全碾压了有没有），这些指令和现实世界中的汇编语言（怎么又是你？）非常类似，你的角色将从一个 inbox（输入流）读取数据，一些临时数据还可以放在地板（寄存器）上，经过比较处理和循环之后，将结果放到 outbox（输出流）中。
 
 如果你对之前提到的 TIS-100 有阴影，那你可以放心地上手这个游戏，因为它的总体难度曲线比较平缓，没有编程经验的玩家通过思考和查看提示也能完成主线任务。
 
-<img src="/img/20190714/028.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/028.jpg" /><br><small>
 图片来源：《程序员升职记》游戏截图</small>
 
 当然，如果你是有一定经验的技术控，这个游戏也能满足你将代码优化到极致的野心。每个关卡都有“运行速度”和“程序体积”两个指示灯，专门检验你的逻辑思考和编程能力。通过完成挑战目标，分别（或者同时）把这些指示灯点亮，还是挺有成就感的。
 
-<img src="/img/20190714/029.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/029.jpg" /><br><small>
 图片来源：《程序员升职记》游戏截图</small>
 
 > “祝你玩得开心！ HR 的眼睛正紧盯着你！”
@@ -272,7 +272,7 @@ Nintendo Labo 里包含了一系列各种不同的手工DIY纸模套件，除了
 
 ## 1. while True: learn()
 
-<img src="/img/20190714/A1_WhileTrue.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/A1_WhileTrue.jpg" /><br><small>
 图片来源：store.steampowered.com</small>
 
 那么，现在让我们揭晓荣登榜首的游戏……噢，你们已经看到标题啦。
@@ -281,27 +281,27 @@ Nintendo Labo 里包含了一系列各种不同的手工DIY纸模套件，除了
 
 是的，当你在《TIS-100》《shenzhen I/O》《EXAPUNKS》里费尽力气学会了三种各不相同的编程语言之后，除了挑战游戏成绩外，并不会有任何现实意义，甚至学习这些编程思路对你现实中的工作和学习也不会有太大的帮助。对于还未入门的编程新手来说，这些令人望而生畏的硬核游戏，能起到的帮助是相当有限。“不如去学 Python”是许多 Z 社玩家的吐槽。
 
-<img src="/img/20190714/030.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/030.jpg" /><br><small>
 图片来源：pixabay.com</small>
 
 回顾这次榜单的二三两名，任天堂 Labo 主要面向未入们的大小朋友，寓教于乐；《程序员升职记》则能学到基础的变量、循环、判断跳转等编程思想，也算是起到了很好的教育引导啦。
 
-<img src="/img/20190714/031.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/031.jpg" /><br><small>
 图片来源：store.steampowered.com</small>
 
 在这一方面，《while True: learn()》可以算是独树一帜：你可以在这里学到和真实世界基本一致的<span class="hl">机器学习原理</span>，构建自己的机器学习模型，一步步从基础的专家系统到强大的递归神经网络, 通过直观易懂的可视化编程，建立一个 AI 猫语翻译系统。
 
-<img src="/img/20190714/032.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/032.jpg" /><br><small>
 图片来源：store.steampowered.com</small>
 
 最棒的是，玩这款游戏，你并不需要任何写代码的经验！它的解谜难度曲线非常适合入门者，从一个简单的“节点”开始，你只需要连连线，就能实现基本的决策树等机器学习概念，并完成诸如识别图形颜色和形状等机器学习任务。
 
-<img src="/img/20190714/033.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/033.jpg" /><br><small>
 图片来源：store.steampowered.com</small>
 
 如果你在游戏中遇到问题，也不用担心，游戏甚至提供了一系列的介绍视频，来详细讲解游戏机制，以及真实世界的机器学习历史与概念，帮助你更快地理解所需的一切。
 
-<img src="/img/20190714/034.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190714/034.jpg" /><br><small>
 图片来源：store.steampowered.com</small>
 
 最后，也是最重要的理由：这有猫啊！

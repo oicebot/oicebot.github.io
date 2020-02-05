@@ -5,14 +5,14 @@ tags: Udacity Translate
 author: Gabriel Ruttner 
 from: https://blog.udacity.com/2019/07/what-is-the-difference-between-dev-and-devops.html
 excerpt: "新时代，新技术，新角色"
-thumb: "/img/20190814/thumb.jpg"
+thumb: "{{site.cdn}}/img/20190814/thumb.jpg"
 ---
 
 传统上，软件开发团队被分为两个不同的职责：软件工程师（Dev）和IT运维专员（IT/Ops）。在过去的认知里，软件工程师负责写代码，以解决客户的问题；当代码准备好之后，IT运维工程师负责将代码部署到生产服务器，并对其进行监控，确保一切都能顺利运行。但我们可能容易忘记，在不久之前，每个项目都有它专用的物理服务器和网络设备——在那个时候，软件开发小组没有能力应对使用这些物理设备带来的技术挑战。
 
 随着云计算服务的不断普及，这些角色划分变得越来越模糊，从而诞生了被称为 DevOps 的新角色——所谓 Developer Operations Engineering，开发运维工程师。DevOps 工程师用软件为主要工具，解决各种内部开发问题。就像传统的软件工程师优化算法一样，DevOps 工程师的目标是优化整个软件工程的流程。换句话说，专门的开发者使用软件来解决客户的业务问题，DevOps 工程师使用软件来解决团队的软件工程问题。由于 DevOps 使用的工具通常是基于代码的，这也就成为了每一个软件开发者的关键技能。
 
-<img src="/img/20190814/001.png" />
+<img src="{{site.cdn}}/img/20190814/001.png" />
 
 ## 开发即运维
 

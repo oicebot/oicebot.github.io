@@ -7,7 +7,7 @@ from: https://medium.com/@matthiasbitzer94/how-to-extend-python-with-c-c-code-aa
 excerpt: "作为解释型语言的 Python 可不是什么超级快速的语言，但许多复杂的库函数却能执行得相当快速。你有没有想过这是怎么一回事呢？"
 thumb: "/img/20190412/thumb.jpg"
 ---
-<img src="/img/20190412/001.jpeg" /><br><small>
+<img src="{{site.cdn}}/img/20190412/001.jpeg" /><br><small>
 图片来源：medium.com</small>
 
 <span style="background-color:#eaecf0;color:#222222">众所周知，作为解释型语言的 Python 可不是什么超级快速的语言</span><sup><small>[[来源请求]](https://zh.wikipedia.org/zh-cn/Wikipedia:%E6%9D%A5%E6%BA%90%E8%AF%B7%E6%B1%82)</small></sup>，但许多复杂的库函数（比如 `NumPy` 库）却能执行得相当快速。这主要是因为这些库的核心代码往往是用 C 或者 C++ 写好，并经过了编译，比解释执行的 Python 代码有更快的执行速度。
@@ -154,7 +154,7 @@ print(factorial(6))
 
 恭喜你已经看完了今天的小教程，你打算给自己的 python 增加哪些威力强大的模块呢？欢迎留言吐槽！
 
-<img src="/img/20190412/002.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190412/002.jpg" /><br><small>
 图片来源：unsplash.com</small>
 
 >（本文已投稿给「[优达学城](https://cn.udacity.com)」。 原作： [{{ page.author }}]({{ page.from }}) 编译：欧剃 转载请保留此信息）

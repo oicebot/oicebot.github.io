@@ -23,7 +23,7 @@ thumb: "/img/20191027/thumb.jpg"
 
 如果你也有类似的想法，那么今天这篇文章一定适合你。
 
-<img src="/img/20191027/001.jpg" /><br><small>图片来源：Unsplash</small>
+<img src="{{site.cdn}}/img/20191027/001.jpg" /><br><small>图片来源：Unsplash</small>
 
 今天要介绍的内容其实是我在日常的数据分析工作中经常用到的几个纯 Python 语言特性或者函数。平时我在**整个数据准备过程中**都会超频繁地使用它们（大部分是为了数据清洗），甚至在可视化绘图前的数据整合偶尔也会用到。
 
@@ -31,7 +31,7 @@ thumb: "/img/20191027/thumb.jpg"
 
 对于正在学习的新人，我个人建议你可以把这些技巧用到你自己的项目中去。虽然它们并不会带来多少运行速度或是效率提升，但起码你不用自己从头实现这些功能，能省下大把的编码时间。那么，话不多说，让我们从第一个特性开始吧！
 
-<img src="/img/20191027/002.webp" /><br><small>图片来源：GIPHY</small>
+<img src="{{site.cdn}}/img/20191027/002.webp" /><br><small>图片来源：GIPHY</small>
 
 ## 1. Lambda 函数
 
@@ -164,6 +164,6 @@ for s1, s2 in zip(sales_north, sales_south):
 
 亲爱的读者，你们有没有什么想法？你是否觉得还有其他的纯 Python 特性是数据分析师必须掌握的呢？欢迎在下面留言分享！
 
-<img src="/img/20191027/003.jpg" /><br><small>图片来源：Unsplash</small>
+<img src="{{site.cdn}}/img/20191027/003.jpg" /><br><small>图片来源：Unsplash</small>
 
 > _（本文已投稿给「[优达学城](https://cn.udacity.com)」。 原作： [{{ page.author }}]({{ page.from }}) 译者：欧剃 转载请保留此信息）_

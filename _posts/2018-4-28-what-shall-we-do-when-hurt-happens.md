@@ -4,11 +4,11 @@ title: 面对危险与无助，我们能做些什么？
 tags: Guokr Science
 origin: true
 author: 朱珠
-thumb: "/img/20180428/thumb.jpg"
+thumb: "{{site.cdn}}/img/20180428/thumb.jpg"
 ---
 > 希望你永远也用不到这些知识。
 
-<img src="/img/20180428/001.png">
+<img src="{{site.cdn}}/img/20180428/001.png">
 
 ## 1、上学放学中，以及在校外活动时，有哪些自我保护的注意事项？
 

@@ -7,7 +7,7 @@ author: Brian Ray
 thumb: "/img/20180815/thumb.jpg"
 excerpt: "应读者要求，今天跟大家分享一篇数据科学的干货文章。无论你是纠结于该选 Python 还是 R 的初学者，还是你在犹豫某个项目用哪种语言来分析更好，希望这篇文章能给你一点小小的帮助。"
 ---
-<img src="/img/20180815/001.png" />
+<img src="{{site.cdn}}/img/20180815/001.png" />
 
 应读者要求，今天跟大家分享一篇数据科学的干货文章。无论你是纠结于该选 Python 还是 R的初学者，还是你在犹豫某个项目用哪种语言来分析更好，希望这篇文章能给你一点小小的帮助。
 
@@ -17,7 +17,7 @@ excerpt: "应读者要求，今天跟大家分享一篇数据科学的干货文�
 
 ## Python？R？并非只能二选一！
 
-<img src="/img/20180815/002.png" />
+<img src="{{site.cdn}}/img/20180815/002.png" />
 
 在撰写本文之前，RStudio 的首席数据科学家 Hadley Wickham 在社交网络上给我发了个回复（见上图）。在他的启发下，我也意识到，R 和 Python 并不是你死我活的关系，完全可以相互协作嘛。这个点子一直在我脑海里徘徊，我将在文章的末尾讲讲这个做法。
 
@@ -25,7 +25,7 @@ excerpt: "应读者要求，今天跟大家分享一篇数据科学的干货文�
 
 ## 语言发展的历史
 
-<img src="/img/20180815/003.png" />
+<img src="{{site.cdn}}/img/20180815/003.png" />
 
 简单地来说：
 
@@ -35,7 +35,7 @@ Fortan 语言 -> S 语言（贝尔实验室）-> 发明 R (1991年，作者 Ross
 
 ## 社区活跃情况
 
-<img src="/img/20180815/004.jpg" />
+<img src="{{site.cdn}}/img/20180815/004.jpg" />
 
 在比较 Python 与 R 语言的用户群时，请先记住一点：
 
@@ -84,7 +84,7 @@ Fortan 语言 -> S 语言（贝尔实验室）-> 发明 R (1991年，作者 Ross
 
 不过为了满足大家的好奇心，我还是运行了一下下面的代码：
 
-<img src="/img/20180815/005.png" /><br><small>
+<img src="{{site.cdn}}/img/20180815/005.png" /><br><small>
 Python 的运行时间是 ￼0.000037 秒，而 R 是 0.00158 秒</small>
 
 >让我检查一下：包括载入和运行时间在内，R 的实际运行时间在 0.238 秒，Python 在 0.147 秒。不过我要再次强调，这不是一个很科学的测试。
@@ -115,7 +115,7 @@ PyPi 上的包数量差不多有 CRAN 的十倍还多：14.1万个，其中含�
 
 我们的实验方法如下：用两种语言分别对同一个数据集执行数据探索，测量并对比每一个分步骤的执行时间。测试结果如下：
 
-<img src="/img/20180815/006.png" /><br><small>
+<img src="{{site.cdn}}/img/20180815/006.png" /><br><small>
 Python 在大部分的任务中的速度都比较快。</small>
 
 测试脚本的源代码可以[在这里下载](http://nbviewer.jupyter.org/gist/brianray/4ce15234e6ac2975b335c8d90a4b6882)。
@@ -124,7 +124,7 @@ Python 在大部分的任务中的速度都比较快。</small>
 
 ### 绘制个可视化看看！
 
-<img src="/img/20180815/007.png" />
+<img src="{{site.cdn}}/img/20180815/007.png" />
 
 实际上，这就变成了 ggplot2 和 matplotlib 的对决。声明：matplotlib 的作者，是我在整个 Python 社区里最尊敬的人，也是教我学 Python 的导师，John D. Hunter。
 
@@ -149,11 +149,11 @@ Python 在大部分的任务中的速度都比较快。</small>
 * R 语言的其他实现，比如 rPython、PythonInR、reticulate、 rJython、 SnakeCharmR 以及 XRPython 等（[这里](https://blog.rstudio.com/2018/03/26/reticulate-r-interface-to-python/)有一个关于 reticulate  的介绍）
 * 直接在 Jupyter Notebook 里把它们混着用，比如下面这样：
 
-<img src="/img/20180815/008.png" />
+<img src="{{site.cdn}}/img/20180815/008.png" />
 
 上面这样处理完之后，我们就可以把  pandas 的 dataframe 对象传给 ggplot2，它将会通过 rpy2 插件自动转换成一个 R 语言的 Dataframe。（需要传入 -i df 开关参数）
 
-<img src="/img/20180815/009.png" />
+<img src="{{site.cdn}}/img/20180815/009.png" />
 
 以上脚本的源代码见[此处](http://nbviewer.jupyter.org/gist/brianray/734bd54f468d9a6db9171b2cfc98405a)。
 
@@ -161,7 +161,7 @@ Python 在大部分的任务中的速度都比较快。</small>
 
 数据科学云服务 Kaggle 上有人写了一个项目，用来预测一个分析师更爱用 R 还是 Python。根据观测到的数据，他提出了几个有趣的结论：
 
-<img src="/img/20180815/010.png" />
+<img src="{{site.cdn}}/img/20180815/010.png" />
 
 * 如果你接下来的一年内考虑迁移到 Linux，你更有可能是 Python 用户。
 * 如果你学的是统计学，那你更可能用 R，而如果你学的是计算机科学，那基本 Python 没跑了。

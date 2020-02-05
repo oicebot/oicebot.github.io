@@ -3,11 +3,11 @@ layout: post
 title: LABO 编程入门，从入门到收购废纸皮
 star: true
 origin: true
-thumb: "/img/labo/thumb_img1.jpg"
+thumb: "{{site.cdn}}/img/labo/thumb_img1.jpg"
 tags: Udacity Game
 excerpt: "今年，任天堂又搞了个大新闻，开发了一套名为 Nintendo Labo 的破纸皮，给 Switch 带来了更加丰富独特的体感游戏体验，有些人评论说这货就像是种“魔术”，还有人说它能吊打索尼微软的最新科技…我读书少，你不要骗我啊！这个 Labo 到底是个啥，真的这么牛逼？"
 ---
-<img src="/img/labo/img1.jpg">
+<img src="{{site.cdn}}/img/labo/img1.jpg">
 
 在去年，全球知名扑克牌生产企业任天堂凭借 Nintendo Switch 主机又大火了一把，首发的《塞尔达传说：旷野之息》、《超级马里奥：奥德赛》分别获得美国《时代》杂志评选出的“年度十大游戏”的冠亚军，可谓大获全胜。
 
@@ -19,13 +19,13 @@ excerpt: "今年，任天堂又搞了个大新闻，开发了一套名为 Ninten
 
 ## 你从没van过的“船新”纸模
 
-<img src="/img/labo/img2.png">
+<img src="{{site.cdn}}/img/labo/img2.png">
 
 Nintendo Labo 是任天堂开发的一系列手工DIY纸模套件的总称，套件里包含纸模所需的各种零件和一个任天堂 Switch 平台的配套游戏软件。组装完成后的纸模可与 Switch 的 Joy-Con 手柄以及本体装配在一起，组合成名为 Toy-Con 的玩具套件，再配合相应软件进行体感互动游戏。
 
 2018年4月20日发售的第一批 Labo 套件包含两款不同的纸模包：一是“机器人套件”，能打造一副简单的穿戴式体感设备，让玩家大屏幕上体验驾驶高达的感觉；另一个就是我们要讨论的重点，“五合一游戏套装”。
 
-<img src="/img/labo/img3.jpg">
+<img src="{{site.cdn}}/img/labo/img3.jpg">
 
 按说明，这款套件中包含遥控车、钓鱼、宠物小屋、竞速摩托和纸板钢琴5个体感互动游戏所需的纸模和零件。
 
@@ -41,19 +41,19 @@ Nintendo Labo 是任天堂开发的一系列手工DIY纸模套件的总称，套
 
 寓教于乐，可谓是任天堂多年一贯的传统。还记得小时候玩过的各种XXXX学习机吗？它们其实都多多少少山寨了任天堂FC红白机在1984年推出的一款 Family BASIC 编程套件。
 
-<img src="/img/labo/img4.jpg">
+<img src="{{site.cdn}}/img/labo/img4.jpg">
 
 ↑这个大家应该都认得（图片来源：电子发烧友网）
 
-<img src="/img/labo/img5.jpg">
+<img src="{{site.cdn}}/img/labo/img5.jpg">
 
 ↑这个就是当年任天堂FC红白机的外设： Family BASIC 编程键盘和程序卡带（图片来源：维基百科）
 
-<img src="/img/labo/img6.jpg">
+<img src="{{site.cdn}}/img/labo/img6.jpg">
 
 ↑为了让FC能支持更多扩展存储，任天堂还出过配套的磁带存储器。（图片来源：维基百科）
 
-<img src="/img/labo/img7.jpg">
+<img src="{{site.cdn}}/img/labo/img7.jpg">
 
 ↑Family BASIC 在模拟器上的运行截图（程序来源：metopal.com ）
 
@@ -61,7 +61,7 @@ Nintendo Labo 是任天堂开发的一系列手工DIY纸模套件的总称，套
 
 ## LABO 的新花样可不少
 
-<img src="/img/labo/img8.jpg">
+<img src="{{site.cdn}}/img/labo/img8.jpg">
 
 如今的 Nintendo Labo ，依然很好地继承了前辈们“在玩中学”的优良传统。
 
@@ -69,15 +69,15 @@ Nintendo Labo 是任天堂开发的一系列手工DIY纸模套件的总称，套
 
 在做好至少一个 Toy-Con，并且了解了其原理之后，神秘的 Labo 编程实验室才会对玩家开放。
 
-<img src="/img/labo/img9.jpg">
+<img src="{{site.cdn}}/img/labo/img9.jpg">
 
 看到上图中的井盖了吗？从那里跳下去，你会来到一片前所未有的独特天地：
 
-<img src="/img/labo/img10.jpg">
+<img src="{{site.cdn}}/img/labo/img10.jpg">
 
 我们常见到面向对象，面向过程的编程方式，而 Labo 采用的是已经封装好的事件触发驱动的编程方式。简单来说，就是设定好当你对 Joy-Con 、 Toy-Con 或是机器本体做了什么事的时候，该触发什么效果。编程的方式也简单明了，把代表事件的 Input 方块，和代表触发效果的 Output 方块用线连起来就可以了。
 
-<img src="/img/labo/img11.jpg">
+<img src="{{site.cdn}}/img/labo/img11.jpg">
 
 内置可用的 Input 类型有 8 大类：
 
@@ -106,19 +106,19 @@ Output 则简单的多，只有4种：
 
 你也许会问，那“或运算 OR ”去哪里了？由于每个 Input 方块可以连接到多个 Output 方块，反之亦然，所以不用 And 方块的时候，就默认是 OR 的关系，也就是当连接到的多个 Input 方块中的任意一个被触发时，对应的 Output 方块就被触发。
 
-<img src="/img/labo/img12.jpg">
+<img src="{{site.cdn}}/img/labo/img12.jpg">
 
 具体每一大类中都有许多代表不同事件的触发方块可选：
 
-<img src="/img/labo/img13.jpg">
+<img src="{{site.cdn}}/img/labo/img13.jpg">
 
 各种事件方块还可以进行详细设置，比如按下按钮的方块，可以设定具体哪个手柄的哪个按钮按下才触发：
 
-<img src="/img/labo/img14.jpg">
+<img src="{{site.cdn}}/img/labo/img14.jpg">
 
 听起来是不是非常有意思？没错，兼顾了趣味丰富、简明直观、功能全面，还有多种传感器和 Toy-Con 加持的 Nintendo Labo 真是老少（码农）咸宜，特别适合家长和孩子一起学编程！（不，我真的不是为了自己玩买的 Switch！）
 
-<img src="/img/labo/img15.jpg">
+<img src="{{site.cdn}}/img/labo/img15.jpg">
 
 ## 他们怎么玩的这么6啊
 
@@ -126,27 +126,27 @@ Labo才发售两天，微博上的 @NS新闻速报 就马上搞出了个山寨 Q
 
 游戏界面是这样的：
 
-<img src="/img/labo/img16.jpg">
+<img src="{{site.cdn}}/img/labo/img16.jpg">
 
 游戏“代码”一览：
 
-<img src="/img/labo/img17.jpg">
+<img src="{{site.cdn}}/img/labo/img17.jpg">
 
 无独有偶，不满足于 Labo 只能弹钢琴的音乐大佬 @刘毅宁 直接开发出了一款大师之……二胡！利用 Joy-Con 的按键，加上动作感应，再区分内弦外弦，演奏的感觉相当逼真！
 
-<img src="/img/labo/img18.jpg">
+<img src="{{site.cdn}}/img/labo/img18.jpg">
 
-<img src="/img/labo/img19.jpg">
+<img src="{{site.cdn}}/img/labo/img19.jpg">
 
-<img src="/img/labo/img20.jpg">
+<img src="{{site.cdn}}/img/labo/img20.jpg">
 
 除了纯玩，还有人把 Labo 的编程入门功能用于改善人们的生活质量。比如一般的电动轮椅，在有些手部不方便的人士看来，必须通过按钮控制还是挺辛苦的。日本的オリィ研究所和任天堂合作，拿 Labo 的摩托车部件，做了一个电动轮椅控制器！用户只需要左右前后摇晃摩托车 Toy-Con ，即可实现前进后退转弯等功能——要是这个功能得以推广，也是特别贴心了～
 
-<img src="/img/labo/img21.jpg">
+<img src="{{site.cdn}}/img/labo/img21.jpg">
 
 此外，任天堂还放出了许多Toy-Con图纸，你可以自己收购一堆废纸皮来打印，组装成额外的 Toy-Con 部件，可以说是特别贴心了……
 
-<img src="/img/labo/img22.jpg">
+<img src="{{site.cdn}}/img/labo/img22.jpg">
 
 ## 编程 ＝ 玩 ＋ 创造
 
@@ -156,6 +156,6 @@ Labo才发售两天，微博上的 @NS新闻速报 就马上搞出了个山寨 Q
 
 嗯，不打算买《给宝宝的 C++ 教程》了，先去买套 Labo 吧。（逃
 
-<img src="/img/labo/img23.jpg">
+<img src="{{site.cdn}}/img/labo/img23.jpg">
 
 _（本文已投稿给「[优达学城](https://cn.udacity.com)」并[发表](https://cn.udacity.com/blog/post/27)。 作者：欧剃 转载请保留此信息）_

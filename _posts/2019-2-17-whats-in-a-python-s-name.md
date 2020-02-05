@@ -7,7 +7,7 @@ from: https://medium.freecodecamp.org/whats-in-a-python-s-name-506262fe61e8
 excerpt: "本文详细介绍了 Python 中的内置变量 &#95;&#95;name&#95;&#95;，以及它的用法，希望对各位新近接触 Python 语言的同学能有所帮助。"
 thumb: "/img/20190217/snake.svg"
 ---
-<img src="/img/20190217/snake.svg" style="max-width:300px;" alt="" />
+<img src="{{site.cdn}}/img/20190217/snake.svg" style="max-width:300px;" alt="" />
 
 我想，你应该已经在很多 Python 脚本里见到过这个 `__name__` 变量了吧？它经常是以类似这样的方式出现在我们的程序里：
 
@@ -32,7 +32,7 @@ if __name__ == '__main__':
 
 下面，让我举两个栗子来说明一下：
 
-<img src="/img/20190217/hands-460865_640.jpg" alt="" />
+<img src="{{site.cdn}}/img/20190217/hands-460865_640.jpg" alt="" />
 
 ## 情况 1 - 直接运行脚本
 
@@ -49,7 +49,7 @@ if __name__ == '__main__':
 
 当你直接执行 `nameScript.py` 时，流程是这样处理的：
 
-<img src="/img/20190217/002.png" alt="" />
+<img src="{{site.cdn}}/img/20190217/002.png" alt="" />
 
 在所有其他代码执行之前，`__name__` 变量就被设置为 `'__main__'` 了。在此之后，通过执行 def 语句，函数 `main()` 和 `myFunction()` 的本体被载入。
 
@@ -68,7 +68,7 @@ ns.myFunction()
 
 这时，我们就有了两个不同的作用域：一个是 `importingScript` 的，一个是 `nameScript` 的。让我画个示意图，你就能看出这和之前的区别了：
 
-<img src="/img/20190217/003.png" alt="" />
+<img src="{{site.cdn}}/img/20190217/003.png" alt="" />
 
 在 `importingScript.py` 里，`__name__` 变量就被设置为 `'__main__'`。当导入 `nameScript` 的时候，Python 就在本地和环境变量 `PATH` 指向的路径中寻找对应名称的 .py 文件，找到之后，将会运行导入的文件中的代码。
 

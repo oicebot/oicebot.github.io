@@ -7,7 +7,7 @@ from: https://medium.freecodecamp.org/how-i-went-from-c-to-python-a-conceptual-c
 excerpt_separator: <!--more-->
 thumb: "/img/20190221/thumb.png"
 ---
-<img src="/img/20190221/001.jpeg" />
+<img src="{{site.cdn}}/img/20190221/001.jpeg" />
 
 还记得之前说的《[对编程语言就不能“从一而终”]({% post_url 2019-2-2-Why-You-Need-to-Learn-More-Languages %})》吗？今天要跟大家分享的是一个程序员的跨语言经历。
 
@@ -21,7 +21,7 @@ thumb: "/img/20190221/thumb.png"
 
 别担心，我不会给你长篇大论什么“两种语言的区别”之类的技术问题，这类文章[网上到处都是](https://www.educba.com/python-vs-c-plus-plus/)，我就不再重复了。我只是希望分享我自己的一些经验，希望给遇到类似问题的读者带来一点点启发。
 
-<img src="/img/20190221/002.jpeg" />
+<img src="{{site.cdn}}/img/20190221/002.jpeg" />
 
 ## 如果 C++ 是深潜，那 Python 就是浮潜
 
@@ -37,7 +37,7 @@ thumb: "/img/20190221/thumb.png"
 
 我日常使用的编程工具是：装了许多插件的 `Vim` 用来写代码，`GDB` 用来调试，而  `Valgrind` 用来分析内存使用情况和捕捉错误。我用 `g++` 来编译， `Makefiles` 也是自己写。在那时候，我并不喜欢 IDE，觉得它们没什么用处，只是会让各种过程变慢，影响我掌控我的代码。回想起来，那时我相当依赖编译器来排查可能发生的类型错误。
 
-<img src="/img/20190221/003.jpeg" />
+<img src="{{site.cdn}}/img/20190221/003.jpeg" />
 
 ## Python: 马尔代夫浮潜之旅
 
@@ -49,7 +49,7 @@ thumb: "/img/20190221/thumb.png"
 
 现在，我每天必备的工具是 `PyCharm` （没错，是个 IDE），装了 `IdeaVim` 插件，以便符合我原来的习惯。它是一个功能强大的调试器，它比默认的 Python 调试器 `pdb` 更友好。我还使用 `pip` 包管理工具来安装我需要的库。现在，除非我真的需要，我不再需要监视我的内存使用情况啦。
 
-<img src="/img/20190221/004.jpeg" />
+<img src="{{site.cdn}}/img/20190221/004.jpeg" />
 
 ## 一些有用的小建议
 

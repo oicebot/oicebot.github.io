@@ -7,12 +7,12 @@ author: Sebastian Eschweiler
 thumb: "/img/20180714/image2.png"
 excerpt_separator: <!--more-->
 ---
-<img src="/img/20180714/image2.png">
+<img src="{{site.cdn}}/img/20180714/image2.png">
 
 不论你是刚开始学 Python，还是正在啃数据分析的骨头，对你来说，不断在各种命令行窗口和编辑器里切来切去，或者不断打开各种窗口查看 matplotlib 的输出之类的繁琐操作，一定是家常便饭了。哎呀，这都 8102 年了，除了又大又笨重的 IDE，难道就没有什么简单而直观的办法，让我们这些新手能管理和运行代码吗？
 <!--more-->
 
-<img src="/img/20180714/image10.png">
+<img src="{{site.cdn}}/img/20180714/image10.png">
 
 当然有啊，还是免费的咧！
 
@@ -40,7 +40,7 @@ Jupyter Notebook 是一款 Web 应用，它能让用户将上面说的各种窗�
 
 首先访问 Jupyter Notebook 的官网 http://www.jupyter.org ，往下稍微拉一点，可以看到这样的选项：
 
-<img src="/img/20180714/image26.png">
+<img src="{{site.cdn}}/img/20180714/image26.png">
 
 这里有两个按钮：
 * 一个是“Try it in your browser”，也就是能让你直接在浏览器里试用
@@ -48,7 +48,7 @@ Jupyter Notebook 是一款 Web 应用，它能让用户将上面说的各种窗�
  
 如果你还不确定 Jupyter Notebook 会不会成为你的真爱，你可以选择直接在浏览器里试用。点击之后，你可以选择想要在体验的 Jupyter Notebook 里使用哪种语言（当然，我们选Python），然后你将跳转到一个已经搭建好了的 Jupyter Notebook 云平台上，可以在这里直接体验各项功能，而无需下载安装一大堆软件。
  
-<img src="/img/20180714/image25.png">
+<img src="{{site.cdn}}/img/20180714/image25.png">
  
 选第二个选项，它就将一步一步教你如何在自己的电脑上安装 Jupyter Notebook 本体。主要有两种方法：
  
@@ -57,19 +57,19 @@ Jupyter Notebook 是一款 Web 应用，它能让用户将上面说的各种窗�
  
 如果你是初学 Python ，希望从头搭建一个合适的运行环境，那 Anaconda 管理器一定是最适合你的。因为它提供了一个一站式的 Python 环境安装管理解决方案，还自带一个很方便的图形界面，让你根据需要为每个项目定制一个运行环境。
 
-<img src="/img/20180714/image17.png">
+<img src="{{site.cdn}}/img/20180714/image17.png">
 
 在 https://www.anaconda.com/download/ 上下载适合你电脑系统的安装包（支持 Windows、MacOS 及 Linux，需区分32位或64位），双击安装，一路 Next 到底。之后，你就能在命令行界面运行这个命令来启动 Jupyter Notebook 的后台服务了：
  
-<img src="/img/20180714/image6.png" height="100px" >
+<img src="{{site.cdn}}/img/20180714/image6.png" height="100px" >
 
 执行这行命令后，你会看到类似这样的提示信息：
 
-<img src="/img/20180714/image18.png">
+<img src="{{site.cdn}}/img/20180714/image18.png">
 
 此时 Jupyter Notebook 的后台服务就开始运行，一小会儿之后，系统会自动打开浏览器，显示 Jupyter Notebook 的 web 界面，类似这样：
  
-<img src="/img/20180714/image24.png">
+<img src="{{site.cdn}}/img/20180714/image24.png">
 
 这个界面是用来管理电脑上的多个 Notebook 文件的。在顶端，有三个不同的标签：
 * Files（文件），该标签内显示当前工作路径下的文件
@@ -82,21 +82,21 @@ Jupyter Notebook 是一款 Web 应用，它能让用户将上面说的各种窗�
 
 创建一个新的 Notebook 文件很简单，点击右上角的 New（新建）按钮，就会弹出一个这样的下拉菜单：
 
-<img src="/img/20180714/image19.png">
+<img src="{{site.cdn}}/img/20180714/image19.png">
 
 选择 Notebook 里的 Python 3 选项，新建一个可运行 Python 3 代码的 Notebook 文件。这个文件将会被打开，你的浏览器也会自动切换到 Notebook 文件应用的界面：
  
-<img src="/img/20180714/image13.png">
+<img src="{{site.cdn}}/img/20180714/image13.png">
 
 目前这个 notebook 还是“未命名”状态，点击顶部的标题“Untitled”，就可以重命名这个文件。重命名之后，这个文件就会保存成“文件名.ipynb”这样的格式。
  
 比如，我把文件名改成 notebook01 ：
 
-<img src="/img/20180714/image11.png">
+<img src="{{site.cdn}}/img/20180714/image11.png">
 
 切换到前面一个浏览器页面，你就会发现，刚新建的 notebook01.ipynb 文件已经在目录里了：
  
-<img src="/img/20180714/image16.png">
+<img src="{{site.cdn}}/img/20180714/image16.png">
 
 正如前面所述，已打开文件的图标是绿色的，如果你选中它，上面还会有一个 Shutdown（关闭）按钮，你可以点击按钮来关闭一个运行中的 notebook 文件。
  
@@ -104,7 +104,7 @@ Jupyter Notebook 是一款 Web 应用，它能让用户将上面说的各种窗�
  
 ## 如何使用
 
-<img src="/img/20180714/image21.png">
+<img src="{{site.cdn}}/img/20180714/image21.png">
  
 回到 notebook 界面，可以看到，从上到下分别是：
 * 当前文件的标题，以及最后一次保存的时间
@@ -114,19 +114,19 @@ Jupyter Notebook 是一款 Web 应用，它能让用户将上面说的各种窗�
  
 你应该注意到了，notebook 文件是由一系列单元格（Cell）构成的，目前这个新文件里只有一个空白的格子：
  
-<img src="/img/20180714/image5.png">
+<img src="{{site.cdn}}/img/20180714/image5.png">
 
 右上角显示了当前这个单元格的类型是“代码（Code）”。在这种类型的单元格里，你可以直接输入希望运行的 Python 代码。每个格子里可以放上一行或者多行的代码。
  
-当你点击右上角的运行按钮 <img src="/img/20180714/image20.png"> ，或者按`Shift + 回车`组合键，该单元格里的代码将会被运行。
+当你点击右上角的运行按钮 <img src="{{site.cdn}}/img/20180714/image20.png"> ，或者按`Shift + 回车`组合键，该单元格里的代码将会被运行。
  
-<img src="/img/20180714/image7.png">
+<img src="{{site.cdn}}/img/20180714/image7.png">
 
 运行之后的输出结果将会显示在单元格内容的正下方，然后输入光标就会跳转到下一个格子，方便你继续写更多的代码。当然，你随时可以点击上面的格子，修改或者添加更多的代码。
  
 再看一个例子：
  
-<img src="/img/20180714/image22-s.png">
+<img src="{{site.cdn}}/img/20180714/image22-s.png">
 
 在后面的格子里，我写了一个循环，让它输出一系列数字。运行一下，就能直观地看到运行结果出现在代码下方。
 
@@ -134,19 +134,19 @@ Jupyter Notebook 是一款 Web 应用，它能让用户将上面说的各种窗�
  
 要改变单元格的类型，只需要在下拉菜单里选择 Markdown 即可：
 
-<img src="/img/20180714/image23.png">
+<img src="{{site.cdn}}/img/20180714/image23.png">
  
 改了单元格类型之后，你会发现前面的 In [ ]: 标记不见了。你在这个单元格中输入 markdown 标记时，会自动解析成不同大小，不同格式的文字标记：
 
-<img src="/img/20180714/image3.png">
+<img src="{{site.cdn}}/img/20180714/image3.png">
 
 当你写完这些文本时，你可以“运行”这个单元格，或是按 `Shift + 回车` 快捷键，于是那些 markdown 格式的记号会被渲染成文本。效果如下：
  
-<img src="/img/20180714/image22.png">
+<img src="{{site.cdn}}/img/20180714/image22.png">
  
 当你的鼠标指向标题的时候，还会自动出现一个链接，点击之后，你的浏览器地址栏会更新成指向这个标题的链接：
  
-<img src="/img/20180714/image12.png">
+<img src="{{site.cdn}}/img/20180714/image12.png">
  
 如果你想要改一改 markdown 文本，只需要双击单元格中的文字，则编辑框又会重新出现。
  
@@ -156,11 +156,11 @@ Jupyter Notebook 是一款 Web 应用，它能让用户将上面说的各种窗�
  
 如果你点击一个单元格的周边空白处或是输出部分，你选中的这个单元格就进入了命令模式，左边的指示条是蓝色：
  
-<img src="/img/20180714/image21.png">
+<img src="{{site.cdn}}/img/20180714/image21.png">
 
 如果你点击代码区域，则单元格就进入编辑模式，光标将在你点击的位置闪烁，而左边的指示条也变成绿色，表示你正在编辑代码内容：
  
-<img src="/img/20180714/image14.png">
+<img src="{{site.cdn}}/img/20180714/image14.png">
 
 在编辑时，你可以按 ESC 键退出编辑模式，回到命令模式。
  
@@ -168,7 +168,7 @@ Jupyter Notebook 是一款 Web 应用，它能让用户将上面说的各种窗�
  
 想了解编辑模式和命令模式下可用的键盘快捷键都有哪些，你可以在菜单栏选择 Help（帮助） -> Keyboard Shortcuts（键盘快捷键），系统会列出具体的命令清单：
  
-<img src="/img/20180714/image15.png">
+<img src="{{site.cdn}}/img/20180714/image15.png">
 
 ## 保存记录点
 
@@ -176,7 +176,7 @@ Jupyter Notebook 还有一个很酷的功能：记录点。你可以为当前的
  
 要创建一个新的记录点，你只需要在菜单栏上选择 File（文件）-> Save and Checkpoint（保存记录点）即可。点完之后，你就会在标题旁看到 Checkpoint 保存的提示：
  
-<img src="/img/20180714/image4.png">
+<img src="{{site.cdn}}/img/20180714/image4.png">
  
 如果你想要返回到之前的 Checkpoint，你只需要在菜单栏上选择 File（文件）-> Revert to Checkpoint（返回到记录点），并点击对应的记录点的时间戳即可。
  
@@ -184,7 +184,7 @@ Jupyter Notebook 还有一个很酷的功能：记录点。你可以为当前的
 
 Jupyter Notebook 提供了几种不同的数据导出方式。你可以在菜单栏上选择 File（文件）-> Download as（下载为），在弹出的菜单里看到具体支持的导出格式。
  
-<img src="/img/20180714/image9.png">
+<img src="{{site.cdn}}/img/20180714/image9.png">
 
 ## 之后该怎么玩
 

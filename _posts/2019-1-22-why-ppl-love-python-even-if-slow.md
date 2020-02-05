@@ -8,12 +8,12 @@ author: Bobby
 excerpt_separator: <!--more-->
 thumb: "/img/Python3-powered_hello-world.svg"
 ---
-<img src="/img/udacity/udalogo.gif">
+<img src="{{site.cdn}}/img/udacity/udalogo.gif">
 
 Python 是世界上使用最广泛的编程语言之一，它至今已经存在了个 28 年头。对于大多数人，尤其是刚接触 Python 的初学者（以及 C 程序员）来说，有一个问题经常会被提起：“为什么 Python 这么慢，还能这么受欢迎？”或者说，为什么 Python 程序员、开发者不担心它的速度问题？在这篇文章中，优达菌将带给大家详细分析一下主要原因。
 <!--more-->
 
-<img src="/img/123edasdf3.webp"><br><small>（地球上最慢的“动物”）</small>
+<img src="{{site.cdn}}/img/123edasdf3.webp"><br><small>（地球上最慢的“动物”）</small>
 
 ## 为啥 Python 在速度上没有优势？
 
@@ -39,7 +39,7 @@ Python 是世界上使用最广泛的编程语言之一，它至今已经存在�
 
 因为 GIL 锁的存在，基本上 Python 解释器在同一个进程里只能运行一个线程（Python解释器的一个实例），所以整体速度难以提升。
 
-<img src="/img/multi-threading-python.webp"><br><small>（别问我，我不过就是用 Python 搞了个多线程）</small>
+<img src="{{site.cdn}}/img/multi-threading-python.webp"><br><small>（别问我，我不过就是用 Python 搞了个多线程）</small>
 
 ## 为啥大家还喜欢用 Python？
 
@@ -56,7 +56,7 @@ Python 是世界上使用最广泛的编程语言之一，它至今已经存在�
 
 Python 如此受欢迎的首要原因是，和其他编程语言（比如 C++ 和 Java）相比，它的开发效率更高。比起其他语言，Python 的代码更加简明易学，可读性好，容易维护，学习成本和时间相对较短，甚至完成类似任务所需的代码行数都更少。
 
-<img src="/img/6343refdgggggr40.webp"><br><small>（Python 代码非常简单而且容易阅读）</small>
+<img src="{{site.cdn}}/img/6343refdgggggr40.webp"><br><small>（Python 代码非常简单而且容易阅读）</small>
 
 Python 语言的许多特性，比如一行函数、列表生成器、动态类型等，都使开发者能用比其他语言少得多代码完成相同或相似的任务。它的良好可读性也使初学者和新手学习语法的时间少了许多。比如，Python 代码确实在运行时的速度比 Java 慢，但 Python 代码的编写时间平均只有 Java 的三到五分之一。
 

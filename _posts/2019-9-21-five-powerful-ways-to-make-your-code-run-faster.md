@@ -8,7 +8,7 @@ excerpt: "好的代码必须首先干净，接着稳定，最后才是快速。"
 thumb: "/img/20190921/thumb.jpg"
 ---
 
-<img src="/img/20190921/001.jpeg"><br><small>
+<img src="{{site.cdn}}/img/20190921/001.jpeg"><br><small>
 图片来源: Unsplash.com</small>
 
 “**让这代码跑得快一点**！！”——我碰到的第一件代码优化任务就是这么开始的。那个项目是一个巨大的 SAP 云平台应用程序，总共含有超过 3 万行的代码。
@@ -21,7 +21,7 @@ thumb: "/img/20190921/thumb.jpg"
 
 在其中的一个读取页面上，被塞了一个等待语句，程序到这里就停上 20 秒。
 
-<img src="/img/20190921/002.jpg">
+<img src="{{site.cdn}}/img/20190921/002.jpg">
 
 ？？？
 
@@ -41,7 +41,7 @@ thumb: "/img/20190921/thumb.jpg"
 
 下面是一些值得你考虑的要点，遵循这些原则，可以让你的代码更具响应性，也能减少你给用户的设备以及它们连接到的数据库带来的额外压力。
 
-<img src="/img/20190921/003.jpg"><br><small>
+<img src="{{site.cdn}}/img/20190921/003.jpg"><br><small>
 图片来源: pixabay.com</small>
 
 ## 1. <b>不要</b>进行优化
@@ -138,7 +138,7 @@ thumb: "/img/20190921/thumb.jpg"
 
 > “我不是一个伟大的程序员，我只是一个不错的程序员，加上伟大的习惯。”
 
-<img src="/img/20190921/004.jpg"><br><small>
+<img src="{{site.cdn}}/img/20190921/004.jpg"><br><small>
 图片来源: pixabay.com</small>
 
 > _（本文已投稿给「[优达学城](https://cn.udacity.com)」。 原作： [{{ page.author }}]({{ page.from }}) ，译者：欧剃 转载请保留此信息）_

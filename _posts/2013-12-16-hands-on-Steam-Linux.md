@@ -4,12 +4,12 @@ title: SteamOS Beta 动手玩
 date: 2013-12-16
 tags: Linux Game
 origin: true
-thumb: "/img/20131216/thumb.jpg"
+thumb: "{{site.cdn}}/img/20131216/thumb.jpg"
 from: http://www.omgubuntu.co.uk/2013/12/hands-on-steamos-beta
 ---
 在大家翘首以盼到纷纷睡着(大雾)之后，Valve终于发布了SteamOS的Beta版本。于是我们就在第一时间把玩了一下这个基于Debian的衍生版系统。
 
-<img src="/img/20131216/000.jpg" />
+<img src="{{site.cdn}}/img/20131216/000.jpg" />
 
 SteamOS的发布总体来说有点鱼龙混杂。一方面这是由一家向Linux平台提供了众多给力驱动和杀手级游戏的公司研发出的最新Debian衍生版系统，另一方面，整个Beta版的安装略显凌乱。当然，Valve官方在放出Beta测试版的两个zip包（以及鲜明的警示：“安装此系统将会清空你的整个硬盘”）之时，就已经反复强调SteamOS现在还是在Beta测试阶段，而且并不推荐给除了“强悍的Linux折腾党”之外的朋友。
 
@@ -19,26 +19,26 @@ SteamOS的发布总体来说有点鱼龙混杂。一方面这是由一家向Linu
 
 由于我们也不是太有耐心，我们选择了960MB的Debian安装版zip包，而不是那个2.4GB的系统恢复镜像。总体来说，这个安装程序还算比较成熟的，大部分工作可以无人值守自动完成。
 
-<img src="/img/20131216/001.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20131216/001.jpg" /><br><small>
 Debian安装器的Grub引导界面</small>
 
-<img src="/img/20131216/002.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20131216/002.jpg" /><br><small>
 无人值守安装进行中…</small>
 
-<img src="/img/20131216/003.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20131216/003.jpg" /><br><small>
 登录界面背后有个大大的Debian标志</small>
 
 ## 桌面环境
 
 大家之前也许对于SteamOS桌面环境抱有疑问，它到底是一个独立可用的桌面操作系统，还是只能限制在Steam“大屏幕”+部分游戏自带界面的桌面环境呢？现在这个问题基本可以解决了，尽管Debian Wheezy源中很早就带了Gnome 3.4.2，SteamOS自带的还是Gnome 3桌面环境，也就是对“强悍的Linux折腾党”来说，很不幸，客户端侧（本地）窗口装饰管理器不能用了。
 
-<img src="/img/20131216/004.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20131216/004.jpg" /><br><small>
 原生的 Gnome Shell 桌面</small>
 
-<img src="/img/20131216/005.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20131216/005.jpg" /><br><small>
 自带冰鼬浏览器</small>
 
-<img src="/img/20131216/006.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20131216/006.jpg" /><br><small>
 自带的本地应用列表</small>
 
 安装完成后，SteamOS自带的本地应用程序相当的少，唯一的桌面应用就是Valve的Steam本身，以及一个Valve的系统问题报告器——不过Valve很早就在GitHub上搭了个开发者社区 <https://github.com/ValveSoftware/SteamOS>
@@ -49,17 +49,17 @@ SteamOS的系统界面基本上就是Steam“大屏幕”模式加上一些Steam
 
 下面是一些图片：
 
-<img src="/img/20131216/007.jpg" />
+<img src="{{site.cdn}}/img/20131216/007.jpg" />
 
-<img src="/img/20131216/008.jpg" />
+<img src="{{site.cdn}}/img/20131216/008.jpg" />
 
-<img src="/img/20131216/009.jpg" />
+<img src="{{site.cdn}}/img/20131216/009.jpg" />
 
-<img src="/img/20131216/010.jpg" />
+<img src="{{site.cdn}}/img/20131216/010.jpg" />
 
-<img src="/img/20131216/011.jpg" />
+<img src="{{site.cdn}}/img/20131216/011.jpg" />
 
-<img src="/img/20131216/012.jpg" />
+<img src="{{site.cdn}}/img/20131216/012.jpg" />
 
 ## 杂项
 

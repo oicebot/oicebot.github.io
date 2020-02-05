@@ -3,12 +3,12 @@ layout: post
 title: 手机跑团软件 AndChat 简明教程
 tags: Linux Game
 origin: true
-thumb: "/img/20120711/thumb.png"
+thumb: "{{site.cdn}}/img/20120711/thumb.png"
 ---
 
 ## AndChat 是什么
 
-<img src="/img/20120711/001.png" />
+<img src="{{site.cdn}}/img/20120711/001.png" />
 
 ### 简介
 
@@ -37,7 +37,7 @@ AndChat目前支持几乎所有 Android 1.6 以上的设备，
 
 ## AndChat的使用
 
-<img src="/img/20120711/002.png" />
+<img src="{{site.cdn}}/img/20120711/002.png" />
 
 在功能表中点按图标以启动AndChat，就是右上角的那个绿色井号图标。
 
@@ -49,13 +49,13 @@ AndChat目前支持几乎所有 Android 1.6 以上的设备，
 
 以上欢迎界面的设置也可以Skip，无影响。
 
-<img src="/img/20120711/003.png" />
+<img src="{{site.cdn}}/img/20120711/003.png" />
 
 一路Next到底，或者Skip之后，就到了上图的主界面了。
 
 在右上角点那个+号按钮，进入添加新服务器的设置界面。（ +号右边的圆形图标是设置按钮，最右边的“...”中，藏着帮助和退出按钮。）
 
-<img src="/img/20120711/004.png" />
+<img src="{{site.cdn}}/img/20120711/004.png" />
 
 点击+号以后，在Basic Settings里，设置服务器的信息：
 * Name是一个显示的名称，可以随便填
@@ -63,7 +63,7 @@ AndChat目前支持几乎所有 Android 1.6 以上的设备，
 * 在Extra Settings里可以设置个人信息（如果你在欢迎界面设置过了，这里将会自动使用你的设置）
 * 关于服务器的设置，可以参考本文的“连接到服务器”一节。
 
-<img src="/img/20120711/005.png" />
+<img src="{{site.cdn}}/img/20120711/005.png" />
 
 接下来是：
 * AutoJoin, 就是你进入这个服务器的时候需要自动进入的频道的名字（可不填），用英文逗号隔开。
@@ -73,7 +73,7 @@ AndChat目前支持几乎所有 Android 1.6 以上的设备，
 
 填完记得点上方的软盘图标保存喔～
 
-<img src="/img/20120711/006.png" />
+<img src="{{site.cdn}}/img/20120711/006.png" />
 
 保存完后，又回到了上面的主界面。于是点击你刚添加的服务器，进入。
 

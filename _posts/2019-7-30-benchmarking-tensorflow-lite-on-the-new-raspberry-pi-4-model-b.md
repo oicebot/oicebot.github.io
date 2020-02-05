@@ -10,7 +10,7 @@ thumb: "/img/20190730/thumb.jpg"
 
 前不久，树莓派基金会又发布了最新的树莓派（Raspberry Pi）4 代单片机电脑，不但大幅提升了芯片运算能力，可选内存也增加到了最多 4GB，让这张小卡片拥有了类似 PC 级别的性能。而 35～55 美元的超低价格（国内代购的零售价一般在 200 ～ 400 元人民币左右，也算能接受得了啦），让树莓派一直以来都是学校和计算机爱好者手中的“神器”。
 
-<img src="/img/20190730/001.jpg"><br><small>
+<img src="{{site.cdn}}/img/20190730/001.jpg"><br><small>
 树莓派 4B 的各种接口，图片来源：raspberrypi.org</small>
 
 树莓派 4B 型主要硬件参数如下：
@@ -38,7 +38,7 @@ thumb: "/img/20190730/thumb.jpg"
 
 3. 如果加上 Coral USB 加速器的话，处理速度甚至能比肩 Google 的 Coral 开发板，而总价格还更便宜。
 
-<img src="/img/20190730/002.jpg"><br><small>
+<img src="{{site.cdn}}/img/20190730/002.jpg"><br><small>
 新树莓派 4b 的机器学习任务跑分结果。单位：毫秒<br>
 本次测试中在新树莓派 4b 上分别使用 MobileNet v1 SSD 0.75 深度模型，以及 MobileNet v2 SSD 模型进行基准测试，都使用了 Common Objects in Context (COCO) 数据集进行训练，输入图像分辨率都是 300x300，使用 TensorFlow 时运算时间分别为 263.9 毫秒和 483.5 毫秒，而使用 TensorFlow Lite 时的运算时间为 82.7 毫秒和 122.6 毫秒。图片来源：hackster.io</small>
 
@@ -56,14 +56,14 @@ thumb: "/img/20190730/thumb.jpg"
 
 机器学习任务方面，我准备了一张分辨率为 3888x2916 的待识别图片，图片中包含两个可识别的对象：一个香蕉🍌，一个苹果🍎。在喂给模型之前，图片将会被缩小到 300x300 像素，每个模型将会执行一万次，抛弃第一次的处理结果（可能存在因为载入瓶颈造成的延迟），将剩下的处理结果取平均速度。
 
-<img src="/img/20190730/003.jpg"><br><small>
+<img src="{{site.cdn}}/img/20190730/003.jpg"><br><small>
 程序要识别的就是这样张图，图片来源：hackster.io</small>
 
 ### 详细数据
 
 让我们先看一下每个设备上的详细运行数据：
 
-<img src="/img/20190730/004.jpg"><br><small>
+<img src="{{site.cdn}}/img/20190730/004.jpg"><br><small>
 测试结果，单位：毫秒。其中在 Xnor.ai 的 AI2GO 平台上运行的程序使用的是他们私有的卷积网络程序模型，因此没有区分 MobileNet v1 和 v2。图片来源：hackster.io
 </small>
 
@@ -73,7 +73,7 @@ thumb: "/img/20190730/thumb.jpg"
 
 接着，我们发现在使用 TensorFlow Lite 的时候，整体速度有了相当显著的提升，总速度达到了 TensorFlow 测试的 3～4 倍。有趣的是，在树莓派 3 上，TensorFlow Lite 的提升则相对有限，只能达到原来的 2 倍上下。
 
-<img src="/img/20190730/005.png"><br><small>
+<img src="{{site.cdn}}/img/20190730/005.png"><br><small>
 各设备运算时间横向对比。单位：毫秒。图片来源：hackster.io</small>
 
 上图是各设备运算时间的横向对比。每一个设备有两组数据，左侧的是用 MobileNet v1 SSD 0.75 深度模型，右侧的是 MobileNet v2 SSD 模型。Xnor AI2GO 平台的两个设备（树莓派3/4）都只使用 Xnor 私有的权重模型。Raspberry Pi 3B+ 的所有测试结果均以黄色显示，Raspberry Pi 4B 上的测试结果以红色显示。其他不依赖于 Raspberry Pi 的独立平台以绿色显示。
@@ -98,7 +98,7 @@ thumb: "/img/20190730/thumb.jpg"
 
 过去，在树莓派上安装 TensorFlow 是一个艰难的过程，但从去年下半年以来，整个过程简单了不少。幸运的是，在社区的帮助下，现在安装 TensorFlow Lite 相比之下可是轻松多了。你甚至都不需要从源代码来重新编译。
 
-<img src="/img/20190730/006.jpg"><br><small>
+<img src="{{site.cdn}}/img/20190730/006.jpg"><br><small>
 树莓派 4B，图片来源：raspberrypi.org</small>
 
 首先，你需要下载最新的 [Raspbian Lite](https://www.raspberrypi.org/downloads/raspbian)，并安装设置你的树莓派。除非你已经准备好了有线网络，或是有显示器/键盘，否则你需要至少设置好无线网络连接和SSH。

@@ -4,13 +4,13 @@ title: 区块链的2018年究竟会怎样？这里有 18 个预测，你希望�
 tags: Udacity Blockchain Translate
 from: https://media.consensys.net/18-predictions-for-2018-7a376ea7bd4b
 author: Andrew Keys
-thumb: "/img/20180112/thumb.jpg"
+thumb: "{{site.cdn}}/img/20180112/thumb.jpg"
 excerpt: 下一代互联网将从这里起飞
 ---
 
 作者简介：**Andrew Keys** 是以太坊创业投资公司 ConsenSys Capital 的联合创始人。此前，他作为 ConsenSys 的全球商业发展总负责，共同创立了 ConsenSys 集团，促进了企业以太坊联盟的诞生，还协助开发了微软以太坊全球区块链平台项目。
 
-<img src="/img/20180112/001.jpg">
+<img src="{{site.cdn}}/img/20180112/001.jpg">
 
 ## 1. 比特币
 
@@ -37,11 +37,11 @@ scriptSig: <sig> <pubKey>
 
 1. 贷款合约
 
-    <img src="/img/20180112/002.png">
+    <img src="{{site.cdn}}/img/20180112/002.png">
 
 2. 首次公开募股或众筹合约
 
-    <img src="/img/20180112/003.png">
+    <img src="{{site.cdn}}/img/20180112/003.png">
 
 通过这种技术，我们将原来需要律师起草、公证员认证的 Word 文档变成了由代码定义的合约，用以传输原生的数字资产。
 

@@ -5,12 +5,12 @@ tags: Udacity Python
 excerpt_separator: <!--more-->
 star: true
 origin: true
-thumb: "/img/20170616/image5.jpg"
+thumb: "{{site.cdn}}/img/20170616/image5.jpg"
 ---
 “在任何一项足够先进的技术和魔法之间，我们无法作出区分。”这是著名科幻作家亚瑟·克拉克在1973年做出的论断。
 
 <table><tr>
-<td width="40%"><img src="/img/20170616/image1.png" /></td><td width="60%"> 
+<td width="40%"><img src="{{site.cdn}}/img/20170616/image1.png" /></td><td width="60%"> 
 现代社会的我们，已经在研发并驾驭各种“魔法”：<b>手机的普及</b>，让我们对着那个方块做做手势，就能和千里之外的人面对面说话；<b>无人车的兴起</b>，让一辆冰凉冷酷的车能学会人类语言，自动解锁并打开车门；Amazon Alexa、Google Home等下一代智能家庭AI的出现，使得人们将能够拥有一名<b>永不疲倦的魔法管家</b>，为你处理各种个人事务。</td></tr></table>
 
 可以说，我们所有人现在都活在一个迥异于过去的魔法时代里，使用着高技术大神们制造的魔法物品，见证着一个又一个的奇迹。那么，你有没有想过，如果你也能学会这样的“魔法”呢？你是否也能利用手边的电子设备，施展自己创造的“独门法术”呢？
@@ -19,7 +19,7 @@ thumb: "/img/20170616/image5.jpg"
 
 答案是肯定的。
 
-<img src="/img/20170616/image2.jpg" class="img-responsive" />
+<img src="{{site.cdn}}/img/20170616/image2.jpg" class="img-responsive" />
  
 撇去高深的自然科学理论不谈——那些往往需要奋斗终身的钻研——普通人最容易入门，也最容易在日常生活中施展的“魔法”，就是计算机程序，也就是俗称的“编程”。
 
@@ -28,19 +28,19 @@ thumb: "/img/20170616/image5.jpg"
 提到编程，很多没玩过的同学，大概会觉得这就是那种修电脑的技术宅们才会干的事，要成天面对着那种天书一样的一行行密密麻麻蝌蚪文实在是太恐怖了，谁想学啊！
 
 <table><tr>
-<td width="65%"><img src="/img/20170616/image3.jpg" /></td><td width="35%">其实，编程不是太高深莫测的玩意，起码作出一个能用的东西一点也不难。它本质上和你在手机上设了个闹钟差不多——都是给计算机下达了一个带有数据的命令，以便让它帮你完成某个特定的任务。只不过在手机上你数通过按钮或是图形的界面指定个时间，而编写程序的时候你是通过一个编辑器给电脑下达你要它做什么事的具体命令。</td></tr></table>
+<td width="65%"><img src="{{site.cdn}}/img/20170616/image3.jpg" /></td><td width="35%">其实，编程不是太高深莫测的玩意，起码作出一个能用的东西一点也不难。它本质上和你在手机上设了个闹钟差不多——都是给计算机下达了一个带有数据的命令，以便让它帮你完成某个特定的任务。只不过在手机上你数通过按钮或是图形的界面指定个时间，而编写程序的时候你是通过一个编辑器给电脑下达你要它做什么事的具体命令。</td></tr></table>
 
 比如最简单的 Hello World（这是传说中编程之神的咒语，每个未来的魔法师都会念它）：
 
-<img src="/img/20170616/image3.gif" class="img-responsive" />
+<img src="{{site.cdn}}/img/20170616/image3.gif" class="img-responsive" />
 
-<img src="/img/20170616/image4.gif" class="img-responsive" />
+<img src="{{site.cdn}}/img/20170616/image4.gif" class="img-responsive" />
 
 和几十年前的编程语言不同，现代的程序员们，已经把现代的编程语言弄成很类似自然语言的语法了，只要你会认一些基本的英文单词——好消息，这门”语言“不需要你天天背单词——再加上一点点逻辑组织能力，你就能用这种语言和计算机交流，让它替你干活。
 
 听起来是不是很厉害？
 
-<img src="/img/20170616/image5.jpg" class="img-responsive" />
+<img src="{{site.cdn}}/img/20170616/image5.jpg" class="img-responsive" />
  
 也许有的同学会觉得，啊，这难道又是要学一门外语，太可怕了，又没什么用，我不玩…
 
@@ -48,7 +48,7 @@ thumb: "/img/20170616/image5.jpg"
 
 学习一门外语，是跟某个类群的人沟通，通过这门语言，了解他们的文化、艺术、思想；而学习一种编程语言，不但能和所有支持这种编程语言的计算机沟通，给它们下命令，还能和世界上各个不同地方的人通过代码进行交流，了解别人是怎么处理解决他们遇到的问题的——所以代码托管网站 **GitHub** 被戏称为”全球最大的同性交友平台“…
 
-<img src="/img/20170616/image6.jpg" class="img-responsive" />
+<img src="{{site.cdn}}/img/20170616/image6.jpg" class="img-responsive" />
  
 ### 哪些事情适合交给程序来做？
 
@@ -56,7 +56,7 @@ thumb: "/img/20170616/image5.jpg"
 
 虽然程序员的智慧是无穷无尽的，程序能够完成的事情也是没有边界的，但从初学者来说，有这么几种事情，你可以很轻松地用编程这个工具完成：
 
-<img src="/img/20170616/image7.png" width="133px" />
+<img src="{{site.cdn}}/img/20170616/image7.png" width="133px" />
  
 1.	大量、重复的事情：
     1.	小红去云南旅游，拍了八千多张照片，想要按拍摄日期和时间把这么一大堆文件分到不同的文件夹里方便整理，小明帮她写了几行代码，双击运行，就搞定了！
@@ -79,7 +79,7 @@ thumb: "/img/20170616/image5.jpg"
 
 在这里，我郑重跟各位推荐 Python，大家别被这个名字吓到，这门语言的创造者Guido van Rossum是根据英国广播公司的搞笑节目“蟒蛇飞行马戏”（Monty Python’s Flying Cirecus）来命名这个语言的——并非他本人特别喜欢蛇缠起它们的长身躯碾死动物觅食。（笑）
 
-<img src="/img/20170616/image21.png" class="img-responsive" />
+<img src="{{site.cdn}}/img/20170616/image21.png" class="img-responsive" />
  
 为什么推荐Python呢，据 `《A Byte of Python》` 概括，这主要有以下几大理由：
 * **简单**：Python是一种代表简单主义思想的语言。阅读一个良好的Python程序就感觉像是在读英语一样，尽管这个英语的要求非常严格！Python的这种伪代码本质是它最大的优点之一。它使你能够专注于解决问题而不是去搞明白语言本身。
@@ -88,11 +88,11 @@ thumb: "/img/20170616/image5.jpg"
 * **高级语言**：当你用Python语言编写程序的时候，你无需考虑诸如如何管理你的程序使用的内存一类的底层细节。
 * **可移植性**：由于它的开源本质，Python已经被移植在许多平台上（经过改动使它能够工作在不同平台上）。如果你小心地避免使用依赖于系统的特性，那么你的所有 Python 程序无需修改就可以在一大堆各种任何平台上面运行。
  
-<img src="/img/20170616/image22.jpg" class="img-responsive" />
+<img src="{{site.cdn}}/img/20170616/image22.jpg" class="img-responsive" />
 
 有人说，Python 是一种非常适合初学者驾驶的好车。你可以不要驾驶证就开它上路。一般来说你不需要其它车，除非你想要开得飞快或者经过非常危险的地带。
 
-<img src="/img/20170616/image23.png" width="150px" />
+<img src="{{site.cdn}}/img/20170616/image23.png" width="150px" />
  
 #### Q：Python有两个不同的版本，我该选择2还是3？
 
@@ -102,7 +102,7 @@ A：Python2.x是已经进入稳定状态的Python版本，Python3.x是开发更�
 
 所以，如果你需要处理中文文本，或者你并不需要用到某些只有在Python 2上才能运行的库，那你或许应该从 Python 3 开始你的学习之旅。
  
- <img src="/img/20170616/image24.jpg" class="img-responsive" />
+ <img src="{{site.cdn}}/img/20170616/image24.jpg" class="img-responsive" />
 
 ### 磨刀不误砍柴工，选择趁手的工具
 
@@ -113,13 +113,13 @@ A：Python2.x是已经进入稳定状态的Python版本，Python3.x是开发更�
 
 对于编辑器的基本要求之一是**语法加亮**功能，利用这一功能，你的Python程序的不同部分被标以不同的颜色，这样你可以更好**看清楚**你的程序，使它的运行显得形象化。
 
-<img src="/img/20170616/image25.png" class="img-responsive" />
+<img src="{{site.cdn}}/img/20170616/image25.png" class="img-responsive" />
  
 如果你使用Windows，那么我建议你使用IDLE。IDLE具备语法加亮功能，还有许多其他的功能，比如允许你在IDLE中运行你的程序。特别值得注意的是：<span style="color:gold;"><b>不要使用 Notepad</b></span>——它是一个糟糕的选择，因为它没有语法加亮功能，而且更加重要的是，它不支持文本缩进。而我们将会看到文本缩进对于我们来说极其重要。一个好的编辑器，比如IDLE（还有VIM）将会自动帮助你做这些事情。
 
 如果你使用 Linux/FreeBSD，那么你有很多种选择。如果你是一个初学编程的人，那么你可以使用 GEdit/Kate。倘若你是一位有经验的程序员，你一定已经在使用 VIM 或者 Emacs 了。勿庸置疑，它们是两个功能最强大的编辑器。使用它们编写你的 Python 程序，你将从中受益。我个人使用VIM编写我的大多数程序。只要你愿意花时间学习使用 VIM 或 Emacs，那么我强烈建议你一定要学习两者之一，因为从长远看来它们对你是极其有帮助的。
 
-<img src="/img/20170616/image26.jpg" class="img-responsive" />
+<img src="{{site.cdn}}/img/20170616/image26.jpg" class="img-responsive" />
  
 ### 选择适合你学习方式的教程
 
@@ -127,11 +127,11 @@ A：Python2.x是已经进入稳定状态的Python版本，Python3.x是开发更�
 
 一类是文字材料，例如实体书、电子书、网络教程和程序文档等。文字教程的好处在于信息密度大，学习中遇到不懂的内容可以随时翻出来查阅，书中的文字材料/代码段可以直接复制出来运行，方便看到运行结果。
 
-<img src="/img/20170616/image27.jpg" class="img-responsive" />
+<img src="{{site.cdn}}/img/20170616/image27.jpg" class="img-responsive" />
  
 另一类是多媒体教材，例如MOOC课程、视频课程、自学APP等。多媒体资料的好处在于直观、互动性强，能清楚明了的通过动画、视频的演示了解教学内容的关系，一些课程在视频的中间还夹有小问题等元素，方便立刻复习刚讲授的内容。
 
-<img src="/img/20170616/image28.jpg" class="img-responsive" />
+<img src="{{site.cdn}}/img/20170616/image28.jpg" class="img-responsive" />
  
 不管选哪个，结合教材中的实例代码，反复修改、运行把玩，通过不同的修改和输出来了解代码的执行原理，都是非常重要的环节。多动手吧！
 
@@ -143,7 +143,7 @@ A：Python2.x是已经进入稳定状态的Python版本，Python3.x是开发更�
 
 Python程序在运行时遇到的错误，通常都会显示详细的行号和错误信息，方便用户查找修正。遇到自己不认识的错误信息时，别慌，先仔细看看错误信息的描述，再打开你的文件，找到出错的行号。
 
-<img src="/img/20170616/image29.png" />
+<img src="{{site.cdn}}/img/20170616/image29.png" />
  
 如果靠自己弄不明白出错在哪，首先建议对照Python入门指南或Python官方文档（见文末），查找错误信息的意思（善用 Ctrl+F 页面内搜索），对照修改自己的代码。
 
@@ -155,7 +155,7 @@ Python程序在运行时遇到的错误，通常都会显示详细的行号和�
 
 耐心一点，不要指望Google搜索几秒钟就能解决一个复杂的问题。如果你第一次搜索没有结果（或者结果太多），也不要抛出一堆问题，回答者对有针对性的问题更容易给出切实可行的答案。在真正开始提问之前，先稍微放松一下，再深入地思考一下问题。
 
-<img src="/img/20170616/image30.jpg" class="img-responsive" />
+<img src="{{site.cdn}}/img/20170616/image30.jpg" class="img-responsive" />
  
 值得注意的是，思考并不是盯着屏幕上的代码发呆，你要动起手来，通过搜索得到的信息，尝试修改你的代码中“可能有问题”的部分，并观察它的输出结果，逐步定位问题产生的原因；或是通过修改从网山搜到的别人代码，研究它的运行情况，来了解别人是如何解决特定问题的——思考的方向往往会成为解决问题的关键。
 
@@ -169,7 +169,7 @@ Python程序在运行时遇到的错误，通常都会显示详细的行号和�
 
 当然，对初学者来说，大家会比较宽容，不用担心你提的问题太简单或“太傻”，但务必表示出你的认真和用心，不要做伸手党。
 
-<img src="/img/20170616/image31.jpg" class="img-responsive" />
+<img src="{{site.cdn}}/img/20170616/image31.jpg" class="img-responsive" />
  
 除了学习QQ群和一些在线课程的讨论区之外，有几个主要的问答网站： 
 * 国内：段错误（<https://segmentfault.com/> ）

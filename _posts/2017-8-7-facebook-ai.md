@@ -6,11 +6,11 @@ tags: Guokr AI Machine-Learning
 from: https://www.guokr.com/article/442345/
 star: true
 origin: true
-thumb: "/img/fbai/ZtywxS5t52TNTG0LzMn06l90bRBjQHUz-88mdpOx0DTiAgAAnwEAAFBO.png"
+thumb: "{{site.cdn}}/img/fbai/ZtywxS5t52TNTG0LzMn06l90bRBjQHUz-88mdpOx0DTiAgAAnwEAAFBO.png"
 ---
 近日，一条略带诡异的消息传遍了社交网络：“Facebook 的人工智能开发出了自己的秘密语言，吓得工程师把它们的插头给拔了。” 啥！？这太有科幻片既视感了吧？难道《终结者》里要灭绝人类的AI“天网”就要出现了吗？
 
-<img src="/img/fbai/C4SHebF9b_IukTzh_9AJ-oYxTU21BeeLvGB_aYIFMl1XAgAAbwIAAFBO.png" class="img-responsive" alt="" /><br><small>
+<img src="{{site.cdn}}/img/fbai/C4SHebF9b_IukTzh_9AJ-oYxTU21BeeLvGB_aYIFMl1XAgAAbwIAAFBO.png" class="img-responsive" alt="" /><br><small>
 一则宣称“Facebook AI开发出自己的语言”的报道。图片来源：bgr.com</small>
 
 ## Facebook AI的“秘密语言”长啥样？
@@ -32,7 +32,7 @@ thumb: "/img/fbai/ZtywxS5t52TNTG0LzMn06l90bRBjQHUz-88mdpOx0DTiAgAAnwEAAFBO.png"
 
 说出上述谜样对话的AI来自Facebook旗下的人工智能实验室（Facebook Artificial Intelligence Research，简称 FAIR）。人工智能属于扎克伯格提到过的 Facebook 将来三大主要方向之一，一直备受重视。在2013年9月，他们就成立了 FAIR。
 
-<img src="/img/fbai/r29YlGci1gILZlpGg2cSmW5E218RldXpXXYtUr64TUKwAwAA5QEAAFBO.png" class="img-responsive" alt="" /><br><small>FAIR团队。图片来源：research.fb.com</small>
+<img src="{{site.cdn}}/img/fbai/r29YlGci1gILZlpGg2cSmW5E218RldXpXXYtUr64TUKwAwAA5QEAAFBO.png" class="img-responsive" alt="" /><br><small>FAIR团队。图片来源：research.fb.com</small>
 
 FAIR基本上是一个只有投入而几乎没有近期产品压力的团队。他们致力于研究和开发高水平的人工智能技术，解决人工智能领域的一些前沿问题。例如运用机器学习进行人脸识别的DeepFace、在机器学习中加入长期记忆来构建自然语言的问答系统等，都是这个团队的研究成果。
 
@@ -56,7 +56,7 @@ FAIR的研究人员表示，现在我们常见的语义分析程序（比如 Sir
 
 为了模拟人类的协商行为，研究者首先训练了两个能处理英文对话的AI，然后给它们设置了一个坐地分赃（大误）的场景，给出了若干种数量不同的物品。同时，两个AI对于不同物品的“价值”被设置了不同的值，所以它们所看重的物品可能是不同的。它们需要通过互相对话来达成一致的分配办法，同时让获得物品的总“价值”在自己看来尽可能的高。
 
-<img src="/img/fbai/5ZRSteXYY3MCvXw6Nbr8OIrpz-IOcv0l4NVYNIY8FlcACgAAoAUAAEdJ.gif" class="img-responsive" alt="" /><br><small>训练过程。图片来源：code.facebook.com</small>
+<img src="{{site.cdn}}/img/fbai/5ZRSteXYY3MCvXw6Nbr8OIrpz-IOcv0l4NVYNIY8FlcACgAAoAUAAEdJ.gif" class="img-responsive" alt="" /><br><small>训练过程。图片来源：code.facebook.com</small>
 
 比如，当书、帽子和篮球分别值0、7和1分时，对话可能是这样的：
 > “我想要帽子和球。”
@@ -73,7 +73,7 @@ FAIR的研究人员表示，现在我们常见的语义分析程序（比如 Sir
 
 同时，研究人员还给AI引入了预期机制，让AI模型在面对输入的句子时，能够逐一评估模型所学习到的每种可行的回应方式，逐一推测这种回应可能从对方处得到的答复，并计算对应收益的期望，以此判断实际要作出什么样的回应。
 
-<img src="/img/fbai/44cGdCJavqAC_mBLdsXEOH-WX5d_1htiHvr5QAMKjw7gAgAAuwAAAEpQ.jpg" class="img-responsive" alt="" /><br><small>AI模型能够根据对谈判结果的预期做出收益最大化的决策。图片来源：code.facebook.com</small>
+<img src="{{site.cdn}}/img/fbai/44cGdCJavqAC_mBLdsXEOH-WX5d_1htiHvr5QAMKjw7gAgAAuwAAAEpQ.jpg" class="img-responsive" alt="" /><br><small>AI模型能够根据对谈判结果的预期做出收益最大化的决策。图片来源：code.facebook.com</small>
 
 而正是在这个过程中，研究人员出了一点小小的纰漏。
 
@@ -81,7 +81,7 @@ FAIR的研究人员表示，现在我们常见的语义分析程序（比如 Sir
 
 所以，对设置了训练场景的研究人员来说，文章开头的出现的“秘密对话”实际上毫不神秘：
 
-<img src="/img/fbai/x5wgSgIlK9C62NHU11oGUof9HAoyB8UErSTCxqcCxLFUAgAAMQEAAFBO.png" class="img-responsive" alt="" /><br><small>智能体Alice和Bob的对话。图片来源：FAIR</small>
+<img src="{{site.cdn}}/img/fbai/x5wgSgIlK9C62NHU11oGUof9HAoyB8UErSTCxqcCxLFUAgAAMQEAAFBO.png" class="img-responsive" alt="" /><br><small>智能体Alice和Bob的对话。图片来源：FAIR</small>
 
 从对物品赋值可以看到，对Bob来说，它对书和帽子毫无所求，只要球。所以可以推测，它尝试表示可以给出其他的所有东西；对Alice来说，尽管书和帽子都有价值，但那一个球的价值也更高。显然，他们就是在为了最大化自己的得分而在激烈地讨价还价。不难猜测，在这一对AI的用法中，重复某个单词或句子的某个部分可能是用以表达出强调的程度。当然，从文字上看，这和平时人类的沟通方式可是大相径庭。
 
@@ -93,7 +93,7 @@ FAIR的研究人员表示，现在我们常见的语义分析程序（比如 Sir
 
 目前从开源了的代码的运行截图上来看，这个项目已经可以调教出能和人一样用英语讨价还价的AI了。
 
-<img src="/img/fbai/Ae39CwXzWQTPTbp-hFpOy3Ol5UxiT5kTSp8h8llmSSKwAwAA4wIAAFBO.png" class="img-responsive" alt="" /><br><small>一次讨价还价的过程。图片来源：Github</small>
+<img src="{{site.cdn}}/img/fbai/Ae39CwXzWQTPTbp-hFpOy3Ol5UxiT5kTSp8h8llmSSKwAwAA4wIAAFBO.png" class="img-responsive" alt="" /><br><small>一次讨价还价的过程。图片来源：Github</small>
 
 物品总数量：书1；帽子2；球2。
 对人类来说：书价值2；帽子价值2；球价值2。
@@ -129,7 +129,7 @@ FAIR的研究人员表示，现在我们常见的语义分析程序（比如 Sir
 
 话说回来，Facebook做的这项工作虽然说起来简单，但的确是整个人工智能研究领域的重要一步，这代表着人类向创造出能辩论、能沟通、能交涉的高级聊天机器人又近了一大步，向创造出诸如钢铁侠的贾维斯或者士官长的柯塔娜那样极具个性的数字助理AI又近了一点点。
 
-<img src="/img/fbai/ZtywxS5t52TNTG0LzMn06l90bRBjQHUz-88mdpOx0DTiAgAAnwEAAFBO.png" class="img-responsive" alt="" /><br><small>做出能与人类进行协商或谈判的聊天机器人是FAIR的工作目标之一。图片来源：techcrunch.com</small>
+<img src="{{site.cdn}}/img/fbai/ZtywxS5t52TNTG0LzMn06l90bRBjQHUz-88mdpOx0DTiAgAAnwEAAFBO.png" class="img-responsive" alt="" /><br><small>做出能与人类进行协商或谈判的聊天机器人是FAIR的工作目标之一。图片来源：techcrunch.com</small>
 
 不仅如此，目前机器学习已广泛应用于数据挖掘、计算机视觉、自然语言处理、生物特征识别、搜索引擎、医学诊断、检测信用卡欺诈、证券市场分析、DNA序列测序、语音和手写识别、战略游戏和机器人等领域。
 
@@ -137,7 +137,7 @@ FAIR的研究人员表示，现在我们常见的语义分析程序（比如 Sir
 
 如果真的要说有谁会因为这次 Facebook 的研究成果而感到恐慌的话，大概就是那些快要失业的谈判专家们吧。
 
-<img src="/img/fbai/D9o_tUZ5btSnYdm5aEkWcyVjE7_Lb1zHe70Ja8IlwiOjBAAA9gIAAEpQ.jpg" class="img-responsive" alt="" />
+<img src="{{site.cdn}}/img/fbai/D9o_tUZ5btSnYdm5aEkWcyVjE7_Lb1zHe70Ja8IlwiOjBAAA9gIAAEpQ.jpg" class="img-responsive" alt="" />
 
 参考资料：
 1. https://www.theatlantic.com/technology/archive/2017/06/what-an-ais-non-human-language-actually-looks-like/530934/

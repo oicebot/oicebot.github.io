@@ -8,7 +8,7 @@ author: Constantin
 excerpt_separator: <!--more-->
 thumb: "/assets/images/code-1839406_640.jpg"
 ---
-<img src="/img/udacity/challenge.webp">
+<img src="{{site.cdn}}/img/udacity/challenge.webp">
 
 在计算机技术日益普及的今天，不学一两门编程语言，出门都不好意思跟人打招呼（大误）。不论你是从事计算机专业的老鸟，还是慕名而来的萌新，学习一门新的编程语言总是十分有益的。
 
@@ -26,7 +26,7 @@ thumb: "/assets/images/code-1839406_640.jpg"
 
 下面这张表显示了几种主要编程语言在2017～2018年间就业情况的变化：
 
-<img src="/img/643434234d234234dsf230.webp" /><br><small>（数据来源：Indeed.com，可视化制图：Coding Dojo)</small>
+<img src="{{site.cdn}}/img/643434234d234234dsf230.webp" /><br><small>（数据来源：Indeed.com，可视化制图：Coding Dojo)</small>
 
 尽管 **Java** 已经有 20 多年的历史，它依旧是就业需求最高的编程语言——虽然自 2017 年来，它的需求量有所下跌。长期以来，Java 一直是最受企业追捧的计算机语言，这可能是因为它强大的可移植性，可以在各种硬件和系统上运行。举个栗子，所有的安卓应用程序都基于 Java，而大部分《财富》500 强企业都用 Java 进行后端开发。
 

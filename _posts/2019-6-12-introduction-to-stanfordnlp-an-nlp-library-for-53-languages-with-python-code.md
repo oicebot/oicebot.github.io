@@ -10,7 +10,7 @@ thumb: "/img/20190612/thumb.jpg"
 
 > 不久之前，斯坦福大学公开了它最新的自然语言处理代码库—— StanfordNLP。它不但包含了完整的语义分析工具链，还带有 73 个不同的高精度神经网络模型，能解析 53 种不同的人类语言。是不是很牛×啊？今天的教程里，优达菌就手把手带你在 Python 上使用 StanfordNLP，进行一些自然语言处理实战。
 
-<img src="/img/20190612/000.jpg" />
+<img src="{{site.cdn}}/img/20190612/000.jpg" />
 
 在学习自然语言处理（NLP）的过程中，我们常常会遇到这样一个问题：“我们能不能为除英语之外的其他语言构建模型呢？”在很长一段时间里，这都是一个难以完成的任务。要知道，每种语言都有自己独特的语法模式和细微的语言差别，而且除了英语之外，其他语言的数据集实在是少之又少。
 
@@ -20,13 +20,13 @@ thumb: "/img/20190612/thumb.jpg"
 
 在 StanfordNLP 的[官方网站](https://stanfordnlp.github.io/stanfordnlp/models.html#human-languages-supported-by-stanfordnlp)上，作者列出了目前支持的所有 53 种人类语言，其中包含了许多其他 NLP 库所没有的语言，比如印地语、日语和我们最爱的中文。这简直是为我们打开了通往无限可能的新世界的大门啊！
 
-<img src="/img/20190612/001.jpeg" />
+<img src="{{site.cdn}}/img/20190612/001.jpeg" />
 
 ## StanfordNLP 到底是何方神圣，我为啥需要用它？
 
 <span class="hl">简单地说，StanfordNLP 是一系列预训练好的，高水平的神经网络模型。</span>目前的 73 个模型都是来自 2017、18 年 CoNLL 会议上的研究者。它们都是用 PyTorch 训练而来的，你也可以用自己的语料库来训练和评估它们，是不是很酷炫？
 
-<img src="/img/20190612/002.jpg" />
+<img src="{{site.cdn}}/img/20190612/002.jpg" />
 
 此外，StanfordNLP 还包含了一个官方的 [CoreNLP](https://stanfordnlp.github.io/CoreNLP/) 封装。CoreNLP 作为一款广受好评的史诗级 NLP 库，在此之前，你只能依靠 Java 才能用上它。对有兴趣的读者，我建议你看看[这个教程](https://www.analyticsvidhya.com/blog/2017/12/introduction-computational-linguistics-dependency-trees?utm_source=blog&utm_medium=stanfordnlp-nlp-library-python)，了解更多有关 CoreNLP 的信息，以及它在 Python 中的工作原理。
 
@@ -131,7 +131,7 @@ doc = nlp("""The prospects for Britain’s orderly withdrawal from the European 
 doc.sentences[0].print_tokens()
 ```
 
-<img src="/img/20190612/004.png" />
+<img src="{{site.cdn}}/img/20190612/004.png" />
 
 结果就类似上面这样。每个 `token` 对象都包含了句子中每个词的索引，以及一个包含了 `Word` 对象的列表（以防有一些由多个单词/字组成的短语/词组。<span class="hl">每一个 Word 对象都包含了详细的信息，包括序号、单词原形、词性、形态特征等标签。</span>
 
@@ -158,7 +158,7 @@ extract_lemma(doc)
 
 这将返回一个 pandas 的数据表（DataFrame 对象），列出了每个单词及其对应的单词原形：
 
-<img src="/img/20190612/005.png" />
+<img src="{{site.cdn}}/img/20190612/005.png" />
 
 ### 词性分析与标注
 
@@ -230,7 +230,7 @@ extract_pos(doc)
 
 程序将输出一个数据表对象，其中包含 3 列：单词（Word）、词性（pos）以及对应的解释（exp）。解释列中的内容包含了最多的语义信息，也是对我们最有用的部分。
 
-<img src="/img/20190612/006.png" />
+<img src="{{site.cdn}}/img/20190612/006.png" />
 
 增加了解释列之后，我们就能更容易地看出分析器处理词句时的准确性如何。让我欣喜的是，绝大部分的词语都能够被正确地标记起来，它甚至能正确地判断出一个词的时态和词性，包括它是单数还是复数形式等。
 
@@ -242,7 +242,7 @@ extract_pos(doc)
 doc.sentences[0].print_dependencies()
 ```
 
-<img src="/img/20190612/007.png" />
+<img src="{{site.cdn}}/img/20190612/007.png" />
 
 总的来说，程序将在一次管道处理过程中计算上述的每一个步骤。对于能使用 GPU 的机器来说，整个运算过程一般要不了几分钟就能搞定。
 
@@ -272,7 +272,7 @@ hindi_doc = nlp("""केंद्र की मोदी सरकार ने
 extract_pos(hindi_doc)
 ```
 
-<img src="/img/20190612/008.png" />
+<img src="{{site.cdn}}/img/20190612/008.png" />
 
 毫不意外，词性分析器很完美地处理了印地语文本。看看这个“अपना”吧，词性分析器指出这是个人称代词（我、他、她），这还是比较准确的。
 
@@ -417,6 +417,6 @@ with CoreNLPClient(annotators=['tokenize','ssplit','pos','lemma','ner','depparse
 
 确实，StanfordNLP 刚发布 0.2.0 版本不久。虽然这次的版本显著地缩小了模型大小，加快了速度，但它可改进的空间还很大。再考虑到有斯坦福“官方”加持，它未来一定会更加完善，更加强大。所以，现在正是开始学习使用它的最佳时机——为什么不快人一步，提前掌握这项技能呢？
 
-<img src="/img/banner_learning.jpg"/>
+<img src="{{site.cdn}}/img/banner_learning.jpg"/>
 
 > _（本文已投稿给「[优达学城](https://cn.udacity.com)」。 原作： [{{ page.author }}]({{ page.from }}) 编译：欧剃 转载请保留此信息）_

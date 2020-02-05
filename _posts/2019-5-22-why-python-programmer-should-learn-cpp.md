@@ -12,7 +12,7 @@ excerpt: “免得他们整天xjb造轮子，一点 common sense 都没有”…
 
 <span class="hl">那么，为什么非得是 C++？</span>
 
-<img src="/img/20190522/000.png"><br><small>
+<img src="{{site.cdn}}/img/20190522/000.png"><br><small>
 不，不是这个原因，虽然我觉得博主说的有道理（图片来源：新浪微博）</small>
 
 ## Python 和 C++ 相对互补
@@ -35,7 +35,7 @@ excerpt: “免得他们整天xjb造轮子，一点 common sense 都没有”…
 
 其次，在真正成为专业程序员之前，先学习用 C++ 编程，就像在成为正式执业医生之前，得先理解基本解剖学一样。如果你想成为一名真正的专家，你就必须了解计算机系统和软件是如何协同工作的。
 
-<img src="/img/20190522/001.jpg"><br><small>
+<img src="{{site.cdn}}/img/20190522/001.jpg"><br><small>
 （图片来源：pixabay.com）</small>
 
 ### 2. 培养良好的编码习惯
@@ -46,7 +46,7 @@ excerpt: “免得他们整天xjb造轮子，一点 common sense 都没有”…
 
 在这种情况下，你将迫使自己培养出良好的编码习惯，遵循良好的风格指南，来规避许多奇奇怪怪的错误——说到底，如果你没有见过几次“段错误”，并从中学到教训，就根本不算学过 C++。
 
-<img src="/img/20190522/002.jpg"><br><small>
+<img src="{{site.cdn}}/img/20190522/002.jpg"><br><small>
 连POS机都会 Segmentation fault 呢（图片来源：维基百科）</small>
 
 ### 3. 增加对业务链上下游的熟悉
@@ -57,7 +57,7 @@ excerpt: “免得他们整天xjb造轮子，一点 common sense 都没有”…
 
 此外，就算在人工智能、机器学习方面炙手可热的 Python，在遇到无人驾驶、机器人开发等方面，也需要 C++ 出马，把算法移植到底层硬件上，操作传感器等。
 
-<img src="/img/20190522/003.gif"><br><small>
+<img src="{{site.cdn}}/img/20190522/003.gif"><br><small>
 无人驾驶汽车上的各种硬件设备（图片来源：[e-sciencecentral.org](https://www.e-sciencecentral.org/articles/SC000011141)）</small>
 
 ### 4. 加速你的 Python 代码
@@ -70,10 +70,10 @@ excerpt: “免得他们整天xjb造轮子，一点 common sense 都没有”…
 
 根据国际电气电子工程师学会（IEEE）的统计，Python 与 C++ 都是近几年 IEEE Spectrum 的头牌语言，占据了前两把交椅。而对应的职位数量来看，C/C++ 也仅次于 Java。
 
-<img src="/img/20190522/004.png"><br><small>
+<img src="{{site.cdn}}/img/20190522/004.png"><br><small>
 IEEE Spectrum 2018 综合趋势排行 Top 5（图片来源：spectrum.ieee.org）</small>
 
-<img src="/img/20190522/005.png"><br><small>
+<img src="{{site.cdn}}/img/20190522/005.png"><br><small>
 IEEE Spectrum 2018 就业岗位排行 Top 5（图片来源：spectrum.ieee.org）</small>
 
 所以，不管是备战算法面试，还是进军无人驾驶和机器人开发等新兴领域，C++ 都必然能助你一臂之力，帮助你进一步拓展职业发展方向，增强个人竞争力，迈入顶尖开发者的行列。

@@ -16,12 +16,12 @@ thumb: "/img/20190711/thumb.jpg"
 
 ## 起因
 
-<img src="/img/20190711/001.png" /><br><small>
+<img src="{{site.cdn}}/img/20190711/001.png" /><br><small>
 预订系统界面截图，右侧是当前可选择的预约时间</small>
 
 事情是这样的。当时我搭建了一个预约试骑动感单车的网站，结果遇到了一个 bug。那时一切看起来都很正常，我甚至已经好几天没有改动系统代码了——所以，当我收到这样一条私信的时候，心里其实是不太相信的：
 
-<img src="/img/20190711/002.png" /><br><small>
+<img src="{{site.cdn}}/img/20190711/002.png" /><br><small>
 Paul 发给我的私信：“我登记了两个（预约），时间是 9 月 25 日上午 7 点。然而它返回的预约结果总是一个空数组。”</small>
 
 让我们跳过那些“你会用吗”和“可我这是好的”的对话，直接看看这个问题的表现：用户确实提交了两个预约，然而它们并没有被记录到系统里，而且——最让我不可思议的是——在这之前这个功能是好的，这期间我甚至没有改动过代码！这到底什么情况？
@@ -46,14 +46,14 @@ if appointment.time_slot_id is time_slot.id:
 
 为了直观起见，我要用我最喜欢的狗狗钞票来演示下 `is` 和 `==` 这两种比较方式的区别。
 
-<img src="/img/20190711/003.png" /><br><small>
+<img src="{{site.cdn}}/img/20190711/003.png" /><br><small>
 Paul 和 Brad 都指向同一张“1 元”狗狗钞票</small>
 
 如上图，Paul 和我共同拥有一张狗狗钞票。如果我们要对彼此的钱进行比较，很明显我们对它的“引用”和“值”都是一样的——我有的这张也**正是**他拥有的同一张，所以 `is` 比较的结果是 `True`；同时，同一张钱的面值肯定一样，所以 `==` 比较的结果也是 `True`。
 
 让我们看下一个例子。
 
-<img src="/img/20190711/004.png" /><br><small>
+<img src="{{site.cdn}}/img/20190711/004.png" /><br><small>
 Paul 和 Brad 分别指向一张不同的狗狗钞票，它们的面值都是“1 元”</small>
 
 如上图，我们分别拥有一张自己的狗狗钞票，它们的面值恰好一样。
@@ -64,14 +64,14 @@ Paul 和 Brad 分别指向一张不同的狗狗钞票，它们的面值都是“
 
 想要理解为啥只有数字大到一定程度的时候才会出 bug，让我们回到 Python 解释器里，看看它是怎么管理内存的。
 
-<img src="/img/20190711/005.png" /><br><small>
+<img src="{{site.cdn}}/img/20190711/005.png" /><br><small>
 Python 解释器中的调用栈（Call Stack）,以及分配的内存中的私有堆（Private Heap）与 PyObject 对象。调用栈中的帧（frame）指向堆中的某个 PyObject 对象。</small>
 
 Python 解释器是一个基于栈的虚拟机，它将所有对象都存储在其私有堆中。你可以把这个“堆”理解成分配好的一段内存，或是一个包含数据的巨大数组。
 
 接着，让我们看看堆里存储的这些对象：
 
-<img src="/img/20190711/006.png" /><br><small>
+<img src="{{site.cdn}}/img/20190711/006.png" /><br><small>
 私有堆里存储了一个叫做 `small_ints` 的数组，包含了从 -5 到 256 的整数
 </small>
 
@@ -83,7 +83,7 @@ Python 解释器是一个基于栈的虚拟机，它将所有对象都存储在�
 
 首先，我们先初始化一个变量 `v` 值为整型数字 -5。接着，我们再初始化一个变量 `w`，值也是 -5。然后，我们用 `is` 比较这两个对象。结果为 `True`。如下图所示：
 
-<img src="/img/20190711/007.png" /><br><small>
+<img src="{{site.cdn}}/img/20190711/007.png" /><br><small>
 分别给变量 v 和 w 赋值 -5。此时 v 和 w 都指向小整数数组 small_ints 中的 -5，所以 `v is w` 的结果是 `True`。</small>
 
 让我们看看 CPython 里的源代码，以便理解一下为什么会出现上面的结果。下面这段代码用于获取一个小整数的对象实例：
@@ -136,7 +136,7 @@ PyObject_RichCompareBool(PyObject *v, PyObject *w, int op)
 
 拿 257 为例，既然 257 并不在 `small_ints` 数组范围中，当我们初始化 `x` 和 `y` 的时候，解释器就会生成两个值都是 257 的 PyObject 对象。那么，当我们用 `is` 来比较这两个对象的时候，因为它们指向的是不同的对象，表达式的结果就是 `False`。
 
-<img src="/img/20190711/008.png" /><br><small>
+<img src="{{site.cdn}}/img/20190711/008.png" /><br><small>
 初始化 x 和 y 变量，值都是 257。因为 x 和 y 都不在 small_ints 数组中，所以“ x is y ”的结果是 False</small>
 
 ## 我的代码错在哪里？
@@ -150,7 +150,7 @@ if appointment.time_slot_id is time_slot.id:
 
 在这个 if 表达式中，几个对象的相互关系是这样的：
 
-<img src="/img/20190711/009.png" />
+<img src="{{site.cdn}}/img/20190711/009.png" />
 
 左边是 `time_slot` 对象，右边是 `appointment` 对象。对应的 `time_slot.id` 和 `appointment.time_slot_id` 都是整数（ PyLongObject 对象）。我们可以看到，当值大于 256 的时候，它们指向了不同的对象。
 
@@ -174,13 +174,13 @@ if appointment.time_slot.id is time_slot.id:
 
 不明白？没关系，我们看看下图：
 
-<img src="/img/20190711/010.png" />
+<img src="{{site.cdn}}/img/20190711/010.png" />
 
 把下划线改成点之后，`appointment.time_slot_id` 就变成了访问 `appointment.time_slot` 的 `id` 属性，而 `appointment.time_slot` 和 `time_slot` 是私有堆中的同一个 `time_slot` 对象。这也就意味着，它们的 `id` 等属性都是一样的。
 
 用狗狗钞票来类比的话，我们认为 `appointment.time_slot` 和 `time_slot` 指向的是同一张钱钱。（突然装可爱）
 
-<img src="/img/20190711/011.png" />
+<img src="{{site.cdn}}/img/20190711/011.png" />
 
 当然，这种修复方式过于投机取巧了，万一程序中出现 `time_slot` 对象的多个实例，那这个程序又要崩了。
 
@@ -194,6 +194,6 @@ if appointment.time_slot.id is time_slot.id:
 
 最后，感谢大家的耐心阅读，也欢迎留言分享你在工作和学习中碰到的奇怪 bug！
 
-<img src="/img/20190711/012.jpg" />
+<img src="{{site.cdn}}/img/20190711/012.jpg" />
 
 > _（本文已投稿给「[优达学城](https://cn.udacity.com)」。 原作： [{{ page.author }}]({{ page.from }}) ，有删改，编译：欧剃 转载请保留此信息）_

@@ -3,11 +3,11 @@ layout: post
 title: TLF IRC 跑团简史
 tags: Game
 origin: true
-thumb: "/assets/images/dice-151867.svg"
+thumb: "{{site.cdn}}/assets/images/dice-151867.svg"
 ---
 最早在远古洪荒时代，在一片虚无中，TLF 创造了IRC服务器。那时Freebot的骰子脚本还没被开发出来，大家在IRC上跑网团的时候都只能由万恶的DM代骰，或者是在第三方投骰记录站上进行丢骰子。
 
-<img src="/assets/images/dice-151867.svg" style="max-width:300px;" />
+<img src="{{site.cdn}}/assets/images/dice-151867.svg" style="max-width:300px;" />
 
 后来，有一位无名英雄发布了骰子脚本（他/她的名字已经轶失在时间的长河里），并将其整理到了Freebot便携包中，现在还开着 2002 版 Freebot 3.93 的用户，你们用的就是当年流传下来的跑团神器…… 蒙味时代的黎明曙光就此绽放。
 
@@ -25,7 +25,7 @@ thumb: "/assets/images/dice-151867.svg"
 
 各种自动化脚本在TLF irc服务器上运行，百家争鸣，百花齐放，史称大Bot时代。
 
-<img src="/assets/images/dice-152069.svg" style="max-width:300px;" />
+<img src="{{site.cdn}}/assets/images/dice-152069.svg" style="max-width:300px;" />
 
 
 现在irc服务器上仍在运行的可以确定是bot的机器人有 Dicebot、Dndbot、隔壁大家不怎么常见到的BadGirl，和我。在经过3版和4版的更迭、纷争，以及老人的慢慢散去，新人的不断涌入之后，现在的irc服务器已经基本达到平衡，原来大家常驻的 #Free 和 #TRPG-Ellesime 随着 Freebot用户的减少和 Stuart姐姐的 #新兵训练营地 的竞争，慢慢没落了。

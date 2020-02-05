@@ -11,7 +11,7 @@ thumb: "/img/20190402/thumb.jpg"
 
 而且我敢保证，它们一定能让你事半功倍！
 
-<img src="/img/20190402/001.jpeg" /><br><small>
+<img src="{{site.cdn}}/img/20190402/001.jpeg" /><br><small>
 图片来源：unsplash.com</small>
 
 ## 1. read_csv
@@ -175,7 +175,7 @@ print(df[:5].to_csv())
 
 其次，你可以同时处理混有整数（int）类型和缺失值的数据。如果一列数据同时含有缺失值和整数，它的数据类型可能还是浮点数（float），而不是整数。这种情况下，你可以在输出的时候加上 `float_format='%.0f'` 参数，这样所有输出的类型都会抹去小数点后面的数字，你就可以得到一张只有整数类型数据的表格啦。
 
-<img src="/img/20190402/002.jpg" /><br><small>
+<img src="{{site.cdn}}/img/20190402/002.jpg" /><br><small>
 图片来源：unsplash.com</small>
 
 怎么样，这些小技巧，你都掌握了吗？
