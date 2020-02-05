@@ -3,7 +3,7 @@ layout: post
 title: 命令行下发送飞信到好友爪机
 tags: Linux
 origin: true
-thumb: "{{site.cdn}}/assets/images/code-1839406_640.jpg"
+thumb: "/assets/images/code-1839406_640.jpg"
 ---
 
 最近爱上终端命令行界面的软件，搭配SSH + Tmux的远程使用，挂irc啥的完全无压力。但是跟人短信聊天还是免不了要开个图形界面的飞信，太蛋痛了，怎么办？

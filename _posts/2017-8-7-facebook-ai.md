@@ -6,7 +6,7 @@ tags: Guokr AI Machine-Learning
 from: https://www.guokr.com/article/442345/
 star: true
 origin: true
-thumb: "{{site.cdn}}/img/fbai/ZtywxS5t52TNTG0LzMn06l90bRBjQHUz-88mdpOx0DTiAgAAnwEAAFBO.png"
+thumb: "/img/fbai/ZtywxS5t52TNTG0LzMn06l90bRBjQHUz-88mdpOx0DTiAgAAnwEAAFBO.png"
 ---
 近日，一条略带诡异的消息传遍了社交网络：“Facebook 的人工智能开发出了自己的秘密语言，吓得工程师把它们的插头给拔了。” 啥！？这太有科幻片既视感了吧？难道《终结者》里要灭绝人类的AI“天网”就要出现了吗？
 

@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 from: http://motherboard.vice.com/read/Dishonored-2-world-design
 author: Ian Birnbaum
 star: true
-thumb: "{{site.cdn}}/img/e23000d5c9e103de566.jpeg"
+thumb: "/img/e23000d5c9e103de566.jpeg"
 ---
 _Dishonored_ （耻辱）是 Bethesda 公司在2012年推出的动作游戏，它带给玩家的则是一个古老的世界。在 _Dishonored_ 中，我最爱做的事情之一就是探索它的城市，工业大都会 Dunwall 。作为一个处于工业革命中期的架空世界的首都， Dunwall 是个集科学、幻想与蒸汽朋克的创造力为一身的城市。
 

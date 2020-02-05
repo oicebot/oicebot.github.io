@@ -4,7 +4,7 @@ title: SteamOS Beta 动手玩
 date: 2013-12-16
 tags: Linux Game
 origin: true
-thumb: "{{site.cdn}}/img/20131216/thumb.jpg"
+thumb: "/img/20131216/thumb.jpg"
 from: http://www.omgubuntu.co.uk/2013/12/hands-on-steamos-beta
 ---
 在大家翘首以盼到纷纷睡着(大雾)之后，Valve终于发布了SteamOS的Beta版本。于是我们就在第一时间把玩了一下这个基于Debian的衍生版系统。

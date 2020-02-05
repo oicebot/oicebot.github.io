@@ -5,7 +5,7 @@ tags: Udacity Translate Science
 author: Peter Schroeder 
 from: https://hackernoon.com/the-reason-why-mark-zuckerberg-wears-the-same-shirt-everyday-68e4f907f661
 excerpt: "才不是！"
-thumb: "{{site.cdn}}/img/20180226/thumb.jpg"
+thumb: "/img/20180226/thumb.jpg"
 ---
 
 <img src="{{site.cdn}}/img/20180226/001.jpg">

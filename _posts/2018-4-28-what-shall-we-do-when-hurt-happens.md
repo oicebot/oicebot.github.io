@@ -4,7 +4,7 @@ title: 面对危险与无助，我们能做些什么？
 tags: Guokr Science
 origin: true
 author: 朱珠
-thumb: "{{site.cdn}}/img/20180428/thumb.jpg"
+thumb: "/img/20180428/thumb.jpg"
 ---
 > 希望你永远也用不到这些知识。
 

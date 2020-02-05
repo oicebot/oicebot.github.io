@@ -4,7 +4,7 @@ title: 打游戏能治病？是的！俄罗斯方块有助于治疗创伤后应�
 tags: Guokr Science Game Translate
 from: https://www.telegraph.co.uk/science/2017/03/28/tetris-can-prevent-post-traumatic-stress-disorder-oxford-university/
 author: Sarah Knapton
-thumb: "{{site.cdn}}/img/20170329/thumb.jpg"
+thumb: "/img/20170329/thumb.jpg"
 ---
 
 一项新的研究表明，在经历诸如车祸等创伤事件后不久就玩 " 俄罗斯方块 " 等类似游戏，可能会降低发生侵扰性意识分离（Flashback，又称 " 闪回 "）的风险。

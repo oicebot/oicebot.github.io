@@ -4,7 +4,7 @@ title: 学员访谈:30岁才转行学编程是怎样一种体验
 tags: Udacity Translate Nanodegree
 from: https://medium.com/udacity/how-i-learned-to-code-in-my-30s-61ad21180208
 author: Brad Crispin
-thumb: '{{site.cdn}}/img/1_rzCI0BDS8jBgInGv0JCSCw.jpg'
+thumb: /img/1_rzCI0BDS8jBgInGv0JCSCw.jpg
 ---
 “沉迷写代码，跟紧老司机，而且永不言败”
 

@@ -3,7 +3,7 @@ layout: post
 title: TLF IRC 跑团简史
 tags: Game
 origin: true
-thumb: "{{site.cdn}}/assets/images/dice-151867.svg"
+thumb: "/assets/images/dice-151867.svg"
 ---
 最早在远古洪荒时代，在一片虚无中，TLF 创造了IRC服务器。那时Freebot的骰子脚本还没被开发出来，大家在IRC上跑网团的时候都只能由万恶的DM代骰，或者是在第三方投骰记录站上进行丢骰子。
 

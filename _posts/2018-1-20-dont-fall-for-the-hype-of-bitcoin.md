@@ -5,7 +5,7 @@ tags: Udacity Translate Blockchain
 author: Miguel Cuneta
 from: https://decentralize.today/dont-fall-for-the-hype-why-bitcoin-s-10-000-price-doesn-t-reflect-its-true-value-6b42a59fce0a
 excerpt: "它真正的价值远不止于此"
-thumb: "{{site.cdn}}/img/20180120/thumb.jpg"
+thumb: "/img/20180120/thumb.jpg"
 ---
 
 作者简介：**Miguel Cuneta** 是比特币新兴公司 Satoshi Citadel Industries  (www.sci.ph) 的联合创始人，2014年起在菲律宾建设区块链金融生态系统。

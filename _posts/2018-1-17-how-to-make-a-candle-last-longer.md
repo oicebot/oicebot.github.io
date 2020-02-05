@@ -4,7 +4,7 @@ title: 我这样精致的人，当然能完美地把香薰蜡烛用到极致
 tags: Guokr Translate Science
 from: https://www.vogue.com/article/how-to-make-a-candle-last-longer
 author: MACKENZIE WAGONER
-thumb: "{{site.cdn}}/img/20180117/thumb.jpg"
+thumb: "/img/20180117/thumb.jpg"
 ---
 每年一度的冬眠季节又到了。无论是什么原因让你缩回自己温暖的小窝——最近的阵雪，跳水般的降温，早早就降临的夜幕，亦或是那些令人沮丧的新闻标题——几乎没有什么事物能像温暖的烛光那样，抚慰你那饱受冬季抑郁侵袭的身心。**当摇曳的小小烛光将最上层的蜡融化，形成光滑的液面，香气悄然释放……**
 

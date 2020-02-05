@@ -3,7 +3,7 @@ layout: post
 title: 手机跑团软件 AndChat 简明教程
 tags: Linux Game
 origin: true
-thumb: "{{site.cdn}}/img/20120711/thumb.png"
+thumb: "/img/20120711/thumb.png"
 ---
 
 ## AndChat 是什么

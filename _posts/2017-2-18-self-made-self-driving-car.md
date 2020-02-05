@@ -4,7 +4,7 @@ title: 天啊！这个大学生居然把破本田升级成了自动驾驶汽车�
 tags: Guokr Selfdriving Translate
 from: https://www.technologyreview.com/s/603637/how-a-college-kid-made-his-honda-civic-self-driving-for-700/
 author: Tom Simonite
-thumb: "{{site.cdn}}/img/Yz19H6il92M9HRO58LbpjGwGcn-ATySitUS9fFGX6OBYAgAAjAEAAEpQ.jpg"
+thumb: "/img/Yz19H6il92M9HRO58LbpjGwGcn-ATySitUS9fFGX6OBYAgAAjAEAAEpQ.jpg"
 ---
 内布拉斯加大学的学生布雷万·约根森（Brevan Jorgenson）将一辆2016款本田思域的车内后视镜换成了一个叫做 Comma Neo 的自制电子设备，这个设备可以使用相机识别道路标记和路上的其他车辆，并自动控制刹车，油门和方向盘 —— 换句话说，他把自己的车子升级成了自动驾驶汽车！而这一切的总花费不过 $700 美元左右。
 

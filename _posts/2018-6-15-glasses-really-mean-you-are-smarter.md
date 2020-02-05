@@ -5,7 +5,7 @@ tags: Guokr Science Translate
 star: true
 author: Arwa Mahdawi
 from: https://www.theguardian.com/science/2018/may/30/glasses-smarter-study-intelligence-bad-eyesight-link-health-benefits
-thumb: "{{site.cdn}}/img/20180615/thumb.jpg"
+thumb: "/img/20180615/thumb.jpg"
 ---
 
 *“戴眼镜的更聪明”这个梗貌似要成真了！爱丁堡大学研究发现，高智商的人更有可能携带视力问题相关的基因！比一般人多30％呢。*

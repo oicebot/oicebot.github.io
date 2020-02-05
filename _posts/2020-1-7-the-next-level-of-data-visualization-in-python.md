@@ -3,7 +3,7 @@ layout: post
 title: "新世纪数据可视化指南"
 tags: Udacity Translate Data-Science Python
 excerpt: "你离全交互式图表就差这么一行代码！"
-thumb: {{site.cdn}}/img/20191226/thumb.jpg
+thumb: /img/20191226/thumb.jpg
 author: Will Koehrsen
 from: https://towardsdatascience.com/the-next-level-of-data-visualization-in-python-dd6e99039d5e
 ---

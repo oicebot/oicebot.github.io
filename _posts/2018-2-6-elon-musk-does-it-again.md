@@ -5,7 +5,7 @@ tags: Udacity SpaceX Translate
 from: https://blogs.scientificamerican.com/observations/elon-musk-does-it-again/
 author: Lee Billings
 star: true
-thumb: "{{site.cdn}}/img/50E7AA0A-8EE9-4726-B1E63F0C20EE3A24_source.jpg"
+thumb: "/img/50E7AA0A-8EE9-4726-B1E63F0C20EE3A24_source.jpg"
 ---
 一年前你要跟我这么说，我会以为你疯了。但事实证明，人类航天探索事业的又一个转折点已经到来。
 

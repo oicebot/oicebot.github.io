@@ -4,7 +4,7 @@ title: 区块链的2018年究竟会怎样？这里有 18 个预测，你希望�
 tags: Udacity Blockchain Translate
 from: https://media.consensys.net/18-predictions-for-2018-7a376ea7bd4b
 author: Andrew Keys
-thumb: "{{site.cdn}}/img/20180112/thumb.jpg"
+thumb: "/img/20180112/thumb.jpg"
 excerpt: 下一代互联网将从这里起飞
 ---
 
