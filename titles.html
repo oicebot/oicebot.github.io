@@ -9,9 +9,9 @@ title: 所有文章
       <div class="only-info">
         <div class="art-img"><a href="{{ post.url }}">
             {% if post.thumb %}
-              <img width="100%" src="{{ post.thumb }}" alt="{{post.title}}">
+              <img width="100%" src="{{ site.cdn }}{{ post.thumb }}" alt="{{post.title}}">
             {% else %}
-              <img width="100%" height="120px" src="{{ site.thumb }}" alt="{{post.title}}">
+              <img width="100%" height="120px" src="{{ site.cdn }}{{ site.thumb }}" alt="{{post.title}}">
             {% endif %}
         </a></div>
       </div>

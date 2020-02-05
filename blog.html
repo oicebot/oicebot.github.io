@@ -8,9 +8,9 @@ title: 精选文章
     <li><div class="only-info">
         <div class="art-img"><a href="{{ post.url }}">
         {% if post.thumb %}
-          <img width="100%" src="{{ post.thumb }}" alt="{{post.title}}">
+          <img width="100%" src="{{ site.cdn }}{{ post.thumb }}" alt="{{post.title}}">
         {% else %}
-          <img width="100%" src="{{ site.thumb }}" alt="{{post.title}}">
+          <img width="100%" src="{{ site.cdn }}{{ site.thumb }}" alt="{{post.title}}">
         {% endif %}
         </a></div>
         </div>
