@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Git / GitHub 基础速查表"
-tags: Udacity Translate Data-Science Github
+tags: Udacity Translate Github
 excerpt: "带你迈向版本控制之路的新手指南"
 thumb: /img/20200213/thumb.jpg
 author: Adam Snyder
