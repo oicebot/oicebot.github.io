@@ -8,7 +8,7 @@ excerpt: "深度分析 2020 全球十大最火编程语言，求职提升新人�
 thumb: "/img/20200218/thumb.jpg"
 ---
 
-<img src="{{site.cdn}}/img/20200218/001.jpg">
+![]({{site.cdn}}/img/20200218/001.jpg)
 
 世界上目前现有大约 600 种编程语言，它们的使用趋势和流行程度每年都在变化，而新的编程语言也不断涌现，带来各种全新的特性。
 
@@ -32,11 +32,162 @@ thumb: "/img/20200218/thumb.jpg"
 
 ## 01. Python
 
-<img src="{{site.cdn}}/img/20200218/002.png">
+![]({{site.cdn}}/img/20200218/002.png)
 
 Guido van Rossum 在 1990 年代创造 Python 语言的时候，只是把它当作一个业余项目来做。没人能想到这个项目有朝一日居然成为了全世界最热门的编程语言。在综合考虑了所有著名的排行榜和行业趋势后，我觉得 Python 是当之无愧的第一。
 
-Python 未曾像 Java 或者 C/C++ 当年那样迅速普及，也不是一种颠覆性的语言。它从一开始就专注于降低程序员编程的难度，降低
+Python 未曾像 Java 或者 C/C++ 当年那样迅速普及，也不是一种颠覆性的语言。它从一开始就专注于改善程序员的编程体验，降低编程学习的难度，即使是学生也能写出真正可用的代码。
+
+在 2008 年，Python 发布了新一代 Python 3 版本，引入了许多突破性的重大变化和改进。
+
+<span class="hl">关键特性</span>：
+
+* Python 的核心卖点在于它的语言设计。它是一门富有创造性的，优雅、简单同时也强大的语言。Python 为“开发体验”设置了黄金标准，这也深刻地影响了后来那些现代编程语言，比如 Go、Julia 等。
+* Python 与 C/C++ 有着原生级别的整合能力，可以无缝地将许多 CPU 密集型任务用 C/C++ 来完成。同时，Python 提供了许多强大的工具组，涵盖了数学、统计学和计算机科学等方面——比如 `NumPy`、`Pandas`、`SciPy`、`Scikit-Learn` 等等。<br>因此，Python 在机器学习、深度学习、数据科学和其他一些科学领域都有着绝对的优势。
+* Python 拥有非常活跃的社区和支持。无论你需要处理什么类型的工作——比如商业软件开发、数据科学甚至人工智能——你都能找到足够好的 Python 库和框架。
+
+<span class="hl">普及程度</span>：
+
+在过去的几年中，对 Python 的需求出现了巨大的增长，并且没有放缓的迹象。编程语言排名网站 PYPL 将 Python 评为 2019 年增长最快的编程语言：
+
+PYPL 全球同比增长排名情况（2020年1月）：
+
+排名 | 升降 | 语言 | 份额 | 趋势
+---- | ---- | ---- | ---- | ---- | ---- 
+1 | - | Python | 29.72% | +4.3%
+
+同时，Python 在 Github 的语言排名中也上升了一位，超越 Java 取得了第二的位置：
+
+![]({{site.cdn}}/img/20200218/003.jpeg)
+
+而 StackOverflow 开发者调查显示，Python 在最受欢迎的编程语言中排行第二（在所有技术工具中排行第4）：
+
+![]({{site.cdn}}/img/20200218/004.jpeg)
+
+和大部分传统的主流编程语言的热度都居于稳定，或是略微下降的趋势相反，Python 在近 5 年的 Google 趋势上一直保持了不错的上升势头：
+
+![]({{site.cdn}}/img/20200218/005.jpeg)
+
+
+<span class="hl">就业市场</span>：
+
+根据 Indeed 网站的分析，Python 是美国就业市场上最炙手可热的编程语言，2020 年 1 月的招聘职位数量达到了最高 7.4 万个，平均年薪水平排行第三，达到 12 万美元。
+
+![]({{site.cdn}}/img/20200218/006.png)
+
+而 StackOverflow 开发者调查显示，比起其他主流编程语言，Python 开发者所需的工作经验相对较少，而获得的平均薪资相对更高：
+
+![]({{site.cdn}}/img/20200218/007.png)
+
+
+<span class="hl">主要用途</span>：
+
+* 数据科学
+* 数据分析
+* 人工智能、深度学习
+* 商业软件开发
+* Web 开发
+
+## 02. JavaScript
+
+![]({{site.cdn}}/img/20200218/008.png)
+
+在第一次网页浏览器战争期间，Netscape 让 Brendan Eich 开发一款用于网景浏览器的新编程语言。Brendan Eich 只用了大约 10 天就搞出了一个最初的原型，后来的事情你们都知道了。
+
+早期，软件开发者经常嘲笑 JavaScript 糟糕的语言设计、各种功能的欠缺。然而随着多年的发展，Javascript 已经变成了一种多范式的高级、动态编程语言。Javascript 最早的一个重大突破，是 2009 年 Ryan Dahl 发布的跨平台 JavaScript 运行环境 Node.js，它让 JavaScript 走出了浏览器，能够在服务器段运行。
+
+而 JavaScript 的另一个巨大飞跃，则是 2010 年 Google 开发的 JavaScript 网络开发框架 AngularJS。
+
+如今，Javascript 已经成了全世界使用最广泛的编程语言，基本上你在任何地方都能发现它的身影：浏览器、服务器、移动设备、云端、容器……甚至微控制器等等。
+
+<span class="hl">关键特性</span>：
+
+* JavaScript 是无可争议的浏览器编程语言之王。如今的 Web 开发，已经基本上被各种基于 JavaScript 的单页应用（SPA）开发框架所垄断，比如 React、Vue.js 以及 AngularJS。
+* 在 Node.js 的加持下，JavaScript 提供的事件驱动编程特性非常适合于完成 I/O 密集型任务。如今 JavaScript 和 Node.js 能在几乎所有平台上运行，包括各种服务器和移动设备。
+* JavaScript 在近几年已经完成了大规模现代化改造和提升，特别是从 2015、2016 年以来，最新的 ES5、ES6 版本加入了许多现代特性，已经和十几年完全不一样了。
+
+<span class="hl">普及程度</span>：
+
+JavaScript 是所有平台上被广泛采用的高级编程语言。它在 GitHub 贡献排名中连续五年蝉联第一：
+
+![]({{site.cdn}}/img/20200218/009.jpeg)
+
+同时，StackOverflow 2019 年度开发者调查显示，JavaScript 在所有语言和技术工具中的受欢迎程度都是第一名。
+
+![]({{site.cdn}}/img/20200218/010.jpeg)
+
+Google 搜索趋势显示，JavaScript 的总体热度保持平稳：
+
+![]({{site.cdn}}/img/20200218/011.jpeg)
+
+<span class="hl">就业市场</span>：
+
+根据 Indeed 网站的分析，JavaScript 是美国就业市场上需求量排行第三的编程语言，2020 年 1 月的招聘职位数量达到了最高 5.7 万个，平均年薪水平排行第四，达到 11.4 万美元。
+
+![]({{site.cdn}}/img/20200218/012.png)
+
+而 StackOverflow 开发者调查显示，比起其他主流编程语言，JavaScript 开发者所需的工作经验也不太多，获得的平均薪资比较居中：
+
+![]({{site.cdn}}/img/20200218/013.png)
+
+<span class="hl">主要用途</span>：
+
+* Web 开发
+* 后端开发
+* 移动 App 开发
+* 无服务器计算
+* 页游开发
+
+## 03. Java
+
+![]({{site.cdn}}/img/20200218/014.png)
+
+Java 是至今为止最具颠覆性的编程语言之一。在上个世纪 90 年代，许多商业应用程序都是用 C++ 进行开发，导致这些软件的维护非常复杂，而且更加依赖于系统平台。James Gosling 和他在 Sun 公司的团队一起创造的 Java 语言，通过提供更加简单、面向对象的解释型编程语言（也支持多线程编程），降低了开发商业应用程序的门槛。
+
+Java 使用 Java 虚拟机（JVM）对底层操作系统进行抽象，首创了“编写一次，到处运行”的跨平台编程能力。同时 JVM 也提供了最早的垃圾回收机制，以管理对象的生命周期。
+
+近年来，Java 的市场空间被其他更加“面向开发者”的新兴编程语言（比如 Python、JavaScript）所蚕食。而同时，JVM 的臃肿体积使它不太适应现在的云计算态势。在收购 Sun 之后，Oracle 对 JDK 收取高额的许可费用，这也进一步削弱了 Java 的受欢迎程度。
+
+不过 Java 依然还是大型企业开发商业产品时的首选编程语言。
+
+<span class="hl">关键特性</span>：
+
+* Java 提供了强大、特性丰富、多范式的解释型编程语言，学习曲线也比较适中，开发生产力强大。
+* Java 严格向后兼容，这对商业软件来说是至关重要的。Java 并不像 Python 和 Scala 那样引入巨大的突破性改变，所以它的稳定性良好，这也使它继续成为商业产品开发的首选。
+* Java 运行时 JVM 可以算是软件工程的杰作，也是业内最佳的虚拟机之一。通过 25 年来不断的工程技术革新，Java 在 JVM 的加持下，成为性能强大，功能完善的编程语言。此外，JVM 还为 Java 提供了一些高级垃圾回收机制。
+
+<span class="hl">普及程度</span>：
+
+在发布 5 年以后，Java 就成了普及程度全球第三的编程语言，并且将这一领先优势保持了 20 年之久。下面是 TIOBE 网站统计的历史数据：
+
+![]({{site.cdn}}/img/20200218/015.jpeg)
+
+在 Github 贡献排名中，2014-2018 年 Java 都排第二，直到 2019 年被 Python 超越：
+
+![]({{site.cdn}}/img/20200218/016.jpeg)
+
+Google 搜索趋势显示，Java 的总体热度相对缓慢下降：
+
+![]({{site.cdn}}/img/20200218/017.jpeg)
+
+<span class="hl">就业市场</span>：
+
+根据 Indeed 网站的分析，Java 是美国就业市场上需求量排行第二的编程语言，2020 年 1 月的招聘职位数量达到了最高 6.9 万个，平均年薪水平排行第六，达到 10.4 万美元。
+
+![]({{site.cdn}}/img/20200218/018.png)
+
+而 StackOverflow 开发者调查显示，Java 开发者需要几年的工作经验，获得的平均薪资比较居中：
+
+![]({{site.cdn}}/img/20200218/019.png)
+
+<span class="hl">主要用途</span>：
+
+* 商业软件开发
+* 安卓 App 开发
+* 大数据处理
+* 网页开发
+
+## 04. C#
 
 
 
@@ -44,8 +195,83 @@ Python 未曾像 Java 或者 C/C++ 当年那样迅速普及，也不是一种颠
 
 
 
+<span class="hl">关键特性</span>：
+
+<span class="hl">普及程度</span>：
+
+<span class="hl">就业市场</span>：
+
+<span class="hl">主要用途</span>：
+
+## 05.
 
 
+
+
+
+<span class="hl">关键特性</span>：
+
+<span class="hl">普及程度</span>：
+
+<span class="hl">就业市场</span>：
+
+<span class="hl">主要用途</span>：
+
+
+## 06.
+
+
+
+
+
+<span class="hl">关键特性</span>：
+
+<span class="hl">普及程度</span>：
+
+<span class="hl">就业市场</span>：
+
+<span class="hl">主要用途</span>：
+
+## 07.
+
+
+
+
+
+<span class="hl">关键特性</span>：
+
+<span class="hl">普及程度</span>：
+
+<span class="hl">就业市场</span>：
+
+<span class="hl">主要用途</span>：
+
+## 08.
+
+
+
+
+
+<span class="hl">关键特性</span>：
+
+<span class="hl">普及程度</span>：
+
+<span class="hl">就业市场</span>：
+
+<span class="hl">主要用途</span>：
+
+## 09.
+
+
+
+
+<span class="hl">关键特性</span>：
+
+<span class="hl">普及程度</span>：
+
+<span class="hl">就业市场</span>：
+
+<span class="hl">主要用途</span>：
 
 
 ## 10. Ruby
@@ -55,6 +281,13 @@ Python 未曾像 Java 或者 C/C++ 当年那样迅速普及，也不是一种颠
 Ruby 诞生于1990年代，是由一名日本计算机科学家松本行弘独立创造的编程语言
 
 
+<span class="hl">关键特性</span>：
+
+<span class="hl">普及程度</span>：
+
+<span class="hl">就业市场</span>：
+
+<span class="hl">主要用途</span>：
 
 
 
