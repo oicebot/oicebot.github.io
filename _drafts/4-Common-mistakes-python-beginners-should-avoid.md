@@ -1,95 +1,103 @@
 ---
 layout: post
-title: "4 Common Mistakes Python Beginners should Avoid"
+title: "Python 新人需要避免的 4 条常见错误"
 tags: Udacity Translate Python
 author: Eden Au
 from: https://towardsdatascience.com/4-common-mistakes-python-beginners-should-avoid-89bcebd2c628
-excerpt: "I learned them the hard way, but you don’t need to"
+excerpt: "我用最崎岖的方式学到了教训，希望你不用重走这条弯路。"
 thumb: "/img/20200302/thumb.jpg"
 ---
 
-![]({{site.cdn}}/img/20200302/001.jpg)
+![图片来源：Unsplash，摄影 Jamie Street]({{site.cdn}}/img/20200302/001.jpg)
 
-<span class="hl">Let’s face it. It is hard to learn programming.</span>
+<span class="hl">“面对现实吧，学编程不能有小聪明。”</span>
 
-Many people would agree, but some do not. I did not believe that.
-This was because I could always discover **subtle** approaches to do whatever I would like in different programming languages. I thought I had mastered them. But I was wrong. You can do anything in your codes, but you should not do anything you want.
+上面这句话，有许多人觉得有道理。而我曾对它不屑一顾。
 
-I soon realized that those ‘subtle’ methods I tried were bad practices. But how can a working piece of code be bad? I get used to adopting these bad (and subtle) practices and it came back to haunt me. I learned that the hard way.
+这是因为，在学习各种不同的编程语言时，我总能发现一些**微妙**的方法，来完成我想做的任何事情。我曾认为我能掌控一切。然而我错了。
 
-Before sharing 4 common mistakes that every Python newbie should know, make sure you are familiar with some Python built-in features in the following article.
+你能在你的代码里做任何事，但你**不应该**任意乱来。
 
-## 1. Not using iterators
+我很快就意识到，我的那些“微妙”的操作其实都是些**糟糕的垃圾代码**。但明明能得出正确的运行结果，为啥说是垃圾代码呢？我曾习惯于这些糟糕的编程“技巧”，直到我被一个复杂的项目狠狠摆了一道。我算是用最笨的办法学到了这个教训。
 
-Every Python newbie does this, regardless of their proficiency in other programming languages. There is no escape.
+在实际开始介绍这 4 条常见的错误做法之前，我希望你已经对接下来要涉及的 Python 内置特性有了一些大概的了解。
 
-Given a list list_, how would you access elements in the list one by one using a for-loop? We know that lists in Python are **indexed**, and therefore we can access the i-th element by `list_[i]`. We can then create an **iterator for integers** ranging from 0 to `len(list_)` for the for-loop as shown below:
+让我们开始吧！
+
+## 错误 1：不使用迭代器
+
+基本上每个刚学 Python 的新人都干过这事。这和 ta 之前是否学过其他编程语言还没什么关系，谁都会犯错。
+
+举个例子，假如手上有个列表 `list_`，你要怎么用 for 循环来按顺序读取列表中的每一个元素呢？你看，我觉得，既然 Python 中的列表是**有序**的，我就可以通过它的索引 `i` 来读取列表中的第 i 个元素，比如 `list_[i]`。那么，接下来我就用一个**循环变量**，在 for 循环中从 0 遍历到列表的总长度 `len(list_)`，读取每一个值：
 
 ```python
 for i in range(len(list_)):
-    foo(list_[i])
+    print(list_[i])
 ```
 
-It works. There are no problems with the codes. This is also the standard way to construct a for-loop in other languages such as C. But we can actually do better in Python.
+它能正常工作。这些代码运行起来没有问题。甚至在其他一些编程语言（比如 C 语言）中，这还是标准的 for 循环格式。
 
-**HOW?**
+但在 Python 里，我们实际上有更好的做法。
 
-Do you know that lists in Python are **iterable**? We can produce much more readable codes by leveraging its iterable nature as shown below:
+### 咋整？
+
+知道吗，在 Python 里，列表对象本身就是**可迭代的**。使用这个特性，我们可以用 `for ... in ...` 语句，构建一个简洁易懂的循环：
 
 ```python
 for element in list_:
-    foo(element)
+    print(element)
 ```
 
-![]({{site.cdn}}/img/20200302/002.jpg)
+![图片来源：Unsplash，摄影 The Creative Exchange]({{site.cdn}}/img/20200302/002.jpg)
 
-**Traversing multiple lists in parallel** in a for-loop can be achieved by `zip` function, whereas `enumerate` can be helpful if you insist on getting the index number (i.e. counter) while iterating over an iterable object. They are both introduced and explained in _5 Python features I wish I had known earlier_.
+如果你想要在 for 循环中**并行遍历多个列表对象**，你可以使用 `zip` 函数，而如果你坚持要在遍历可迭代对象的时候获取对应的索引号（例如计数），你可以使用 `enumerate` 函数。
 
+## 错误 2：滥用全局变量
 
-## 2. Using globals
-
-A global variable is a variable declared in the main script with a global scope, whereas a **local** one is a variable declared within a function with a local scope. Using the `global` keyword in Python allows you to access and make changes to global variables locally in a function. Here is an example:
+全局变量是在主代码块中以全局作用域声明的变量，而**局部**变量则是在某个函数中以局部作用域声明的变量。使用 `global` 关键字，你可以在函数内部改变全局变量的值。比如下面这个例子：
 
 ```python
-a = 1 # a variable    
+a = 1 # 在顶层定义的一个变量 a
 
 def increment():
     a += 1
     return a
 
 def increment2():
-    global a # can make changes to global variable "a"
+    global a # 将全局变量 “a” 引入函数内部以供修改
     a += 1 
     return a
   
-increment()  # UnboundLocalError: local variable 'a' referenced before assignment
-increment2() # returns 2
+increment()  
+# 返回错误信息：UnboundLocalError: local variable 'a' referenced before assignment
+increment2() 
+# 返回： 2
 ```
 
-Many beginners love it, as using `global` seems to save you from passing all the arguments you need for the function. **But this is actually not true**. It simply hides the actions.
+许多初学者喜欢这样操作，使用 `global` 关键字，似乎可以省下许多在函数间传递参数的麻烦事。**然而这是不对的**，这让你难以追踪函数的行为。
 
-Using `globals` is also bad for **debugging** purpose. Functions should be treated as **block boxes**, and should be **reusable**. Functions that amend global variables might bring **side effects** to the main scripts that are very difficult to spot, and it is likely to cause complex spaghetti code and is much harder to debug.
+同样，滥用全局变量还会让你的**调试**工作难上加难。每个函数都应该像一个**独立的盒子**，有着明确的功能，并且可以被**重复使用**。会修改全局变量的函数可能会给主脚本带来很难发现的**副作用**，这会让你的代码变成一团乱麻，让你无法进行调试。
 
-Modifying global variables in a local function is a **poor** programming practice. You should pass the variable in as an argument, modify it, and have it be returned at the end of the function.
+在一个局部函数里修改全局变量是一个**非常糟糕**的编程做法。你应当将所需的变量作为参数传给函数，并且在函数结尾返回一个值给主脚本。
 
-![]({{site.cdn}}/img/20200302/003.jpg)
+![图片来源：Unsplash，摄影 Vladislav Klapin ]({{site.cdn}}/img/20200302/003.jpg)
 
-> *Not to confuse global variables with global constants, as using the latter is perfectly fine in most scenarios.
+> *注：别把全局变量和全局常量搞混了，在大部分情况下，定义全局常量都是个很好的习惯。
 
-## 3. Not understanding mutable objects
+## 错误 3：不理解可变对象
 
-This is perhaps the most common surprise for new Python learners, as this feature is quite unique in this language.
+对于 Python 初学者来说，这个概念可能是最让人挠头的啦，毕竟在 Python 中这个特性还是挺特殊的。
 
-There are two kinds of objects in Python. Mutable objects can change their states or contents **during runtime**, whereas immutable ones cannot. Many built-in object types are immutable, including `int`, `float`, `string`, `bool`, and `tuple`.
+在 Python 中，有两种类型的对象，可变对象和不可变对象。可变对象的状态或是内容，在**运行时**可以被改变，而不可变对象不可以被改变（是不是有点像绕口令）。许多自带的对象都是不可变的，包括整数 `int`、浮点数 `float`、字符串 `string`、布尔值 `bool` 以及元组 `tuple` 对象。
 
 ```python
 st = 'A string' 
-st[0] = 'B' # You cannot do this in Python
+st[0] = 'B' # 在 Python 中这样做会报错
 ```
 
-On the other hand, data types like `list`, `set`, and `dict` are mutable. So you can change the contents of elements in a list e.g. `list_[0] = 'new'`.
+另一方面，许多数据类型，比如列表 `list`、集合 `set` 以及字典 `dict` 对象是可变的，也就是你可以修改这些对象内部的元素，比如修改列表对象的第一个元素： `list_[0] = 'new'`。
 
-When **default arguments** in functions are mutable, something unexpected would happen. Let’s take the following function as an example where a *mutable* **empty list** is the default value of the parameter `list_`.
+如果一个函数的**默认参数**是可变对象，可能会发生一些意外情况。比如下面这个函数，它的 `list_` 参数的默认值是一个**可变**的**空列表**：
 
 ```python
 def foo(element, list_=[]):
@@ -97,20 +105,22 @@ def foo(element, list_=[]):
     return list_
 ```
 
-Let’s call the function **twice** without feeding an argument for `list_` such that it takes its default value. Ideally, a new empty list would be created every time the function is called if a second argument is not provided.
+让我们调用**两次**这个函数，而不给 `list_` 参数传递任何值，这样它就会使用默认值。推想过去，这两次都应该返回一个只有单个元素的列表，因为每次调用函数的时候，`list_` 应该都是取默认值为空才对。试试看：
 
 ```python
-a = foo(1) # returns [1]
-b = foo(2) # returns [1,2], not [2]! WHY?
+a = foo(1) 
+# 返回 [1]
+b = foo(2) 
+# 返回 [1,2]，而不是 [2] ？这是怎么回事？
 ```
 
-**WHAT?**
+### 什么情况？
 
-It turns out that default arguments in Python are **evaluated once at the time where the function is defined**. That means calling the function does **not** refresh its default arguments.
+事实上，Python 中函数的默认参数<span class="hl">只在函数被定义的时候进行一次求值</span>。这意味着重复调用函数并**不会**重置默认参数的值，这个默认参数是会被重复使用的。
 
-![]({{site.cdn}}/img/20200302/004.jpg)
+![图片来源：Unsplash，摄影 Ravi Roshan ]({{site.cdn}}/img/20200302/004.jpg)
 
-Therefore, if the default argument is mutable, and it is mutated every time the function is called. The mutated default argument would **stick** for all future function calls. The ‘standard’ **fix** is to use (immutable) `None` as the default value as shown below.
+因此，如果默认参数是可变对象，它在每次函数被调用的时候都会被改变，而且这些改变的结果会**影响**到之后的每次调用。“标准”的做法是使用（不可变的）`None` 作为默认值，如下所示：
 
 ```python
 def foo(element, list_=None):
@@ -120,13 +130,17 @@ def foo(element, list_=None):
     return list_
 ```
 
-## 4. Not copying
-The concept of copy might be **foreign** or even **counterintuitive** for learners. Let’s say you have a list `a = [[0,1],[2,3]]`, and then you declare a new list by `b = a`. You now have two lists with the same elements. By changing some elements in list b, it should not have any (side) effect on list `a`, right?
+## 错误 4. 没有复制对象
 
-**Wrong.**
+复制（copy）的概念或许对初学者来说有点**怪异**甚至是**反直觉**的。举个🌰子：
+
+你有一个列表 `a = [[0,1],[2,3]]`，然后你声明一个新的列表，`b = a`，现在你有了两个内容一样的列表。
+
+那我现在是不是就可以修改 `b` 而不影响 `a` 列表中的内容了呢？
+
+### 错。
 
 ```python
-
 a = [[0,1],[2,3]]
 b = a
 
@@ -138,18 +152,17 @@ print(id(a)==id(b))
 # True
 ```
 
-When you ‘copy’ a list using **assignment statement** i.e. `b = a`, any modification made on the elements of one list is visible in both. The assignment operator only creates **bindings** between a target and an object, and therefore both lists `a` and `b` in the example share the same **reference**, i.e. `id()` in Python.
+当你使用**赋值语句**来“复制”一个列表时（比如 `b = a`），对两个列表中任意元素的修改都会同时反映在两个对象上。赋值语句本身只是将目标对象和一个新的变量名**绑定**在一起，因此列表 `a` 和 `b` 在 Python 中其实对应的是同一个**引用**（可以通过 `id()` 查看）。
 
-**How can I copy objects?**
+### 该怎么复制对象呢？
 
-If you want to ‘copy’ objects and only modify values in the new (or the old) object without the bindings, there are two methods to create copies: **shallow copy** and **deep copy**. Two objects will have different references.
+如果你想要“复制”对象，单独修改其中一个的值（元素）而不影响另一个，你有两种复制的办法：**浅拷贝**和**深拷贝**。让两个对象拥有不同的引用。
 
-![]({{site.cdn}}/img/20200302/005.jpg)
+![图片来源：Unsplash，摄影 Louis Hansel ]({{site.cdn}}/img/20200302/005.jpg)
 
-Using our previous example, you can create a shallow copy of `a` by `b = copy.copy(a)`. A shallow copy creates a new object which stores the **reference** of the original elements. This might sound complicated, but let’s take a look at the following example:
+还是用上面的例子，你可以用 `b = copy.copy(a)` 来创造一个 `a` 的浅拷贝。浅拷贝将会创造一个新的对象，里面存储的是原来那个对象里各个元素的**引用**。这听起来有点复杂，让我们看看实际例子：
 
 ```python
-
 import copy
 
 a = [[0,1],[2,3]]
@@ -169,20 +182,22 @@ print(id(a[0]) == id(b[0]))
 # True
 ```
 
-Right after creating a shallow copy of a **nested list** `a`, which we call it `b`, two lists have different references `id(a) != id(b)`, with notation `!=` denotes ‘not equal’. However, their elements have the same references, and thus `id(a[0]) == id(b[0])`.
+在创造出**嵌套列表** `a` 的浅拷贝 `b` 之后，两个列表对象的引用是不一样了（`id(a) != id(b)`），这里 `!=` 表示“不等于”。然而，它们内部的元素还保持着相同的引用，也就是 `id(a[0]) == id(b[0])`。
 
-This means changing the elements inside `b` does not affect list `a`, but amending the elements inside `b[1]` does affect `a[1]`, and therefore this copy is shallow.
+这意味着，如果修改 `b` 中的元素，将不会影响到 `a`，但如果你修改 `b` 中元素的元素，比如 `b[1]` 中的元素，则会影响到 `a[1]`。所以这个复制方式没有达到全部深度。
 
-In short, **any changes made on elements within nested objects in `b` will appear in `a` if `b` is a shallow copy of `a`**.
+简单地说，<span class='hl'>如果 `b` 是 `a` 的浅拷贝，对 `b` 中内嵌列表中的元素进行修改，也会影响到 `a`</span>。
 
-If you want to copy a nested object without any bindings between their elements whatsoever, you need a deep copy of a by `b = copy.deepcopy(a)`. A deep copy creates a new object and **recursively** creates **copies of nested objects** in the original elements.
+如果你想要复制一个和原对象完全没有关联的对象，你需要进行深拷贝。例如，用 `b = copy.deepcopy(a)` 生成一个 `a` 的深拷贝。深拷贝将会**递归地**生成所有嵌套对象中的元素的拷贝。
 
-<span class='hl'>In short, deep copy copies everything without any bindings.</span>
+简单地说，<span class='hl'>深拷贝对所有对象都进行复制而没有绑定。</span>
 
-![]({{site.cdn}}/img/20200302/006.jpg)
+![图片来源：Unsplash，摄影 Drew Coffman ]({{site.cdn}}/img/20200302/006.jpg)
 
-## The Takeaways
+## 结语
 
-There you are — 4 common mistakes Python beginners should avoid. I learned them the hard way, but you do not need to. You can sign up for my newsletter to receive updates on my new articles. If you are interested in Python, you might find the following articles useful:
+好了，以上就是 Python 新人需要避免的 4 条常见错误。我用最崎岖的方式学到了教训，希望你不用重走这条弯路。
 
-**Happy Coding!**
+<span class='hl'>祝编码顺利！</span>
+
+> _（本文已投稿给「[优达学城](https://cn.udacity.com)」。 原作： [{{ page.author }}]({{ page.from }}) 翻译：欧剃 转载请保留此信息）_
