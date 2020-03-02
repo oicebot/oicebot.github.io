@@ -2,7 +2,7 @@
 layout: post
 title: "What are the 10 Must Read Data Science and AI Books of 2020"
 tags: Udacity Translate AI Data-Science Python
-author: David Yakobovitch
+作者： David Yakobovitch
 from: https://towardsdatascience.com/what-are-the-10-must-read-data-science-and-ai-books-of-2020-36e2c5f0d72f
 excerpt: "Data Science and AI — Project-based learning"
 thumb: "/img/20200304/thumb.jpg"
@@ -12,15 +12,25 @@ thumb: "/img/20200304/thumb.jpg"
 
 Becoming an expert in anything requires commitment to learn and consistency to reach your goals. The same is true for all professions whether #AI, engineering or even medical studies. Knowledge acquisition is critical in skill development as this raises your level of expertise. When was the last time you dedicated yourself to becoming an expert?
 
+要想在任何一件事情上成为专家——不论是人工智能、工程学甚至医学——你都必须付出足够的努力，不断学习，持之以恒，才能实现目标。在拓展技能的过程中，知识的汲取是至关重要的，只有这样，你才能提升自己的经验水平。
+
 Unlike the past when **artificial intelligence** was a new concept for many, the mention of AI has become mainstream and buzzyworthy. My personal journey in the field of AI has been one filled with **consistent learning and studying with diverse resources**.
+
+<span class="hl">人工智能</span>在如今的业界，早已不是个新概念了，它是你进入数据科学和机器学习领域的必备技能。我个人在人工智能领域的学习过程就是利用多种不同资源，不断学习的过程。
 
 You can **become an expert in data science** today by _reading the right books_.
 
+是的，你也可以通过这些资源自学成为一名数据科学领域的专家。
+
 Here are **10 of the best books** from 2019 and 2020 in the **Data Science**, **Machine Learning**, and **Applied AI** domains for your reading list:
 
-## 1. Interpretable Machine Learning
+下面就是我整理的，2019年至今出版的**数据科学**、**机器学习**以及**实用 AI** 方面的十本好书。强烈建议你把它们加入自己的书单：
 
-Author: Christoph Molnar (2019) 
+## 1. 可解释的机器学习 
+
+（Interpretable Machine Learning）
+
+作者: Christoph Molnar (2019) 
 
 ![]({{site.cdn}}/img/20200304/002.jpg)
 
@@ -35,9 +45,11 @@ Data scientists encounter challenges interpreting their machine learning models 
 
 https://leanpub.com/interpretable-machine-learning
 
-## 2. Python for Data Analysis, 2nd Edition
-Author: Wes McKinney (2017) 
-ISBN: 9781491957653
+## 2. Python 语言数据分析 第二版
+
+（Python for Data Analysis, 2nd Edition）
+
+作者: Wes McKinney (2017) ， ISBN: 9781491957653
 
 ![]({{site.cdn}}/img/20200304/003.jpg)
 
@@ -45,10 +57,11 @@ Python for Data Analysis by Wes McKinney helps readers to **learn data science**
 
 The author covers key areas in data science including **dataset crunching** and **manipulation** in Python. I admire this book for its flexibility in covering subject areas in python that most readers would want to discover when **learning Data Science for the first time**. McKinney offers solutions you can use to address data analysis challenges by using effective methods with popular packages such as **pandas and numpy**.
 
-## 3. The Hundred-Page Machine Learning Book
-Author: Andriy Burkov (2019)
+## 3. 用一百页纸解释机器学习
 
-ISBN: 9781999579500
+（The Hundred-Page Machine Learning Book）
+
+作者: Andriy Burkov (2019) ，ISBN: 9781999579500
 
 ![]({{site.cdn}}/img/20200304/004.png)
 
@@ -58,10 +71,11 @@ From the first page to the last, Burkov engages with readers by taking them thro
 
 https://leanpub.com/theMLbook
 
-## 4. Deep Learning with JavaScript: Neural networks in TensorFlow.js
-Authors: Shanqing Cai, Stanley Bileschi, Eric D. Nielsen with Francois Chollet (2020)
-ISBN 9781617296178
+## 4. Javascript 深度学习：用 TensorFlow.js 搭建神经网络
 
+（Deep Learning with JavaScript: Neural networks in TensorFlow.js）
+
+作者： Shanqing Cai、Stanley Bileschi、Eric D. Nielsen 和 Francois Chollet (2020)， ISBN： 9781617296178
 
 ![]({{site.cdn}}/img/20200304/005.jpg)
 
@@ -71,8 +85,11 @@ JavaScript is a popular language in the programming world with data structures, 
 
 https://livebook.manning.com/book/deep-learning-with-javascript/about-this-book/
 
-## 5. Mastering Large Datasets with Python: Parallelize and Distribute Your Python Code
-Author: John T. Wolohan (2020)
+## 5. Python 语言处理大规模数据集：并行化和分布式 Python 代码
+
+（Mastering Large Datasets with Python: Parallelize and Distribute Your Python Code）
+
+作者： John T. Wolohan (2020)
 
 ISBN 9781617296239
 
@@ -86,10 +103,10 @@ For students looking forward to build enormous data science models, this book wi
 
 https://livebook.manning.com/book/mastering-large-datasets/about-this-book/
 
-## 6. Practical Data Science with R, (2nd edition)
-Authors: Nina Zumel, John Mount (2019)
+## 6. 实用 R 语言数据科学 第二版
+（Practical Data Science with R, 2nd edition）
 
-ISBN 9781617295874
+作者： Nina Zumel、John Mount (2019)， ISBN： 9781617295874
 
 ![]({{site.cdn}}/img/20200304/007.png)
 
@@ -99,10 +116,10 @@ Readers learn about statistical analysis interpretation, the data science workfl
 
 https://livebook.manning.com/book/practical-data-science-with-r-second-edition/about-this-book/
 
-## 7. Data Science in Production
-Author: Ben Weber (2020)
+## 7. 从数据科学到产品
+（Data Science in Production）
 
-ASIN: B083H2YWP4
+作者： Ben Weber (2020)， ASIN: B083H2YWP4
 
 ![]({{site.cdn}}/img/20200304/008.png)
 
@@ -112,10 +129,10 @@ Areas such as **cloud deployment, developing web end points** and **models of ma
 
 https://leanpub.com/ProductionDataScience
 
-## 8. Python Data Science Handbook
-Author: Jake Vanderplas (2016)
+## 8. Python 语言数据科学手册
+（Python Data Science Handbook） 
 
-ISBN: 9781491912058
+作者： Jake Vanderplas (2016)， ISBN: 9781491912058
 
 ![]({{site.cdn}}/img/20200304/009.jpg)
 
@@ -125,10 +142,10 @@ The _Python Data Science Handbook_ is a must-have if you want to learn data scie
 
 http://shop.oreilly.com/product/0636920034919.do
 
-## 9. Seven Databases in Seven Weeks 2nd Edition
-Authors: Eric Redmond, Jim Wilson (2018)
+## 9. 七星期掌握七种数据库 第二版
+（Seven Databases in Seven Weeks 2nd Edition）
 
-ISBN: 9781680502534
+作者： Eric Redmond 和 Jim Wilson (2018)、ISBN: 9781680502534
 
 ![]({{site.cdn}}/img/20200304/010.jpg)
 
@@ -136,10 +153,10 @@ Massive data systems require large databases and database frameworks. Data Scien
 
 https://pragprog.com/book/pwrdata/seven-databases-in-seven-weeks-second-edition
 
-## 10. Artificial Intelligence with Python — Second Edition
-Authors: Alberto Artasanchez, Prateek Joshi (2020)
+## 10. 人工智能与 Python 语言 第二版
+（Artificial Intelligence with Python — Second Edition）
 
-ISBN: 9781839219535
+作者： Alberto Artasanchez 和 Prateek Joshi (2020)， ISBN: 9781839219535
 
 ![]({{site.cdn}}/img/20200304/011.jpg)
 
@@ -150,6 +167,8 @@ Artasanchez and Joshi have updated their best-selling book for **TensorFlow 2.0*
 https://www.packtpub.com/data/artificial-intelligence-with-python-second-edition
 
 ## You have the grit to be an Expert Data Scientist
+## 成为专业数据科学家
+
 From teaching thousands of students at The Carpentries, Galvanize, and General Assembly, I have narrowed dozens of books into these 10 resources on data science, machine learning and AI. Whether you are learning from OReilly, Manning, Packt, Leanpub, Pragprog, or other platforms now there is a wealth of knowledge for everyone to learn data science.
 
 Which recommended book in this list caught your attention the most? What books would you add to this list? Share your comments below to contribute to the discussion
