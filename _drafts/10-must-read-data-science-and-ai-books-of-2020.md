@@ -2,7 +2,7 @@
 layout: post
 title: "数据科学和人工智能初学者，这里有一个 2020 年必读书单送给你"
 tags: Udacity Translate AI Data-Science Python
-作者： David Yakobovitch
+author: David Yakobovitch
 from: https://towardsdatascience.com/what-are-the-10-must-read-data-science-and-ai-books-of-2020-36e2c5f0d72f
 excerpt: "10 本精挑细选的实用秘籍，不看可惜"
 thumb: "/img/20200304/thumb.jpg"
