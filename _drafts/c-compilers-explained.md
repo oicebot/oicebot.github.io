@@ -9,18 +9,36 @@ thumb: "/img/20200320/thumb.jpg"
 ---
 
 As a C++ developer, you’ve mastered a high-performance programming language used to create applications in the world’s most exciting fields—from data mining and big data to self-driving cars and robotics to gaming and video. By this point you may have tackled topics like multi-threading and parallel programming. But have you ever taken a look behind the scenes to find out what happens during compilation?
+
+<span class="hl">C++</span> 是一门高性能编程语言，它被广泛应用于世界最前沿的技术应用当中——从数据挖掘、大数据，到自动驾驶汽车、机器人，再到电子游戏和视频处理，C++ 的身影可谓无处不在。作为一名 C++ 程序员，你已经相当精通这门语言，对多线程和并行编程等主题也有了一定的了解。但你是否曾经揭开过编译器那神秘的面纱，是否好奇过在编译期间到底发生了什么事？
+
 The topic is worth learning about, and this article contains some of the most important details that you’ll want to know. The inner workings of the compiler can provide deep insights and improve your programming skills by helping you avoid common errors.
+
+这是一个非常值得讨论的问题，今天这篇文章里，我们将详细聊聊你最需要了解的几个重点细节。对编译器内部工作原理的了解能帮你更深刻地理解代码，避开许多常见的“坑”，从而进一步提高你的编程水平。
 
 ![](./001.jpg)
 
-## Steps in the C++ compilation process
+## C++ 编译过程的阶段 Steps in the C++ compilation process
 
 Let’s cast some light on the black box of compilation by explaining in simple terms what a C++ compiler does. Being a high-level programming language, C++ makes coding easier for programmers; the nuts-and-bolts nature of low-level machine language makes it hard to write useful programs of sufficient complexity for the modern era of computing. The compiler bridges the gap between high-level C++ and machine language by converting your C++ source code into a binary file that computers can execute. The compilation process is fairly complex and can be divided into three steps:
 
-### Preprocessing
-Before the actual compilation, the preprocessor directives instruct the compiler to prepare the source code by temporarily expanding it. In C++, preprocessor directives begin with a # (hash) symbol; examples of some preprocessor directives are `#include`, `#define`, and `#if`. In the preprocessor stage, the compiler works with one C++ source file at a time. In the case of #define directives, the compiler replaces macros while with `#if`, `#ifdef`, and `#ifndef` directives, the compiler selects different parts of the text. For #include directives, it replaces the contents of the corresponding files, which are usually just declarations. Header files marked with the #include preprocessor directive can add a lot of lines to the code; the more header files you include, the longer the preprocessed output file becomes. In general, this preprocessed file is bigger than your simple C++ source code.
+现在，让我们一起打开编译器的“小黑盒”，用最简明的办法来解释 C++ 编译器到底都对你的代码施了什么“魔法”吧。
+
+作为一门高级编程语言，C++ 让程序员的编程工作变得更加容易——低级机器语言一板一眼的本性难以用于编写足够复杂的现代应用程序。编译器通过将 C++ 源码转换成计算机可以执行的二进制文件，填补了高级 C++ 语言和机器语言之间的空白。
+
+总的来说，编译过程还比较复杂，一般可以分为三个阶段：
+
+### 预处理 Preprocessing
+
+Before the actual compilation, the preprocessor directives instruct the compiler to prepare the source code by temporarily expanding it. In C++, preprocessor directives begin with a # (hash) symbol; examples of some preprocessor directives are `#include`, `#define`, and `#if`. In the preprocessor stage, the compiler works with one C++ source file at a time. In the case of `#define` directives, the compiler replaces macros while with `#if`, `#ifdef`, and `#ifndef` directives, the compiler selects different parts of the text. For #include directives, it replaces the contents of the corresponding files, which are usually just declarations. Header files marked with the #include preprocessor directive can add a lot of lines to the code; the more header files you include, the longer the preprocessed output file becomes. In general, this preprocessed file is bigger than your simple C++ source code.
+
+在实际编译工作开始之前，预处理器指令指示编译器对源码进行临时扩充，以为之后的步骤做好准备。
+
+在 C++ 中，预处理器指令以 `#` 号开头，比如 `#include`、`#define` 和 `#if` 等。在这一阶段，编译器逐个处理 C++ 源码文件。对于 `#define` 指令，编译器将源码中的宏替换成宏定义中的内容；对于 `#if`、`#ifdef` 和 `#ifndef` 指令，编译器将有选择地跳过或选中部分源代码；而对于 `#include` 指令，编译器将把对应的库的源码插入到当前源代码中——这通常是一些通用的声明。被  `#include` 指令引入的头文件（ `.h` ）往往会包含大量的代码，你引入的越多，最后生成的预编译文件就越大。总的来说，预编译过的文件会比原来的 C++ 源码更大一些。
 
 From the aforementioned replacements and extensions, a unified output is produced by the preprocessor. The preprocessor also inserts markers into the code to tell the compiler where each line comes from, in order to generate error messages that can be helpful for your C++ code development during the debugging process. 
+
+通过上面这些替换和插入操作，预处理器产生的是被合为一体的输出文件。预处理器还会在代码中插入记号，使编译器能分辨出每一行来自哪个文件，以便在调试过程中能生成对应的错误信息。这些错误信息对于开发调试你的 C++ 程序是非常有用的。
 
 ### Compilation & assembly
 
