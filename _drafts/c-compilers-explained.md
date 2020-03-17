@@ -38,13 +38,17 @@ Before the actual compilation, the preprocessor directives instruct the compiler
 
 From the aforementioned replacements and extensions, a unified output is produced by the preprocessor. The preprocessor also inserts markers into the code to tell the compiler where each line comes from, in order to generate error messages that can be helpful for your C++ code development during the debugging process. 
 
-通过上面这些替换和插入操作，预处理器产生的是被合为一体的输出文件。预处理器还会在代码中插入记号，使编译器能分辨出每一行来自哪个文件，以便在调试过程中能生成对应的错误信息。这些错误信息对于开发调试你的 C++ 程序是非常有用的。
+通过上面这些替换和插入操作，预处理器产生的是被合为一体的输出文件。预处理器还会在代码中插入记号，使编译器能分辨出每一行来自哪个文件，以便在调试过程中能生成对应的错误信息。在开发调试你的 C++ 程序时，这些错误信息能给你很多帮助。
 
-### Compilation & assembly
+### 编译和汇编 Compilation & assembly
 
 In the next stage, which consists of two steps, the compiler creates an object file from the preprocessor’s output. 
 
+在这一阶段，编译器通过两个连续的步骤，将预处理器产生的代码编译成对象文件（object file）。
+
 First, the compiler converts the pure C++ code, now stripped of preprocessor directives, into low-level assembly code. In this parsing step, the compiler optimizes the source code by pointing out syntax errors, overload resolution errors and any other compile-time errors. Even if a declaration without a definition is used, the compiler can still produce an object file from the source code, since that object file may also refer to symbols that the source code hasn’t defined. 
+
+首先，编译器将去除了预编处理器指令的纯 C++ 代码编译成底层汇编代码。在这一步中，
 
 Second, the assembler converts the assembly code from the previous step line by line into bit code, a.k.a. machine code. Compilation can actually be stopped at this point, useful if you wish to compile each piece of code separately. Object files from this process can be placed in archives called static libraries for later use; you don’t have to recompile all your source files if you change only one file. 
 
