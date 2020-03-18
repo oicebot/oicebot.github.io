@@ -95,32 +95,53 @@ Compilers’ features vary widely, even between versions of the same compiler, a
 
 编译器的特性差异很大，即使在同一个编译器的不同版本之间也是这样；同样，它们的选项也非常丰富，比如在代码生成、调试、浮点数行为、库处理等方面，都有着相当多的选项。
 
-## C++ 编译器总览 Overview of C++ compilers
+## C++ 编译器纵览 Overview of C++ compilers
 Now that you’re ready to compile your C++ program, which C++ compiler should you use?
+
 In general, one can group compilers by their licensing (free vs. paid), by how they are used (locally installed vs. accessed online) or by operating system (Windows, OS X, Linux).
+
 Here are a few suggestions:
 
+现在你已经对 C++ 的编译有了一定的了解，那么你该用哪种编译器呢？
+
+总体上说，你可以按编译器的许可类型（免费或是收费），使用方式（本地安装或是在线编译）以及所支持的操作系统（Windows、OS X 或 Linux）来分类。
+
+下面是几点建议：
 
 * If you are running Linux, the **GNU Compiler Collection** (GCC) is a popular choice. It’s free, of course, and typically available in your Linux distribution’s package repositories.
+* 如果你在 Linux 上进行编程，**GNU 编译器套装（GCC）**是个非常流行的选项。它是免费的，而且你所用的 Linux 发行版的软件包仓库里通常就有。
 * On macOS, **Clang** is the default choice, installed with the Xcode command-line tools. Using Clang is free.
+* 对于 macOS 来说，**Clang** 是个默认选项，它随 Xcode 的命令行工具一起安装。使用 Clang 也是免费的。
 * The **Cygwin project** provides a collection of Linux tools, including GCC, for the Windows operating system. You can use Cygwin to run GCC or Clang, but take note that code produced this way will require Cygwin to run. 
+* **Cygwin 项目**为 Windows 系统提供了一系列 Linux 工具集，包括 GCC 在内。你可以使用 Cygwin 来运行 GCC 或 Clang，但请注意，用这种方式生成的代码需要 Cygwin 才能运行。
 * Another option for Windows is **MinGW**, which doesn’t require Cygwin and produces executables that run natively on Windows.
+* Windows 系统的另外一种选择是 **MinGW**，它不依赖于 Cygwin，而且能生成可原生在 Windows 上运行的可执行程序。
 
 Some IDEs include a compiler along with a code editor, such as Xcode on macOS and Visual Studio on Windows. There are many specialized compilers like **Intel’s C++ compiler** that provide special features for niche uses. For example, Intel’s compiler makes better use of the multi-core architecture in Intel processors and produces code that runs faster on Intel hardware. Such specialized compilers, however, often require the user to purchase an expensive license in order to use them.
 
-Bjarne Stroustrup, the creator of C++, offers an [incomplete list of C++ compilers](http://www.stroustrup.com/compilers.html) on his website.
+有些 IDE 本身在代码编辑器之外就已经包含了编译器。比如 macOS 上的 Xcode，以及 Windows 上的 Visual Studio 等。此外，还有许多专业化的编译器，比如**英特尔 C++ 编译器**等，为特定的需求专门定制了一些特性。比如，英特尔的编译器在自家的处理器上能更有效地利用多核心架构，产生的代码在英特尔的硬件上运行速度更快。这类专业化的编译器常常需要用户购买价格不菲的授权才能使用。
 
 If you find yourself considering a compiler that’s not very popular, take standards compliance seriously. Avoid compilers that do not comply with ISO standards or that do not provide a solid implementation of the standard library—an extensive library C++ comes with. A library file, in turn, is a collection of precompiled code that has been “packaged” for reuse in other programs.
 
+如果你发现自己正在考虑使用某种不是很流行的编译器，请认真了解它的标准依从性。避免使用那些不符合 ISO 标准，或不提供可靠实现的标准库的编译器。这里提到的“标准库”是 C++ 自带的大量库文件；而“库文件”，则是已经“打包”好，可以在其他程序中重复使用的预编译代码的集合。
+
 Some compilers are embedded in the frameworks of software development tools (IDEs) along with libraries. These frameworks can be useful, but it can be difficult to switch away from them if you ever decide to replace your tooling.
 
-## Online C++ compilers
+有些编译器和库文件一起被嵌入在软件开发工具（IDE）提供的框架中。这些框架很有用，但如果你打算更换你的工具链，你可能很难脱离它们。
+
+## 在线 C++ 编译器 Online C++ compilers
 
 An online compiler can be a useful tool for quickly compiling code without having to install a full compiler on the computer. They make it easy for a developer to play with the latest language features, to share code snippets online, to do collaborative live editing, and to test out various compilers. Beyond compilation in the strict sense, most online compilers also execute the compiled program and display its output.
 
+在线编译器是种很有用的工具，它能让你快速编译代码，而不需要在电脑上安装完整的编译工具链。这让程序员能更轻易的摆弄代码，熟悉最新的语言特性，或是在线分享代码片段，实时合作编辑，以及测试各种不同的编译器等。除了狭义的“编译”功能之外，大部分在线编译器还会执行编译完的程序，并将输出结果显示出来。
+
 Just like offline compilers, the features and C++ standard version support offered by online compilers vary widely, from using flags to parameterize the compilation to handling standard inputs to passing in command-line and runtime parameters.
 
+和离线编译器一样，在线编译器支持的 C++ 标准版本和提供的特性也千差万别，从使用 flag 标识来定义编译参数，到处理标准输入并传入命令行和运行时参数等待，不一而足。
+
 A few popular online C++ compilers:
+
+常用的在线编译器有下面这几个：
 
 * Compile Explorer
 * Repl.it
@@ -129,12 +150,14 @@ A few popular online C++ compilers:
 
 Check out this list of[ other online C++ compilers](https://arnemertz.github.io/online-compilers) organized by features.
 
-## Summary
+你还可以在[这里](https://arnemertz.github.io/online-compilers)看到关于更多在线编译器的列表，已按特性进行分类。
+
+## 总结 Summary
 
 In this article, we walked through the stages of C++ compilation to understand the process in more detail. In learning how to use a C++ compiler and through this article’s overview of various C++ compilers, you got a glimpse behind the compilation curtain and gained some hopefully helpful insights.
 
-Want to learn more about the C++ compilation process? Check out the articles from Toptal and Freelancer that include examples of how the compiler works with different parts of the program.
+本文中，我们介绍了 C++ 编译过程的各个阶段，更加详细地了解了整个过程。通过学习俗如何使用 C++ 编译器，并对各种 C++ 编译器进行概述，你得以一窥编译过程的幕后细节，并对它有了一些深入的了解，希望能给你带来帮助。
 
-Looking to learn more about C++? Sign up to earn a C++ Nanodegree program.
+希望了解更多关于 C++ 编译过程的详细信息？想要学习更多 C++ 知识？欢迎报名参加我们的 C++ 纳米学位课程！
 
 > _（本文已投稿给「[优达学城](https://cn.udacity.com)」。 原作： [{{ page.author }}]({{ page.from }}) 翻译：欧剃 转载请保留此信息）_
