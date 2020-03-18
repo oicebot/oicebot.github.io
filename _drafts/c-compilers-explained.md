@@ -70,24 +70,36 @@ Linking may also generate errors, usually related to duplicate or missing defini
 
 With your new knowledge of the individual stages of compilation, you can better understand compiler or linker errors and avoid potential bugs in your code related to compilation. For example, if you understand preprocessing, you can make good use of header guards: code snippets used to protect the contents of the header file from multiple inclusions.
 
-当你对编译过程的各个阶段有了新的理解，你就能更好地理解编译错误或连接错误产生的原因，并避免这些与编译相关的潜在问题。
+当你对编译过程的各个阶段有了新的理解，你就能更好地理解编译错误或连接错误产生的原因，并避免这些与编译相关的潜在问题。比如，如果你理解了预处理过程，你就能利用头文件保护符（用于保护头文件内容不被错误地多次包含的预编译器指令）防止一些编译错误的出现。
 
 Knowing how C++ compilation works can help you look at the whole process differently and can give you more insight into processes you might otherwise take for granted in C++ development.
 
-## How to use a C++ compiler
+对 C++ 编译细节的充分了解，能使你从一个完全不同的角度看待整个编程过程，也让你对原先以为是理所当然的编译过程有了新的认识。
+
+## 如何使用 C++ 编译器 How to use a C++ compiler
 
 The basic steps for building and running a C++ program are as follows:
 
+构建并运行一个 C++ 程序所需的基本步骤有：
+
 1. Create a syntactically correct C++ source file with the help of an editor or programming environment (IDE).
+1. 使用一个编辑器或是编程环境（IDE），构建一个语法正确的 C++ 源文件。
+
 2. Run the compiler to produce an executable file.
+2. 运行编译器对源文件进行编译，生成可执行文件。
+
 3. Execute the resultant file.
+3. 运行生成的文件。
 
 Compilers’ features vary widely, even between versions of the same compiler, as do their options for example code generation, debugging, floating-point behavior, library handling, and more. 
 
-## Overview of C++ compilers
+编译器的特性差异很大，即使在同一个编译器的不同版本之间也是这样；同样，它们的选项也非常丰富，比如在代码生成、调试、浮点数行为、库处理等方面，都有着相当多的选项。
+
+## C++ 编译器总览 Overview of C++ compilers
 Now that you’re ready to compile your C++ program, which C++ compiler should you use?
 In general, one can group compilers by their licensing (free vs. paid), by how they are used (locally installed vs. accessed online) or by operating system (Windows, OS X, Linux).
 Here are a few suggestions:
+
 
 * If you are running Linux, the **GNU Compiler Collection** (GCC) is a popular choice. It’s free, of course, and typically available in your Linux distribution’s package repositories.
 * On macOS, **Clang** is the default choice, installed with the Xcode command-line tools. Using Clang is free.
