@@ -1,79 +1,65 @@
 ---
 layout: post
-title: "艺术家把骨灰做成陶器"
+title: " "
 tags: Guokr Science Space
-excerpt: 我们如何面对死亡
+excerpt:  
 star: true
 origin: true
 thumb: "/img/20200329/thumb.jpg"
 ---
 
+[]
 
+对许多人来说，死亡似乎是一个很遥远的阴影，一般不会在早餐时间特意想起。但如果你的餐具都在时刻提醒你“凡人终究难逃一死”呢？
 
-1. 800字
+陶瓷艺术家贾斯汀·克罗（Justin Crowe）将人们亲属的骨灰制成日常使用的物件，在平凡的生活中增添了少许关于死亡的思考。
 
-How does a mushroom omelet, sausage links, orange juice, and a side of "being reminded that we're all mortal beings who will one day die" sound for breakfast? Great, coming right up! Ceramics artist Justin Crowe creates functional objects using the cremated ashes of loved ones to insert a little mortality into everyday life. If you're craving a cup of joe, you can have it. Literally — a coffee cup made with Grandpa Joe.
+#
 
+在选择如何让故去的亲朋继续陪伴在身边方面，人们总是不缺创意。骨灰拿来种树，压成钻石，甚至拌进墨水纹身什么的都不过是“基操勿六”，把逝者本人的纹身皮肤裱在镜框里放到客厅也只是略显硬核。
 
+美国新墨西哥州的贾斯汀·克罗则另辟蹊径，把死者变成各种不同的陶瓷物件，摆在你的餐桌上。
 
+克罗这或许有些病态的创意，来自一个被他称为“滋养”（Nourish）的艺术项目。在这个项目中，他将来自约两百具不同遗体的骨灰混合在一起，烧制出看似普通的陶瓷餐具。这些骨骼来自一些向医疗机构、学生和猎奇收藏者贩卖骨骸的遗体贩子。克罗将骨头放在窑里烧成灰，用研钵和杵碾细，再将细小的粉末混入液体釉料中搅拌均匀，最后用这种特殊釉料包裹杯子和碗碟的陶胚，再烧制成型。
 
-Reincarn-plate
+在完成这个项目之后，就有人跟他联系，想要用这与众不同的方式纪念自己故去的亲朋。就这样，克罗的“骨灰纪念设计”诞生了。如今你可以选择将骨灰做成各种不同形式的东西：咖啡杯、蜡烛台、首饰和各种瓷器。
 
-There's no shortage of interesting ways to deal with the remains of a deceased friend or family member. Why go with a casket or cremation when you could turn a decomposing body into a tree, diamond, mushroom farm, or coral reef? Perhaps you'd rather get a tattoo of your beloved grandma, using ink mixed with your beloved grandma. Or, hell, just preserve one of her actual tattoos in a frame for your front room. Why stop there? New Mexico-based artist Justin Crowe is putting another option on the table by turning the deceased into various ceramic objects. Grief is weird.
+一具典型的成人遗骸会产生大约1.8到2.7千克的骨灰，克罗制作定制釉料时只需要大约100克。在最终制作出来的器皿上其实看不到骨灰，它们在窑内烧制的过程中就已经完全熔化，成为瓷器釉面的一部分。制作这种定制釉料要收费399美金，之后每一件瓷器再加收159至649美金不等。
 
-Crowe got this maybe-morbid idea after an art project he called "Nourish." For it, he used the mixed ashes of about 200 people (bought from bone dealers who typically sell to medical professionals, students and oddity collectors) to make functional dinnerware. Crowe turned the bones into ash in a kiln, ground it up with mortar and pestle, and blended the fine ash into a liquid glaze used to coat the cups, bowls, and plates. According to his website, this series was "designed to infuse a sense of mortality into everyday moments﻿﻿﻿. [...] It's inspiration to celebrate, share, and live full while reflecting on our very existence."
+克罗最初的客户之一是24岁的约苏亚·马丁内斯，他希望纪念自己意外离世的好友米勒。米勒的妈妈给了他一小部分米勒的骨灰，他原先一直把骨灰保存在盒子里。如今克罗已经将这些骨灰融进了四只咖啡杯里，米勒的几位生前好友每人都收到了一只。
 
-Bone Appétit
+约苏亚表示，“我会试着在往后余生都带着这只杯子，这让我永远铭记他，以他为荣，给他满上一杯上好的咖啡。这是我与他继续分享人生的方式。”
 
-After he completed "Nourish," Crowe was approached about creating custom orders for people looking to memorialize their deceased loved ones in a new and certainly unique way. And just like that, Crowe's Chronicle Cremation Designs was born. Today, you can choose from a variety of forms you'd like ashes to be transformed into: coffee mugs, candle luminaries, jewelry, and china. Instead of feeling dejected by an empty seat at your breakfast nook, you can sip your morning tea with your passed-on family member in a different way.
+当然，也有人觉得要是你去别人家喝杯茶，发现茶杯是对方老爸的骨灰做的，是不是会有点毛骨悚然？
 
-If the thought of heating up leftovers on Uncle Phil makes you uncomfortable, that's not something that would surprise Crowe. He notes that especially in the U.S., death is a very taboo topic that often gets swept under the rug; it's not something we want to confront on the regular. He wants to put death out in the open, if only to normalize it.
+对于这个问题，克罗在承认之前表示“你用不着告诉他们，这本来就是个分歧严重的点子。”
 
-"What's been really interesting about creating ceramic objects from the ashes of passed loved ones is that it allows the owner or the person who has the pieces to interact with them," Crowe told Inverse. "It integrates them into their daily life, rather than looking at a picture on a shelf or a cremation urn on a mantle. You now have this object that is very much a part of your life."
+克罗还表示，死亡被视为非常禁忌的话题，人们往往避而不谈。他希望让死亡成为一件公开的事情，希望将它正常化。
 
+对于那些心怀担忧的人，克罗解释说，人类骨灰的化学组成和传统上制造陶瓷釉料所用的天然材料的化学组成其实没什么区别。“唯一的区别只是它们来源于一个曾经活过的人。我们来源于尘土，最后也归于尘土，这难道不美吗？”
+
+#
+
+“正视死亡，珍视生命”正是当今社会死亡教育的重要主题。
+
+死亡教育在国内又被称为生死教育，生命教育。它通过对生命和死亡相关知识的教导，帮助人们正确认识死亡，学会面对死亡，破除对死亡的禁忌，从而树立恰当的人生观和死亡观，更加热爱生活，珍视生命。这其中恰好就包括了“理解尸体可以有多种处理方式”和“感觉能够面对亲人的离去”等内容。
+
+此外，有研究表明，接受过死亡教育的学生获得了在死亡危机来临前的“预演”机会，通过对死亡相关问题的探索、感受与反应，他们得以做好准备，练习那些新的应对模式，从而在危机真正来临时能减轻危机强度和由此带来的悲伤；他们还将获得或增强各种应对能力，帮助自己和他人度过难关。
+
+日本的一项研究认为，接受死亡教育不论对医务人员、患者本人还是患者家属都有着重要的意义。
+
+作为医务人员，能更好地理解终末患者对死亡的恐惧和焦虑，并能帮助他们减轻恐惧，更知道如何处理终末患者的医学伦理，引导家人做好临终关怀。
+
+作为患者，能理解并面对自己的生命，驱散对死亡的恐惧与禁忌，利用好宝贵的剩余时间，了却未尽的心愿，安排好自己的身后事。
+
+作为患者家属和亲朋，能保持温暖的情感支持，做好病人的临终关怀，也能面对并正视自己的悲伤，从死亡中走向新生。
 
 ---
-
-
-A typical adult human body will generate between 1.8kg (4lb) and 2.7kg (6lb) of ash, and Crowe needs just 100g of it to create the custom glaze. The ash isn’t visible in the final product, but melts in the kiln to become part of the glass coating on the pottery. Crowe charges $399 to create the custom glaze plus between $159 and $649 for each pottery object.
-
-Would the idea of going round someone’s house and drinking out of a coffee cup made from their dad not be a little creepy? “You don’t have to tell them,” Crowe said, before admitting: “It’s a really polarizing idea.”
-
-“I’ve had people threaten me and tell me they are having me investigated. Or they’ve quoted the Bible and told me I’m going to hell. But then shortly after someone contacts me and tells me it’s a really beautiful project,” he said.
-
-To allay critics’ concerns, he explains that the chemical composition of human ash is made up of all of the same natural materials used to create a typical ceramic glaze.
-
-“These just happen to originate from a previously living person. It really puts into perspective that we are all just made of the same dust we walk on. It’s pretty beautiful.”
-
-一具典型的成人尸体会产生大约 1.8 到 2.7 千克的骨灰，克罗制作定制釉料时只需要大约 100 克。在最终制作出来的器皿上其实看不到骨灰，它们在窑内烧制的过程中就已经完全熔化，成为瓷器釉面的一部分。制作这种定制釉料要收费399美金，之后每一件瓷器再加收159至649美金不等。
-
-想想看，如果你去别人家喝杯茶，发现茶杯是对方老爸的骨灰做的，是不是会有点毛骨悚然？
-
-2. 理论-联系死亡教育相关理论 400字
-
-①
-
-
-死亡教育中本来就包含“尸体是有多种处理方法的”（coping with death 中包含 I am aware of the variety of options for disposing of bodies ）（见论文中的表格）
-
-研究的结果发现接受过死亡教育的学生能在危机时刻（死亡）帮助他人度过难关
-
-
-
-②
-
-这篇论文原文是日语，只能看到英文摘要。总结一下摘要里的部分内容即可：
-
-接受过死亡教育的人，【对自己】能消除自己对死亡的禁忌；【对他人】更知道家人临终时应做好临终护理
-
-"Death Education" is at the same time "Life Education." For many years I have endeavored to create an awareness of the need for death education in Japan. In this paper I would like to stress the necessity of death education for the following three groups. 1. For medical personnel. Three objectives of death education: 1) Learn to understand the fears and anxieties of the patients facing death and try to reduce their excessive fears and anxieties. 2) Familiarize yourself with the ethical issues related to terminal care and try to establish a warm relationship based on trust and continue communication with the dying patient till the end. 2. For patients. 1) Be aware that the time of your life is limited and try to discover the preciousness of the remaining time. Meditate on the uniqueness of your own death. 2) Finish your unfinished business, reevaluate your human relationships and benefit from a life review therapy. 3) Remove the taboo on death, arrange your own funeral and consider the possibility of another life after death. 3. For the patient's family and friends. 1) Continue warm communication with the dying patient till the end. 2) Prepare for your own bereavement and grief. 3) Try to make your own grief process an opportunity for personal growth. When a cure is no longer possible for a dying patient, the focus of our endeavors should be loving care of the person. Death education can help us to provide better terminal care during the final stage of life.
-
-
 
 参考来源：
 
 1. https://curiosity.com/topics/you-can-get-the-cremated-ashes-of-a-loved-one-turned-into-some-pottery-curiosity/
 2. https://www.theguardian.com/artanddesign/2016/oct/24/pottery-cremation-dinnerware-ceremic-glaze-art-justin-crowe
-3. https://www.ncbi.nlm.nih.gov/pubmed/1503476
-4. COPING: EFFECTS OF DEATH EDUCATION LARRY A. BUGEN, PH.D. St. Edwards University
+3. COPING: EFFECTS OF DEATH EDUCATION LARRY A. BUGEN, PH.D. St. Edwards University
+4. https://www.ncbi.nlm.nih.gov/pubmed/1503476
 
