@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "The Pandemic Is Turning the Natural World Upside Down"
+title: "疫情期间，外面的大自然都怎么样了？"
 tags: Guokr Science Translate
-excerpt: Widespread social-distancing measures have produced some jarring effects across land, air, and sea.
+excerpt: 大规模的居家隔离对大地、天空和海洋都产生了影响
 star: true
 thumb: "/img/20200407/thumb.jpg"
 from: https://www.theatlantic.com/science/archive/2020/04/coronavirus-pandemic-earth-pollution-noise/609316/
