@@ -112,5 +112,5 @@ Fournet is thinking now of North Pacific humpback whales, who have begun to move
 
 * * *
 
-
+_（本文已投稿给「果壳网」。作者：欧剃 编辑：八云。未经授权不得转载。如有需要请联系sns@guokr.com。）_
 

@@ -57,3 +57,4 @@ thumb: "/img/20200329/thumb.jpg"
 3. COPING: EFFECTS OF DEATH EDUCATION LARRY A. BUGEN, PH.D. St. Edwards University
 4. https://www.ncbi.nlm.nih.gov/pubmed/1503476
 
+_（本文已投稿给「果壳网」。作者：欧剃 编辑：八云。未经授权不得转载。如有需要请联系sns@guokr.com。）_

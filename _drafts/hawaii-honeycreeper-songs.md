@@ -139,3 +139,5 @@ But in the end, the captive-bred honeycreepers will need to learn the songs that
 但最终，这些圈养繁殖的夏威夷旋蜜雀需要重新学习歌唱，以使它们在自己的土地上成功繁衍生息。“当我们失去那些歌声时，我们也失去了构成夏威夷原始森林的一部分。”帕克斯顿说。
 
 * * *
+
+_（本文已投稿给「果壳网」。作者：欧剃 编辑：八云。未经授权不得转载。如有需要请联系sns@guokr.com。）_
