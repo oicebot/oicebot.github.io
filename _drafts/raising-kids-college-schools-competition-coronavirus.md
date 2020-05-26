@@ -122,3 +122,5 @@ I don’t actually think I’m raising mediocre children. In fact, my kids might
 That might seem ordinary to some, but to me, it’s the most extraordinary kind of life.
 
 这也许在有些人看来很普通，但对我来说，那样的生活才最不平凡。
+
+_（本文已投稿给「果壳网」。作者：欧剃 编辑：八云。未经授权不得转载。如有需要请联系sns@guokr.com。）_
