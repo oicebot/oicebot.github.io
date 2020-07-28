@@ -1,0 +1,65 @@
+---
+layout: page
+title: 魔兽世界怀旧服黑本模拟器
+---
+
+<link rel="stylesheet" href="./assets/css/weui.css">
+<link rel="stylesheet" href="./loot/loot.css">
+
+<div class="bg"></div>
+<div class="weui-cells weui-cells_form">
+    <div class="weui-cells__title">请输入团长名字</div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="text" id="name" default="请输入团长名字" />
+        </div> 
+    </div>
+
+    <div class="weui-cells weui-cells_radio">
+        <div class="weui-cells__title">选择一个副本</div>
+        <label class="weui-cell weui-check__label" for="bwl"">
+            <div class="weui-cell__bd">
+                <p>黑翼之巢</p>
+            </div>
+            <div class="weui-cell__ft">
+                <input type="radio" class="weui-check" name="area" id="bwl">
+                <span class="weui-icon-checked"></span>
+            </div>
+        </label>
+        <label class="weui-cell weui-check__label" for="aq20">
+            <div class="weui-cell__bd">
+                <p>安琪拉废墟</p>
+            </div>
+            <div class="weui-cell__ft">
+                <input type="radio" class="weui-check" name="area" id="aq20" checked="true">
+                <span class="weui-icon-checked"></span>
+            </div>
+        </label>
+        <label class="weui-cell weui-check__label" for="aq40">
+            <div class="weui-cell__bd">
+                <p>安琪拉神殿</p>
+            </div>
+            <div class="weui-cell__ft">
+                <input type="radio" name="area" class="weui-check" id="aq40">
+                <span class="weui-icon-checked"></span>
+            </div>
+        </label>
+    </div>
+
+    <div class="weui-cells">
+        <a href="javascript:;" onclick="displayLootResult()" class="weui-btn weui-btn_primary">
+            开战
+        </a>
+    </div>
+    <div class="weui-cells">
+     <hr>
+    </div>
+</div>
+<div id="information"></div>
+<div id="loot_result"></div>
+
+<script src="./loot/data/icon_pair.js"></script>
+<script src="./loot/data/bwl.js"></script>
+<script src="./loot/data/aq20.js"></script>
+<script src="./loot/data/aq40.js"></script>
+<script src="./loot/loot.js"></script>

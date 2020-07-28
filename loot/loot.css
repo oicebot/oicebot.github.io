@@ -1,0 +1,45 @@
+body {
+    /* The image used */
+    background-image: url("https://cdn.jsdelivr.net/gh/oicebot/oicebot.github.io/loot/map_BG.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;    
+    background-attachment: fixed;
+  }
+
+.weui-cell {
+    color: antiquewhite;
+}
+
+.weui-cells {
+    color: antiquewhite;
+}
+
+h3 {
+    color:green;
+}
+
+.boss{
+    text-align:left;
+
+    margin-left: 25%;
+    color: orange;
+    text-shadow: sandybrown;
+    font-size: large;
+    padding-bottom: 1rem;
+    padding-bottom: 0.3rem;
+}
+
+.item {
+    text-align: left;
+    padding-left: 30%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+    background-color: rgba(168, 158, 158, 0.6);
+    text-shadow: silver;
+    vertical-align:middle;
+}
