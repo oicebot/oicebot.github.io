@@ -85,36 +85,44 @@ function displayLootResult() {
         var currentBossName = lootData["bossName"][i];
         appendWords("<b>" + currentBossName + "</b>","boss","loot_result");
         for (var key in lootData[currentBossName]) {
-            var currentLootList = lootData[currentBossName][key];
-            result = currentLootList[Math.seededRandom(0,currentLootList.length)];
-            z = true;
-            
-            if (result.length > 0) {
+            var currentLootList = [...lootData[currentBossName][key]];
 
-                if (result[result.length-1] == 'b') {
-                    z = false;
-                    result = result.substr(0,result.length-1);
-                }
-                var prefixP = "<span style='display:inline-block; vertical-align:middle;color:blue; padding-left:0.5rem'>";
-                if (z) {
-                    prefixP = "<span style='display:inline-block; vertical-align:middle;color:purple;padding-left:0.5rem'>";
-                }
+            var itemNum = parseInt(key[key.length-1]);
+
+            for (var h = 0;h<itemNum;h++) {
+
+                result = currentLootList.splice(Math.seededRandom(0,currentLootList.length-1),1)[0];
+                z = true;
                 
-                if (icon_pair[result]) {
-                    imgName = icon_pair[result] + ".png"
-                    imgName = '<img align="middle" src="https://cdn.jsdelivr.net/gh/oicebot/oicebot.github.io/loot/icons/' + imgName + '" />'
+                if (result.length > 0) {
+    
+                    if (result[result.length-1] == 'b') {
+                        z = false;
+                        result = result.substr(0,result.length-1);
+                    }
+                    var prefixP = "<span style='display:inline-block; vertical-align:middle;color:blue; padding-left:0.5rem'>";
+                    if (z) {
+                        prefixP = "<span style='display:inline-block; vertical-align:middle;color:purple;padding-left:0.5rem'>";
+                    }
+                    
+                    if (icon_pair[result]) {
+                        imgName = icon_pair[result] + ".png"
+                        imgName = '<img align="middle" src="https://cdn.jsdelivr.net/gh/oicebot/oicebot.github.io/loot/icons/' + imgName + '" />'
+                    }
+    
+                    appendWords(imgName + prefixP + result + "</span>","item","loot_result");
                 }
-
-                appendWords(imgName + prefixP + result + "</span>","item","loot_result");
             }
+
+            
         }
 
     }
 
     appendWords("<b>小怪掉落</b>","boss","loot_result");
-    var mobItemNum = Math.seededRandom(0, Math.ceil(lootData["bossNum"]/2+1));
+    var mobItemNum = Math.seededRandom(0, Math.ceil(lootData["bossNum"]/2));
     for (i=0;i<mobItemNum;i++) {
-        result = lootData["小怪掉落"]["loot0"][Math.seededRandom(0,lootData["小怪掉落"]["loot0"].length)];
+        result = lootData["小怪掉落"][Math.seededRandom(0,lootData["小怪掉落"].length)];
         z = true;
         if (result.length > 0) {
             if (result[result.length-1] == 'b') {

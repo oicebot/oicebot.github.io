@@ -13,7 +13,7 @@ var icon_pair = { "\u7075\u98ce\u8170\u5e26": "inv_belt_22", "\u8840\u7259\u80a9
     "埃瑟利苏尔，惩戒之弩":"inv_weapon_crossbow_09",
     "克鲁索洛克恩，混乱之刃":"inv_axe_12",
     "密苏达尔，夺魂者的头饰":"inv_helmet_52",
-    "阿什坎迪，兄弟会之剑":"阿什坎迪-兄弟会之剑",
+    "阿什坎迪，兄弟会之剑":"inv_sword_50",
     "遗忘虫群之怒":"inv_jewelry_necklace_14",
     "游荡牧民之靴":"inv_boots_cloth_05",
     "其拉威严之锤":"inv_hammer_04",
