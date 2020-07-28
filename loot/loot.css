@@ -1,3 +1,8 @@
+html {
+
+    scroll-behavior: smooth;
+}
+
 body {
     /* The image used */
     background-image: url("https://cdn.jsdelivr.net/gh/oicebot/oicebot.github.io/loot/map_BG.jpg");
@@ -20,13 +25,13 @@ body {
 }
 
 h3 {
-    color:green;
+    color: springgreen;
 }
 
 .boss{
     text-align:left;
 
-    margin-left: 25%;
+    margin-left: 15%;
     color: orange;
     text-shadow: sandybrown;
     font-size: large;
@@ -36,10 +41,25 @@ h3 {
 
 .item {
     text-align: left;
-    padding-left: 30%;
+    padding-left: 20%;
     padding-top: 0.5rem;
     padding-bottom: 0.2rem;
     background-color: rgba(168, 158, 158, 0.6);
     text-shadow: silver;
     vertical-align:middle;
+}
+
+.displayer {
+    
+    z-index: 999;
+}
+
+#information {
+    top:0;
+    position: fixed;
+    padding-left: 5%;
+    padding-bottom: 0.2rem;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.863);
+    
 }

@@ -77,7 +77,7 @@ function displayLootResult() {
         var dungeonName = "黑翼之巢";
     }
     document.getElementById("loot_result").innerHTML = "";
-    document.getElementById("information").innerHTML = "<center><h3>预测今天<span style='color:yellow'>" + name + "</span>在<span style='color:yellow'>" + dungeonName + "</span>：</h3></center><br>";
+    document.getElementById("information").innerHTML = "<h3>预测今天<span style='color:yellow'>" + name + "</span>在<span style='color:yellow'>" + dungeonName + "</span>：</h3>";
         
     Math.seed = num1+num2;
 
@@ -134,4 +134,11 @@ function displayLootResult() {
         }
     }
 
+    var show_result = document.getElementById("starthere");
+
+    setTimeout(function() {
+        show_result.scrollIntoView();
+    }
+    ,300);
+    
 }
