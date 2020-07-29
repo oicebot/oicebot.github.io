@@ -72,6 +72,10 @@ function displayLootResult() {
         var lootData = aq40_data;
         var dungeonName = "安其拉神殿";
     }
+    else if (document.getElementById("mcface").checked) {
+        var lootData = mcface_data;
+        var dungeonName = "MC摸脸团";
+    }
     else {
         var lootData = bwl_data;
         var dungeonName = "黑翼之巢";
@@ -92,18 +96,23 @@ function displayLootResult() {
             for (var h = 0;h<itemNum;h++) {
 
                 result = currentLootList.splice(Math.seededRandom(0,currentLootList.length-1),1)[0];
-                z = true;
+                z = "purple";
                 
                 if (result.length > 0) {
     
                     if (result[result.length-1] == 'b') {
-                        z = false;
+                        z = "blue";
+                        result = result.substr(0,result.length-1);
+                    } else if (result[result.length-1] == 'g') {
+                        z = "orange";
+                        result = result.substr(0,result.length-1);
+                    } else if (result[result.length-1] == 'w') { 
+                        z = "silver";
                         result = result.substr(0,result.length-1);
                     }
-                    var prefixP = "<span style='display:inline-block; vertical-align:middle;color:blue; padding-left:0.5rem'>";
-                    if (z) {
-                        prefixP = "<span style='display:inline-block; vertical-align:middle;color:purple;padding-left:0.5rem'>";
-                    }
+        
+                    var prefixP = "<span style='display:inline-block; vertical-align:middle;color:" + z + ";padding-left:0.5rem'>";
+        
                     
                     if (icon_pair[result]) {
                         imgName = icon_pair[result] + ".png"
@@ -123,16 +132,21 @@ function displayLootResult() {
     var mobItemNum = Math.seededRandom(0, Math.ceil(lootData["bossNum"]/2));
     for (i=0;i<mobItemNum;i++) {
         result = lootData["小怪掉落"][Math.seededRandom(0,lootData["小怪掉落"].length)];
-        z = true;
+        z = "purple";
         if (result.length > 0) {
             if (result[result.length-1] == 'b') {
-                z = false;
+                z = "blue";
+                result = result.substr(0,result.length-1);
+            } else if (result[result.length-1] == 'g') {
+                z = "gold";
+                result = result.substr(0,result.length-1);
+            } else if (result[result.length-1] == 'w') { 
+                z = "silver";
                 result = result.substr(0,result.length-1);
             }
-            var prefixP = "<span style='display:inline-block; vertical-align:middle;color:purple;padding-left:0.5rem'>";
-            if (!z) {
-                prefixP = "<span style='display:inline-block; vertical-align:middle;color:blue;padding-left:0.5rem'>";
-            }
+
+            var prefixP = "<span style='display:inline-block; vertical-align:middle;color:" + z + ";padding-left:0.5rem'>";
+
             if (icon_pair[result]) {
                 imgName = icon_pair[result] + ".png"
                 imgName = '<img align="middle" src="https://cdn.jsdelivr.net/gh/oicebot/oicebot.github.io/loot/icons/' + imgName + '" />'
