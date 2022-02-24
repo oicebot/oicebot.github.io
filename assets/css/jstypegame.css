@@ -1,0 +1,93 @@
+body {
+    background-image: url('{{site.cdn}}/assets/images/bg_star.jpg');
+    background-repeat: repeat-y;
+}
+
+.bg {
+    position: absolute;
+    filter:brightness(50%);
+    margin: 5px;
+    z-index: -1;
+    width: auto;
+    height: 670px;
+}
+
+.UIwrapper {
+    display: flex;
+    flex-direction: row;
+    position:absolute;
+    top: 20px;
+    font-size: larger;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    z-index: 9;
+    width: 100%;
+}
+
+.UI {
+    position:absolute;
+}
+
+
+
+#life {
+    left:0%;
+}
+
+#score {
+    left:90%;
+}
+
+#highscore {
+    left:45%;
+}
+
+#city {
+    
+    position: relative;
+    top:663px;    
+    display: flex;
+    z-index: 2;
+    height: 100px;
+    
+}
+
+#intro {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 170px;    
+    font-size: larger;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    z-index: 9;
+}
+
+.block {
+    position:absolute;
+    display: block;
+    text-align: center;
+    border-radius: 15%;
+    border: 2px solid sandybrown;
+    background-color: sandybrown;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 45px;
+    height: 45px;
+    box-shadow: 2px 2px 3px #c0c0c0c7;
+}
+
+
+#magic {
+    position: absolute;
+    top:800px;    
+}
+
+#timeoutNumber {
+    font-size: larger;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}

@@ -1,0 +1,80 @@
+---
+layout: page
+title: JS打字通
+---
+
+
+        <link rel="stylesheet" href="./assets/css/jstypegame.css">
+
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <div class="UIwrapper">
+            <div class="UI" id="life">生命值：0</div>
+            <div class="UI" id="highscore">最高分：0</div>
+            <div class="UI" id="score">分数：0</div>
+        </div>
+        <div id="field">
+            <canvas class="bg" id="effect"></canvas>
+
+            <div id="intro">
+                <img src="{{site.cdn}}/assets/images/gametitle.png"/>
+                <p>按回车键开始游戏</p>
+                <button onclick="settingsClicked()">游戏设置</button>
+                <div id="settings">                    
+                    <div>生命上限：</div>
+                    <div>
+                        <label><input type="radio" id="live1" onclick="setLive(3)"
+                            name="live" value="3" checked>❤️❤️❤️</label><br/>
+                        <label><input type="radio" id="live2" onclick="setLive(5)"
+                            name="live" value="5">❤️❤️❤️❤️❤️</label><br/>
+                        <label><input type="radio" id="live3" onclick="setLive(10)"
+                            name="live" value="10">❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</label>
+                    </div>
+                    <div>难度等级：</div>
+                    <div>
+                        <label><input type="radio" id="lv1" onclick="setSpeed(1)"
+                            name="level" value="1" checked>1️⃣</label>
+                        <label><input type="radio" id="lv2" onclick="setSpeed(2)"
+                            name="level" value="2">2️⃣</label>
+                        <label><input type="radio" id="lv3" onclick="setSpeed(3)"
+                            name="level" value="3">3️⃣</label>
+                        <label><input type="radio" id="lv3" onclick="setSpeed(4)"
+                            name="level" value="4">4️⃣</label>
+                        <label><input type="radio" id="lv3" onclick="setSpeed(5)"
+                            name="level" value="5">5️⃣</label>
+                    </div>
+                    <div>刷新间隔：</div>
+                    <div>
+                        <label><input type="radio" id="cd1" onclick="setSpawn(1)"
+                            name="spawn" value="1">1秒</label>
+                        <label><input type="radio" id="cd2" onclick="setSpawn(2)"
+                            name="spawn" value="2" checked>2秒</label>
+                        <label><input type="radio" id="cd3" onclick="setSpawn(3)"
+                            name="spawn" value="3" >3秒</label>
+                        <label><input type="radio" id="cd4" onclick="setSpawn(4)"
+                            name="spawn" value="4">4秒</label>
+                        <label><input type="radio" id="cd5" onclick="setSpawn(5)"
+                            name="spawn" value="5">5秒</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="city">
+                <img src="{{site.cdn}}/assets/images/city.png" height=120px>
+                <img src="{{site.cdn}}/assets/images/city.png" height=120px>
+                <img src="{{site.cdn}}/assets/images/city.png" height=120px>
+            </div>
+            
+        </div>
+        <div id="magic">
+            <div id="timeoutNumber">Timer数：0</div>
+            <button onclick="createBlock()">增加Timer</button>
+            <button onclick="resetTimer()">重置Timer</button>
+        </div>
+
+
+
+        <script src="./script/jstypegame.js"></script>
