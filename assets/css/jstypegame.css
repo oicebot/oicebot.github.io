@@ -1,5 +1,5 @@
 body {
-    background-image: url('{{site.cdn}}/assets/images/bg_star.jpg');
+    background-image: url('../images/bg_star.jpg');
     background-repeat: repeat-y;
 }
 
